@@ -1,0 +1,60 @@
+---
+/**
+ * JsonLd Component
+ * 
+ * A universal component for adding JSON-LD structured data to pages.
+ * Place this in the <head> section of your page.
+ * 
+ * Usage:
+ * ```astro
+ * ---
+ * import JsonLd from '../components/seo/JsonLd.astro';
+ * import { generateArticleSchema } from '../lib/schema';
+ * 
+ * const schema = generateArticleSchema({ ... });
+ * ---
+ * <JsonLd schema={schema} />
+ * ```
+ * 
+ * For multiple schemas:
+ * ```astro
+ * <JsonLd schemas={[articleSchema, breadcrumbSchema]} />
+ * ```
+ */
+
+import { schemaToJsonLd, combineSchemas } from '../../lib/schema';
+import type { Schema } from '../../lib/schema';
+
+interface Props {
+    /**
+     * Single schema object
+     */
+    schema?: Schema;
+    
+    /**
+     * Multiple schema objects (will be combined into @graph)
+     */
+    schemas?: Schema[];
+}
+
+const { schema, schemas } = Astro.props;
+
+// Determine what to render
+let jsonLdContent: string = '';
+
+if (schemas && schemas.length > 0) {
+    // Multiple schemas - combine into a graph
+    if (schemas.length === 1) {
+        jsonLdContent = schemaToJsonLd(schemas[0]);
+    } else {
+        jsonLdContent = JSON.stringify(combineSchemas(schemas));
+    }
+} else if (schema) {
+    // Single schema
+    jsonLdContent = schemaToJsonLd(schema);
+}
+---
+
+{jsonLdContent && (
+    <script type="application/ld+json" set:html={jsonLdContent} />
+)}

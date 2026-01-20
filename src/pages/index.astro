@@ -1,0 +1,141 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import HeroSection from '../components/ui/HeroSection.astro';
+import FeaturedPost from '../components/ui/FeaturedPost.astro';
+import ArticleCard from '../components/ui/ArticleCard.astro';
+import CategoryTile from '../components/ui/CategoryTile.astro';
+import Icon from '../components/ui/Icon.astro';
+import { siteConfig } from '../config/site';
+import { categories } from '../config/categories';
+import { 
+  generateWebSiteSchema, 
+  getOrganizationSchema,
+  type Schema 
+} from '../lib/schema';
+
+// Get latest posts
+const allPosts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+const featuredPost = allPosts.find(p => p.data.featured) || allPosts[0];
+const recentPosts = allPosts.filter(p => p.id !== featuredPost?.id).slice(0, 3);
+
+// Count articles per category
+const categoryArticleCounts = categories.reduce((acc, cat) => {
+  acc[cat.slug] = allPosts.filter(p => p.data.category === cat.slug).length;
+  return acc;
+}, {} as Record<string, number>);
+
+// Featured categories to display on homepage (curated list)
+const featuredCategorySlugs = [
+  'ai-agents',
+  'ai-tools', 
+  'mcp',
+  'prompt-engineering',
+  'code-snippets',
+];
+
+// Get featured categories with article counts
+const topCategories = featuredCategorySlugs
+  .map(slug => categories.find(cat => cat.slug === slug))
+  .filter(Boolean)
+  .map(cat => ({ ...cat!, count: categoryArticleCounts[cat!.slug] || 0 }));
+
+// Total category count for the "View All" tile
+const totalCategories = categories.length;
+
+// Generate JSON-LD structured data for homepage
+const schemas: Schema[] = [
+  generateWebSiteSchema(),
+  getOrganizationSchema(),
+];
+---
+
+<BaseLayout 
+  title={siteConfig.title} 
+  description={siteConfig.description}
+  schemas={schemas}
+>
+  <!-- Hero Section -->
+  <HeroSection articleCount={allPosts.length} />
+
+  <!-- Featured Post Section -->
+  {featuredPost && <FeaturedPost post={featuredPost} />}
+
+  <!-- Browse by Topic Section -->
+  <section class="py-16 sm:py-24 border-b border-border">
+    <div class="mx-auto max-w-wide px-4 sm:px-6">
+      <div class="flex items-center justify-between mb-10">
+        <div class="flex items-center gap-3">
+          <Icon name="layers" size={24} class="text-foreground-secondary" />
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">
+            Browse by Topic
+          </h2>
+        </div>
+      </div>
+      
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+        {topCategories.map((category) => (
+          <CategoryTile 
+            category={category} 
+            articleCount={category.count} 
+            size="sm"
+          />
+        ))}
+        
+        <!-- View All Categories Tile -->
+        <a 
+          href="/categories" 
+          class="view-all-tile group block rounded-xl border border-dashed border-border-strong bg-background p-4 hover:border-foreground-secondary hover:bg-background-secondary transition-all duration-300"
+        >
+          <div class="h-full flex flex-col items-center justify-center text-center py-4">
+            <div class="mb-3 w-12 h-12 rounded-full bg-background-secondary border border-border flex items-center justify-center group-hover:bg-background group-hover:border-foreground-tertiary transition-all">
+              <Icon name="grid" size={24} class="text-foreground-secondary group-hover:text-foreground transition-colors" />
+            </div>
+            <h3 class="font-bold text-lg mb-1 group-hover:text-foreground-secondary transition-colors">
+              View All Topics
+            </h3>
+            <p class="text-sm text-foreground-tertiary mb-3">
+              Explore all {totalCategories} categories
+            </p>
+            <span class="inline-flex items-center gap-1 text-sm font-medium text-foreground-secondary group-hover:text-foreground transition-colors">
+              Browse all
+              <Icon name="arrow-right" size={16} class="group-hover:translate-x-1 transition-transform" />
+            </span>
+          </div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Recent Posts Grid -->
+  {recentPosts.length > 0 && (
+    <section class="py-16 sm:py-24 border-b border-border">
+      <div class="mx-auto max-w-wide px-4 sm:px-6">
+        <div class="flex items-center justify-between mb-10">
+          <div class="flex items-center gap-3">
+            <Icon name="file-code" size={24} class="text-foreground-secondary" />
+            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">
+              Latest Articles
+            </h2>
+          </div>
+          <a 
+            href="/blog" 
+            class="text-sm font-medium text-foreground-secondary hover:text-foreground transition-colors inline-flex items-center gap-1"
+          >
+            View all
+            <Icon name="chevron-right" size={16} />
+          </a>
+        </div>
+        
+        <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+          {recentPosts.map((post, index) => (
+            <ArticleCard post={post} index={index} />
+          ))}
+        </div>
+      </div>
+    </section>
+  )}
+</BaseLayout>

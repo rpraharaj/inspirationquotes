@@ -1,0 +1,43 @@
+---
+/**
+ * Google Analytics 4 Component
+ * 
+ * Google's officially recommended implementation using gtag.js with async loading.
+ * This approach ensures:
+ * - Full compatibility with all GA4 features
+ * - Reliable session tracking (duration, engagement time, etc.)
+ * - Minimal performance impact (async = non-blocking)
+ * 
+ * @see https://developers.google.com/analytics/devguides/collection/gtagjs
+ */
+
+interface Props {
+  /**
+   * Your GA4 Measurement ID (format: G-XXXXXXXXXX)
+   */
+  id?: string;
+}
+
+const { id = 'G-FBGD2V1PXX' } = Astro.props;
+
+// Only load GA in production to avoid polluting analytics with dev data
+const isProd = import.meta.env.PROD;
+---
+
+{isProd && (
+  <>
+    <!-- 
+      Google tag (gtag.js) - Google's officially recommended approach
+      - async: Downloads in parallel, doesn't block rendering
+      - Tracks: Sessions, engagement time, page views, scroll, clicks, etc.
+    -->
+    <script async src={`https://www.googletagmanager.com/gtag/js?id=${id}`}></script>
+    <script is:inline define:vars={{ gaId: id }}>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', gaId);
+    </script>
+  </>
+)}
+

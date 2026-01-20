@@ -1,0 +1,21 @@
+# Robots.txt for AI Agents Kit
+# https://aiagentskit.com
+# Last updated: 2026-01-06
+
+# ===========================================
+# Default rules for all crawlers
+# ===========================================
+User-agent: *
+Allow: /
+
+# Sitemap location (required for proper indexing)
+Sitemap: https://aiagentskit.com/sitemap-index.xml
+
+# ===========================================
+# Block internal/build assets
+# ===========================================
+# Astro build output (CSS/JS bundles with hashed names)
+Disallow: /_astro/
+
+# Worker internal files
+Disallow: /_worker.js/

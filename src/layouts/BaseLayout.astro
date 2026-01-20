@@ -1,0 +1,77 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import JsonLd from '../components/seo/JsonLd.astro';
+import type { Schema } from '../lib/schema';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  class?: string;
+  /**
+   * Optional JSON-LD structured data schemas
+   * Pass an array of schema objects to be injected into the page head
+   */
+  schemas?: Schema[];
+  /**
+   * Optional canonical URL override - use for pagination pages
+   */
+  canonicalUrl?: string;
+  /**
+   * If true, adds noindex meta tag - use for pagination pages
+   */
+  noindex?: boolean;
+}
+
+const { title, description, image, class: className, schemas, canonicalUrl, noindex } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <BaseHead title={title} description={description} image={image} canonicalUrl={canonicalUrl} noindex={noindex} />
+    {schemas && schemas.length > 0 && <JsonLd schemas={schemas} />}
+  </head>
+  <body class="bg-background text-foreground min-h-screen flex flex-col font-sans">
+    <!-- Skip to main content link for keyboard accessibility -->
+    <a 
+      href="#main-content" 
+      class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-foreground focus:text-background focus:rounded-lg focus:font-medium focus:shadow-lg"
+    >
+      Skip to main content
+    </a>
+    <Header />
+    <main id="main-content" class:list={["flex-1", className]}>
+      <slot />
+    </main>
+    <Footer />
+    
+    <!-- Page transition animations -->
+    <style is:global>
+      @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(10px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      @keyframes slideUp {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+      }
+      
+      .animate-fade-in {
+        animation: fadeIn 0.5s ease-out forwards;
+      }
+      
+      .animate-slide-up {
+        animation: slideUp 0.6s ease-out forwards;
+      }
+      
+      .stagger-1 { animation-delay: 0.1s; }
+      .stagger-2 { animation-delay: 0.2s; }
+      .stagger-3 { animation-delay: 0.3s; }
+      .stagger-4 { animation-delay: 0.4s; }
+    </style>
+  </body>
+</html>

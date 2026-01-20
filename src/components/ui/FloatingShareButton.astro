@@ -1,0 +1,153 @@
+---
+/**
+ * FloatingShareButton Component
+ * 
+ * Fixed floating action button (FAB) that triggers the share modal.
+ * Always shows the custom modal on all devices (desktop and mobile).
+ * Positioned in bottom-right corner.
+ */
+import Icon from './Icon.astro';
+import ShareModal from './ShareModal.astro';
+
+interface Props {
+  title: string;
+  url: string;
+  description?: string;
+}
+
+const { title, url, description = '' } = Astro.props;
+---
+
+<!-- Floating Action Button -->
+<div class="floating-share-container">
+  <button
+    type="button"
+    class="floating-share-btn fixed z-50 flex items-center justify-center rounded-full shadow-lg transition-all duration-200"
+    id="floating-share-btn"
+    aria-label="Share this article"
+    aria-haspopup="dialog"
+    aria-expanded="false"
+    data-title={title}
+    data-url={url}
+    data-description={description}
+  >
+    <Icon name="share" size={24} />
+  </button>
+  
+  <!-- Include the ShareModal -->
+  <ShareModal title={title} url={url} description={description} />
+</div>
+
+<style>
+  .floating-share-btn {
+    bottom: 24px;
+    right: 24px;
+    width: 56px;
+    height: 56px;
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    border: 1px solid var(--border);
+    box-shadow: 
+      0 4px 12px rgba(0, 0, 0, 0.15),
+      0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Mobile adjustments */
+  @media (max-width: 640px) {
+    .floating-share-btn {
+      bottom: 16px;
+      right: 16px;
+      width: 48px;
+      height: 48px;
+    }
+  }
+  
+  /* Hover state */
+  .floating-share-btn:hover {
+    transform: scale(1.05);
+    box-shadow: 
+      0 6px 20px rgba(0, 0, 0, 0.2),
+      0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Active state */
+  .floating-share-btn:active {
+    transform: scale(0.98);
+  }
+  
+  /* Focus state - accessible */
+  .floating-share-btn:focus-visible {
+    outline: 2px solid var(--bg-primary);
+    outline-offset: 2px;
+    box-shadow: 
+      0 6px 20px rgba(0, 0, 0, 0.2),
+      0 0 0 4px var(--text-primary);
+  }
+  
+  /* Subtle pulse animation for attention */
+  @keyframes subtle-pulse {
+    0%, 100% {
+      box-shadow: 
+        0 4px 12px rgba(0, 0, 0, 0.15),
+        0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    50% {
+      box-shadow: 
+        0 4px 16px rgba(0, 0, 0, 0.2),
+        0 2px 6px rgba(0, 0, 0, 0.12);
+    }
+  }
+  
+  .floating-share-btn {
+    animation: subtle-pulse 4s ease-in-out infinite;
+  }
+  
+  .floating-share-btn:hover,
+  .floating-share-btn:focus {
+    animation: none;
+  }
+  
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .floating-share-btn {
+      animation: none !important;
+      transition-duration: 0.01ms !important;
+    }
+    
+    .floating-share-btn:hover,
+    .floating-share-btn:active {
+      transform: none !important;
+    }
+  }
+</style>
+
+<script>
+  function initFloatingShare() {
+    const fab = document.getElementById('floating-share-btn') as HTMLButtonElement;
+    if (!fab) return;
+    
+    // Handle FAB click - always open custom modal
+    fab.addEventListener('click', () => {
+      if (typeof (window as any).openShareModal === 'function') {
+        (window as any).openShareModal();
+        fab.setAttribute('aria-expanded', 'true');
+      }
+    });
+    
+    // Update aria-expanded when modal closes
+    const originalClose = (window as any).closeShareModal;
+    if (typeof originalClose === 'function') {
+      (window as any).closeShareModal = () => {
+        originalClose();
+        fab.setAttribute('aria-expanded', 'false');
+      };
+    }
+  }
+  
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initFloatingShare);
+  } else {
+    initFloatingShare();
+  }
+</script>

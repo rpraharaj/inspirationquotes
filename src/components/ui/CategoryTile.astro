@@ -1,0 +1,72 @@
+---
+/**
+ * CategoryTile Component
+ * 
+ * Displays a category as a clickable tile for the homepage
+ * and categories page. Shows icon, name, description, and article count.
+ */
+import Icon from './Icon.astro';
+import type { Category } from '../../config/categories';
+
+interface Props {
+    category: Category;
+    articleCount?: number;
+    size?: 'sm' | 'md' | 'lg';
+}
+
+const { category, articleCount = 0, size = 'md' } = Astro.props;
+
+const sizeClasses = {
+    sm: 'p-4',
+    md: 'p-6',
+    lg: 'p-8',
+};
+
+const iconSizes = {
+    sm: 28,
+    md: 32,
+    lg: 40,
+};
+---
+
+<a 
+    href={`/categories/${category.slug}`}
+    class:list={[
+        'group block rounded-xl border border-border bg-background',
+        'hover:border-border-strong hover:bg-background-secondary',
+        'transition-all duration-300',
+        sizeClasses[size]
+    ]}
+>
+    <div class="mb-3 text-foreground-secondary group-hover:text-foreground transition-colors">
+        <Icon name={category.icon} size={iconSizes[size]} strokeWidth={1.5} />
+    </div>
+    
+    <h3 class="font-bold text-lg mb-1 group-hover:text-foreground-secondary transition-colors">
+        {category.name}
+    </h3>
+    
+    <p class="text-sm text-foreground-tertiary line-clamp-2 mb-3">
+        {category.description}
+    </p>
+    
+    <div class="flex items-center justify-between">
+        <span class="text-xs text-foreground-tertiary">
+            {articleCount} {articleCount === 1 ? 'article' : 'articles'}
+        </span>
+        <Icon 
+            name="chevron-right" 
+            size={16} 
+            class="text-foreground-tertiary group-hover:text-foreground group-hover:translate-x-1 transition-all" 
+        />
+    </div>
+</a>
+
+<style>
+    .line-clamp-2 {
+        display: -webkit-box;
+        -webkit-line-clamp: 2;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+    }
+</style>

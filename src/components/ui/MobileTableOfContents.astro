@@ -1,0 +1,144 @@
+---
+/**
+ * Mobile Table of Contents Component
+ * 
+ * Collapsible TOC for mobile/tablet devices
+ * Shows below article header, hidden on desktop where sidebar TOC is used
+ */
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+
+// Filter to only H2 and H3 headings
+const filteredHeadings = headings.filter(h => h.depth >= 2 && h.depth <= 3);
+---
+
+{filteredHeadings.length > 0 && (
+  <div class="mobile-toc lg:hidden mb-8">
+    <details class="group border border-border rounded-xl bg-background-secondary overflow-hidden">
+      <summary class="flex items-center justify-between p-4 cursor-pointer select-none hover:bg-background-tertiary/50 transition-colors">
+        <div class="flex items-center gap-3">
+          <svg class="w-5 h-5 text-foreground-tertiary" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 10h16M4 14h16M4 18h16"/>
+          </svg>
+          <span class="font-medium text-foreground">Table of Contents</span>
+          <span class="text-xs text-foreground-secondary bg-background-tertiary px-2 py-0.5 rounded-full font-medium">
+            {filteredHeadings.length} sections
+          </span>
+        </div>
+        <svg 
+          class="w-5 h-5 text-foreground-tertiary transition-transform duration-200 group-open:rotate-180" 
+          fill="none" 
+          stroke="currentColor" 
+          viewBox="0 0 24 24"
+        >
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/>
+        </svg>
+      </summary>
+      
+      <nav class="px-4 pb-4" aria-label="Table of contents">
+        <ul class="space-y-1 border-t border-border pt-4">
+          {filteredHeadings.map((heading) => (
+            <li>
+              <a 
+                href={`#${heading.slug}`}
+                class:list={[
+                  'mobile-toc-link flex items-center gap-2 py-2 px-3 text-sm rounded-lg transition-all duration-200',
+                  'hover:bg-background-tertiary hover:text-foreground',
+                  heading.depth === 2 
+                    ? 'text-foreground-secondary font-medium' 
+                    : 'text-foreground-tertiary ml-4'
+                ]}
+                data-heading-slug={heading.slug}
+              >
+                {heading.depth === 2 ? (
+                  <span class="w-1.5 h-1.5 rounded-full bg-foreground-tertiary flex-shrink-0"></span>
+                ) : (
+                  <span class="w-1 h-1 rounded-full bg-foreground-tertiary/50 flex-shrink-0"></span>
+                )}
+                <span class="line-clamp-1">{heading.text}</span>
+              </a>
+            </li>
+          ))}
+        </ul>
+      </nav>
+    </details>
+  </div>
+)}
+
+<style>
+  /* Remove default details marker */
+  summary::-webkit-details-marker,
+  summary::marker {
+    display: none;
+  }
+  
+  /* Smooth open/close animation */
+  details[open] summary {
+    border-bottom: 1px solid var(--border);
+  }
+  
+  /* Active link styling */
+  .mobile-toc-link.active {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  
+  /* Line clamp for long headings */
+  .line-clamp-1 {
+    display: -webkit-box;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>
+
+<script>
+  // Close TOC when a link is clicked and scroll smoothly
+  document.addEventListener('DOMContentLoaded', () => {
+    const details = document.querySelector('.mobile-toc details');
+    const links = document.querySelectorAll('.mobile-toc-link');
+    
+    if (!details || links.length === 0) return;
+    
+    links.forEach((link) => {
+      link.addEventListener('click', () => {
+        // Small delay to allow scroll to start
+        setTimeout(() => {
+          (details as HTMLDetailsElement).open = false;
+        }, 100);
+      });
+    });
+    
+    // Highlight active section on scroll
+    const headings = document.querySelectorAll('h2[id], h3[id]');
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            links.forEach((link) => {
+              link.classList.remove('active');
+              if (link.getAttribute('data-heading-slug') === id) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      },
+      { rootMargin: '-100px 0px -80% 0px' }
+    );
+    
+    headings.forEach((heading) => observer.observe(heading));
+  });
+</script>

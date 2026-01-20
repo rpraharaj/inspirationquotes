@@ -1,0 +1,496 @@
+---
+description: Master orchestrator workflow - the single entry point for creating blog posts, coordinates all sub-workflows from research to validation.
+---
+
+// turbo-all
+
+# 🎯 Blog Master Workflow
+
+The central orchestrator for the blog creation system. Invoke this workflow with a topic to create a complete, SEO-optimized blog post.
+
+---
+
+## 📋 Quick Reference
+
+**Input:** Topic or keyword from user
+**Output:** Complete, validated blog post ready to publish
+**Sub-workflows:** `/blog-research` → `/blog-outline` → `/blog-writer` → `/blog-reviewer` → `/blog-validator`
+**Final Step:** `/blog-writing-sop` (Phase 4: Publishing)
+
+### Working Files Location
+
+All intermediate files are saved to `blog-drafts/[post-slug]/`:
+
+```
+blog-drafts/
+└── [post-slug]/                        ← Folder created for each post
+    ├── 01-research-brief.md            ← From /blog-research
+    ├── 02-outline.md                   ← From /blog-outline
+    ├── 03-draft-v1.md                  ← From /blog-writer (working copy)
+    ├── 04-reviewed-draft.md            ← From /blog-reviewer
+    ├── 05-review-report.md             ← From /blog-reviewer
+    └── 06-validation-report.md         ← From /blog-validator
+```
+
+The final publishable post goes to: `src/content/blog/[slug].md`
+
+### 🚨 MANDATORY: File Creation Requirements
+
+**ALL 6 INTERMEDIATE FILES MUST BE CREATED.** This is non-negotiable.
+
+| File | When to Create | Why Required |
+|------|----------------|--------------|
+| `01-research-brief.md` | After research phase | Reference for future updates, SEO strategy |
+| `02-outline.md` | After outline phase | Structure documentation, word count planning |
+| `03-draft-v1.md` | After writing phase | Version control, rollback capability |
+| `04-reviewed-draft.md` | After review phase | Track changes, audit trail |
+| `05-review-report.md` | After review phase | Document improvements made |
+| `06-validation-report.md` | After validation phase | Quality assurance record |
+
+**DO NOT skip file creation to save time.** These files are essential for:
+- Debugging if issues arise
+- Updating content in the future
+- Tracking the evolution of content
+- Auditing quality and process compliance
+
+**Agent MUST verify all 6 files exist before marking a post as complete.**
+
+### Phase Mapping to blog-writing-sop
+
+| Blog Master Phase | Maps to SOP Phase |
+|-------------------|-------------------|
+| Phase 1: Research (`/blog-research`) | SOP Phase 1: Research |
+| Phase 2: Outline (`/blog-outline`) | SOP Phase 2: Writing (prep) |
+| Phase 3: Writing (`/blog-writer`) | SOP Phase 2: Writing |
+| Phase 4: Review (`/blog-reviewer`) | SOP Phase 3: Optimization (enhancement) |
+| Phase 5: Validation (`/blog-validator`) | SOP Phase 3: Optimization (quality gate) |
+| Phase 6: Publish (`/blog-writing-sop`) | SOP Phase 4 & 5: Publishing & Updating |
+
+### ⚠️ Critical Requirements
+
+| Requirement | Priority | Details |
+|-------------|----------|---------|
+| **Human Voice** | 🔴 Critical | ALL content must sound 100% human-written. No AI clichés. See `/blog-writer` Human Voice Guidelines. |
+| **Information Currency** | 🔴 Critical | ALL data, statistics, and facts must be from the CURRENT YEAR or previous year. Use system date as reference. |
+| **AI Model Currency** | 🔴 Critical | For AI/tech content: ALL model references must be latest versions (e.g., GPT-5.x, Claude Opus 4.x). Search to verify before writing. |
+| **Word Count** | 🔴 Critical | Minimum 4,000 words. No maximum—be comprehensive. |
+| **E-E-A-T Signals** | 🔴 Critical | Personal experiences, opinions, admissions of uncertainty. |
+| **SEO Optimization** | 🟡 High | Keywords, internal links, meta optimization. |
+| **Accessibility** | 🟡 High | Alt text, heading structure, link text. |
+
+> **Human Voice is NON-NEGOTIABLE.** If content sounds AI-generated, it fails validation regardless of other factors. Every post must include personal anecdotes, opinions, conversational tone, and admissions of uncertainty.
+
+> **Information Currency is NON-NEGOTIABLE.** The system provides the current date in the context. All research, statistics, and content must use the latest available information. Reject sources >2 years old for AI/tech topics.
+
+> **AI Model Currency is NON-NEGOTIABLE.** For any content mentioning AI models or tools, ALWAYS search for the latest model versions before writing. AI models update monthly—never assume model names from previous knowledge are current. Search: `"[provider] latest model [current month year]"`
+
+---
+
+## 🚀 How to Use
+
+### Invocation
+
+```
+/blog-master [Your topic or keyword here]
+```
+
+**Examples:**
+```
+/blog-master AI agents for customer service
+/blog-master How to use Claude for code review
+/blog-master Best MCP servers for developers in 2025
+/blog-master Prompt engineering techniques for beginners
+```
+
+---
+
+## 🔄 Orchestration Flow
+
+```
+USER INPUT: Topic
+       │
+       ▼
+┌──────────────────────────────────────────────────────────┐
+│                    PHASE 1: RESEARCH                      │
+│                      /blog-research                       │
+│                                                          │
+│   • Keyword analysis                                     │
+│   • SERP analysis                                        │
+│   • Competitor review                                    │
+│   • Question mining                                      │
+│   • Data gathering                                       │
+│   • Unique angle definition                              │
+│                                                          │
+│   OUTPUT: Research Brief                                 │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                           ▼
+┌──────────────────────────────────────────────────────────┐
+│                    PHASE 2: OUTLINE                       │
+│                      /blog-outline                        │
+│                                                          │
+│   • Structure planning                                   │
+│   • H2/H3 hierarchy                                      │
+│   • Word count allocation                                │
+│   • Link mapping                                         │
+│   • Featured snippet optimization                        │
+│   • FAQ planning                                         │
+│                                                          │
+│   OUTPUT: Detailed Outline                               │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                           ▼
+┌──────────────────────────────────────────────────────────┐
+│                    PHASE 3: WRITING                       │
+│                       /blog-writer                        │
+│                                                          │
+│   • Frontmatter creation                                 │
+│   • Introduction with hook                               │
+│   • Section content with E-E-A-T                         │
+│   • FAQ section                                          │
+│   • Conclusion with CTA                                  │
+│   • Internal/external linking                            │
+│                                                          │
+│   OUTPUT: Draft saved to blog-drafts/[slug]/03-draft-v1.md│
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                           ▼
+┌──────────────────────────────────────────────────────────┐
+│                    PHASE 4: REVIEW                        │
+│                    /blog-reviewer                         │
+│                                                          │
+│   Pass 1: Content Enhancement                            │
+│   • Expand thin sections, improve examples               │
+│   • Strengthen hook and CTA                              │
+│                                                          │
+│   Pass 2: Humanization                                   │
+│   • Remove AI patterns, add anecdotes                    │
+│   • Inject opinions, humor, uncertainty                  │
+│                                                          │
+│   Pass 3: Fact-Checking (Deep)                           │
+│   • Verify all claims via web search                     │
+│   • Correct errors, update outdated info                 │
+│                                                          │
+│   Pass 4: Citations                                      │
+│   • Add 3-5 high-quality external links                  │
+│   • Cite authoritative sources                           │
+│                                                          │
+│   OUTPUT: Reviewed draft + Review report                 │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+                           ▼
+┌──────────────────────────────────────────────────────────┐
+│                   PHASE 5: VALIDATION                     │
+│                     /blog-validator                       │
+│                                                          │
+│   • SEO checks (title, description, keywords)            │
+│   • Content checks (word count, readability, links)      │
+│   • Human voice checks (anecdotes, opinions, tone)       │
+│   • Accessibility checks (alt text, headings)            │
+│   • Technical checks (frontmatter, categories)           │
+│                                                          │
+│   OUTPUT: Validation Report (PASS/FAIL)                  │
+└──────────────────────────┬───────────────────────────────┘
+                           │
+              ┌────────────┴────────────┐
+              │                         │
+              ▼                         ▼
+         ┌─────────┐             ┌─────────┐
+         │  FAIL   │             │  PASS   │
+         └────┬────┘             └────┬────┘
+              │                       │
+              ▼                       ▼
+      Fix issues &              ┌───────────────────────┐
+      Re-validate               │   PHASE 6: PUBLISH    │
+                                │   /blog-writing-sop   │
+                                │   (Phase 4 & 5)       │
+                                │                       │
+                                │   • Final checks      │
+                                │   • Build & deploy    │
+                                │   • Submit to GSC     │
+                                └───────────────────────┘
+```
+
+---
+
+## 📝 Step-by-Step Execution
+
+### Step 1: Receive and Validate Topic
+
+When user provides a topic:
+
+1. **Check specificity**
+   - ❌ Too broad: "AI" → Ask to narrow down
+   - ✅ Good: "AI agents for customer service"
+
+2. **Check alignment with site categories**
+   - See `src/config/categories.ts` for valid category options
+   - If unclear, ask user to clarify category
+
+3. **Confirm before proceeding**
+   ```
+   Topic: [user's topic]
+   Suggested Category: [category]
+   Proceed with research? (Y/N)
+   ```
+
+---
+
+### Step 2: Execute Research Phase
+
+**Run:** `/blog-research`
+
+**Actions:**
+1. Conduct keyword research
+2. Analyze SERP results
+3. Review competitor content
+4. Mine questions from PAA/forums
+5. Gather supporting data
+6. Define unique angle
+
+**Checkpoint:**
+```
+✅ Research Phase Complete
+
+Primary Keyword: [keyword]
+Search Intent: [intent]
+Target Word Count: [count]
+Unique Angle: [angle]
+
+Proceeding to Outline phase...
+```
+
+---
+
+### Step 3: Execute Outline Phase
+
+**Run:** `/blog-outline`
+
+**Input:** Research Brief from Step 2
+
+**Actions:**
+1. Design heading hierarchy
+2. Allocate word counts
+3. Map internal links
+4. Plan FAQ section
+5. Identify snippet opportunities
+
+**Checkpoint:**
+```
+✅ Outline Phase Complete
+
+Structure:
+- Introduction (150-200 words)
+- [H2 sections listed]
+- FAQ (200-300 words)
+- Conclusion (100-150 words)
+
+Total Planned: [X words]
+
+Proceeding to Writing phase...
+```
+
+---
+
+### Step 4: Execute Writing Phase
+
+**Run:** `/blog-writer`
+
+**Input:** Research Brief + Detailed Outline
+
+**Actions:**
+1. Create frontmatter
+2. Write compelling introduction
+3. Expand each section
+4. Add E-E-A-T signals
+5. Write FAQ
+6. Write conclusion with CTA
+7. Insert all links
+
+**Checkpoint:**
+```
+✅ Writing Phase Complete
+
+File saved: src/content/blog/[slug].md
+Word count: [X words]
+Internal links: [X]
+External links: [X]
+
+Proceeding to Validation phase...
+```
+
+---
+
+### Step 5: Execute Validation Phase
+
+**Run:** `/blog-validator`
+
+**Input:** Draft file path
+
+**Actions:**
+1. Validate SEO requirements
+2. Validate content quality
+3. Validate accessibility
+4. Validate technical requirements
+5. Check all links
+
+**If PASS:**
+```
+✅ Validation PASSED (X/Y checks)
+
+Blog post is ready for publishing!
+
+Next steps:
+1. Run: npm run dev (preview locally)
+2. Follow /blog-writing-sop Phase 4 for publishing
+3. After deploy, submit to Google Search Console
+```
+
+**If FAIL:**
+```
+❌ Validation FAILED
+
+Issues found:
+1. [Issue 1] - [Fix required]
+2. [Issue 2] - [Fix required]
+
+After fixing, re-run validation:
+/blog-validator src/content/blog/[slug].md
+```
+
+---
+
+### Step 6: Publishing Handoff
+
+After validation passes, guide user to existing SOP:
+
+```
+✅ Blog creation workflow complete!
+
+Your post is at: src/content/blog/[slug].md
+
+To publish, follow /blog-writing-sop Phase 4:
+
+1. Pre-publish checks:
+   - npm run dev (local preview)
+   - Check desktop, tablet, mobile views
+
+2. Build and deploy:
+   - npm run build
+   - npm run deploy
+
+3. Post-publish:
+   - Submit URL to Google Search Console
+   - Verify in sitemap
+   - Share on social media
+```
+
+---
+
+## 🔧 State Management
+
+Throughout execution, maintain state:
+
+```
+Blog Creation State:
+├── Topic: [original topic]
+├── Phase: [current phase]
+├── Research Brief: [stored/reference]
+├── Outline: [stored/reference]
+├── Draft Path: [file location]
+└── Validation: [PENDING/PASS/FAIL]
+```
+
+This allows:
+- Resuming if interrupted
+- Reference previous phases
+- Clear handoffs between workflows
+
+---
+
+## ❓ Handling Edge Cases
+
+### User Wants to Skip Phases
+
+```
+User: "I already have research, just write the post"
+
+Agent: I can skip the research phase if you provide:
+1. Primary keyword
+2. Target word count
+3. Key points to cover
+
+Without research, the post may miss SEO opportunities.
+Proceed anyway? (Y/N)
+```
+
+### Validation Keeps Failing
+
+```
+After 3 failed validations:
+
+The same issues keep appearing. Let me help resolve them:
+
+Issue: [specific issue]
+Root cause: [analysis]
+Fix: [detailed solution with example]
+
+Would you like me to apply this fix directly?
+```
+
+### User Wants Different Direction
+
+```
+User: "The outline doesn't match what I wanted"
+
+Agent: I can adjust the outline. What would you like to change?
+1. Different structure/format
+2. Different sections
+3. Different angle
+4. Different word count
+
+Please specify, and I'll regenerate the outline.
+```
+
+---
+
+## 📊 Success Metrics
+
+A successful blog master execution achieves:
+
+| Metric | Target |
+|--------|--------|
+| Validation pass | First or second attempt |
+| Research depth | 5+ sources analyzed |
+| Outline completeness | All sections planned |
+| Draft quality | E-E-A-T signals present |
+| SEO readiness | All critical checks pass |
+
+---
+
+## ⚠️ Agent Instructions
+
+When executing this workflow:
+
+1. **Execute phases in order** - Never skip phases unless user explicitly requests
+2. **Confirm before proceeding** - Checkpoint after each phase
+3. **Maintain context** - Reference outputs from previous phases
+4. **Handle failures gracefully** - Provide specific fixes for issues
+5. **Guide to completion** - Ensure user knows next steps after validation
+
+**Required sub-workflows:**
+- `/blog-research` - Phase 1
+- `/blog-outline` - Phase 2
+- `/blog-writer` - Phase 3
+- `/blog-validator` - Phase 4
+- `/blog-writing-sop` - Phase 5 (publishing)
+
+**Reference workflows:**
+- `/seo-guidelines` - SEO standards
+- `/accessibility` - WCAG compliance
+- `/performance` - Page speed
+- `/json-ld-schema` - Structured data
+
+---
+
+*Last updated: 2026-01-07*

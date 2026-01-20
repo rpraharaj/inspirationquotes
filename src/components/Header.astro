@@ -1,0 +1,296 @@
+---
+import HeaderLink from './HeaderLink.astro';
+import ThemeToggle from './ThemeToggle.astro';
+import Icon from './ui/Icon.astro';
+import SearchModal from './ui/SearchModal.astro';
+import { siteConfig } from '../config/site';
+import type { IconName } from '../types/icons';
+---
+
+<header class="sticky top-0 z-50 w-full border-b border-border bg-background/95 backdrop-blur-md supports-[backdrop-filter]:bg-background/60">
+  <nav class="mx-auto flex h-16 max-w-wide items-center justify-between px-4 sm:px-6">
+    <!-- Logo -->
+    <a 
+      href="/" 
+      class="inline-flex items-center gap-2 text-lg font-bold tracking-tight text-foreground hover:text-foreground-secondary transition-colors"
+    >
+      <span class="header-logo-icon">
+        <Icon name="bot" size={24} strokeWidth={2} />
+      </span>
+      <span class="hidden sm:inline">{siteConfig.name}</span>
+      <span class="sm:hidden">AIK</span>
+    </a>
+    
+    <!-- Desktop Navigation -->
+    <div class="hidden md:flex items-center gap-6">
+      <HeaderLink href="/">Home</HeaderLink>
+      <HeaderLink href="/blog">Blog</HeaderLink>
+      
+      <!-- Topics Dropdown -->
+      <div class="relative" id="topics-dropdown-container">
+        <button 
+          id="topics-dropdown-btn"
+          class="inline-flex items-center gap-1.5 py-1 text-sm font-medium text-foreground-tertiary hover:text-foreground transition-colors"
+          aria-expanded="false"
+          aria-haspopup="true"
+        >
+          Topics
+          <Icon name="chevron-down" size={14} class="topics-chevron transition-transform duration-200" />
+        </button>
+        
+        <!-- Dropdown Menu -->
+        <div 
+          id="topics-dropdown-menu"
+          class="absolute top-full right-0 mt-2 w-64 opacity-0 invisible translate-y-1 transition-all duration-200 origin-top-right"
+          role="menu"
+          aria-orientation="vertical"
+          aria-labelledby="topics-dropdown-btn"
+        >
+          <div class="rounded-xl border border-border bg-background shadow-lg ring-1 ring-black/5 dark:ring-white/5 overflow-hidden">
+            <div class="p-2">
+              {siteConfig.headerCategories.map((category) => (
+                <a 
+                  href={`/categories/${category.slug}`}
+                  class="flex items-center gap-3 px-3 py-2.5 rounded-lg text-sm text-foreground-secondary hover:text-foreground hover:bg-background-secondary transition-colors"
+                  role="menuitem"
+                >
+                  <span class="flex-shrink-0 text-foreground-tertiary">
+                    <Icon name={category.icon as IconName} size={18} />
+                  </span>
+                  <span>{category.name}</span>
+                </a>
+              ))}
+            </div>
+            <div class="border-t border-border px-2 py-2">
+              <a 
+                href="/categories"
+                class="flex items-center justify-between px-3 py-2 rounded-lg text-sm text-foreground-tertiary hover:text-foreground hover:bg-background-secondary transition-colors"
+                role="menuitem"
+              >
+                <span>All Categories</span>
+                <Icon name="arrow-right" size={14} />
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <HeaderLink href="/about">About</HeaderLink>
+    </div>
+    
+    <!-- Right Side: Search + Theme Toggle + Mobile Menu -->
+    <div class="flex items-center gap-1 sm:gap-2">
+      <!-- Search Button -->
+      <button 
+        id="search-trigger"
+        class="p-2 text-foreground-secondary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
+        aria-label="Search articles (⌘K)"
+        title="Search (⌘K)"
+      >
+        <Icon name="search" size={20} />
+      </button>
+      
+      <ThemeToggle />
+      
+      <!-- Mobile Menu Button -->
+      <button 
+        id="mobile-menu-btn"
+        class="md:hidden p-2 -mr-2 text-foreground-secondary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
+        aria-label="Open menu"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+      >
+        <Icon name="menu" size={24} class="menu-icon" />
+        <Icon name="x" size={24} class="close-icon hidden" />
+      </button>
+    </div>
+  </nav>
+  
+  <!-- Mobile Menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-border bg-background">
+    <div class="px-4 py-4 space-y-1">
+      <a 
+        href="/" 
+        class="block py-3 px-3 text-foreground hover:text-foreground-secondary hover:bg-background-secondary rounded-lg transition-colors"
+      >
+        Home
+      </a>
+      <a 
+        href="/blog" 
+        class="block py-3 px-3 text-foreground hover:text-foreground-secondary hover:bg-background-secondary rounded-lg transition-colors"
+      >
+        Blog
+      </a>
+      
+      <!-- Mobile Topics Section -->
+      <div>
+        <button 
+          id="mobile-topics-btn"
+          class="flex items-center justify-between w-full py-3 px-3 text-foreground hover:bg-background-secondary rounded-lg transition-colors"
+          aria-expanded="false"
+          aria-controls="mobile-topics-menu"
+        >
+          <span class="font-medium">Topics</span>
+          <Icon name="chevron-down" size={16} class="mobile-topics-chevron transition-transform duration-200" />
+        </button>
+        
+        <div id="mobile-topics-menu" class="hidden pl-3 space-y-1 mt-1">
+          {siteConfig.headerCategories.map((category) => (
+            <a 
+              href={`/categories/${category.slug}`}
+              class="flex items-center gap-3 py-2.5 px-3 text-sm text-foreground-secondary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
+            >
+              <span class="flex-shrink-0 text-foreground-tertiary">
+                <Icon name={category.icon as IconName} size={16} />
+              </span>
+              <span>{category.name}</span>
+            </a>
+          ))}
+          <a 
+            href="/categories"
+            class="flex items-center gap-3 py-2.5 px-3 text-sm text-foreground-tertiary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
+          >
+            <span class="flex-shrink-0">
+              <Icon name="layers" size={16} />
+            </span>
+            <span>All Categories</span>
+          </a>
+        </div>
+      </div>
+      
+      <a 
+        href="/about" 
+        class="block py-3 px-3 text-foreground hover:text-foreground-secondary hover:bg-background-secondary rounded-lg transition-colors"
+      >
+        About
+      </a>
+    </div>
+  </div>
+</header>
+
+<!-- Search Modal (lazy loaded) -->
+<SearchModal />
+
+<style>
+  /* Bouncing logo icon - GPU accelerated, no layout impact */
+  .header-logo-icon {
+    display: inline-flex;
+    animation: headerIconBounce 2s ease-in-out infinite;
+  }
+
+  @keyframes headerIconBounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-2px); }
+  }
+
+  /* Respect user preference for reduced motion (WCAG 2.1 AA) */
+  @media (prefers-reduced-motion: reduce) {
+    .header-logo-icon {
+      animation: none;
+    }
+  }
+  
+  /* Dropdown visible state */
+  #topics-dropdown-menu.dropdown-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+  
+  /* Chevron rotation */
+  .topics-chevron.rotate {
+    transform: rotate(180deg);
+  }
+  
+  .mobile-topics-chevron.rotate {
+    transform: rotate(180deg);
+  }
+</style>
+
+<script>
+  // Mobile menu toggle
+  const btn = document.getElementById('mobile-menu-btn');
+  const menu = document.getElementById('mobile-menu');
+  const menuIcon = btn?.querySelector('.menu-icon');
+  const closeIcon = btn?.querySelector('.close-icon');
+  
+  btn?.addEventListener('click', () => {
+    const isOpen = menu?.classList.toggle('hidden');
+    btn?.setAttribute('aria-expanded', isOpen ? 'false' : 'true');
+    menuIcon?.classList.toggle('hidden');
+    closeIcon?.classList.toggle('hidden');
+  });
+  
+  // Desktop Topics Dropdown
+  const topicsBtn = document.getElementById('topics-dropdown-btn');
+  const topicsMenu = document.getElementById('topics-dropdown-menu');
+  const topicsChevron = topicsBtn?.querySelector('.topics-chevron');
+  const topicsContainer = document.getElementById('topics-dropdown-container');
+  
+  let dropdownOpen = false;
+  
+  function openDropdown() {
+    dropdownOpen = true;
+    topicsMenu?.classList.add('dropdown-open');
+    topicsChevron?.classList.add('rotate');
+    topicsBtn?.setAttribute('aria-expanded', 'true');
+  }
+  
+  function closeDropdown() {
+    dropdownOpen = false;
+    topicsMenu?.classList.remove('dropdown-open');
+    topicsChevron?.classList.remove('rotate');
+    topicsBtn?.setAttribute('aria-expanded', 'false');
+  }
+  
+  topicsBtn?.addEventListener('click', (e) => {
+    e.stopPropagation();
+    if (dropdownOpen) {
+      closeDropdown();
+    } else {
+      openDropdown();
+    }
+  });
+  
+  // Close dropdown when clicking outside
+  document.addEventListener('click', (e) => {
+    if (dropdownOpen && !topicsContainer?.contains(e.target as Node)) {
+      closeDropdown();
+    }
+  });
+  
+  // Close dropdown on escape key
+  document.addEventListener('keydown', (e) => {
+    if (e.key === 'Escape') {
+      if (dropdownOpen) {
+        closeDropdown();
+        topicsBtn?.focus();
+      }
+      if (!menu?.classList.contains('hidden')) {
+        menu?.classList.add('hidden');
+        btn?.setAttribute('aria-expanded', 'false');
+        menuIcon?.classList.remove('hidden');
+        closeIcon?.classList.add('hidden');
+      }
+    }
+  });
+  
+  // Mobile Topics Toggle
+  const mobileTopicsBtn = document.getElementById('mobile-topics-btn');
+  const mobileTopicsMenu = document.getElementById('mobile-topics-menu');
+  const mobileTopicsChevron = mobileTopicsBtn?.querySelector('.mobile-topics-chevron');
+  
+  mobileTopicsBtn?.addEventListener('click', () => {
+    const isExpanded = mobileTopicsMenu?.classList.toggle('hidden');
+    mobileTopicsBtn?.setAttribute('aria-expanded', isExpanded ? 'false' : 'true');
+    mobileTopicsChevron?.classList.toggle('rotate');
+  });
+  
+  // Search trigger click handler
+  const searchTrigger = document.getElementById('search-trigger');
+  searchTrigger?.addEventListener('click', () => {
+    if (typeof (window as any).openSearchModal === 'function') {
+      (window as any).openSearchModal();
+    }
+  });
+</script>

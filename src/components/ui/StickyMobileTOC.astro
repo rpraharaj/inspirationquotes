@@ -1,0 +1,368 @@
+---
+/**
+ * StickyMobileTOC Component
+ * 
+ * Fixed mobile TOC bar that appears below the header on mobile devices.
+ * - Shows current section dynamically as user scrolls
+ * - Dropdown expands to show all sections
+ * - Uses IntersectionObserver for performance
+ * - Hidden on desktop (lg:hidden)
+ */
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+
+interface Props {
+  headings: Heading[];
+}
+
+const { headings } = Astro.props;
+
+// Filter to only H2 headings for cleaner mobile navigation
+const filteredHeadings = headings.filter(h => h.depth === 2);
+---
+
+{filteredHeadings.length > 0 && (
+  <div 
+    class="sticky-mobile-toc lg:hidden"
+    id="sticky-mobile-toc"
+    aria-label="Page navigation"
+  >
+    <!-- Fixed Bar -->
+    <button
+      type="button"
+      class="toc-bar"
+      id="toc-toggle"
+      aria-expanded="false"
+      aria-controls="toc-dropdown"
+    >
+      <div class="toc-bar-content">
+        <!-- Menu Icon -->
+        <svg class="toc-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+        
+        <!-- Label -->
+        <span class="toc-label">On this page</span>
+        
+        <!-- Current Section (dynamic) -->
+        <span class="toc-current" id="toc-current-section">
+          {filteredHeadings[0]?.text || 'Introduction'}
+        </span>
+      </div>
+      
+      <!-- Chevron -->
+      <svg class="toc-chevron" id="toc-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7"/>
+      </svg>
+    </button>
+    
+    <!-- Dropdown -->
+    <nav 
+      class="toc-dropdown" 
+      id="toc-dropdown"
+      aria-label="Table of contents"
+    >
+      <ul class="toc-list">
+        {filteredHeadings.map((heading, index) => (
+          <li>
+            <a 
+              href={`#${heading.slug}`}
+              class="toc-link"
+              data-heading-slug={heading.slug}
+              data-index={index}
+            >
+              <span class="toc-link-dot"></span>
+              <span class="toc-link-text">{heading.text}</span>
+            </a>
+          </li>
+        ))}
+      </ul>
+    </nav>
+    
+    <!-- Backdrop -->
+    <div class="toc-backdrop" id="toc-backdrop"></div>
+  </div>
+)}
+
+<style>
+  /* Fixed container */
+  .sticky-mobile-toc {
+    position: fixed;
+    top: 64px; /* Below main header */
+    left: 0;
+    right: 0;
+    z-index: 40;
+    height: 48px; /* Fixed height for CLS prevention */
+  }
+  
+  /* Main toggle bar */
+  .toc-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 48px;
+    padding: 0 16px;
+    background: var(--bg-primary);
+    border: none;
+    border-bottom: 1px solid var(--border);
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+  }
+  
+  .toc-bar:hover {
+    background: var(--bg-secondary);
+  }
+  
+  .toc-bar-content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    min-width: 0;
+    flex: 1;
+  }
+  
+  .toc-icon {
+    width: 18px;
+    height: 18px;
+    color: var(--text-tertiary);
+    flex-shrink: 0;
+  }
+  
+  .toc-label {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-secondary);
+    white-space: nowrap;
+  }
+  
+  .toc-current {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--text-primary);
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 180px;
+  }
+  
+  .toc-current::before {
+    content: '›';
+    margin-right: 8px;
+    color: var(--text-tertiary);
+  }
+  
+  .toc-chevron {
+    width: 18px;
+    height: 18px;
+    color: var(--text-tertiary);
+    flex-shrink: 0;
+    transition: transform 0.2s ease;
+  }
+  
+  /* Dropdown panel */
+  .toc-dropdown {
+    position: absolute;
+    top: 48px;
+    left: 0;
+    right: 0;
+    max-height: 0;
+    overflow: hidden;
+    background: var(--bg-primary);
+    border-bottom: 1px solid transparent;
+    transition: max-height 0.25s ease, border-color 0.25s ease;
+  }
+  
+  .toc-list {
+    list-style: none;
+    margin: 0;
+    padding: 8px 0;
+    max-height: calc(100vh - 200px);
+    overflow-y: auto;
+  }
+  
+  .toc-link {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px 20px;
+    font-size: 15px;
+    color: var(--text-secondary);
+    text-decoration: none;
+    transition: all 0.15s ease;
+  }
+  
+  .toc-link:hover {
+    background: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+  
+  .toc-link.active {
+    background: var(--bg-tertiary);
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+  
+  .toc-link-dot {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: var(--border-strong);
+    flex-shrink: 0;
+    transition: background-color 0.15s ease, transform 0.15s ease;
+  }
+  
+  .toc-link.active .toc-link-dot {
+    background: var(--text-primary);
+    transform: scale(1.2);
+  }
+  
+  .toc-link-text {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  
+  /* Backdrop overlay */
+  .toc-backdrop {
+    position: fixed;
+    top: 112px; /* header + toc bar */
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0, 0, 0, 0.3);
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.25s ease, visibility 0.25s ease;
+    z-index: -1;
+  }
+  
+  /* Open state */
+  .sticky-mobile-toc.open .toc-chevron {
+    transform: rotate(180deg);
+  }
+  
+  .sticky-mobile-toc.open .toc-dropdown {
+    max-height: calc(100vh - 150px);
+    border-bottom-color: var(--border);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .sticky-mobile-toc.open .toc-backdrop {
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* Custom scrollbar for dropdown */
+  .toc-list::-webkit-scrollbar {
+    width: 4px;
+  }
+  
+  .toc-list::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  .toc-list::-webkit-scrollbar-thumb {
+    background: var(--border-strong);
+    border-radius: 2px;
+  }
+  
+  .toc-list {
+    scrollbar-width: thin;
+    scrollbar-color: var(--border-strong) transparent;
+  }
+</style>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const container = document.getElementById('sticky-mobile-toc');
+    const toggle = document.getElementById('toc-toggle');
+    const dropdown = document.getElementById('toc-dropdown');
+    const backdrop = document.getElementById('toc-backdrop');
+    const currentSection = document.getElementById('toc-current-section');
+    const links = document.querySelectorAll('.sticky-mobile-toc .toc-link');
+    
+    if (!container || !toggle || !dropdown || !currentSection || links.length === 0) return;
+    
+    let isOpen = false;
+    
+    // Toggle dropdown
+    function toggleDropdown() {
+      isOpen = !isOpen;
+      container.classList.toggle('open', isOpen);
+      toggle.setAttribute('aria-expanded', isOpen.toString());
+    }
+    
+    // Close dropdown
+    function closeDropdown() {
+      if (!isOpen) return;
+      isOpen = false;
+      container.classList.remove('open');
+      toggle.setAttribute('aria-expanded', 'false');
+    }
+    
+    // Event: Toggle button click
+    toggle.addEventListener('click', toggleDropdown);
+    
+    // Event: Backdrop click closes
+    backdrop?.addEventListener('click', closeDropdown);
+    
+    // Event: Link click - navigate and close
+    links.forEach((link) => {
+      link.addEventListener('click', () => {
+        setTimeout(closeDropdown, 100);
+      });
+    });
+    
+    // Event: Escape key closes
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && isOpen) {
+        closeDropdown();
+      }
+    });
+    
+    // IntersectionObserver for section tracking
+    const headings = document.querySelectorAll('h2[id]');
+    
+    if (headings.length === 0) return;
+    
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting) {
+            const id = entry.target.getAttribute('id');
+            const text = entry.target.textContent?.trim() || '';
+            
+            // Update current section display
+            if (currentSection && text) {
+              currentSection.textContent = text;
+            }
+            
+            // Update active link
+            links.forEach((link) => {
+              link.classList.remove('active');
+              if (link.getAttribute('data-heading-slug') === id) {
+                link.classList.add('active');
+              }
+            });
+          }
+        });
+      },
+      {
+        // Trigger when heading enters top portion of viewport
+        rootMargin: '-80px 0px -70% 0px',
+        threshold: 0
+      }
+    );
+    
+    headings.forEach((heading) => observer.observe(heading));
+    
+    // Cleanup on page navigation (Astro view transitions)
+    document.addEventListener('astro:before-preparation', () => {
+      observer.disconnect();
+    });
+  });
+</script>

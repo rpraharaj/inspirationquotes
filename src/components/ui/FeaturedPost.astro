@@ -1,0 +1,102 @@
+---
+/**
+ * FeaturedPost Component
+ * 
+ * Displays the featured article on the homepage with full metadata.
+ */
+import type { CollectionEntry } from 'astro:content';
+import FormattedDate from '../FormattedDate.astro';
+import CategoryBadge from './CategoryBadge.astro';
+import TagPill from './TagPill.astro';
+import Icon from './Icon.astro';
+import { type CategorySlug } from '../../config/categories';
+
+interface Props {
+  post: CollectionEntry<'blog'>;
+}
+
+const { post } = Astro.props;
+
+// Calculate reading time
+function getReadingTime(content: string): string {
+  const words = content.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / 200);
+  return minutes === 1 ? '1 min read' : `${minutes} min read`;
+}
+---
+
+<section class="py-16 sm:py-24 border-b border-border">
+  <div class="mx-auto max-w-wide px-4 sm:px-6">
+    <div class="flex items-center justify-between mb-10">
+      <div class="flex items-center gap-3">
+        <Icon name="sparkles" size={24} class="text-foreground-secondary" />
+        <h2 class="text-2xl sm:text-3xl font-bold tracking-tight animate-fade-in">
+          Featured
+        </h2>
+      </div>
+    </div>
+    
+    <article class="group animate-slide-up">
+      <a href={`/blog/${post.id}/`} class="block">
+        <div class="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+          <div class="aspect-video overflow-hidden rounded-2xl bg-background-secondary border border-border">
+            <img 
+              src={post.data.heroImage} 
+              alt={`Featured image for ${post.data.title}`}
+              width={960}
+              height={540}
+              class="w-full h-full object-cover transition-all duration-700 group-hover:scale-105"
+              loading="eager"
+              decoding="async"
+            />
+          </div>
+          
+          <div class="lg:py-8">
+            <div class="flex flex-wrap items-center gap-3 mb-4">
+              <CategoryBadge category={post.data.category as CategorySlug} size="sm" />
+              <span class="text-foreground-tertiary">·</span>
+              <span class="text-sm text-foreground-tertiary">
+                <FormattedDate date={post.data.pubDate} />
+              </span>
+              <span class="text-foreground-tertiary">·</span>
+              <span class="text-sm text-foreground-tertiary inline-flex items-center gap-1">
+                <Icon name="clock" size={14} />
+                {getReadingTime(post.body || '')}
+              </span>
+            </div>
+            
+            <h3 class="text-2xl sm:text-3xl lg:text-4xl font-bold tracking-tight mb-4 group-hover:text-foreground-secondary transition-colors">
+              {post.data.title}
+            </h3>
+            
+            <p class="text-foreground-secondary text-lg leading-relaxed mb-6 line-clamp-3">
+              {post.data.description}
+            </p>
+            
+            {post.data.tags && post.data.tags.length > 0 && (
+              <div class="flex flex-wrap gap-2 mb-6">
+                {post.data.tags.slice(0, 4).map((tag: string) => (
+                  <TagPill tag={tag} />
+                ))}
+              </div>
+            )}
+            
+            <span class="inline-flex items-center gap-2 text-sm font-medium group-hover:text-foreground-secondary transition-colors">
+              Read full article
+              <Icon name="arrow-right" size={16} class="transition-transform group-hover:translate-x-2" />
+            </span>
+          </div>
+        </div>
+      </a>
+    </article>
+  </div>
+</section>
+
+<style>
+  .line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

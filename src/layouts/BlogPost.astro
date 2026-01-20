@@ -1,0 +1,418 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import FormattedDate from '../components/FormattedDate.astro';
+import TableOfContents from '../components/ui/TableOfContents.astro';
+import StickyMobileTOC from '../components/ui/StickyMobileTOC.astro';
+import AuthorBio from '../components/ui/AuthorBio.astro';
+import ShareButtons from '../components/ui/ShareButtons.astro';
+import CategoryBadge from '../components/ui/CategoryBadge.astro';
+import TagPill from '../components/ui/TagPill.astro';
+import DifficultyBadge from '../components/ui/DifficultyBadge.astro';
+import Icon from '../components/ui/Icon.astro';
+import FloatingShareButton from '../components/ui/FloatingShareButton.astro';
+import JsonLd from '../components/seo/JsonLd.astro';
+import { siteConfig } from '../config/site';
+import { type CategorySlug, getCategoryBySlug } from '../config/categories';
+import { 
+  generateArticleSchema, 
+  generateBlogPostBreadcrumbSchema,
+  type Schema 
+} from '../lib/schema';
+
+type Props = CollectionEntry<'blog'>['data'] & {
+  headings?: { depth: number; slug: string; text: string }[];
+  body?: string;
+  slug?: string;
+};
+
+const { 
+  title, 
+  description, 
+  pubDate, 
+  updatedDate, 
+  heroImage, 
+  headings = [], 
+  body = '', 
+  slug = '',
+  category = 'ai-news',
+  tags = [],
+  difficulty,
+  author,
+} = Astro.props;
+
+// Calculate reading time
+const words = body.trim().split(/\s+/).length;
+const readingTime = Math.ceil(words / 200);
+const readingTimeText = readingTime === 1 ? '1 min read' : `${readingTime} min read`;
+
+// Full URL for sharing
+const fullUrl = `${siteConfig.url}/blog/${slug}/`;
+
+// Filter headings for TOC (only H2 and H3)
+const tocHeadings = headings.filter(h => h.depth >= 2 && h.depth <= 3);
+const showToc = tocHeadings.length > 2 && siteConfig.blog.showTableOfContents;
+
+// Generate JSON-LD structured data
+const categoryInfo = getCategoryBySlug(category);
+const articleSchema = generateArticleSchema({
+  title,
+  description,
+  slug,
+  pubDate,
+  updatedDate,
+  heroImage,
+  author,
+  category,
+  tags,
+  wordCount: words,
+});
+
+const breadcrumbSchema = generateBlogPostBreadcrumbSchema(
+  title,
+  slug,
+  category,
+  categoryInfo?.name
+);
+
+const schemas: Schema[] = [articleSchema, breadcrumbSchema];
+---
+
+<html lang="en">
+  <head>
+    <BaseHead 
+      title={title} 
+      description={description} 
+      image={heroImage}
+      type="article"
+      publishedTime={pubDate}
+      modifiedTime={updatedDate}
+      author={author}
+      section={categoryInfo?.name}
+      tags={tags}
+    />
+    <!-- JSON-LD Structured Data -->
+    <JsonLd schemas={schemas} />
+    <style>
+      /* Reading progress bar */
+      .reading-progress {
+        position: fixed;
+        top: 64px; /* Height of header */
+        left: 0;
+        width: 0%;
+        height: 2px;
+        background: var(--text-primary);
+        z-index: 100;
+        transition: width 0.1s;
+      }
+      
+      /* TOC scrollbar styling */
+      .toc-scroll-container {
+        scrollbar-width: thin;
+        scrollbar-color: var(--border-strong) transparent;
+      }
+      
+      .toc-scroll-container::-webkit-scrollbar {
+        width: 4px;
+      }
+      
+      .toc-scroll-container::-webkit-scrollbar-track {
+        background: transparent;
+      }
+      
+      .toc-scroll-container::-webkit-scrollbar-thumb {
+        background: var(--border-strong);
+        border-radius: 2px;
+      }
+      
+      .toc-scroll-container::-webkit-scrollbar-thumb:hover {
+        background: var(--text-tertiary);
+      }
+    </style>
+  </head>
+  <body class="bg-background text-foreground min-h-screen flex flex-col font-sans">
+    <!-- Skip to main content link for keyboard accessibility -->
+    <a 
+      href="#main-content" 
+      class="skip-link sr-only focus:not-sr-only focus:absolute focus:top-4 focus:left-4 focus:z-[100] focus:px-4 focus:py-2 focus:bg-foreground focus:text-background focus:rounded-lg focus:font-medium focus:shadow-lg"
+    >
+      Skip to main content
+    </a>
+    <!-- Reading Progress Bar -->
+    <div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+    
+    <Header />
+    
+    <!-- Sticky Mobile TOC - Fixed below header on mobile -->
+    {showToc && (
+      <StickyMobileTOC headings={tocHeadings} />
+    )}
+    
+    <main id="main-content" class="flex-1 pt-12 lg:pt-0">
+      <article class="animate-fade-in">
+        <!-- Hero Image -->
+        {heroImage && (
+          <div class="w-full max-w-5xl mx-auto px-4 sm:px-6 pt-8">
+            <div class="aspect-video overflow-hidden rounded-2xl border border-border bg-background-secondary">
+              <img 
+                src={heroImage} 
+                alt={`Featured image for ${title}`}
+                width={1200}
+                height={630}
+                class="w-full h-full object-cover"
+                loading="eager"
+                decoding="async"
+              />
+            </div>
+          </div>
+        )}
+        
+        <!-- Article Container - consistent width with hero image -->
+        <div class:list={[
+          "mx-auto px-4 sm:px-6 py-12",
+          showToc ? "max-w-6xl" : "max-w-5xl"
+        ]}>
+          <!-- Layout: Content + TOC Sidebar (or centered content without TOC) -->
+          <div class:list={[
+            showToc 
+              ? "lg:grid lg:grid-cols-[1fr_280px] lg:gap-16"
+              : "max-w-[750px] mx-auto"
+          ]}>
+            <!-- Main Content Column -->
+            <div class="min-w-0">
+              <!-- Article Header -->
+              <header class="mb-10 pb-10 border-b border-border">
+                <!-- Breadcrumb Navigation -->
+                <nav class="flex items-center gap-2 text-sm text-foreground-tertiary mb-6" aria-label="Breadcrumb">
+                  <a href="/" class="hover:text-foreground transition-colors">Home</a>
+                  <Icon name="chevron-right" size={14} />
+                  <a href="/blog" class="hover:text-foreground transition-colors">Blog</a>
+                  <Icon name="chevron-right" size={14} />
+                  <a href={`/categories/${category}`} class="hover:text-foreground transition-colors">
+                    {categoryInfo?.name || category}
+                  </a>
+                  <Icon name="chevron-right" size={14} />
+                  <span class="text-foreground truncate max-w-[200px]" title={title}>{title}</span>
+                </nav>
+                
+                <!-- Category and Meta -->
+                <div class="flex flex-wrap items-center gap-3 mb-6">
+                  <CategoryBadge category={category as CategorySlug} size="md" />
+                  {difficulty && (
+                    <>
+                      <span class="text-foreground-tertiary">·</span>
+                      <DifficultyBadge difficulty={difficulty} />
+                    </>
+                  )}
+                  <span class="text-foreground-tertiary">·</span>
+                  <span class="text-sm text-foreground-tertiary">
+                    <FormattedDate date={pubDate} />
+                  </span>
+                  <span class="text-foreground-tertiary">·</span>
+                  <span class="text-sm text-foreground-tertiary inline-flex items-center gap-1">
+                    <Icon name="clock" size={14} />
+                    {readingTimeText}
+                  </span>
+                  {updatedDate && (
+                    <>
+                      <span class="text-foreground-tertiary">·</span>
+                      <span class="text-sm text-foreground-tertiary">
+                        Updated <FormattedDate date={updatedDate} />
+                      </span>
+                    </>
+                  )}
+                </div>
+                
+                <!-- Title -->
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-tight mb-6">
+                  {title}
+                </h1>
+                
+                <!-- Description -->
+                {description && (
+                  <p class="text-lg sm:text-xl text-foreground-secondary leading-relaxed mb-6">
+                    {description}
+                  </p>
+                )}
+                
+                <!-- Tags -->
+                {tags && tags.length > 0 && (
+                  <div class="flex flex-wrap gap-2 mb-6">
+                    {tags.map((tag: string) => (
+                      <TagPill tag={tag} size="md" />
+                    ))}
+                  </div>
+                )}
+                
+                <!-- Share Buttons -->
+                <div class="mt-8">
+                  <ShareButtons title={title} url={fullUrl} />
+                </div>
+              </header>
+              
+              <!-- Article Content -->
+              <div class="prose max-w-none">
+                <slot />
+              </div>
+              
+              <!-- Post Footer -->
+              <footer class="mt-16 pt-10 border-t border-border space-y-10">
+                <!-- Tags (repeat for visibility) -->
+                {tags && tags.length > 0 && (
+                  <div>
+                    <span class="text-sm font-bold uppercase tracking-wider text-foreground-tertiary mb-4 flex items-center gap-2" aria-hidden="true">
+                      <Icon name="layers" size={16} />
+                      Topics
+                    </span>
+                    <div class="flex flex-wrap gap-2">
+                      {tags.map((tag: string) => (
+                        <TagPill tag={tag} size="md" clickable />
+                      ))}
+                    </div>
+                  </div>
+                )}
+                
+                <!-- Share Again -->
+                <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+                  <p class="text-foreground-secondary">
+                    Found this helpful? Share it with others.
+                  </p>
+                  <ShareButtons title={title} url={fullUrl} />
+                </div>
+                
+                <!-- Author Bio -->
+                {siteConfig.blog.showAuthorBio && (
+                  <div>
+                    <span class="text-sm font-bold uppercase tracking-wider text-foreground-tertiary mb-4 flex items-center gap-2" aria-hidden="true">
+                      <Icon name="brain" size={16} />
+                      Written by
+                    </span>
+                    <AuthorBio />
+                  </div>
+                )}
+              </footer>
+            </div>
+            
+            <!-- TOC Sidebar - Only on large screens when there are enough headings -->
+            {showToc && (
+              <aside class="hidden lg:block">
+                <div class="sticky top-24 max-h-[calc(100vh-8rem)] overflow-y-auto toc-scroll-container">
+                  <TableOfContents headings={tocHeadings} />
+                </div>
+              </aside>
+            )}
+          </div>
+        </div>
+      </article>
+      
+      <!-- Back to Blog -->
+      <div class="py-10 border-t border-border">
+        <div class="mx-auto max-w-content px-4 sm:px-6 flex flex-wrap items-center justify-between gap-4">
+          <a 
+            href="/blog" 
+            class="inline-flex items-center gap-2 text-sm font-medium text-foreground-secondary hover:text-foreground transition-colors"
+          >
+            <Icon name="arrow-left" size={16} />
+            Back to all articles
+          </a>
+          
+          <a 
+            href={`/categories/${category}`}
+            class="inline-flex items-center gap-2 text-sm font-medium text-foreground-secondary hover:text-foreground transition-colors"
+          >
+            More in this category
+            <Icon name="arrow-right" size={16} />
+          </a>
+        </div>
+      </div>
+    </main>
+    
+    <!-- Floating Share Button -->
+    <FloatingShareButton title={title} url={fullUrl} description={description} />
+    
+    <Footer />
+    
+    <!-- Reading Progress Script -->
+    <script>
+      const progressBar = document.getElementById('reading-progress');
+      const article = document.querySelector('article');
+      
+      if (progressBar && article) {
+        function updateProgress() {
+          const articleRect = article.getBoundingClientRect();
+          const articleHeight = article.offsetHeight;
+          const windowHeight = window.innerHeight;
+          const scrolled = Math.max(0, -articleRect.top);
+          const total = articleHeight - windowHeight;
+          const progress = Math.min(100, (scrolled / total) * 100);
+          progressBar.style.width = `${progress}%`;
+        }
+        
+        window.addEventListener('scroll', updateProgress, { passive: true });
+        updateProgress();
+      }
+    </script>
+    
+    <!-- Copy Code Button Script -->
+    <script>
+      // SVG icon templates (using the same icon system as Icon.astro)
+      const copyIcon = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>`;
+      const checkIcon = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>`;
+      const xIcon = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`;
+      
+      // Copy code block functionality
+      function initCopyCodeButtons() {
+        const codeBlocks = document.querySelectorAll('.prose pre:has(code)');
+        
+        codeBlocks.forEach(pre => {
+          // Create copy button
+          const button = document.createElement('button');
+          button.className = 'copy-code-button';
+          button.setAttribute('aria-label', 'Copy code to clipboard');
+          button.type = 'button';
+          button.innerHTML = `${copyIcon} <span>Copy</span>`;
+          
+          // Append button to pre
+          pre.appendChild(button);
+          
+          // Click handler
+          button.addEventListener('click', async () => {
+            const code = pre.querySelector('code');
+            if (!code) return;
+            
+            try {
+              await navigator.clipboard.writeText(code.textContent || '');
+              
+              // Success feedback
+              button.innerHTML = `${checkIcon} <span>Copied!</span>`;
+              button.classList.add('copied');
+              button.setAttribute('aria-label', 'Code copied to clipboard');
+              
+              // Reset after 2 seconds
+              setTimeout(() => {
+                button.innerHTML = `${copyIcon} <span>Copy</span>`;
+                button.classList.remove('copied');
+                button.setAttribute('aria-label', 'Copy code to clipboard');
+              }, 2000);
+            } catch (err) {
+              console.error('Failed to copy:', err);
+              button.innerHTML = `${xIcon} <span>Failed</span>`;
+              setTimeout(() => {
+                button.innerHTML = `${copyIcon} <span>Copy</span>`;
+              }, 2000);
+            }
+          });
+        });
+      }
+      
+      // Initialize on page load
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCopyCodeButtons);
+      } else {
+        initCopyCodeButtons();
+      }
+    </script>
+  </body>
+</html>

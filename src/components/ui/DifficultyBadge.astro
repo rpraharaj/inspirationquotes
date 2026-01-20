@@ -1,0 +1,44 @@
+---
+/**
+ * DifficultyBadge Component
+ * 
+ * Displays the difficulty level of an article.
+ */
+
+interface Props {
+    difficulty: 'beginner' | 'intermediate' | 'advanced';
+}
+
+const { difficulty } = Astro.props;
+
+const configs = {
+    beginner: {
+        label: 'Beginner',
+        dots: 1,
+    },
+    intermediate: {
+        label: 'Intermediate',
+        dots: 2,
+    },
+    advanced: {
+        label: 'Advanced',
+        dots: 3,
+    },
+};
+
+const config = configs[difficulty];
+---
+
+<div class="inline-flex items-center gap-1.5 text-xs text-foreground-tertiary">
+    <div class="flex gap-0.5">
+        {Array.from({ length: 3 }).map((_, i) => (
+            <span 
+                class:list={[
+                    'w-1.5 h-1.5 rounded-full',
+                    i < config.dots ? 'bg-foreground' : 'bg-border'
+                ]}
+            />
+        ))}
+    </div>
+    <span>{config.label}</span>
+</div>

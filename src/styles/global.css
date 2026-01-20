@@ -1,0 +1,529 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --bg-primary: #FFFFFF;
+  --bg-secondary: #FAFAFA;
+  --bg-tertiary: #F0F0F0;
+  --text-primary: #000000;
+  --text-secondary: #404040;
+  --text-tertiary: #525252;
+  --border: #E5E5E5;
+  --border-strong: #D4D4D4;
+}
+
+.dark {
+  --bg-primary: #000000;
+  --bg-secondary: #0A0A0A;
+  --bg-tertiary: #171717;
+  --text-primary: #FFFFFF;
+  --text-secondary: #E5E5E5;
+  --text-tertiary: #A3A3A3;
+  --border: #262626;
+  --border-strong: #404040;
+}
+
+@font-face {
+  font-family: 'Atkinson';
+  src: url('/fonts/atkinson-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Atkinson';
+  src: url('/fonts/atkinson-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    font-family: 'Atkinson', system-ui, -apple-system, sans-serif;
+    background-color: var(--bg-primary);
+    color: var(--text-primary);
+    line-height: 1.7;
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--text-primary);
+    outline-offset: 2px;
+  }
+
+  ::selection {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+  }
+}
+
+@layer components {
+  .prose {
+    --prose-body: var(--text-secondary);
+    --prose-headings: var(--text-primary);
+    --prose-links: var(--text-primary);
+    --prose-code: var(--text-primary);
+    --prose-pre-bg: var(--bg-tertiary);
+    --prose-borders: var(--border);
+    --prose-quotes: var(--text-tertiary);
+  }
+
+  .prose h1,
+  .prose h2,
+  .prose h3,
+  .prose h4 {
+    color: var(--prose-headings);
+    font-weight: 700;
+    line-height: 1.3;
+    margin-top: 2em;
+    margin-bottom: 0.5em;
+  }
+
+  .prose h1 {
+    font-size: 2.25rem;
+  }
+
+  .prose h2 {
+    font-size: 1.875rem;
+  }
+
+  .prose h3 {
+    font-size: 1.5rem;
+  }
+
+  .prose h4 {
+    font-size: 1.25rem;
+  }
+
+  .prose p {
+    color: var(--prose-body);
+    margin-bottom: 1.5em;
+  }
+
+  .prose a {
+    color: var(--prose-links);
+    text-decoration: underline;
+    text-underline-offset: 3px;
+    transition: opacity 0.15s;
+  }
+
+  .prose a:hover {
+    opacity: 0.7;
+  }
+
+  .prose code {
+    background-color: var(--prose-pre-bg);
+    padding: 0.2em 0.4em;
+    border-radius: 4px;
+    font-size: 0.9em;
+  }
+
+  .prose pre {
+    position: relative;
+    background-color: var(--prose-pre-bg);
+    padding: 1.25rem;
+    border-radius: 8px;
+    overflow-x: auto;
+  }
+
+  .prose pre code {
+    background: none;
+    padding: 0;
+  }
+
+  /* Copy code button */
+  .copy-code-button {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.375rem;
+    padding: 0.375rem 0.75rem;
+    font-size: 0.75rem;
+    font-weight: 500;
+    line-height: 1;
+    background-color: var(--bg-secondary);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    transition: opacity 0.2s ease, background-color 0.15s ease, transform 0.1s ease;
+    transform: scale(1);
+    z-index: 10;
+  }
+
+  .prose pre:hover .copy-code-button,
+  .copy-code-button:focus {
+    opacity: 1;
+  }
+
+  .copy-code-button:hover {
+    background-color: var(--bg-tertiary);
+    color: var(--text-primary);
+    border-color: var(--border-strong);
+  }
+
+  .copy-code-button:active {
+    transform: scale(0.95);
+  }
+
+  .copy-code-button:focus-visible {
+    opacity: 1;
+    outline: 2px solid var(--text-primary);
+    outline-offset: 2px;
+  }
+
+  .copy-code-button.copied {
+    background-color: var(--text-primary);
+    color: var(--bg-primary);
+    border-color: var(--text-primary);
+  }
+
+  /* Reduced motion support for copy button */
+  @media (prefers-reduced-motion: reduce) {
+    .copy-code-button {
+      transition: none;
+    }
+  }
+
+  .prose blockquote {
+    border-left: 3px solid var(--prose-borders);
+    padding-left: 1rem;
+    color: var(--prose-quotes);
+    font-style: italic;
+  }
+
+  .prose ul,
+  .prose ol {
+    padding-left: 1.5rem;
+    margin-bottom: 1.5em;
+    color: var(--prose-body);
+  }
+
+  .prose li {
+    margin-bottom: 0.5em;
+  }
+
+  .prose img {
+    border-radius: 8px;
+    margin: 2em 0;
+  }
+
+  .prose hr {
+    border: none;
+    border-top: 1px solid var(--prose-borders);
+    margin: 3em 0;
+  }
+
+  /* ===== TABLE STYLING ===== */
+  .prose table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 2em 0;
+    font-size: 0.95em;
+    overflow-x: auto;
+    display: block;
+  }
+
+  @media (min-width: 640px) {
+    .prose table {
+      display: table;
+    }
+  }
+
+  .prose thead {
+    border-bottom: 2px solid var(--prose-borders);
+  }
+
+  .prose th {
+    background-color: var(--bg-tertiary);
+    color: var(--prose-headings);
+    font-weight: 700;
+    text-align: left;
+    padding: 0.75rem 1rem;
+    white-space: nowrap;
+  }
+
+  .prose td {
+    padding: 0.75rem 1rem;
+    border-bottom: 1px solid var(--prose-borders);
+    color: var(--prose-body);
+  }
+
+  .prose tbody tr:hover {
+    background-color: var(--bg-secondary);
+  }
+
+  .prose tbody tr:last-child td {
+    border-bottom: none;
+  }
+
+  /* ===== LIST STYLING ===== */
+  .prose ul {
+    list-style-type: disc;
+    padding-left: 1.75rem;
+    margin-bottom: 1.5em;
+    color: var(--prose-body);
+  }
+
+  .prose ol {
+    list-style-type: decimal;
+    padding-left: 1.75rem;
+    margin-bottom: 1.5em;
+    color: var(--prose-body);
+  }
+
+  .prose li {
+    margin-bottom: 0.5em;
+    padding-left: 0.25rem;
+  }
+
+  .prose li::marker {
+    color: var(--text-tertiary);
+  }
+
+  /* Nested list styling */
+  .prose ul ul {
+    list-style-type: circle;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .prose ul ul ul {
+    list-style-type: square;
+  }
+
+  .prose ol ol {
+    list-style-type: lower-alpha;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  .prose ol ol ol {
+    list-style-type: lower-roman;
+  }
+
+  /* Mixed nested lists */
+  .prose ul ol,
+  .prose ol ul {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+  }
+
+  /* ===== ENHANCED BLOCKQUOTE ===== */
+  .prose blockquote {
+    border-left: 4px solid var(--text-tertiary);
+    padding: 1rem 1.5rem;
+    margin: 1.5em 0;
+    color: var(--prose-quotes);
+    font-style: italic;
+    background-color: var(--bg-secondary);
+    border-radius: 0 8px 8px 0;
+  }
+
+  .prose blockquote p {
+    margin-bottom: 0;
+  }
+
+  .prose blockquote p:not(:last-child) {
+    margin-bottom: 1em;
+  }
+
+  .prose blockquote cite {
+    display: block;
+    margin-top: 0.5em;
+    font-size: 0.9em;
+    font-style: normal;
+    color: var(--text-tertiary);
+  }
+
+  /* ===== KEYBOARD ELEMENT STYLING ===== */
+  .prose kbd {
+    display: inline-block;
+    padding: 0.2em 0.5em;
+    font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+    font-size: 0.85em;
+    line-height: 1.4;
+    color: var(--text-primary);
+    background-color: var(--bg-tertiary);
+    border: 1px solid var(--border-strong);
+    border-radius: 4px;
+    box-shadow: 0 2px 0 var(--border-strong);
+    vertical-align: middle;
+  }
+
+  /* ===== HIGHLIGHTED TEXT (MARK) ===== */
+  .prose mark {
+    background-color: rgba(250, 204, 21, 0.3);
+    color: var(--text-primary);
+    padding: 0.1em 0.3em;
+    border-radius: 3px;
+  }
+
+  /* ===== ABBREVIATION STYLING ===== */
+  .prose abbr[title] {
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    cursor: help;
+    border-bottom: none;
+  }
+
+  /* ===== SUBSCRIPT AND SUPERSCRIPT ===== */
+  .prose sub,
+  .prose sup {
+    font-size: 0.75em;
+    line-height: 0;
+    position: relative;
+    vertical-align: baseline;
+  }
+
+  .prose sup {
+    top: -0.5em;
+  }
+
+  .prose sub {
+    bottom: -0.25em;
+  }
+
+  /* ===== FOOTNOTES ===== */
+  .prose .footnotes {
+    margin-top: 3em;
+    padding-top: 1.5em;
+    border-top: 1px solid var(--prose-borders);
+    font-size: 0.9em;
+  }
+
+  .prose .footnotes h2 {
+    font-size: 1.25rem;
+    margin-top: 0;
+  }
+
+  .prose .footnotes ol {
+    padding-left: 1.5rem;
+  }
+
+  .prose .footnotes li {
+    margin-bottom: 0.75em;
+  }
+
+  .prose sup a[href^="#fn"] {
+    font-weight: 600;
+    color: var(--text-primary);
+    text-decoration: none;
+    padding: 0 0.15em;
+  }
+
+  .prose sup a[href^="#fn"]:hover {
+    text-decoration: underline;
+  }
+
+  .prose a[href^="#fnref"] {
+    font-size: 0.85em;
+    text-decoration: none;
+    margin-left: 0.25em;
+  }
+
+  /* ===== DEFINITION LISTS ===== */
+  .prose dl {
+    margin: 1.5em 0;
+  }
+
+  .prose dt {
+    font-weight: 700;
+    color: var(--prose-headings);
+    margin-top: 1em;
+  }
+
+  .prose dt:first-child {
+    margin-top: 0;
+  }
+
+  .prose dd {
+    margin-left: 1.5rem;
+    margin-top: 0.25em;
+    color: var(--prose-body);
+  }
+
+  /* ===== FIGURE AND FIGCAPTION ===== */
+  .prose figure {
+    margin: 2em 0;
+  }
+
+  .prose figcaption {
+    margin-top: 0.75em;
+    font-size: 0.9em;
+    color: var(--text-tertiary);
+    text-align: center;
+    font-style: italic;
+  }
+
+  /* ===== STRONG AND EMPHASIS ===== */
+  .prose strong {
+    font-weight: 700;
+    color: var(--prose-headings);
+  }
+
+  .prose em {
+    font-style: italic;
+  }
+
+  /* ===== DELETED AND INSERTED TEXT ===== */
+  .prose del {
+    text-decoration: line-through;
+    color: var(--text-tertiary);
+  }
+
+  .prose ins {
+    text-decoration: underline;
+    text-decoration-color: var(--text-tertiary);
+  }
+
+  /* Code block syntax highlighting contrast fix for WCAG AA compliance */
+  .prose pre .comment,
+  .prose pre .prolog,
+  .prose pre .doctype,
+  .prose pre .cdata {
+    color: #6e7681;
+  }
+}
+
+/* Astro/Shiki code block comment contrast fix */
+.astro-code span[style*="color:#6A737D"],
+.astro-code span[style*="color: #6A737D"] {
+  color: #8B949E !important;
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+
+/* Respect user preference for reduced motion (WCAG 2.1 AA) */
+@media (prefers-reduced-motion: reduce) {
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

@@ -1,0 +1,151 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../../components/FormattedDate.astro';
+import SearchInput from '../../../components/ui/SearchInput.astro';
+import Pagination from '../../../components/ui/Pagination.astro';
+import { siteConfig } from '../../../config/site';
+
+export async function getStaticPaths() {
+  const allPosts = await getCollection('blog');
+  const postsPerPage = siteConfig.blog.postsPerPage;
+  const totalPages = Math.ceil(allPosts.length / postsPerPage);
+  
+  // Generate paths for pages 2, 3, 4, etc. (page 1 is handled by /blog/index.astro)
+  return Array.from({ length: totalPages - 1 }, (_, i) => ({
+    params: { page: String(i + 2) },
+    props: { page: i + 2, totalPages },
+  }));
+}
+
+const { page, totalPages } = Astro.props;
+const currentPage = page;
+
+// Get all posts sorted by date
+const allPosts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+// Pagination
+const postsPerPage = siteConfig.blog.postsPerPage;
+const startIndex = (currentPage - 1) * postsPerPage;
+const posts = allPosts.slice(startIndex, startIndex + postsPerPage);
+
+// Calculate reading time helper
+function getReadingTime(content: string): string {
+  const words = content.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / 200);
+  return minutes === 1 ? '1 min read' : `${minutes} min read`;
+}
+---
+
+<BaseLayout 
+  title={`Blog - Page ${currentPage} | ${siteConfig.name}`} 
+  description="Latest articles and thoughts on web development, design, and building products."
+  canonicalUrl="/blog/"
+  noindex={true}
+>
+  <div class="py-16 sm:py-24">
+    <div class="mx-auto max-w-wide px-4 sm:px-6">
+      <!-- Header -->
+      <header class="mb-12 animate-fade-in">
+        <h1 class="text-3xl sm:text-4xl font-bold tracking-tight mb-4">Blog</h1>
+        <p class="text-lg text-foreground-secondary max-w-2xl">
+          Thoughts, tutorials, and insights on web development, design systems, and building products that matter.
+        </p>
+        <p class="text-sm text-foreground-tertiary mt-2">
+          Page {currentPage} of {totalPages}
+        </p>
+      </header>
+      
+      <!-- Search -->
+      <div class="mb-12 animate-fade-in stagger-1">
+        <SearchInput placeholder="Search articles..." />
+      </div>
+      
+      <!-- Posts Grid -->
+      <div class="grid gap-10 sm:grid-cols-2 lg:gap-12 mb-16" id="posts-grid">
+        {posts.map((post, index) => (
+          <article 
+            class:list={[
+              'group animate-slide-up',
+              `stagger-${Math.min(index + 1, 4)}`
+            ]}
+            data-searchable
+            data-title={post.data.title}
+            data-description={post.data.description || ''}
+            data-content={(post.body || '').slice(0, 500)}
+          >
+            <a href={`/blog/${post.id}/`} class="block">
+              <div class="aspect-video overflow-hidden rounded-xl bg-background-secondary border border-border mb-4">
+                {post.data.heroImage ? (
+                  <img 
+                    src={post.data.heroImage} 
+                    alt={`Featured image for ${post.data.title}`}
+                    width={480}
+                    height={270}
+                    class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                    loading={index < 4 ? 'eager' : 'lazy'}
+                    decoding="async"
+                  />
+                ) : (
+                  <div class="w-full h-full flex items-center justify-center text-foreground-tertiary">
+                    <svg class="w-16 h-16" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M4 16l4.586-4.586a2 2 0 012.828 0L16 16m-2-2l1.586-1.586a2 2 0 012.828 0L20 14m-6-6h.01M6 20h12a2 2 0 002-2V6a2 2 0 00-2-2H6a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+                    </svg>
+                  </div>
+                )}
+              </div>
+              
+              <div>
+                <div class="flex items-center gap-3 text-sm text-foreground-tertiary mb-3">
+                  <FormattedDate date={post.data.pubDate} />
+                  {post.body && (
+                    <>
+                      <span>·</span>
+                      <span class="inline-flex items-center gap-1">
+                        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                        {getReadingTime(post.body)}
+                      </span>
+                    </>
+                  )}
+                </div>
+                
+                <h2 class="text-xl font-bold tracking-tight group-hover:text-foreground-secondary transition-colors line-clamp-2">
+                  {post.data.title}
+                </h2>
+                
+                {post.data.description && (
+                  <p class="text-sm text-foreground-secondary mt-3 line-clamp-2">
+                    {post.data.description}
+                  </p>
+                )}
+                
+                <span class="inline-flex items-center gap-1 mt-4 text-sm font-medium text-foreground-secondary group-hover:text-foreground transition-colors">
+                  Read article
+                  <svg class="w-4 h-4 transition-transform group-hover:translate-x-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 8l4 4m0 0l-4 4m4-4H3"/>
+                  </svg>
+                </span>
+              </div>
+            </a>
+          </article>
+        ))}
+      </div>
+      
+      <!-- Pagination -->
+      <Pagination currentPage={currentPage} totalPages={totalPages} />
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

@@ -1,0 +1,463 @@
+---
+/**
+ * ShareModal Component
+ * 
+ * Modal overlay with sharing options for social platforms, messaging, and clipboard.
+ * Accessible with focus trap, keyboard navigation, and screen reader support.
+ */
+import Icon from './Icon.astro';
+
+interface Props {
+  title: string;
+  url: string;
+  description?: string;
+}
+
+const { title, url, description = '' } = Astro.props;
+
+const encodedTitle = encodeURIComponent(title);
+const encodedUrl = encodeURIComponent(url);
+const encodedDescription = encodeURIComponent(description);
+
+// Share platforms configuration
+const primaryPlatforms = [
+  {
+    name: 'X (Twitter)',
+    icon: 'twitter' as const,
+    href: `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`,
+    color: 'hover:text-[#1DA1F2]',
+  },
+  {
+    name: 'Facebook',
+    icon: 'facebook' as const,
+    href: `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`,
+    color: 'hover:text-[#1877F2]',
+  },
+  {
+    name: 'LinkedIn',
+    icon: 'linkedin' as const,
+    href: `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`,
+    color: 'hover:text-[#0A66C2]',
+  },
+  {
+    name: 'Reddit',
+    icon: 'reddit' as const,
+    href: `https://reddit.com/submit?url=${encodedUrl}&title=${encodedTitle}`,
+    color: 'hover:text-[#FF4500]',
+  },
+];
+
+const secondaryPlatforms = [
+  {
+    name: 'WhatsApp',
+    icon: 'whatsapp' as const,
+    href: `https://wa.me/?text=${encodedTitle}%20${encodedUrl}`,
+    color: 'hover:text-[#25D366]',
+  },
+  {
+    name: 'Telegram',
+    icon: 'telegram' as const,
+    href: `https://t.me/share/url?url=${encodedUrl}&text=${encodedTitle}`,
+    color: 'hover:text-[#0088CC]',
+  },
+  {
+    name: 'Pinterest',
+    icon: 'pinterest' as const,
+    href: `https://pinterest.com/pin/create/button/?url=${encodedUrl}&description=${encodedTitle}`,
+    color: 'hover:text-[#E60023]',
+  },
+  {
+    name: 'Pocket',
+    icon: 'pocket' as const,
+    href: `https://getpocket.com/save?url=${encodedUrl}&title=${encodedTitle}`,
+    color: 'hover:text-[#EF4154]',
+  },
+];
+
+const techPlatforms = [
+  {
+    name: 'Hacker News',
+    icon: 'hackernews' as const,
+    href: `https://news.ycombinator.com/submitlink?u=${encodedUrl}&t=${encodedTitle}`,
+    color: 'hover:text-[#FF6600]',
+  },
+  {
+    name: 'Email',
+    icon: 'mail' as const,
+    href: `mailto:?subject=${encodedTitle}&body=Check%20out%20this%20article%3A%20${encodedUrl}`,
+    color: 'hover:text-foreground',
+  },
+];
+---
+
+<!-- Template for lazy loading - parsed but not rendered until first open -->
+<template id="share-modal-template">
+  <div 
+    class="share-modal-backdrop fixed inset-0 z-[100]"
+    id="share-modal-backdrop"
+    aria-hidden="true"
+  >
+    <!-- Backdrop overlay -->
+    <div class="absolute inset-0 bg-black/50 backdrop-blur-sm" data-close-modal></div>
+    
+    <!-- Modal wrapper - flexbox centering for better viewport handling -->
+    <div class="share-modal-wrapper fixed inset-0 flex items-end sm:items-center sm:justify-center p-4 pointer-events-none">
+      <!-- Modal container -->
+      <div 
+        class="share-modal w-full sm:max-w-md pointer-events-auto"
+      >
+        <div 
+          class="modal-content bg-[var(--bg-primary)] border border-[var(--border)] rounded-2xl shadow-2xl overflow-hidden flex flex-col max-h-[85vh] sm:max-h-[80vh]"
+          role="dialog"
+          aria-modal="true"
+          aria-labelledby="share-modal-title"
+        >
+          <!-- Header - Fixed -->
+          <div class="flex items-center justify-between px-6 py-4 border-b border-[var(--border)] flex-shrink-0">
+            <h2 
+              id="share-modal-title" 
+              class="text-lg font-bold text-[var(--text-primary)]"
+            >
+              Share this article
+            </h2>
+            <button
+              type="button"
+              class="share-modal-close p-2 -mr-2 rounded-lg text-[var(--text-tertiary)] hover:text-[var(--text-primary)] hover:bg-[var(--bg-secondary)] transition-colors"
+              aria-label="Close share modal"
+              data-close-modal
+            >
+              <Icon name="x" size={20} />
+            </button>
+          </div>
+          
+          <!-- Content - Scrollable if needed -->
+          <div class="px-6 py-5 space-y-4 overflow-y-auto flex-grow">
+            <!-- Primary platforms -->
+            <div class="grid grid-cols-4 gap-3">
+              {primaryPlatforms.map((platform) => (
+                <a
+                  href={platform.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class:list={[
+                    "share-platform-btn flex flex-col items-center justify-center gap-2 p-3 rounded-xl",
+                    "text-[var(--text-secondary)] bg-[var(--bg-secondary)]",
+                    "hover:bg-[var(--bg-tertiary)] transition-all duration-200",
+                    platform.color
+                  ]}
+                  aria-label={`Share on ${platform.name}`}
+                >
+                  <Icon name={platform.icon} size={24} />
+                  <span class="text-xs font-medium truncate max-w-full">{platform.name.split(' ')[0]}</span>
+                </a>
+              ))}
+            </div>
+            
+            <!-- Secondary platforms -->
+            <div class="grid grid-cols-4 gap-3">
+              {secondaryPlatforms.map((platform) => (
+                <a
+                  href={platform.href}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class:list={[
+                    "share-platform-btn flex flex-col items-center justify-center gap-2 p-3 rounded-xl",
+                    "text-[var(--text-secondary)] bg-[var(--bg-secondary)]",
+                    "hover:bg-[var(--bg-tertiary)] transition-all duration-200",
+                    platform.color
+                  ]}
+                  aria-label={`Share on ${platform.name}`}
+                >
+                  <Icon name={platform.icon} size={24} />
+                  <span class="text-xs font-medium truncate max-w-full">{platform.name.split(' ')[0]}</span>
+                </a>
+              ))}
+            </div>
+            
+            <!-- Tech/Other platforms -->
+            <div class="grid grid-cols-4 gap-3">
+              {techPlatforms.map((platform) => (
+                <a
+                  href={platform.href}
+                  target={platform.icon === 'mail' ? '_self' : '_blank'}
+                  rel={platform.icon === 'mail' ? undefined : 'noopener noreferrer'}
+                  class:list={[
+                    "share-platform-btn flex flex-col items-center justify-center gap-2 p-3 rounded-xl",
+                    "text-[var(--text-secondary)] bg-[var(--bg-secondary)]",
+                    "hover:bg-[var(--bg-tertiary)] transition-all duration-200",
+                    platform.color
+                  ]}
+                  aria-label={`Share via ${platform.name}`}
+                >
+                  <Icon name={platform.icon} size={24} />
+                  <span class="text-xs font-medium truncate max-w-full">
+                    {platform.name === 'Hacker News' ? 'HN' : platform.name}
+                  </span>
+                </a>
+              ))}
+            </div>
+          </div>
+          
+          <!-- Footer with Copy Link - Fixed at bottom -->
+          <div class="px-6 py-4 bg-[var(--bg-secondary)] border-t border-[var(--border)] flex-shrink-0 space-y-3">
+            <!-- Copy Link Button -->
+            <button
+              type="button"
+              class="copy-link-btn w-full flex items-center justify-center gap-3 py-3 px-4 rounded-xl border border-[var(--border)] bg-[var(--bg-primary)] text-[var(--text-secondary)] hover:text-[var(--text-primary)] hover:border-[var(--text-primary)] transition-all duration-200"
+              data-url={url}
+              aria-label="Copy link to clipboard"
+            >
+              <span class="copy-icons relative w-5 h-5">
+                <span class="icon-copy absolute inset-0 flex items-center justify-center transition-all duration-200">
+                  <Icon name="copy" size={20} />
+                </span>
+                <span class="icon-check absolute inset-0 flex items-center justify-center opacity-0 scale-50 transition-all duration-200">
+                  <Icon name="check" size={20} />
+                </span>
+              </span>
+              <span class="copy-text font-medium">Copy link</span>
+            </button>
+            
+            <!-- URL display -->
+            <p class="text-xs text-[var(--text-tertiary)] text-center truncate" title={url}>
+              {url}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
+
+<!-- Announcement region for screen readers -->
+<div 
+  class="sr-only" 
+  role="status" 
+  aria-live="polite" 
+  id="share-modal-announcer"
+></div>
+
+<style>
+  /* Modal animation */
+  .share-modal-backdrop {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.2s ease-out, visibility 0.2s ease-out;
+  }
+  
+  .share-modal-backdrop.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  
+  .share-modal {
+    transform: translateY(100%);
+    transition: transform 0.3s cubic-bezier(0.32, 0.72, 0, 1);
+  }
+  
+  @media (min-width: 640px) {
+    .share-modal {
+      transform: scale(0.95) translateY(10px);
+      opacity: 0;
+      transition: transform 0.2s ease-out, opacity 0.2s ease-out;
+    }
+  }
+  
+  .share-modal-backdrop.active .share-modal {
+    transform: translateY(0);
+  }
+  
+  @media (min-width: 640px) {
+    .share-modal-backdrop.active .share-modal {
+      transform: scale(1) translateY(0);
+      opacity: 1;
+    }
+  }
+  
+  /* Copy button success state */
+  .copy-link-btn.copied {
+    border-color: var(--text-primary);
+    background-color: var(--bg-secondary);
+    color: var(--text-primary);
+  }
+  
+  .copy-link-btn.copied .icon-copy {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  
+  .copy-link-btn.copied .icon-check {
+    opacity: 1;
+    transform: scale(1);
+  }
+  
+  /* Platform button hover effect */
+  .share-platform-btn:hover {
+    transform: translateY(-2px);
+  }
+  
+  .share-platform-btn:active {
+    transform: translateY(0);
+  }
+  
+  /* Respect reduced motion preference */
+  @media (prefers-reduced-motion: reduce) {
+    .share-modal-backdrop,
+    .share-modal,
+    .copy-link-btn,
+    .copy-link-btn .icon-copy,
+    .copy-link-btn .icon-check,
+    .share-platform-btn {
+      transition-duration: 0.01ms !important;
+      transform: none !important;
+    }
+    
+    .share-modal-backdrop.active .share-modal {
+      transform: none !important;
+      opacity: 1;
+    }
+  }
+</style>
+
+<script>
+  // Share modal functionality with lazy loading
+  function initShareModal() {
+    const template = document.getElementById('share-modal-template') as HTMLTemplateElement;
+    const announcer = document.getElementById('share-modal-announcer');
+    const focusableSelector = 'button, a[href], [tabindex]:not([tabindex="-1"])';
+    
+    let backdrop: HTMLElement | null = null;
+    let isInjected = false;
+    let previouslyFocusedElement: HTMLElement | null = null;
+    
+    // Inject modal from template (lazy loading)
+    function injectModal() {
+      if (isInjected || !template) return;
+      
+      // Clone template content and append to body
+      const content = template.content.cloneNode(true) as DocumentFragment;
+      document.body.appendChild(content);
+      
+      // Get reference to injected modal
+      backdrop = document.getElementById('share-modal-backdrop');
+      
+      if (backdrop) {
+        // Set up close button clicks
+        const closeElements = backdrop.querySelectorAll('[data-close-modal]');
+        closeElements.forEach((el) => {
+          el.addEventListener('click', closeModal);
+        });
+        
+        // Set up copy link functionality
+        const copyBtn = backdrop.querySelector('.copy-link-btn') as HTMLButtonElement;
+        copyBtn?.addEventListener('click', async () => {
+          const url = copyBtn.dataset.url;
+          if (!url) return;
+          
+          try {
+            await navigator.clipboard.writeText(url);
+            
+            // Visual feedback
+            copyBtn.classList.add('copied');
+            const textSpan = copyBtn.querySelector('.copy-text');
+            if (textSpan) textSpan.textContent = 'Copied!';
+            
+            // Screen reader announcement
+            if (announcer) announcer.textContent = 'Link copied to clipboard';
+            
+            // Reset after delay
+            setTimeout(() => {
+              copyBtn.classList.remove('copied');
+              if (textSpan) textSpan.textContent = 'Copy link';
+              if (announcer) announcer.textContent = '';
+            }, 2500);
+          } catch (err) {
+            console.error('Failed to copy:', err);
+            if (announcer) announcer.textContent = 'Failed to copy link';
+          }
+        });
+      }
+      
+      isInjected = true;
+    }
+    
+    // Open modal (injects on first call)
+    function openModal() {
+      // Lazy inject on first open
+      if (!isInjected) {
+        injectModal();
+      }
+      
+      if (!backdrop) return;
+      
+      previouslyFocusedElement = document.activeElement as HTMLElement;
+      backdrop.setAttribute('aria-hidden', 'false');
+      
+      // Trigger animation
+      requestAnimationFrame(() => {
+        backdrop?.classList.add('active');
+      });
+      
+      // Focus first focusable element
+      const firstFocusable = backdrop.querySelector(focusableSelector) as HTMLElement;
+      setTimeout(() => firstFocusable?.focus(), 100);
+      
+      // Prevent body scroll
+      document.body.style.overflow = 'hidden';
+    }
+    
+    // Close modal
+    function closeModal() {
+      if (!backdrop) return;
+      
+      backdrop.classList.remove('active');
+      backdrop.setAttribute('aria-hidden', 'true');
+      
+      // Wait for animation then restore scroll
+      setTimeout(() => {
+        document.body.style.overflow = '';
+        previouslyFocusedElement?.focus();
+      }, 200);
+    }
+    
+    // Focus trap
+    function trapFocus(e: KeyboardEvent) {
+      if (!backdrop || e.key !== 'Tab') return;
+      
+      const focusableElements = backdrop.querySelectorAll(focusableSelector);
+      const firstElement = focusableElements[0] as HTMLElement;
+      const lastElement = focusableElements[focusableElements.length - 1] as HTMLElement;
+      
+      if (e.shiftKey && document.activeElement === firstElement) {
+        e.preventDefault();
+        lastElement.focus();
+      } else if (!e.shiftKey && document.activeElement === lastElement) {
+        e.preventDefault();
+        firstElement.focus();
+      }
+    }
+    
+    // Keyboard events (always active, checks if modal is open)
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && backdrop?.classList.contains('active')) {
+        closeModal();
+      }
+      if (backdrop?.classList.contains('active')) {
+        trapFocus(e);
+      }
+    });
+    
+    // Expose open/close functions globally for FAB
+    (window as any).openShareModal = openModal;
+    (window as any).closeShareModal = closeModal;
+  }
+  
+  // Initialize when DOM is ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initShareModal);
+  } else {
+    initShareModal();
+  }
+</script>

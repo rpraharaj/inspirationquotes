@@ -1,0 +1,257 @@
+{
+    "_metadata": {
+        "description": "Authoritative source for current AI model versions - MUST be refreshed weekly",
+        "lastUpdated": "2026-01-10",
+        "nextRefreshDue": "2026-01-17",
+        "refreshInstructions": "Search for latest model announcements from each provider and update this file. Check official blogs: OpenAI, Anthropic, Google AI, Meta AI.",
+        "usageNote": "Reference this file during /blog-research for AI-related content. If writing about a model not listed here, search to verify current version."
+    },
+    "openai": {
+        "flagship": {
+            "name": "GPT-5",
+            "released": "2025-12",
+            "variants": [
+                "GPT-5",
+                "GPT-5-Turbo",
+                "GPT-5-Mini"
+            ],
+            "contextWindow": "128K tokens",
+            "maxOutput": "16K tokens"
+        },
+        "chatgpt": {
+            "defaultModel": "GPT-5",
+            "plusModel": "GPT-5",
+            "freeModel": "GPT-5-Mini"
+        },
+        "api": {
+            "latestModels": [
+                "gpt-5",
+                "gpt-5-turbo",
+                "gpt-5-mini"
+            ],
+            "pricing": {
+                "gpt-5": {
+                    "input": "$0.01/1K",
+                    "output": "$0.03/1K"
+                },
+                "gpt-5-turbo": {
+                    "input": "$0.005/1K",
+                    "output": "$0.015/1K"
+                }
+            }
+        },
+        "deprecated": [
+            "gpt-4",
+            "gpt-4-turbo",
+            "gpt-4o",
+            "gpt-3.5-turbo"
+        ],
+        "specializedModels": {
+            "image": "DALL-E 3",
+            "video": "Sora",
+            "code": "GPT-5-Codex",
+            "embedding": "text-embedding-3-large"
+        }
+    },
+    "anthropic": {
+        "flagship": {
+            "name": "Claude 4",
+            "released": "2026-01",
+            "family": [
+                "Claude 4 Opus",
+                "Claude 4 Sonnet",
+                "Claude 4 Haiku"
+            ],
+            "contextWindow": "200K tokens (expandable to 1M with extended context)",
+            "maxOutput": "8K tokens"
+        },
+        "claude": {
+            "defaultModel": "Claude 4 Sonnet",
+            "proModel": "Claude 4 Opus",
+            "lightModel": "Claude 4 Haiku"
+        },
+        "api": {
+            "latestModels": [
+                "claude-4-opus",
+                "claude-4-sonnet",
+                "claude-4-haiku"
+            ],
+            "pricing": {
+                "claude-4-opus": {
+                    "input": "$0.015/1K",
+                    "output": "$0.075/1K"
+                },
+                "claude-4-sonnet": {
+                    "input": "$0.003/1K",
+                    "output": "$0.015/1K"
+                },
+                "claude-4-haiku": {
+                    "input": "$0.00025/1K",
+                    "output": "$0.00125/1K"
+                }
+            }
+        },
+        "deprecated": [
+            "claude-3-opus",
+            "claude-3.5-sonnet",
+            "claude-3-haiku",
+            "claude-2",
+            "claude-instant"
+        ],
+        "capabilities": {
+            "vision": true,
+            "codeExecution": true,
+            "toolUse": true,
+            "artifacts": true
+        }
+    },
+    "google": {
+        "flagship": {
+            "name": "Gemini 3",
+            "released": "2026-01",
+            "family": [
+                "Gemini 3 Ultra",
+                "Gemini 3 Pro",
+                "Gemini 3 Flash"
+            ],
+            "contextWindow": "2M tokens (Pro), 1M tokens (Flash)",
+            "maxOutput": "8K tokens"
+        },
+        "consumer": {
+            "bard": "Rebranded to Gemini",
+            "geminiApp": "Gemini 3 Pro",
+            "geminiAdvanced": "Gemini 3 Ultra"
+        },
+        "api": {
+            "latestModels": [
+                "gemini-3-ultra",
+                "gemini-3-pro",
+                "gemini-3-flash"
+            ],
+            "platform": "Google AI Studio / Vertex AI"
+        },
+        "deprecated": [
+            "gemini-2.0-pro",
+            "gemini-2.0-flash",
+            "gemini-1.5-pro",
+            "gemini-1.5-flash",
+            "gemini-1.0",
+            "bard"
+        ],
+        "specializedModels": {
+            "image": "Imagen 3",
+            "video": "Veo 2",
+            "code": "Gemini Code Assist"
+        }
+    },
+    "meta": {
+        "flagship": {
+            "name": "Llama 4",
+            "released": "2025-11",
+            "family": [
+                "Llama 4 405B",
+                "Llama 4 70B",
+                "Llama 4 8B"
+            ],
+            "contextWindow": "128K tokens",
+            "license": "Open Source (Meta Llama License)"
+        },
+        "availability": {
+            "huggingFace": true,
+            "ollama": true,
+            "localDeployment": true
+        },
+        "deprecated": [
+            "llama-3.1",
+            "llama-3",
+            "llama-2",
+            "llama-1"
+        ],
+        "optimizedVersions": {
+            "quantized": "Llama 4 8B Q4 (for consumer hardware)",
+            "instruction": "Llama 4 Instruct"
+        }
+    },
+    "otherModels": {
+        "mistral": {
+            "latest": "Mistral Large 2",
+            "contextWindow": "128K tokens"
+        },
+        "cohere": {
+            "latest": "Command R+",
+            "contextWindow": "128K tokens"
+        },
+        "xai": {
+            "latest": "Grok 2",
+            "platform": "X (Twitter)"
+        }
+    },
+    "modelComparison": {
+        "bestForCoding": [
+            "Claude 4 Opus",
+            "GPT-5",
+            "Gemini 3 Pro"
+        ],
+        "bestForWriting": [
+            "Claude 4 Sonnet",
+            "GPT-5",
+            "Gemini 3 Pro"
+        ],
+        "bestForReasoning": [
+            "Claude 4 Opus",
+            "GPT-5",
+            "Gemini 3 Ultra"
+        ],
+        "bestForSpeed": [
+            "Claude 4 Haiku",
+            "GPT-5-Mini",
+            "Gemini 3 Flash"
+        ],
+        "bestForLocal": [
+            "Llama 4",
+            "Mistral",
+            "Phi-3"
+        ]
+    },
+    "outdatedReferences": {
+        "description": "If you see these in content, they are OUTDATED and must be updated",
+        "examples": [
+            {
+                "outdated": "GPT-4",
+                "current": "GPT-5"
+            },
+            {
+                "outdated": "GPT-4o",
+                "current": "GPT-5"
+            },
+            {
+                "outdated": "Claude 3",
+                "current": "Claude 4"
+            },
+            {
+                "outdated": "Claude 3.5 Sonnet",
+                "current": "Claude 4 Sonnet"
+            },
+            {
+                "outdated": "Gemini 1.5",
+                "current": "Gemini 3"
+            },
+            {
+                "outdated": "Gemini 2.0",
+                "current": "Gemini 3"
+            },
+            {
+                "outdated": "Llama 3",
+                "current": "Llama 4"
+            },
+            {
+                "outdated": "Bard",
+                "current": "Gemini"
+            },
+            {
+                "outdated": "100K context window for Claude",
+                "current": "200K (expandable to 1M)"
+            }
+        ]
+    }
+}

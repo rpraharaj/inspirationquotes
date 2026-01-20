@@ -1,0 +1,189 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+import FormattedDate from '../../components/FormattedDate.astro';
+import SearchInput from '../../components/ui/SearchInput.astro';
+import Pagination from '../../components/ui/Pagination.astro';
+import CategoryBadge from '../../components/ui/CategoryBadge.astro';
+import TagPill from '../../components/ui/TagPill.astro';
+import Icon from '../../components/ui/Icon.astro';
+import { siteConfig } from '../../config/site';
+import { categories, type CategorySlug } from '../../config/categories';
+
+// Get all posts sorted by date
+const allPosts = (await getCollection('blog')).sort(
+  (a, b) => b.data.pubDate.valueOf() - a.data.pubDate.valueOf(),
+);
+
+// Pagination settings
+const postsPerPage = siteConfig.blog.postsPerPage;
+const totalPages = Math.ceil(allPosts.length / postsPerPage);
+const currentPage = 1;
+const posts = allPosts.slice(0, postsPerPage);
+
+// Calculate reading time helper
+function getReadingTime(content: string): string {
+  const words = content.trim().split(/\s+/).length;
+  const minutes = Math.ceil(words / 200);
+  return minutes === 1 ? '1 min read' : `${minutes} min read`;
+}
+---
+
+<BaseLayout 
+  title="AI Blog: Tutorials, Code Snippets & Developer Guides | AI Agents Kit" 
+  description="Explore tutorials, code snippets, and in-depth guides on AI agents, LLMs, prompt engineering, and developer tools. Stay updated with the latest AI news."
+>
+  <div class="py-16 sm:py-24">
+    <div class="mx-auto max-w-wide px-4 sm:px-6">
+      <!-- Header -->
+      <header class="mb-12 animate-fade-in">
+        <div class="flex items-center gap-3 mb-4">
+          <Icon name="file-code" size={32} class="text-foreground-secondary" />
+          <h1 class="text-3xl sm:text-4xl font-bold tracking-tight">Blog</h1>
+        </div>
+        <p class="text-lg text-foreground-secondary max-w-2xl">
+          Tutorials, code snippets, and insights on AI agents, LLMs, and developer tools.
+        </p>
+      </header>
+      
+      <!-- Category Filter -->
+      <div class="mb-8 animate-fade-in stagger-1">
+        <div class="flex flex-wrap items-center gap-2">
+          <a 
+            href="/blog"
+            class="inline-flex items-center px-3 py-1.5 text-xs font-medium uppercase tracking-wider rounded-md bg-foreground text-background"
+          >
+            All
+          </a>
+          {categories.map((category) => (
+            <a 
+              href={`/categories/${category.slug}`}
+              class="inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-medium uppercase tracking-wider rounded-md border border-border hover:bg-background-secondary transition-colors"
+            >
+              <Icon name={category.icon} size={14} strokeWidth={2.5} />
+              <span>{category.name}</span>
+            </a>
+          ))}
+        </div>
+      </div>
+      
+      <!-- Search -->
+      <div class="mb-12 animate-fade-in stagger-2">
+        <SearchInput placeholder="Search articles..." />
+      </div>
+      
+      <!-- Posts Grid -->
+      <div class="grid gap-10 sm:grid-cols-2 lg:gap-12 mb-16" id="posts-grid">
+        {posts.map((post, index) => (
+          <article 
+            class:list={[
+              'group animate-slide-up',
+              `stagger-${Math.min(index + 1, 4)}`,
+              index === 0 && allPosts.length > 1 && 'sm:col-span-2'
+            ]}
+            data-searchable
+            data-title={post.data.title}
+            data-description={post.data.description || ''}
+            data-content={(post.body || '').slice(0, 500)}
+            data-category={post.data.category}
+            data-tags={post.data.tags?.join(',') || ''}
+          >
+            <a href={`/blog/${post.id}/`} class="block">
+              <div class:list={[
+                'aspect-video overflow-hidden rounded-xl bg-background-secondary border border-border mb-4',
+                index === 0 && allPosts.length > 1 && 'lg:aspect-[21/9]'
+              ]}>
+                {post.data.heroImage ? (
+                  <img 
+                    src={post.data.heroImage} 
+                    alt={`Featured image for ${post.data.title}`}
+                    width={index === 0 ? 960 : 480}
+                    height={index === 0 ? 540 : 270}
+                    class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
+                    loading={index < 3 ? 'eager' : 'lazy'}
+                    decoding="async"
+                  />
+                ) : (
+                  <div class="w-full h-full flex items-center justify-center text-foreground-tertiary">
+                    <Icon name="file-code" size={48} strokeWidth={1} />
+                  </div>
+                )}
+              </div>
+              
+              <div class:list={[index === 0 && allPosts.length > 1 && 'max-w-2xl']}>
+                <div class="flex flex-wrap items-center gap-2 mb-3">
+                  <CategoryBadge category={post.data.category as CategorySlug} size="sm" showIcon={false} />
+                  <span class="text-foreground-tertiary">·</span>
+                  <span class="text-sm text-foreground-tertiary">
+                    <FormattedDate date={post.data.pubDate} />
+                  </span>
+                  {post.body && (
+                    <>
+                      <span class="text-foreground-tertiary">·</span>
+                      <span class="text-sm text-foreground-tertiary inline-flex items-center gap-1">
+                        <Icon name="clock" size={14} />
+                        {getReadingTime(post.body)}
+                      </span>
+                    </>
+                  )}
+                </div>
+                
+                <h2 class:list={[
+                  'font-bold tracking-tight group-hover:text-foreground-secondary transition-colors line-clamp-2',
+                  index === 0 && allPosts.length > 1 ? 'text-2xl sm:text-3xl' : 'text-xl'
+                ]}>
+                  {post.data.title}
+                </h2>
+                
+                {post.data.description && (
+                  <p class:list={[
+                    'text-foreground-secondary mt-3 line-clamp-2',
+                    index === 0 && allPosts.length > 1 ? 'text-base' : 'text-sm'
+                  ]}>
+                    {post.data.description}
+                  </p>
+                )}
+                
+                {post.data.tags && post.data.tags.length > 0 && (
+                  <div class="flex flex-wrap gap-2 mt-4">
+                    {post.data.tags.slice(0, 3).map((tag: string) => (
+                      <TagPill tag={tag} />
+                    ))}
+                  </div>
+                )}
+                
+                <span class="inline-flex items-center gap-1 mt-4 text-sm font-medium text-foreground-secondary group-hover:text-foreground transition-colors">
+                  Read article
+                  <Icon name="arrow-right" size={16} class="transition-transform group-hover:translate-x-1" />
+                </span>
+              </div>
+            </a>
+          </article>
+        ))}
+      </div>
+      
+      <!-- Empty State for Search -->
+      <div id="no-results" class="hidden text-center py-16">
+        <Icon name="search" size={48} class="mx-auto text-foreground-tertiary mb-4" />
+        <h3 class="text-lg font-semibold mb-2">No articles found</h3>
+        <p class="text-foreground-secondary">Try adjusting your search terms</p>
+      </div>
+      
+      <!-- Pagination -->
+      {totalPages > 1 && (
+        <div class="mt-12">
+          <Pagination currentPage={currentPage} totalPages={totalPages} />
+        </div>
+      )}
+    </div>
+  </div>
+</BaseLayout>
+
+<style>
+  .line-clamp-2 {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+  }
+</style>

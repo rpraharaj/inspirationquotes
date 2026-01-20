@@ -1,0 +1,70 @@
+---
+/**
+ * Callout Component
+ * 
+ * Displays tip, warning, note, or info callout boxes.
+ * Essential for technical documentation and tutorials.
+ */
+
+interface Props {
+    type?: 'tip' | 'warning' | 'note' | 'info';
+    title?: string;
+}
+
+const { type = 'note', title } = Astro.props;
+
+const configs = {
+    tip: {
+        icon: '💡',
+        label: 'Tip',
+        borderClass: 'border-l-foreground',
+    },
+    warning: {
+        icon: '⚠️',
+        label: 'Warning',
+        borderClass: 'border-l-foreground',
+    },
+    note: {
+        icon: '📝',
+        label: 'Note',
+        borderClass: 'border-l-border-strong',
+    },
+    info: {
+        icon: 'ℹ️',
+        label: 'Info',
+        borderClass: 'border-l-border-strong',
+    },
+};
+
+const config = configs[type];
+const displayTitle = title || config.label;
+---
+
+<div 
+    class:list={[
+        'callout my-6 p-4 rounded-r-lg bg-background-secondary border-l-4',
+        config.borderClass
+    ]}
+>
+    <div class="flex items-center gap-2 font-bold text-sm uppercase tracking-wider mb-2">
+        <span>{config.icon}</span>
+        <span>{displayTitle}</span>
+    </div>
+    <div class="text-foreground-secondary text-sm">
+        <slot />
+    </div>
+</div>
+
+<style>
+    .callout :global(p) {
+        margin-bottom: 0;
+    }
+    
+    .callout :global(p:not(:last-child)) {
+        margin-bottom: 0.5rem;
+    }
+    
+    .callout :global(code) {
+        font-size: 0.85em;
+    }
+</style>

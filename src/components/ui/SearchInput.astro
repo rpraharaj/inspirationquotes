@@ -1,0 +1,99 @@
+---
+/**
+ * SearchInput Component
+ * 
+ * Client-side search input for filtering blog posts
+ */
+interface Props {
+  placeholder?: string;
+}
+
+const { placeholder = 'Search articles...' } = Astro.props;
+---
+
+<div class="search-container relative w-full max-w-md">
+  <div class="relative">
+    <label for="blog-search" class="sr-only">Search articles</label>
+    <svg 
+      class="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-foreground-tertiary pointer-events-none"
+      fill="none" 
+      stroke="currentColor" 
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+    </svg>
+    <input
+      type="search"
+      id="blog-search"
+      placeholder={placeholder}
+      autocomplete="off"
+      class="w-full pl-12 pr-10 py-3 rounded-xl border border-border bg-background-secondary text-foreground placeholder:text-foreground-tertiary focus:outline-none focus:ring-2 focus:ring-foreground/20 focus:border-border-strong transition-all duration-200"
+    />
+    <button
+      id="clear-search"
+      class="absolute right-3 top-1/2 -translate-y-1/2 p-1 text-foreground-tertiary hover:text-foreground transition-colors hidden"
+      aria-label="Clear search"
+    >
+      <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+      </svg>
+    </button>
+  </div>
+  
+  <!-- Search results count -->
+  <div id="search-results-count" class="mt-2 text-sm text-foreground-tertiary hidden"></div>
+</div>
+
+<script>
+  const searchInput = document.getElementById('blog-search') as HTMLInputElement;
+  const clearBtn = document.getElementById('clear-search');
+  const resultsCount = document.getElementById('search-results-count');
+  const articles = document.querySelectorAll('[data-searchable]');
+  
+  if (searchInput && clearBtn && resultsCount && articles.length > 0) {
+    let debounceTimer: ReturnType<typeof setTimeout>;
+    
+    searchInput.addEventListener('input', () => {
+      clearTimeout(debounceTimer);
+      debounceTimer = setTimeout(() => {
+        const query = searchInput.value.toLowerCase().trim();
+        
+        // Show/hide clear button
+        clearBtn.classList.toggle('hidden', !query);
+        
+        if (!query) {
+          // Show all articles
+          articles.forEach((article) => {
+            (article as HTMLElement).style.display = '';
+          });
+          resultsCount.classList.add('hidden');
+          return;
+        }
+        
+        let visibleCount = 0;
+        
+        articles.forEach((article) => {
+          const title = article.getAttribute('data-title')?.toLowerCase() || '';
+          const description = article.getAttribute('data-description')?.toLowerCase() || '';
+          const content = article.getAttribute('data-content')?.toLowerCase() || '';
+          
+          const matches = title.includes(query) || description.includes(query) || content.includes(query);
+          
+          (article as HTMLElement).style.display = matches ? '' : 'none';
+          if (matches) visibleCount++;
+        });
+        
+        // Show results count
+        resultsCount.textContent = `${visibleCount} article${visibleCount !== 1 ? 's' : ''} found`;
+        resultsCount.classList.remove('hidden');
+      }, 200);
+    });
+    
+    clearBtn.addEventListener('click', () => {
+      searchInput.value = '';
+      searchInput.dispatchEvent(new Event('input'));
+      searchInput.focus();
+    });
+  }
+</script>

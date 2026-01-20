@@ -1,0 +1,45 @@
+---
+/**
+ * TagPill Component
+ * 
+ * Displays a tag pill for technologies/topics.
+ * Simple, minimal design that fits the B&W aesthetic.
+ */
+
+interface Props {
+    tag: string;
+    size?: 'sm' | 'md';
+    clickable?: boolean;
+}
+
+const { tag, size = 'sm', clickable = false } = Astro.props;
+
+const sizeClasses = {
+    sm: 'text-xs px-2 py-0.5',
+    md: 'text-sm px-2.5 py-1',
+};
+---
+
+{clickable ? (
+    <a 
+        href={`/blog?tag=${encodeURIComponent(tag)}`}
+        class:list={[
+            'inline-block font-medium rounded-full',
+            'bg-background-tertiary text-foreground-secondary',
+            'hover:bg-border hover:text-foreground transition-colors',
+            sizeClasses[size]
+        ]}
+    >
+        {tag}
+    </a>
+) : (
+    <span 
+        class:list={[
+            'inline-block font-medium rounded-full',
+            'bg-background-tertiary text-foreground-secondary',
+            sizeClasses[size]
+        ]}
+    >
+        {tag}
+    </span>
+)}

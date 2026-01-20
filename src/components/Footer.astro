@@ -1,0 +1,120 @@
+---
+import Icon from './ui/Icon.astro';
+import { siteConfig } from '../config/site';
+import { getFeaturedCategories } from '../config/categories';
+
+const today = new Date();
+const featuredCategories = getFeaturedCategories();
+---
+
+<footer class="border-t border-border bg-background">
+  <div class="mx-auto max-w-wide px-4 sm:px-6">
+    <!-- Main Footer Content -->
+    <div class="py-12 grid gap-8 sm:grid-cols-2 lg:grid-cols-4">
+      <!-- Brand & Description -->
+      <div class="sm:col-span-2 lg:col-span-2">
+        <a href="/" class="inline-flex items-center gap-2 text-lg font-bold tracking-tight text-foreground">
+          <Icon name="bot" size={24} strokeWidth={2} />
+          {siteConfig.name}
+        </a>
+        <p class="mt-3 text-sm text-foreground-secondary max-w-md">
+          {siteConfig.tagline}. Tutorials, code snippets, prompts, and the latest AI updates for developers.
+        </p>
+        
+        <!-- Social Links -->
+        <div class="flex items-center gap-2 mt-6">
+          <a 
+            href={siteConfig.social.twitter}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="p-2 text-foreground-tertiary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
+            aria-label="Follow on X"
+          >
+            <Icon name="twitter" size={20} />
+          </a>
+          <a 
+            href={siteConfig.social.github}
+            target="_blank"
+            rel="noopener noreferrer"
+            class="p-2 text-foreground-tertiary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
+            aria-label="Follow on GitHub"
+          >
+            <Icon name="github" size={20} />
+          </a>
+          <a 
+            href={`mailto:${siteConfig.social.email}`}
+            class="p-2 text-foreground-tertiary hover:text-foreground hover:bg-background-secondary rounded-lg transition-colors"
+            aria-label="Send an email"
+          >
+            <Icon name="mail" size={20} />
+          </a>
+        </div>
+      </div>
+      
+      <!-- Featured Categories -->
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-foreground-tertiary mb-4">
+          Categories
+        </h3>
+        <ul class="space-y-2">
+          {featuredCategories.map((category) => (
+            <li>
+              <a 
+                href={`/categories/${category.slug}`}
+                class="text-sm text-foreground-secondary hover:text-foreground transition-colors inline-flex items-center gap-2"
+              >
+                <Icon name={category.icon} size={14} strokeWidth={2} />
+                {category.name}
+              </a>
+            </li>
+          ))}
+          <li class="pt-2">
+            <a 
+              href="/categories"
+              class="text-sm font-medium text-accent hover:text-accent-hover transition-colors inline-flex items-center gap-1"
+            >
+              View All Categories
+              <Icon name="arrow-right" size={14} strokeWidth={2} />
+            </a>
+          </li>
+        </ul>
+      </div>
+      
+      <!-- Quick Links -->
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-foreground-tertiary mb-4">
+          Quick Links
+        </h3>
+        <ul class="space-y-2">
+          {siteConfig.nav.map((item) => (
+            <li>
+              <a 
+                href={item.href}
+                class="text-sm text-foreground-secondary hover:text-foreground transition-colors"
+              >
+                {item.name}
+              </a>
+            </li>
+          ))}
+          <li class="pt-2 border-t border-border mt-2">
+            {siteConfig.footerLinks.map((item) => (
+              <a 
+                href={item.href}
+                class="block text-sm text-foreground-secondary hover:text-foreground transition-colors py-1"
+              >
+                {item.name}
+              </a>
+            ))}
+          </li>
+        </ul>
+      </div>
+    </div>
+    
+    <!-- Bottom Bar -->
+    <div class="py-6 border-t border-border flex items-center justify-center text-sm text-foreground-tertiary">
+      <p>
+        &copy; {today.getFullYear()} {siteConfig.name}. All rights reserved.
+      </p>
+    </div>
+  </div>
+</footer>
