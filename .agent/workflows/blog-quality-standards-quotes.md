@@ -22,8 +22,10 @@ description: Blog quality standards for InspirationalQuotes - human voice, SEO, 
 8. [Word Count Requirements](#8-word-count-requirements)
 9. [SEO On-Page Requirements](#9-seo-on-page-requirements)
 10. [Heading Structure Rules](#10-heading-structure-rules)
-11. [Featured Image Requirements](#11-featured-image-requirements)
-12. [Quote Collections Requirements](#12-quote-collections-requirements)
+11. [Keyword Strategy Requirements](#11-keyword-strategy-requirements)
+12. [Section Structure Requirements](#12-section-structure-requirements)
+13. [Featured Image Requirements](#13-featured-image-requirements)
+14. [Quote Collections Requirements](#14-quote-collections-requirements)
 
 ---
 
@@ -231,8 +233,9 @@ For EVERY quote in an article:
 ### Quantity
 
 - **Minimum:** 3 internal links per post
-- **Maximum:** 7 internal links (avoid over-linking)
-- **Distribution:** Spread throughout article, not clustered
+- **Maximum:** 5 internal links
+- **Distribution:** Spread throughout different sections (not clustered)
+- **Placement:** Distribute across multiple H2 sections for natural flow
 
 ### Quality Rules
 
@@ -245,16 +248,39 @@ For EVERY quote in an article:
 
 ### Internal Link Targets
 
-Link to:
-- Related quote collections (e.g., link from "success quotes" to "perseverance quotes")
-- Author-specific collections
-- Thematic quote pages
-- Related blog posts
+**CRITICAL:** Only link to **published blog posts** in the `/blog/` directory.
 
-### Format
+**DO NOT link to:**
+- ❌ `/quotes/` paths (these don't exist)
+- ❌ Unpublished posts
+- ❌ Draft content
 
+**Valid link targets:**
+- ✅ Published blog posts: `/blog/[slug]/`
+- ✅ Related quote collection posts that are live
+- ✅ Thematic blog posts that are published
+
+### Verification Before Linking
+
+Before adding an internal link:
+1. Verify the target post exists in `src/content/blog/`
+2. Confirm the post is published (not draft)
+3. Use the correct slug from the filename
+4. Use the `/blog/[slug]/` format with trailing slash
+
+### Format Examples
+
+**✅ CORRECT:**
 ```markdown
-If you're looking for more wisdom on this topic, explore our collection of [perseverance quotes](/quotes/perseverance-quotes).
+If you're looking for more wisdom on this topic, explore our [perseverance quotes](/blog/perseverance-quotes/).
+
+For more inspiration, check out our collection of [quotes about strength](/blog/strength-quotes/).
+```
+
+**❌ WRONG:**
+```markdown
+[perseverance quotes](/quotes/perseverance-quotes)     ❌ Wrong path - don't use /quotes/
+[some post](/blog/unpublished-post/)                  ❌ Post doesn't exist yet
 ```
 
 ---
@@ -263,9 +289,10 @@ If you're looking for more wisdom on this topic, explore our collection of [pers
 
 ### Quantity
 
-- **Minimum:** 2-3 external links per post
+- **Minimum:** 3 external links per post
 - **Maximum:** 5 external links
-- **Distribution:** Spread throughout article, not clustered
+- **Distribution:** Spread throughout different sections (not clustered)
+- **Placement:** Distribute across multiple H2 sections to high authority sites
 
 ### Required Format (Google-Compliant)
 
@@ -373,15 +400,26 @@ Prioritize sources in this order:
 | Keyword | Include primary keyword |
 | Case | All lowercase |
 | **No Years** | **Never include year (2024, 2025, 2026, etc.)** |
+| **No Numbers** | **Never include numeric prefixes (50, 100, 150, etc.)** |
 
 **⚠️ CRITICAL - Evergreen URL Rule:**
 
-Do NOT include years in URL slugs. Quotes are timeless.
+Do NOT include years OR numbers in URL slugs. Quotes are timeless.
 
-| ❌ BAD (Dated) | ✅ GOOD (Evergreen) |
-|----------------|---------------------|
+| ❌ BAD (Dated/Numbered) | ✅ GOOD (Evergreen) |
+|-------------------------|---------------------|
 | `courage-quotes-2026` | `courage-quotes` |
 | `best-quotes-2026` | `best-motivational-quotes` |
+| `101-motivational-success-quotes` | `motivational-success-quotes` |
+| `50-inspirational-quotes` | `inspirational-quotes` |
+| `150-discipline-quotes` | `discipline-quotes` |
+
+**Rationale:**
+- Numbers (like "101" or "150") make URLs look dated and promotional
+- If you update the post to 200 quotes, the "150" in the URL becomes inaccurate
+- Clean, keyword-focused slugs are more SEO-friendly and professional
+- Timeless URLs rank better long-term
+
 
 ### Keyword Placement
 
@@ -400,33 +438,218 @@ Do NOT include years in URL slugs. Quotes are timeless.
 | Level | Usage |
 |-------|-------|
 | **H1** | Title ONLY (set via frontmatter) - NEVER in body |
-| **H2** | Major sections (quote categories, themes) |
-| **H3** | Subsections under H2 (individual quotes or sub-themes) |
-| **H4** | Rarely used - only for complex nested content |
+| **H2** | Major sections (quote categories, themes) - ONLY heading level used |
+| **H3** | ❌ NOT USED in quote posts |
+| **H4** | ❌ NOT USED in quote posts |
+
+### Minimum H2 Requirement
+
+- **Minimum:** 7 H2 headings per post
+- **Purpose:** Ensures comprehensive topic coverage and SEO structure
+- **Organization:** Each H2 represents a major subtopic or theme
+
+### Semantic Keyword Requirements for Headers
+
+**CRITICAL:** Each H2 heading MUST include semantic keywords related to the main keyword.
+
+**Example - Main Keyword: "motivational quotes"**
+
+| ✅ Good H2 (Semantic Keywords) | ❌ Bad H2 (Generic) |
+|-------------------------------|---------------------|
+| "Motivational Quotes for Success and Achievement" | "Quotes About Success" |
+| "Inspiring Words to Boost Motivation" | "More Quotes" |
+| "Uplifting Quotes for Daily Inspiration" | "Additional Motivational Sayings" |
+| "Empowering Motivation for Overcoming Challenges" | "Quotes for Hard Times" |
+
+**Semantic Keyword Strategy:**
+- Use variations of the main keyword (motivation → motivational, motivating, inspired)
+- Include related terms (inspiration, empowerment, encouragement, uplift)
+- Mix specific applications (success, goals, challenges, daily life)
 
 ### Rules
 
-- **NEVER** skip levels (H2 → H4 is WRONG)
 - **NEVER** use H1 in body content
-- Include primary keyword in at least one H2
+- **NEVER** use H3 or H4 headings in quote posts
+- **ALWAYS** include semantic keywords in every H2
+- Include primary keyword in at least 2-3 H2 headings
 - Use descriptive, benefit-focused heading text
+- Ensure H2s cover different aspects of the topic
+- Use **ONLY H2 headings** for all sections
 
 ### Valid Structure for Quote Posts
 
 ```markdown
-## Quotes About [Subtopic 1]               ✅ Valid H2
-### Quote by [Author Name]                 ✅ Valid H3
-### Quote by [Author Name]                 ✅ Valid H3
+## Motivational Quotes for Success and Achievement               ✅ Valid H2
 
-## Quotes About [Subtopic 2]               ✅ Valid H2
-### Quote by [Author Name]                 ✅ Valid H3
+> "Quote text here."
+> — Author Name
 
-## Why These Quotes Matter                 ✅ Valid H2
+Context or personal reflection about this quote.
+
+## Inspiring Words to Overcome Life's Challenges                  ✅ Valid H2
+
+> "Quote text here."
+> — Author Name
+
+Context or personal reflection about this quote.
+
+## Uplifting Quotes for Daily Motivation                          ✅ Valid H2
+
+## Empowering Motivation for Goal Achievement                     ✅ Valid H2
+
+## Encouraging Quotes for Personal Growth                         ✅ Valid H2
+
+## Powerful Words to Ignite Your Inner Strength                   ✅ Valid H2
+
+## Inspirational Quotes for Career Success                        ✅ Valid H2
+```
+
+**❌ Invalid Structure (Using H3s):**
+```markdown
+## Motivational Quotes
+### Quote by Author      ❌ WRONG - No H3s allowed
 ```
 
 ---
 
-## 11. Featured Image Requirements
+## 11. Keyword Strategy Requirements
+
+### Keyword Coverage Mandate
+
+**CRITICAL:** Every post MUST cover short-tail, medium-tail, and long-tail keywords for the topic.
+
+### Keyword Types Explained
+
+| Keyword Type | Word Count | Search Volume | Competition | Example |
+|--------------|------------|---------------|-------------|----------|
+| **Short-tail** | 1-2 words | High | High | "motivational quotes" |
+| **Medium-tail** | 2-3 words | Medium | Medium | "quotes for success" |
+| **Long-tail** | 4+ words | Low-Medium | Low | "motivational quotes for students studying" |
+
+### Distribution Requirements
+
+| Element | Short-tail | Medium-tail | Long-tail |
+|---------|------------|-------------|-----------|
+| **Title** | ✅ Primary focus | Optional | Optional |
+| **H2 Headings** | 2-3 H2s | 3-4 H2s | 2-3 H2s |
+| **First paragraph** | ✅ Required | ✅ Required | Optional |
+| **Throughout content** | Natural placement | Natural placement | Natural placement |
+| **Meta description** | ✅ Required | Optional | Optional |
+
+### Keyword Research Requirements
+
+Before writing, identify:
+
+- [ ] **1 primary short-tail keyword** (e.g., "courage quotes")
+- [ ] **3-5 medium-tail variations** (e.g., "quotes about courage", "courage and strength quotes")
+- [ ] **5-7 long-tail keywords** (e.g., "courage quotes for difficult times", "quotes about finding courage within")
+
+### Natural Integration Rules
+
+**DO:**
+- Weave keywords naturally into conversational text
+- Use variations and synonyms
+- Focus on user intent behind keywords
+- Place keywords in H2s with semantic variations
+
+**DON'T:**
+- Keyword stuff or repeat exact phrases unnaturally
+- Force keywords where they don't fit
+- Sacrifice readability for keyword placement
+- Use keywords in every paragraph
+
+### Example Keyword Integration
+
+**Topic:** Motivational Quotes
+
+**Short-tail (Primary):** "motivational quotes"
+
+**Medium-tail:**
+- "quotes for motivation"
+- "motivational quotes for success"
+- "inspirational motivational quotes"
+
+**Long-tail:**
+- "motivational quotes for students studying hard"
+- "short motivational quotes for daily inspiration"
+- "motivational quotes to overcome challenges at work"
+
+**H2 Examples with Integrated Keywords:**
+```markdown
+## Motivational Quotes for Success and Achievement (medium-tail)
+## Short Motivational Quotes for Daily Inspiration (long-tail)
+## Inspirational Motivational Quotes to Overcome Challenges (medium + long-tail)
+## Powerful Words of Motivation for Students (long-tail variation)
+```
+
+---
+
+## 12. Section Structure Requirements
+
+### Standard Section Format
+
+**MANDATORY:** Each H2 section MUST follow this structure:
+
+1. **Short paragraph** (3-5 sentences) written in human tone
+2. **Minimum 15 quotes** related to the section theme
+
+### Paragraph Requirements
+
+| Element | Requirement |
+|---------|-------------|
+| **Length** | 3-5 sentences (50-100 words) |
+| **Tone** | Conversational, warm, human voice |
+| **Purpose** | Introduce the theme, share personal connection, or provide context |
+| **Keywords** | Naturally include relevant keywords from the section |
+| **Connection** | Bridge between heading and quotes that follow |
+
+### Quote Requirements Per Section
+
+- **Minimum:** 15 quotes per H2 section
+- **Format:** Use blockquote format with proper attribution
+- **Numbering:** Continue sequential numbering throughout the post
+- **Variety:** Mix well-known and lesser-known quotes
+
+### Section Structure Example
+
+**Note:** Use ONLY H2 headings. Do NOT use H3s for individual quotes.
+
+```markdown
+## Motivational Quotes for Overcoming Challenges
+
+Life throws obstacles in our path, but it's how we respond that defines us. When I'm facing a difficult situation, I turn to these quotes to remind myself that challenges are opportunities in disguise. The wisdom shared by those who've walked through fire before us can light our way forward. These quotes have helped me push through some of my toughest moments.
+
+> "The only way out is through."
+> — Robert Frost
+
+This quote reminds us that avoiding problems only prolongs them. Facing challenges head-on is often the fastest path to resolution.
+
+> "Strength doesn't come from what you can do. It comes from overcoming the things you once thought you couldn't."
+> — Rikki Rogers
+
+True power emerges when we push past our perceived limitations.
+
+> "You are braver than you believe, stronger than you seem, and smarter than you think."
+
+> — A.A. Milne
+
+This beloved quote from Winnie the Pooh reminds us of the potential we all carry within.
+
+[... continues with 12 more quotes to reach minimum 15 ...]
+```
+
+### Validation Checklist Per Section
+
+- [ ] H2 heading includes semantic keywords
+- [ ] Opening paragraph is 3-5 sentences in human tone
+- [ ] Section contains minimum 15 quotes
+- [ ] All quotes properly formatted with attribution
+- [ ] Context provided for at least 50% of quotes
+- [ ] Section flows naturally with personal voice
+
+---
+
+## 13. Featured Image Requirements
 
 ### Technical Specifications
 
@@ -435,7 +658,7 @@ Do NOT include years in URL slugs. Quotes are timeless.
 | **Dimensions** | Exactly 1200×630 pixels | Open Graph standard |
 | **Aspect Ratio** | 1.91:1 | Optimal for all social platforms |
 | **Format** | WebP | Best balance of quality and size |
-| **Quality** | 80-85% | Balance between quality and file size |
+| **Quality** | 75-85% | Balance between quality and file size |
 | **Max File Size** | <100KB | Fast page load, passing Core Web Vitals |
 | **Target File Size** | <50KB | Optimal performance |
 
@@ -443,11 +666,80 @@ Do NOT include years in URL slugs. Quotes are timeless.
 
 | Element | Requirement |
 |---------|-------------|
-| **Primary Colors** | Black & white palette with accent colors |
+| **Primary Colors** | Black & white palette with accent colors (deep blue #1E3A8A, gold #F59E0B) |
 | **Typography** | Clean, readable fonts - emphasis on quote text preview |
-| **Watermark** | Include InspirationalQuotes logo/branding |
+| **Watermark** | **www.inspirationquoteshub.com** in bottom right corner (20-30px from edges) |
 | **Visual Style** | Elegant, minimalist, timeless aesthetic |
 | **Quote Preview** | Optionally include a featured quote from the post |
+| **Visual Elements** | Wide mountain ranges, upward arrows, ascending steps (success/progress themes) |
+
+### 🚨 CRITICAL: AI Image Generation & Cropping Workflow
+
+**PROBLEM:** AI image generators often create **square images (e.g., 640×640)** which must be **CROPPED, NOT RESIZED** to 1200×630 to avoid squeezing/distortion.
+
+#### ❌ WRONG Approach (Causes Squeezing):
+```bash
+# This SQUEEZES a 640x640 square into 1200x630 - DON'T DO THIS!
+cwebp -resize 1200 630 input_640x640.png -o output.webp
+```
+**Result:** Vertically compressed, distorted image
+
+#### ✅ CORRECT Approach (Proper Cropping):
+
+**Step 1: Check source image dimensions**
+```bash
+sips -g pixelWidth -g pixelHeight generated_image.png
+```
+Expected output example: `640x640` (square)
+
+**Step 2: Resize to larger dimension while maintaining aspect ratio**
+```bash
+sips -z 1200 1200 generated_image.png --out /tmp/resized.png
+```
+
+**Step 3: Center-crop to exact 1200×630**
+```bash
+sips -c 630 1200 /tmp/resized.png --out /tmp/cropped.png
+```
+
+**Step 4: Verify dimensions are exact**
+```bash
+sips -g pixelWidth -g pixelHeight /tmp/cropped.png
+```
+Expected output: `pixelWidth: 1200`, `pixelHeight: 630`
+
+**Step 5: Convert to WebP (NO resizing)**
+```bash
+cwebp -q 75 /tmp/cropped.png -o public/images/blog/[slug].webp
+```
+
+**Step 6: Verify file size**
+```bash
+ls -lh public/images/blog/[slug].webp
+```
+Target: <100KB (ideally 40-60KB)
+
+### AI Image Generation Prompt Requirements
+
+When generating images with AI, include these critical instructions:
+
+```
+CRITICAL: The final output must be EXACTLY 1200 pixels wide x 630 pixels tall. 
+Design the image at this exact aspect ratio (1.91:1) from the start. 
+DO NOT squeeze or distort - use proper cropping if needed.
+
+ASPECT RATIO CRITICAL:
+- Design must be in 1.91:1 landscape aspect ratio (1200x630)
+- DO NOT create a square or different ratio and then squeeze it
+- Make the mountain peaks, text, and all elements fit naturally in this wide panoramic format
+- If using mountain imagery, make it a wide mountain range, not a tall single peak
+
+WATERMARK (CRITICAL):
+- "www.inspirationquoteshub.com" in bottom right corner (20-30px from edges)
+- Subtle but readable
+- Light gray or white color (#E5E7EB) for contrast
+- Small, professional size
+```
 
 ### Safe Zone Layout
 
@@ -465,7 +757,7 @@ Do NOT include years in URL slugs. Quotes are timeless.
 |              │     (Readable, Centered)       │          |
 |              │                                │          |
 |              │  [Optional: Featured Quote]    │          |
-|              │  [Watermark/Logo]              │          |
+|              │  www.inspirationquoteshub.com  │          |
 |              └────────────────────────────────┘          |
 |                                                          |
 +----------------------------------------------------------+
@@ -478,76 +770,145 @@ Do NOT include years in URL slugs. Quotes are timeless.
 
 ```yaml
 ---
-heroImage: "/images/featured/[slug].webp"
+heroImage: "/images/blog/[slug].webp"
 ---
 ```
 
-### File Location
+### File Location & Naming
 
-| File Type | Path |
-|-----------|------|
-| **Image file** | `public/images/featured/[slug].webp` |
-| **Blog post** | `src/content/blog/[slug].md` |
+| File Type | Path | Naming Rules |
+|-----------|------|--------------|
+| **Image file** | `public/images/blog/[slug].webp` | Lowercase, hyphens, **NO numbers/years** |
+| **Blog post** | `src/content/blog/[slug].md` | Lowercase, hyphens, **NO numbers/years** |
+
+**⚠️ CRITICAL - URL & Filename Slug Rules:**
+
+**DO NOT include:**
+- ❌ Numbers at the beginning (e.g., `101-motivational-quotes`)
+- ❌ Years anywhere (e.g., `quotes-2026`)
+- ❌ Dates (e.g., `feb-2026-quotes`)
+
+**Examples:**
+
+| ❌ WRONG | ✅ CORRECT |
+|----------|------------|
+| `101-motivational-success-quotes.md` | `motivational-success-quotes.md` |
+| `50-inspirational-quotes.md` | `inspirational-quotes.md` |
+| `courage-quotes-2026.md` | `courage-quotes.md` |
+
+**Rationale:** 
+- Numbers/years make URLs dated and less evergreen
+- URLs should be timeless, just like the quote content
+- Better for SEO and long-term searchability
 
 ### Validation Checklist
 
-- [ ] Image file exists at correct path
-- [ ] Dimensions are exactly 1200×630 pixels
-- [ ] File format is WebP
-- [ ] File size is <100KB (ideally <50KB)
-- [ ] Branding elements present
-- [ ] Title readable in middle 50% safe zone
-- [ ] Frontmatter includes correct image path
+- [ ] **Source image checked** - Verified original dimensions before processing
+- [ ] **Properly cropped** - Used crop workflow, NOT resize (if source wasn't 1200×630)
+- [ ] **Exact dimensions** - Verified final image is exactly 1200×630 pixels
+- [ ] **Correct watermark** - Shows "www.inspirationquoteshub.com" in bottom right
+- [ ] **File format** - WebP format confirmed
+- [ ] **File size** - <100KB (ideally <50KB) confirmed with `ls -lh`
+- [ ] **No squeezing** - Image elements look natural and proportional (not vertically compressed)
+- [ ] **Slug naming** - No numbers or years in filename
+- [ ] **Branding present** - Watermark visible and readable
+- [ ] **Safe zone** - Title and key elements in middle 50% safe zone
+- [ ] **Frontmatter** - Correct image path in blog post frontmatter
+
+### Common Mistakes to Avoid
+
+| Mistake | Problem | Solution |
+|---------|---------|----------|
+| **Resizing square to rectangle** | Squeezes/distorts image | Crop, don't resize |
+| **Wrong watermark domain** | Shows incorrect branding | Use "www.inspirationquoteshub.com" |
+| **Numbers in slug** | URLs look dated | Remove all numbers and years |
+| **File size >100KB** | Hurts page speed | Reduce quality with `-q 60-75` |
+| **Skipping dimension check** | May not catch source issues | Always verify source dimensions first |
+
+
 
 ---
 
-## 12. Quote Collections Requirements
+## 14. Quote Collections Requirements
 
 ### Quantity Standards
 
-| Post Type | Minimum Quotes |
-|-----------|----------------|
-| **Standard collection** | 30-50 quotes |
-| **Comprehensive guide** | 50-100 quotes |
-| **Author-specific** | 20-40 quotes |
+**CRITICAL:** Minimum quote requirement per post
+
+-   **Minimum:** 150 quotes per post
+-   **Target:** 150-200 quotes for comprehensive coverage
+-   **Distribution:** Minimum 15 quotes per H2 section (with 7+ sections minimum)
+
+| Post Type | Minimum Quotes | Recommended |
+|-----------|----------------|-------------|
+| **Standard collection** | 150 quotes | 150-180 quotes |
+| **Comprehensive guide** | 180+ quotes | 200+ quotes |
+| **Author-specific** | 150 quotes | 150-200 quotes |
+
+### Quote Distribution Across Sections
+
+With **minimum 7 H2 sections** and **minimum 15 quotes per section:**
+
+-   7 sections × 15 quotes = **105 quotes minimum from main sections**
+-   Additional quotes in introduction/other sections: **45+ quotes**
+-   **Total: 150+ quotes**
 
 ### Quote Presentation Format
 
-**Standard Format:**
+**Standard Format (No H3 headings):**
 ```markdown
-### [Number]. "[Quote text]"
+## [Section Title with Semantic Keywords]
 
-> "[Quote text in block quote format]"
+[3-5 sentence intro paragraph in human tone]
+
+> "[Quote text]"
 > — Author Name
 
 [1-2 sentences of context, interpretation, or personal reflection]
+
+> "[Next quote text]"
+> — Author Name
+
+[1-2 sentences of context, interpretation, or personal reflection]
+
+[... continue with minimum 15 quotes per section ...]
 ```
 
 **Example:**
 ```markdown
-### 1. "The only impossible journey is the one you never begin."
+## Motivational Quotes for Overcoming Life's Challenges
+
+When life knocks you down, these quotes remind you of your inner strength. I've turned to these words during my toughest moments, and they've helped me see obstacles as opportunities. The wisdom here comes from people who've faced incredible challenges and emerged stronger.
 
 > "The only impossible journey is the one you never begin."
 > — Tony Robbins
 
-This quote reminds me that starting is often the hardest part. We can spend years planning and preparing, but nothing changes until we take that first step.
+Starting is often the hardest part. We can spend years planning, but nothing changes until we take that first step.
+
+> "Strength doesn't come from what you can do. It comes from overcoming the things you once thought you couldn't."
+> — Rikki Rogers
+
+This quote reminds me that true power emerges when we push past our perceived limitations.
+
+[... continues with 13+ more quotes ...]
 ```
 
 ### Quote Organization
 
 **MUST organize quotes by:**
-- Themes/subtopics (use H2 headings)
-- Emotional context (hope, courage, resilience, etc.)
-- Author (for author-specific collections)
-- Situation/application (for work, relationships, personal growth, etc.)
+-   Themes/subtopics using H2 headings (minimum 7 sections)
+-   Emotional context (hope, courage, resilience, etc.)
+-   Situation/application (for work, relationships, personal growth, etc.)
+-   **NO H3 headings** - all quotes under H2 sections directly
 
 ### Context Requirements
 
 For each quote, provide AT LEAST ONE of:
-- Historical context (when/why it was said)
-- Personal reflection on its meaning
-- How it applies to modern situations
-- Why it resonates with you
+-   Historical context (when/why it was said)
+-   Personal reflection on its meaning
+-   How it applies to modern situations
+-   Why it resonates with you
+-   Connection to the section theme
 
 ---
 
@@ -557,14 +918,17 @@ For each quote, provide AT LEAST ONE of:
 
 | Element | Minimum |
 |---------|---------|
-| Word count | 2,000-2,500 |
-| Internal links | 3 |
-| External links | 2 |
-| Personal anecdotes | 2 |
-| Human voice score | 10/12 |
-| Quote verification | 100% (all quotes verified) |
-| Quotes per collection | 30 (standard) |
-| Featured image | 1 (required for every post) |
+| **Word count** | 2,000-2,500 |
+| **Internal links** | 3 (spread across sections, `/blog/` paths only) |
+| **External links** | 3 (to high authority sites, spread across sections) |
+| **Personal anecdotes** | 2 |
+| **Human voice score** | 10/12 |
+| **Quote verification** | 100% (all quotes verified) |
+| **Quotes per post** | 150 minimum |
+| **H2 headings** | 7 minimum (with semantic keywords) |
+| **Quotes per H2 section** | 15 minimum |
+| **Keyword coverage** | Short-tail + Medium-tail + Long-tail |
+| **Featured image** | 1 (required for every post) |
 
 ### Zero Tolerance
 
@@ -572,8 +936,10 @@ For each quote, provide AT LEAST ONE of:
 - Incorrect quote attributions
 - Unverified quotes
 - H1 in body content
-- Skipped heading levels
-- \"Click here\" anchor text
+- **H3 or H4 headings in quote posts**
+- "Click here" anchor text
+- **Internal links to `/quotes/` paths**
+- **Internal links to unpublished posts**
 - Missing featured image
 - Featured image not meeting specs
 - **Years in URL slugs or image filenames**
@@ -616,8 +982,25 @@ Every quote post should include:
 - Cultural context evolves
 
 **Last updated:** 2026-02-05  
-**Version:** 1.0 (InspirationalQuotes Custom)  
+**Version:** 1.1 (InspirationalQuotes Custom)  
 **Based on:** Universal Blog Quality Standards Template
+
+### Changelog
+
+**v1.1 (2026-02-05)**
+- ✅ Added critical AI image generation & cropping workflow (Section 13)
+- ✅ Added step-by-step guide to avoid image squeezing (crop vs resize)
+- ✅ Updated watermark requirement to "www.inspirationquoteshub.com"
+- ✅ Added no-numbers rule for URL slugs and filenames
+- ✅ Added common mistakes table to Featured Image section
+- ✅ Enhanced validation checklist with dimension verification
+- ✅ Added AI image generation prompt template
+
+**v1.0 (2026-02-05)**
+- Initial version for InspirationalQuotes website
+- Adapted from universal blog quality standards
+- Added quote-specific requirements (150 quotes, 7 H2s, etc.)
+
 
 ---
 
