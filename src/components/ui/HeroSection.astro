@@ -1,9 +1,9 @@
 ---
 /**
- * HeroSection Component - Ultra Modern Tech Design
+ * HeroSection Component - Modern editorial design
  * 
  * Features:
- * - Animated grid background with neural network effect
+ * - Animated grid background with soft constellation effect
  * - Floating geometric nodes with CSS animations
  * - Glowing headline with dynamic underline
  * - Glassmorphism stat cards
@@ -54,15 +54,15 @@ const { articleCount } = Astro.props;
       <!-- Badge -->
       <div class="hero-badge">
         <div class="badge-pulse"></div>
-        <Icon name="bot" size={16} strokeWidth={2} />
-        <span>Welcome to the Future</span>
+        <Icon name="sparkles" size={16} strokeWidth={2} />
+        <span>Daily Inspiration</span>
       </div>
 
       <!-- Headline -->
       <h1 class="hero-headline">
-        <span class="headline-line">AI Agents</span>
+        <span class="headline-line">Inspiration</span>
         <span class="headline-accent">
-          <span class="accent-text">Kit</span>
+          <span class="accent-text">Quotes Hub</span>
           <span class="accent-glow"></span>
         </span>
       </h1>
@@ -74,13 +74,13 @@ const { articleCount } = Astro.props;
 
       <!-- Description -->
       <p class="hero-description">
-        Tutorials, code snippets, prompts, and the latest AI updates—all in one place.
+        Curated words on life, love, courage, creativity, and calm—ready to read, save, and share.
       </p>
 
       <!-- CTAs -->
       <div class="hero-ctas">
         <a href="/blog" class="cta-primary">
-          <span class="cta-text">Browse Articles</span>
+          <span class="cta-text">Browse Quotes</span>
           <span class="cta-icon">
             <Icon name="arrow-right" size={16} />
           </span>
@@ -96,11 +96,11 @@ const { articleCount } = Astro.props;
       <div class="hero-stats">
         <div class="stat-card">
           <div class="stat-icon">
-            <Icon name="file-code" size={20} />
+            <Icon name="message-square" size={20} />
           </div>
           <div class="stat-content">
             <span class="stat-value">{articleCount}+</span>
-            <span class="stat-label">Articles</span>
+            <span class="stat-label">Quotes</span>
           </div>
         </div>
         
@@ -120,11 +120,11 @@ const { articleCount } = Astro.props;
         
         <div class="stat-card">
           <div class="stat-icon">
-            <Icon name="zap" size={20} />
+            <Icon name="sun" size={20} />
           </div>
           <div class="stat-content">
-            <span class="stat-value">Weekly</span>
-            <span class="stat-label">Updates</span>
+            <span class="stat-value">Daily</span>
+            <span class="stat-label">Refresh</span>
           </div>
         </div>
       </div>

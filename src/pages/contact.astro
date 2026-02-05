@@ -10,7 +10,7 @@ import {
 
 // Page metadata
 const pageTitle = `Contact Us | ${siteConfig.name}`;
-const pageDescription = "Get in touch with AI Agents Kit. Have questions, feedback, or collaboration ideas? We'd love to hear from you.";
+const pageDescription = "Get in touch with Inspiration Quotes Hub. Share a quote, suggest a correction, or just say hello.";
 
 // Generate JSON-LD structured data for Contact page
 const schemas: Schema[] = [
@@ -30,27 +30,26 @@ const contactMethods = [
   {
     icon: 'mail',
     title: 'Email',
-    description: 'For general inquiries, feedback, or collaboration ideas.',
+    description: 'Questions, feedback, corrections, or partnerships.',
     value: siteConfig.social.email,
     href: `mailto:${siteConfig.social.email}`,
     cta: 'Send Email',
   },
   {
-    icon: 'twitter',
-    title: 'X / Twitter',
-    description: 'Follow for the latest AI updates and connect with us.',
-    value: '@quantumaidev',
-    href: siteConfig.social.twitter,
-    cta: 'Follow Us',
-    external: true,
+    icon: 'book-open',
+    title: 'Submit a Quote',
+    description: 'Share a favorite line with attribution or a source link.',
+    value: 'Quote submission',
+    href: `mailto:${siteConfig.social.email}?subject=Quote%20Submission`,
+    cta: 'Send a Quote',
   },
   {
-    icon: 'github',
-    title: 'GitHub',
-    description: 'Check out our open-source projects and contribute.',
-    value: 'aiagentskit',
-    href: siteConfig.social.github,
-    cta: 'View GitHub',
+    icon: 'twitter',
+    title: 'X / Twitter',
+    description: 'Follow along for fresh quotes and updates.',
+    value: '@inspirationquoteshub',
+    href: siteConfig.social.twitter,
+    cta: 'Follow Us',
     external: true,
   },
 ];
@@ -59,19 +58,19 @@ const contactMethods = [
 const faqItems = [
   {
     question: 'How quickly do you respond to emails?',
-    answer: 'We aim to respond to all inquiries within 24-48 hours during business days. For urgent matters, please mention that in your subject line.',
+    answer: 'We aim to respond within 24-48 hours on business days. If something is time-sensitive, mention it in the subject line.',
   },
   {
-    question: 'Can I submit a guest post?',
-    answer: 'We welcome high-quality guest contributions on AI agents, LLMs, and developer tools. Send us your pitch via email with a brief outline of your proposed topic.',
+    question: 'Can I submit a quote?',
+    answer: 'Yes. Please include the exact quote, author, and a reliable source link or reference if you have it.',
   },
   {
-    question: 'Do you offer consulting services?',
-    answer: 'Yes, we provide consulting for AI agent development, LLM integration, and AI strategy. Reach out with your project details to discuss how we can help.',
+    question: 'How do you verify sources?',
+    answer: 'We prioritize primary sources (books, speeches, interviews) and reputable references. If a quote is widely circulated but unverified, we label it clearly.',
   },
   {
-    question: 'How can I report an error in an article?',
-    answer: "We appreciate corrections! Please email us with the article URL and the specific issue you've found. We'll review and update the content promptly.",
+    question: 'Can I request a category or theme?',
+    answer: 'Absolutely. Tell us what you want to see and why it matters to you—we use requests to plan new collections.',
   },
 ];
 ---
@@ -93,7 +92,7 @@ const faqItems = [
           Get in Touch
         </h1>
         <p class="text-lg sm:text-xl text-foreground-secondary max-w-2xl mx-auto">
-          Have a question, feedback, or just want to say hello? 
+          Have a favorite quote to share, a correction to suggest, or a theme request? 
           We'd love to hear from you.
         </p>
       </header>
@@ -140,13 +139,13 @@ const faqItems = [
             <div class="w-16 h-16 mx-auto flex items-center justify-center rounded-2xl bg-background border border-border mb-6">
               <Icon name="mail" size={28} strokeWidth={1.5} />
             </div>
-            <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
-              Email is the Best Way to Reach Us
-            </h2>
-            <p class="text-foreground-secondary mb-6">
-              Whether you have a question about our content, want to collaborate, 
-              or have feedback to share—email is the fastest way to get a response.
-            </p>
+          <h2 class="text-2xl sm:text-3xl font-bold tracking-tight mb-4">
+            Email Is the Fastest Way to Reach Us
+          </h2>
+          <p class="text-foreground-secondary mb-6">
+            Whether you're sharing a quote, requesting a theme, or reporting an error, 
+            email helps us respond quickly.
+          </p>
             <a 
               href={`mailto:${siteConfig.social.email}`}
               class="inline-flex items-center gap-2 px-6 py-3 bg-foreground text-background font-medium rounded-xl hover:bg-foreground-secondary transition-colors"
@@ -166,11 +165,11 @@ const faqItems = [
         <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
           <div class="p-5 border border-border rounded-xl bg-background">
             <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
-              <Icon name="file-code" size={20} />
+              <Icon name="mail" size={20} />
             </div>
             <h3 class="font-bold mb-2">Subject Line</h3>
             <p class="text-sm text-foreground-secondary">
-              A clear, concise subject helps us route your message quickly.
+              A clear subject helps us route your request quickly.
             </p>
           </div>
           
@@ -178,9 +177,19 @@ const faqItems = [
             <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
               <Icon name="book-open" size={20} />
             </div>
-            <h3 class="font-bold mb-2">Context</h3>
+            <h3 class="font-bold mb-2">Quote + Author</h3>
             <p class="text-sm text-foreground-secondary">
-              Brief background on why you're reaching out.
+              Include the exact wording and who said it.
+            </p>
+          </div>
+          
+          <div class="p-5 border border-border rounded-xl bg-background">
+            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
+              <Icon name="external-link" size={20} />
+            </div>
+            <h3 class="font-bold mb-2">Source Link</h3>
+            <p class="text-sm text-foreground-secondary">
+              Add a book, article, or interview reference if available.
             </p>
           </div>
           
@@ -188,19 +197,9 @@ const faqItems = [
             <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
               <Icon name="message-square" size={20} />
             </div>
-            <h3 class="font-bold mb-2">Your Question</h3>
+            <h3 class="font-bold mb-2">Your Note</h3>
             <p class="text-sm text-foreground-secondary">
-              Be specific about what you need help with.
-            </p>
-          </div>
-          
-          <div class="p-5 border border-border rounded-xl bg-background">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
-              <Icon name="clock" size={20} />
-            </div>
-            <h3 class="font-bold mb-2">Timeline</h3>
-            <p class="text-sm text-foreground-secondary">
-              If urgent, let us know your deadline.
+              Share why the quote matters or how you'd like it used.
             </p>
           </div>
         </div>

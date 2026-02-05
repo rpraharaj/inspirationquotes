@@ -30,11 +30,11 @@ const categoryArticleCounts = categories.reduce((acc, cat) => {
 
 // Featured categories to display on homepage (curated list)
 const featuredCategorySlugs = [
-  'ai-agents',
-  'ai-tools', 
-  'mcp',
-  'prompt-engineering',
-  'code-snippets',
+  'motivation-success',
+  'love-relationships',
+  'life-wisdom',
+  'happiness-joy',
+  'friendship',
 ];
 
 // Get featured categories with article counts
@@ -71,7 +71,7 @@ const schemas: Schema[] = [
         <div class="flex items-center gap-3">
           <Icon name="layers" size={24} class="text-foreground-secondary" />
           <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">
-            Browse by Topic
+            Browse by Category
           </h2>
         </div>
       </div>
@@ -95,7 +95,7 @@ const schemas: Schema[] = [
               <Icon name="grid" size={24} class="text-foreground-secondary group-hover:text-foreground transition-colors" />
             </div>
             <h3 class="font-bold text-lg mb-1 group-hover:text-foreground-secondary transition-colors">
-              View All Topics
+              View All Categories
             </h3>
             <p class="text-sm text-foreground-tertiary mb-3">
               Explore all {totalCategories} categories
@@ -116,9 +116,9 @@ const schemas: Schema[] = [
       <div class="mx-auto max-w-wide px-4 sm:px-6">
         <div class="flex items-center justify-between mb-10">
           <div class="flex items-center gap-3">
-            <Icon name="file-code" size={24} class="text-foreground-secondary" />
+            <Icon name="message-square" size={24} class="text-foreground-secondary" />
             <h2 class="text-2xl sm:text-3xl font-bold tracking-tight">
-              Latest Articles
+              Latest Quotes
             </h2>
           </div>
           <a 

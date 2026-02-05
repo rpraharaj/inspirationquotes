@@ -4,7 +4,7 @@ import { defineCollection, z } from "astro:content";
 /**
  * Blog Collection Schema
  * 
- * Enhanced schema for AI Agents Kit with category support,
+ * Schema for quotes with category support,
  * tags, difficulty levels, and series grouping.
  */
 const blog = defineCollection({
@@ -18,31 +18,19 @@ const blog = defineCollection({
 		pubDate: z.coerce.date(),
 		updatedDate: z.coerce.date().optional(),
 		heroImage: z.string().optional(),
-		// Category - all options from content-ideas.md + legacy categories
+		// Category - all available quote categories
 		category: z.enum([
-			// Primary categories from content plan
-			'ai-agents',
-			'ai-tools',
-			'ai-news',
-			'tutorials',
-			'chatgpt',
-			'prompt-engineering',
-			'ai-comparisons',
-			'ai-careers',
-			'generative-ai',
-			'open-source-ai',
-			'ai-ethics',
-			'ai-business',
-			'llms',
-			'ai-hardware',
-			'industry-ai',
-			// Legacy categories
-			'prompts',
-			'mcp',
-			'tools',
-			'code-snippets',
-			'vibe-coding'
-		]).default('ai-news'),
+			'motivation-success',
+			'love-relationships',
+			'life-wisdom',
+			'happiness-joy',
+			'friendship',
+			'courage-confidence',
+			'mindfulness-peace',
+			'creativity-art',
+			'leadership-responsibility',
+			'humor-wit'
+		]).default('life-wisdom'),
 		tags: z.array(z.string()).default([]),
 		difficulty: z.enum(['beginner', 'intermediate', 'advanced']).optional(),
 		featured: z.boolean().default(false),

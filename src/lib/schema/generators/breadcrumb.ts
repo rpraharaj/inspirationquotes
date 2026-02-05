@@ -70,7 +70,7 @@ export function generateBlogPostBreadcrumbSchema(
     // Add the current post (no URL as it's the current page)
     breadcrumbs.push({ name: postTitle });
 
-    return generateBreadcrumbSchema(breadcrumbs, `/blog/${postSlug}/`);
+    return generateBreadcrumbSchema(breadcrumbs, `/${postSlug}/`);
 }
 
 /**

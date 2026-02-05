@@ -18,12 +18,12 @@ const totalArticles = allPosts.length;
 
 // Featured categories for the "What We Cover" section
 const featuredCategorySlugs = [
-  'ai-agents',
-  'ai-tools',
-  'mcp',
-  'prompt-engineering',
-  'code-snippets',
-  'llms',
+  'motivation-success',
+  'love-relationships',
+  'life-wisdom',
+  'happiness-joy',
+  'friendship',
+  'courage-confidence',
 ];
 
 const featuredCategories = featuredCategorySlugs
@@ -31,7 +31,7 @@ const featuredCategories = featuredCategorySlugs
   .filter(Boolean);
 
 // Generate JSON-LD structured data for About page
-const aboutDescription = "Learn about AI Agents Kit - your resource for AI tutorials, code snippets, and developer guides. Created by an AI engineer with 5+ years of experience.";
+const aboutDescription = "Learn about Inspiration Quotes Hub — a curated home for motivation, wisdom, and daily encouragement.";
 const schemas: Schema[] = [
   generateAboutPageSchema(aboutDescription),
   getDefaultAuthorSchema(),
@@ -52,15 +52,15 @@ const schemas: Schema[] = [
       <!-- Header -->
       <header class="mb-16 animate-fade-in">
         <span class="inline-flex items-center gap-2 text-sm font-medium tracking-widest uppercase text-foreground-tertiary mb-4">
-          <Icon name="brain" size={18} />
+          <Icon name="book-open" size={18} />
           About
         </span>
         <h1 class="text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6">
-          About AI Agents Kit
+          About Inspiration Quotes Hub
         </h1>
         <p class="text-lg sm:text-xl text-foreground-secondary max-w-2xl">
-          Your toolkit for building intelligent agents. Tutorials, code snippets, 
-          prompts, and the latest AI updates—all in one place.
+          A calm, thoughtful corner of the internet for quotes that uplift, ground, 
+          and spark fresh perspective.
         </p>
       </header>
       
@@ -72,21 +72,21 @@ const schemas: Schema[] = [
           <section>
             <div class="prose max-w-none">
               <p class="text-lg leading-relaxed">
-                AI Agents Kit was created to bridge the gap between AI research and practical 
-                implementation. Whether you're building your first chatbot or architecting 
-                complex autonomous systems, this is your resource hub.
+                Inspiration Quotes Hub was created to make meaningful words easy to find, 
+                remember, and share. Whether you need a quick spark or a deeper reflection, 
+                we help you get there.
               </p>
               
               <p>
-                The AI landscape moves fast. New models, frameworks, and techniques emerge weekly. 
-                Our mission is to cut through the noise and provide actionable, developer-focused 
-                content that you can use immediately.
+                We curate quotes across themes like motivation, love, courage, and creativity. 
+                Each collection is designed to help you match the moment—start your morning, 
+                reset your mindset, or send a thoughtful message to someone you care about.
               </p>
               
               <p>
-                From understanding Model Context Protocol (MCP) to crafting perfect prompts, 
-                from code snippets you can copy-paste to in-depth tutorials—everything here is 
-                designed with builders in mind.
+                We focus on clarity and attribution. When a quote has a known source, we aim to 
+                share it. When the origin is unclear, we label it honestly so you can trust what 
+                you're reading.
               </p>
             </div>
           </section>
@@ -94,12 +94,12 @@ const schemas: Schema[] = [
           <!-- What We Cover Section - Now with featured categories only -->
           <section>
             <div class="flex items-center justify-between mb-6">
-              <h2 class="text-2xl font-bold tracking-tight">What We Cover</h2>
+              <h2 class="text-2xl font-bold tracking-tight">What You'll Find</h2>
               <a 
                 href="/categories" 
                 class="text-sm font-medium text-foreground-secondary hover:text-foreground transition-colors inline-flex items-center gap-1"
               >
-                View all {categories.length} topics
+                View all {categories.length} categories
                 <Icon name="chevron-right" size={16} />
               </a>
             </div>
@@ -129,45 +129,45 @@ const schemas: Schema[] = [
           
           <!-- Why Trust Us Section -->
           <section>
-            <h2 class="text-2xl font-bold tracking-tight mb-6">Why AI Agents Kit?</h2>
+            <h2 class="text-2xl font-bold tracking-tight mb-6">Why Inspiration Quotes Hub?</h2>
             <div class="grid sm:grid-cols-2 gap-4">
-              <div class="p-5 border border-border rounded-xl bg-background">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
-                  <Icon name="terminal" size={20} />
-                </div>
-                <h3 class="font-bold mb-2">Practitioner-Written</h3>
-                <p class="text-sm text-foreground-secondary">
-                  All content comes from hands-on experience building real AI systems in production.
-                </p>
-              </div>
-              
-              <div class="p-5 border border-border rounded-xl bg-background">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
-                  <Icon name="zap" size={20} />
-                </div>
-                <h3 class="font-bold mb-2">Always Current</h3>
-                <p class="text-sm text-foreground-secondary">
-                  We update content as the AI landscape evolves. No outdated tutorials here.
-                </p>
-              </div>
-              
-              <div class="p-5 border border-border rounded-xl bg-background">
-                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
-                  <Icon name="copy" size={20} />
-                </div>
-                <h3 class="font-bold mb-2">Copy-Paste Ready</h3>
-                <p class="text-sm text-foreground-secondary">
-                  Code snippets that work. Tested, documented, and ready for your projects.
-                </p>
-              </div>
-              
               <div class="p-5 border border-border rounded-xl bg-background">
                 <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
                   <Icon name="book-open" size={20} />
                 </div>
-                <h3 class="font-bold mb-2">Beginner to Advanced</h3>
+                <h3 class="font-bold mb-2">Curated Collections</h3>
                 <p class="text-sm text-foreground-secondary">
-                  Content for every skill level, clearly labeled so you know what to expect.
+                  Themes are thoughtfully grouped so you can find the right words quickly.
+                </p>
+              </div>
+              
+              <div class="p-5 border border-border rounded-xl bg-background">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
+                  <Icon name="check" size={20} />
+                </div>
+                <h3 class="font-bold mb-2">Attribution First</h3>
+                <p class="text-sm text-foreground-secondary">
+                  We aim to provide accurate sources and clear credit whenever possible.
+                </p>
+              </div>
+              
+              <div class="p-5 border border-border rounded-xl bg-background">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
+                  <Icon name="share" size={20} />
+                </div>
+                <h3 class="font-bold mb-2">Shareable Moments</h3>
+                <p class="text-sm text-foreground-secondary">
+                  Short, memorable quotes ready for cards, captions, and messages.
+                </p>
+              </div>
+              
+              <div class="p-5 border border-border rounded-xl bg-background">
+                <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
+                  <Icon name="moon" size={20} />
+                </div>
+                <h3 class="font-bold mb-2">Calm by Design</h3>
+                <p class="text-sm text-foreground-secondary">
+                  A clean, distraction-free reading experience that keeps focus on the words.
                 </p>
               </div>
             </div>
@@ -178,8 +178,8 @@ const schemas: Schema[] = [
             <h2 class="text-2xl font-bold tracking-tight mb-6">Get in Touch</h2>
             <div class="prose max-w-none">
               <p>
-                Have a topic you'd like covered? Found an error? Just want to say hi? 
-                I'd love to hear from you.
+                Have a favorite quote to share, a correction to suggest, or a theme you'd 
+                love to see? We'd love to hear from you.
               </p>
             </div>
             
@@ -217,7 +217,7 @@ const schemas: Schema[] = [
         
         <!-- Right Column - Author Card -->
         <aside class="space-y-6 animate-slide-up stagger-2">
-          <h2 class="text-lg font-bold tracking-tight">Created By</h2>
+          <h2 class="text-lg font-bold tracking-tight">Curated By</h2>
           <AuthorBio showAchievements={true} />
           
           <!-- Quick Stats -->
@@ -228,31 +228,31 @@ const schemas: Schema[] = [
             <div class="space-y-3">
               <div class="flex items-center justify-between">
                 <span class="text-foreground-secondary flex items-center gap-2">
-                  <Icon name="file-code" size={16} />
-                  Articles
+                  <Icon name="message-square" size={16} />
+                  Quotes
                 </span>
                 <span class="font-bold">{totalArticles}+</span>
               </div>
               <div class="flex items-center justify-between">
                 <span class="text-foreground-secondary flex items-center gap-2">
                   <Icon name="layers" size={16} />
-                  Topics
+                  Themes
                 </span>
                 <span class="font-bold">{categories.length}</span>
               </div>
               <div class="flex items-center justify-between">
                 <span class="text-foreground-secondary flex items-center gap-2">
-                  <Icon name="zap" size={16} />
-                  Updates
+                  <Icon name="sun" size={16} />
+                  Refresh
                 </span>
-                <span class="font-bold">Weekly</span>
+                <span class="font-bold">Daily</span>
               </div>
               <div class="flex items-center justify-between">
                 <span class="text-foreground-secondary flex items-center gap-2">
-                  <Icon name="cpu" size={16} />
+                  <Icon name="sparkles" size={16} />
                   Focus
                 </span>
-                <span class="font-bold">AI & Agents</span>
+                <span class="font-bold">Inspiration</span>
               </div>
             </div>
           </div>

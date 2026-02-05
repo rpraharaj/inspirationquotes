@@ -25,21 +25,20 @@ export interface Author {
 export const authors: Record<string, Author> = {
     'default': {
         id: 'default',
-        name: 'Vibe Coder',
-        bio: 'AI Engineer with 5+ years of experience building production AI systems. Specialized in AI agents, LLMs, and developer tools. Previously built AI solutions processing millions of requests daily. Passionate about making AI accessible to every developer.',
+        name: 'Inspiration Quotes Hub',
+        bio: 'A small team of readers and writers curating timeless words from classic and modern voices. We focus on clarity, context, and attribution so every quote lands with meaning.',
         avatar: '/author-avatar.webp',
-        role: 'AI Engineer & Technical Writer',
-        expertise: ['AI Agents', 'LLMs', 'Prompt Engineering', 'Python', 'TypeScript', 'Model Context Protocol'],
-        experience: '5+ years',
+        role: 'Quote Curators',
+        expertise: ['Motivation', 'Life Wisdom', 'Love & Relationships', 'Mindfulness', 'Creativity', 'Humor'],
+        experience: 'Since 2024',
         achievements: [
-            'Built AI systems processing 1M+ daily requests',
-            'Open source contributor to AI tooling',
-            'Technical writer with 100+ published articles',
+            'Curates themed collections for everyday reflection',
+            'Highlights quotes with clear sources and context',
+            'Spotlights voices across cultures and eras',
         ],
         social: {
-            twitter: 'https://x.com/quantumaidev',
-            github: 'https://github.com/aiagentskit',
-            website: 'https://aiagentskit.com',
+            twitter: 'https://x.com/inspirationquoteshub',
+            website: 'https://inspirationquoteshub.com',
         },
     },
     'guest': {

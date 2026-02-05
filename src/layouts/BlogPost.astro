@@ -49,7 +49,7 @@ const readingTime = Math.ceil(words / 200);
 const readingTimeText = readingTime === 1 ? '1 min read' : `${readingTime} min read`;
 
 // Full URL for sharing
-const fullUrl = `${siteConfig.url}/blog/${slug}/`;
+const fullUrl = `${siteConfig.url}/${slug}/`;
 
 // Filter headings for TOC (only H2 and H3)
 const tocHeadings = headings.filter(h => h.depth >= 2 && h.depth <= 3);

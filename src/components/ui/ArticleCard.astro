@@ -20,7 +20,7 @@ const { post, index = 0, showReadMore = false } = Astro.props;
 ---
 
 <article class:list={['group animate-slide-up', `stagger-${index + 1}`]}>
-  <a href={`/blog/${post.id}/`} class="block">
+  <a href={`/${post.id}/`} class="block">
     <div class="aspect-video overflow-hidden rounded-xl bg-background-secondary border border-border mb-4">
       {post.data.heroImage ? (
         <img 

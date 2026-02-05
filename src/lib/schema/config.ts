@@ -95,7 +95,7 @@ export const schemaIds = {
     organization: `${siteConfig.url}/#organization`,
     website: `${siteConfig.url}/#website`,
     author: `${siteConfig.url}/#author`,
-    getArticleId: (slug: string) => `${siteConfig.url}/blog/${slug}/#article`,
+    getArticleId: (slug: string) => `${siteConfig.url}/${slug}/#article`,
     getWebPageId: (path: string) => `${siteConfig.url}${path}/#webpage`,
     getBreadcrumbId: (path: string) => `${siteConfig.url}${path}/#breadcrumb`,
 };

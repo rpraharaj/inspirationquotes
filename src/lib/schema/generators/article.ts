@@ -40,7 +40,7 @@ export function generateArticleSchema(input: ArticleSchemaInput): ArticleSchema 
         wordCount,
     } = input;
 
-    const articleUrl = `${siteConfig.url}/blog/${slug}/`;
+    const articleUrl = `${siteConfig.url}/${slug}/`;
     const imageUrl = heroImage
         ? (heroImage.startsWith('http') ? heroImage : `${siteConfig.url}${heroImage}`)
         : `${siteConfig.url}/blog-placeholder-1.jpg`;
@@ -100,7 +100,7 @@ export function generateArticleSchema(input: ArticleSchemaInput): ArticleSchema 
 export function generateArticleListItemSchema(input: ArticleSchemaInput) {
     const { title, description, slug, pubDate, heroImage } = input;
 
-    const articleUrl = `${siteConfig.url}/blog/${slug}/`;
+    const articleUrl = `${siteConfig.url}/${slug}/`;
     const imageUrl = heroImage
         ? (heroImage.startsWith('http') ? heroImage : `${siteConfig.url}${heroImage}`)
         : `${siteConfig.url}/blog-placeholder-1.jpg`;

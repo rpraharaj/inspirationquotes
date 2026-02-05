@@ -1,41 +1,40 @@
 /**
  * Site Configuration
  * 
- * Central configuration for AI Agents Kit - a tech blog focused on
- * AI updates, code snippets, dev guides and AI agent-related articles.
+ * Central configuration for Inspiration Quotes Hub.
  */
 
 export const siteConfig = {
-    name: 'AI Agents Kit',
-    title: 'AI Agents Kit - AI Updates, Code & Dev Guides',
-    description: 'Your toolkit for building intelligent agents. Tutorials, code snippets, prompts, and the latest AI updates—all in one place.',
-    tagline: 'Your toolkit for building intelligent agents',
-    url: 'https://aiagentskit.com',
-    author: 'Vibe Coder',
+    name: 'Inspiration Quotes Hub',
+    title: 'Inspiration Quotes Hub - Daily Words That Lift You Up',
+    description: 'Discover curated quotes about life, love, wisdom, and joy. Save your favorites and share inspiration.',
+    tagline: 'Daily quotes to brighten your day',
+    url: 'https://inspirationquoteshub.com',
+    author: 'Inspiration Quotes Hub',
 
     // Social Links
     social: {
-        twitter: 'https://x.com/quantumaidev',
-        github: 'https://github.com/aiagentskit',
-        email: 'aiagentskit@gmail.com',
+        twitter: 'https://x.com/inspirationquoteshub',
+        github: 'https://github.com/inspirationquoteshub',
+        email: 'hello@inspirationquoteshub.com',
     },
 
     // Navigation
     nav: [
         { name: 'Home', href: '/' },
-        { name: 'Blog', href: '/blog' },
+        { name: 'Quotes', href: '/blog' },
         { name: 'About', href: '/about' },
         { name: 'Contact', href: '/contact' },
     ],
 
     // Header Categories (Featured in Topics dropdown)
     headerCategories: [
-        { name: 'AI Agents', slug: 'ai-agents', icon: 'bot' },
-        { name: 'AI News', slug: 'ai-news', icon: 'newspaper' },
-        { name: 'AI Tools', slug: 'ai-tools', icon: 'wrench' },
-        { name: 'Prompts', slug: 'prompt-engineering', icon: 'terminal' },
-        { name: 'MCP', slug: 'mcp', icon: 'plug' },
-        { name: 'Code', slug: 'code-snippets', icon: 'code' },
+        { name: 'Motivation', slug: 'motivation-success', icon: 'zap' },
+        { name: 'Love', slug: 'love-relationships', icon: 'share' },
+        { name: 'Life', slug: 'life-wisdom', icon: 'book-open' },
+        { name: 'Happiness', slug: 'happiness-joy', icon: 'sun' },
+        { name: 'Mindfulness', slug: 'mindfulness-peace', icon: 'moon' },
+        { name: 'Humor', slug: 'humor-wit', icon: 'copy' },
     ],
 
     // Footer Links
@@ -62,9 +61,9 @@ export const siteConfig = {
 
     // Author Bio (for tech focus)
     authorBio: {
-        name: 'Vibe Coder',
-        role: 'AI Engineer & Developer',
-        bio: 'Building intelligent systems and sharing learnings along the way. Passionate about AI agents, LLMs, and developer tools that make AI accessible to everyone.',
+        name: 'Inspiration Quotes Hub',
+        role: 'Curators of Timeless Quotes',
+        bio: 'We collect and curate meaningful quotes from classic and modern voices to help you reflect, grow, and share encouragement.',
     },
 };
 
