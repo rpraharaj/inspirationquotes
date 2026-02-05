@@ -5,7 +5,7 @@ All posts are marked as `to-do` in the `Post Created` column for tracking.
 | Category | SEO Post Name | Slug | Post Created |
 | --- | --- | --- | --- |
 | motivation-success | 150 Motivational Success Quotes to Fuel Your Goals | motivational-success-quotes | ✅ complete |
-| motivation-success | 150 Success Quotes for Entrepreneurs and Founders | success-quotes-for-entrepreneurs | to-do |
+| motivation-success | 150 Success Quotes for Entrepreneurs and Founders | success-quotes-for-entrepreneurs | ✅ complete |
 | motivation-success | 150 Short Success Quotes for Daily Motivation | short-success-quotes | to-do |
 | motivation-success | 150 Discipline Quotes to Stay Consistent and Win | discipline-quotes-to-stay-consistent | to-do |
 | motivation-success | 150 Hard Work Quotes That Actually Push You Forward | hard-work-quotes-that-push-you-forward | to-do |

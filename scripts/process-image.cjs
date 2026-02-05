@@ -24,7 +24,7 @@ const path = require('path');
 const TARGET_WIDTH = 1200;
 const TARGET_HEIGHT = 630;
 const DEFAULT_QUALITY = 85;
-const WATERMARK_TEXT = 'www.aiagentskit.com';
+const WATERMARK_TEXT = 'www.inspirationquoteshub.com';
 
 // ============================================
 // PROCESSING FUNCTIONS
