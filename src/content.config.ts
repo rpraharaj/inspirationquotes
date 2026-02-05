@@ -21,15 +21,17 @@ const blog = defineCollection({
 		// Category - all available quote categories
 		category: z.enum([
 			'motivation-success',
-			'love-relationships',
+			'inspirational',
 			'life-wisdom',
-			'happiness-joy',
+			'love-relationships',
 			'friendship',
+			'family',
+			'happiness-joy',
+			'gratitude',
 			'courage-confidence',
 			'mindfulness-peace',
-			'creativity-art',
-			'leadership-responsibility',
-			'humor-wit'
+			'humor-wit',
+			'short-quotes'
 		]).default('life-wisdom'),
 		tags: z.array(z.string()).default([]),
 		difficulty: z.enum(['beginner', 'intermediate', 'advanced']).optional(),

@@ -36,6 +36,7 @@ export type IconName =
     | 'zap'
     | 'layers'
     | 'cpu'
+    | 'quote'
     | 'sparkles'
     | 'brain'
     | 'share'

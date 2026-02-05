@@ -24,10 +24,10 @@ export const categories: Category[] = [
         featured: true,
     },
     {
-        slug: 'love-relationships',
-        name: 'Love & Relationships',
-        description: 'Connection, romance, and the bonds that shape our lives.',
-        icon: 'share',
+        slug: 'inspirational',
+        name: 'Inspirational',
+        description: 'Uplifting words to spark hope, purpose, and momentum.',
+        icon: 'sparkles',
         featured: true,
     },
     {
@@ -38,16 +38,35 @@ export const categories: Category[] = [
         featured: true,
     },
     {
-        slug: 'happiness-joy',
-        name: 'Happiness & Joy',
-        description: 'Light, laughter, and the simple pleasures of life.',
-        icon: 'sun',
+        slug: 'love-relationships',
+        name: 'Love & Relationships',
+        description: 'Connection, romance, and the bonds that shape our lives.',
+        icon: 'share',
+        featured: true,
     },
     {
         slug: 'friendship',
         name: 'Friendship',
         description: 'Loyalty, support, and the people who feel like home.',
         icon: 'message-square',
+    },
+    {
+        slug: 'family',
+        name: 'Family',
+        description: 'Belonging, support, and the people who shape us most.',
+        icon: 'layers',
+    },
+    {
+        slug: 'happiness-joy',
+        name: 'Happiness & Joy',
+        description: 'Light, laughter, and the simple pleasures of life.',
+        icon: 'sun',
+    },
+    {
+        slug: 'gratitude',
+        name: 'Gratitude',
+        description: 'Appreciation, thankfulness, and noticing what matters.',
+        icon: 'check',
     },
     {
         slug: 'courage-confidence',
@@ -62,22 +81,16 @@ export const categories: Category[] = [
         icon: 'moon',
     },
     {
-        slug: 'creativity-art',
-        name: 'Creativity & Art',
-        description: 'Imagination, inspiration, and the creative spirit.',
-        icon: 'sparkles',
-    },
-    {
-        slug: 'leadership-responsibility',
-        name: 'Leadership & Responsibility',
-        description: 'Integrity, purpose, and guiding others with care.',
-        icon: 'layers',
-    },
-    {
         slug: 'humor-wit',
         name: 'Humor & Wit',
         description: 'Clever, funny, and lighthearted perspectives.',
         icon: 'copy',
+    },
+    {
+        slug: 'short-quotes',
+        name: 'Short Quotes',
+        description: 'Bite-sized lines made for quick boosts and captions.',
+        icon: 'message-square',
     },
 ];
 
@@ -108,12 +121,14 @@ export function getFeaturedCategories(): Category[] {
  */
 export type CategorySlug =
     | 'motivation-success'
-    | 'love-relationships'
+    | 'inspirational'
     | 'life-wisdom'
-    | 'happiness-joy'
+    | 'love-relationships'
     | 'friendship'
+    | 'family'
+    | 'happiness-joy'
+    | 'gratitude'
     | 'courage-confidence'
     | 'mindfulness-peace'
-    | 'creativity-art'
-    | 'leadership-responsibility'
-    | 'humor-wit';
+    | 'humor-wit'
+    | 'short-quotes';
