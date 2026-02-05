@@ -1,2 +1,0 @@
-# Validation Report
-**Status:** ✅ PASSED
