@@ -246,14 +246,15 @@
       try {
         // Load search index
         const response = await fetch('/search-index.json');
-        const data = await response.json();
+        const data = (await response.json()) as any;
         searchIndex = data.posts || [];
         
         // Load Fuse.js from CDN
-        const Fuse = await import('https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.mjs');
+        // @ts-ignore
+        const Fuse = (await import('https://cdn.jsdelivr.net/npm/fuse.js@7.0.0/dist/fuse.mjs') as any).default;
         
         // Initialize Fuse with search options
-        fuse = new Fuse.default(searchIndex, {
+        fuse = new Fuse(searchIndex, {
           keys: [
             { name: 'title', weight: 0.4 },
             { name: 'description', weight: 0.3 },

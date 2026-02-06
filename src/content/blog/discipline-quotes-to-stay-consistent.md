@@ -95,7 +95,7 @@ This anonymous quote distills personal development to its essence: action is the
 
 Tracy reduces achievement to its behavioral core. Change your habits, change your life.
 
-For more inspiration on your journey to success, explore our collection of <a href="/blog/motivational-success-quotes/">motivational success quotes</a> to fuel your ambitions.
+For more inspiration on your journey to success, explore our collection of <a href="/motivational-success-quotes/">motivational success quotes</a> to fuel your ambitions.
 
 ## Self-Discipline Quotes for Overcoming Procrastination
 
@@ -255,7 +255,7 @@ This ancient teaching emphasizes that mental discipline shapes our entire realit
 
 Holtz knew that champions don't just tolerate discipline—they embrace it as the price of greatness.
 
-If you need quick bursts of inspiration to keep you going, check out our <a href="/blog/short-success-quotes/">short success quotes for daily motivation</a>—perfect for those moments when you need a quick reminder of why you're doing the hard work.
+If you need quick bursts of inspiration to keep you going, check out our <a href="/short-success-quotes/">short success quotes for daily motivation</a>—perfect for those moments when you need a quick reminder of why you're doing the hard work.
 
 ## Consistency Quotes for Long-Term Success
 
@@ -494,7 +494,7 @@ The Buddha repeats this theme: internal victory surpasses all external achieveme
 
 This modern proverb connects financial and personal discipline through action over words.
 
-Entrepreneurs building something meaningful will also find wisdom in our <a href="/blog/success-quotes-for-entrepreneurs/">success quotes for entrepreneurs and founders</a>.
+Entrepreneurs building something meaningful will also find wisdom in our <a href="/success-quotes-for-entrepreneurs/">success quotes for entrepreneurs and founders</a>.
 
 ## Inspirational Discipline Quotes for Daily Motivation
 

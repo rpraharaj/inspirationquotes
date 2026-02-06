@@ -64,7 +64,7 @@ const COLORS = {
 const FONT_FAMILY = 'Atkinson, Arial, Helvetica, sans-serif';
 
 // Watermark
-const WATERMARK = 'www.aiagentskit.com';
+const WATERMARK = 'www.inspirationquoteshub.com';
 
 // ============================================
 // DRAWING FUNCTIONS
@@ -342,7 +342,7 @@ async function main() {
     if (args.length < 2) {
         console.log(`
 ╔══════════════════════════════════════════════════════════════╗
-║        AI Agents Kit - Featured Image Generator              ║
+║        Inspiration Quotes - Featured Image Generator         ║
 ╠══════════════════════════════════════════════════════════════╣
 ║                                                              ║
 ║  Usage:                                                      ║
@@ -361,13 +361,13 @@ async function main() {
 ║      --category ai-agents --update-frontmatter               ║
 ║                                                              ║
 ║  Output:                                                     ║
-║    public/images/featured/[slug].webp                        ║
+║    public/images/blog/[slug].webp                            ║
 ║                                                              ║
 ║  Features:                                                   ║
 ║    • Black & white minimalist theme                          ║
 ║    • 1200x630 pixels (OG standard)                           ║
 ║    • WebP format (<100KB)                                    ║
-║    • www.aiagentskit.com watermark                           ║
+║    • www.inspirationquoteshub.com watermark                  ║
 ║    • LARGE, readable text                                    ║
 ║    • Auto frontmatter update (with flag)                     ║
 ║                                                              ║
@@ -386,7 +386,7 @@ async function main() {
         category = args[categoryIndex + 1];
     }
 
-    const outputDir = path.join(__dirname, '../public/images/featured');
+    const outputDir = path.join(__dirname, '../public/images/blog');
     const outputPath = path.join(outputDir, `${outputName}.webp`);
 
     console.log(`\n🎨 Generating featured image...`);
@@ -412,7 +412,7 @@ async function main() {
 
             if (fs.existsSync(postPath)) {
                 const content = fs.readFileSync(postPath, 'utf8');
-                const newHeroImage = `/images/featured/${outputName}.webp`;
+                const newHeroImage = `/images/blog/${outputName}.webp`;
 
                 // Replace heroImage in frontmatter
                 const updated = content.replace(

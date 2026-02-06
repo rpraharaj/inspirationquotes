@@ -341,6 +341,7 @@ const schemas: Schema[] = [articleSchema, breadcrumbSchema];
       
       if (progressBar && article) {
         function updateProgress() {
+          if (!progressBar || !article) return;
           const articleRect = article.getBoundingClientRect();
           const articleHeight = article.offsetHeight;
           const windowHeight = window.innerHeight;
@@ -361,18 +362,41 @@ const schemas: Schema[] = [articleSchema, breadcrumbSchema];
       const copyIcon = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="14" x="8" y="8" rx="2" ry="2"/><path d="M4 16c-1.1 0-2-.9-2-2V4c0-1.1.9-2 2-2h10c1.1 0 2 .9 2 2"/></svg>`;
       const checkIcon = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>`;
       const xIcon = `<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M18 6 6 18"/><path d="m6 6 12 12"/></svg>`;
+
+      function setCopyState(button: HTMLButtonElement, state: 'idle' | 'copied' | 'failed') {
+        if (state === 'copied') {
+          button.innerHTML = `${checkIcon} <span>Copied!</span>`;
+          button.classList.add('copied');
+          return;
+        }
+
+        if (state === 'failed') {
+          button.innerHTML = `${xIcon} <span>Failed</span>`;
+          button.classList.remove('copied');
+          return;
+        }
+
+        button.innerHTML = `${copyIcon} <span>Copy</span>`;
+        button.classList.remove('copied');
+      }
+
+      async function copyText(text: string) {
+        await navigator.clipboard.writeText(text);
+      }
       
       // Copy code block functionality
       function initCopyCodeButtons() {
         const codeBlocks = document.querySelectorAll('.prose pre:has(code)');
         
         codeBlocks.forEach(pre => {
+          if (pre.querySelector('.copy-code-button')) return;
+
           // Create copy button
           const button = document.createElement('button');
           button.className = 'copy-code-button';
           button.setAttribute('aria-label', 'Copy code to clipboard');
           button.type = 'button';
-          button.innerHTML = `${copyIcon} <span>Copy</span>`;
+          setCopyState(button, 'idle');
           
           // Append button to pre
           pre.appendChild(button);
@@ -383,24 +407,66 @@ const schemas: Schema[] = [articleSchema, breadcrumbSchema];
             if (!code) return;
             
             try {
-              await navigator.clipboard.writeText(code.textContent || '');
+              await copyText(code.textContent || '');
               
               // Success feedback
-              button.innerHTML = `${checkIcon} <span>Copied!</span>`;
-              button.classList.add('copied');
+              setCopyState(button, 'copied');
               button.setAttribute('aria-label', 'Code copied to clipboard');
               
               // Reset after 2 seconds
               setTimeout(() => {
-                button.innerHTML = `${copyIcon} <span>Copy</span>`;
-                button.classList.remove('copied');
+                setCopyState(button, 'idle');
                 button.setAttribute('aria-label', 'Copy code to clipboard');
               }, 2000);
             } catch (err) {
               console.error('Failed to copy:', err);
-              button.innerHTML = `${xIcon} <span>Failed</span>`;
+              setCopyState(button, 'failed');
               setTimeout(() => {
-                button.innerHTML = `${copyIcon} <span>Copy</span>`;
+                setCopyState(button, 'idle');
+              }, 2000);
+            }
+          });
+        });
+      }
+
+      // Copy quote block functionality
+      function initCopyQuoteButtons() {
+        const quotes = document.querySelectorAll('.prose blockquote');
+
+        quotes.forEach(quote => {
+          if (quote.querySelector('.copy-quote-button')) return;
+
+          const button = document.createElement('button');
+          button.className = 'copy-quote-button';
+          button.setAttribute('aria-label', 'Copy quote to clipboard');
+          button.type = 'button';
+          setCopyState(button, 'idle');
+          quote.appendChild(button);
+
+          button.addEventListener('click', async () => {
+            const paragraphs = Array.from(quote.querySelectorAll('p'))
+              .map(p => p.textContent?.trim() || '')
+              .filter(Boolean);
+            const quoteText = paragraphs.length > 0
+              ? paragraphs.join('\n')
+              : (quote.textContent || '').trim();
+
+            if (!quoteText) return;
+
+            try {
+              await copyText(quoteText);
+              setCopyState(button, 'copied');
+              button.setAttribute('aria-label', 'Quote copied to clipboard');
+
+              setTimeout(() => {
+                setCopyState(button, 'idle');
+                button.setAttribute('aria-label', 'Copy quote to clipboard');
+              }, 2000);
+            } catch (err) {
+              console.error('Failed to copy quote:', err);
+              setCopyState(button, 'failed');
+              setTimeout(() => {
+                setCopyState(button, 'idle');
               }, 2000);
             }
           });
@@ -408,10 +474,15 @@ const schemas: Schema[] = [articleSchema, breadcrumbSchema];
       }
       
       // Initialize on page load
-      if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', initCopyCodeButtons);
-      } else {
+      function initCopyButtons() {
         initCopyCodeButtons();
+        initCopyQuoteButtons();
+      }
+
+      if (document.readyState === 'loading') {
+        document.addEventListener('DOMContentLoaded', initCopyButtons);
+      } else {
+        initCopyButtons();
       }
     </script>
   </body>

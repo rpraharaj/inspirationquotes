@@ -93,7 +93,7 @@ Lauder built a cosmetics empire through relentless effort. Dreams without action
 
 This truth explains why easy wins feel hollow while hard-fought victories feel satisfying.
 
-If you're looking for more motivation to fuel your daily grind, explore our collection of <a href="/blog/motivational-success-quotes/">motivational success quotes</a> that will keep your fire burning.
+If you're looking for more motivation to fuel your daily grind, explore our collection of <a href="/motivational-success-quotes/">motivational success quotes</a> that will keep your fire burning.
 
 ## Quotes About Working Hard When No One's Watching
 
@@ -174,7 +174,7 @@ Bennett's words remind us that character matters more than possessions.
 
 Emerson's wisdom emphasizes personal agency. Your destiny is chosen through daily decisions.
 
-For quick daily motivation that fits your busy schedule, check out our <a href="/blog/short-success-quotes/">short success quotes for daily motivation</a>.
+For quick daily motivation that fits your busy schedule, check out our <a href="/short-success-quotes/">short success quotes for daily motivation</a>.
 
 ## Hard Work Quotes About Persistence Through Failure
 
@@ -413,7 +413,7 @@ Jobs emphasized that passion and profession should align for fulfillment.
 
 This timeless wisdom combats procrastination. It's never too late to start.
 
-If you're building something meaningful, you'll find additional wisdom in our <a href="/blog/success-quotes-for-entrepreneurs/">success quotes for entrepreneurs and founders</a>.
+If you're building something meaningful, you'll find additional wisdom in our <a href="/success-quotes-for-entrepreneurs/">success quotes for entrepreneurs and founders</a>.
 
 ## Quotes About Outworking the Competition
 
@@ -573,7 +573,7 @@ Dr. Brothers understood that identity precedes achievement.
 
 This bears repeating: the order of operations matters. Work comes first, always.
 
-To master the consistency that makes hard work sustainable, dive into our <a href="/blog/discipline-quotes-to-stay-consistent/">discipline quotes to stay consistent and win</a>.
+To master the consistency that makes hard work sustainable, dive into our <a href="/discipline-quotes-to-stay-consistent/">discipline quotes to stay consistent and win</a>.
 
 ## Conclusion: The Unsexy Truth About Hard Work
 

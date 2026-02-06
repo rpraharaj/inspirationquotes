@@ -16,26 +16,18 @@ const EXCERPT_LENGTH = 200;
 
 // Category display names mapping
 const categoryNames = {
-    'ai-agents': 'AI Agents',
-    'ai-tools': 'AI Tools',
-    'ai-news': 'AI News',
-    'tutorials': 'Tutorials',
-    'chatgpt': 'ChatGPT',
-    'prompt-engineering': 'Prompt Engineering',
-    'ai-comparisons': 'AI Comparisons',
-    'ai-careers': 'AI Careers',
-    'generative-ai': 'Generative AI',
-    'open-source-ai': 'Open Source AI',
-    'ai-ethics': 'AI Ethics',
-    'ai-business': 'AI Business',
-    'llms': 'LLMs',
-    'ai-hardware': 'AI Hardware',
-    'industry-ai': 'Industry AI',
-    'prompts': 'Prompts',
-    'mcp': 'MCP',
-    'tools': 'Tools',
-    'code-snippets': 'Code Snippets',
-    'vibe-coding': 'Vibe Coding'
+    'motivation-success': 'Motivation',
+    'inspirational': 'Inspirational',
+    'life-wisdom': 'Life Wisdom',
+    'love-relationships': 'Love & Relationships',
+    'friendship': 'Friendship',
+    'family': 'Family',
+    'happiness-joy': 'Happiness & Joy',
+    'gratitude': 'Gratitude',
+    'courage-confidence': 'Courage & Confidence',
+    'mindfulness-peace': 'Mindfulness & Peace',
+    'humor-wit': 'Humor & Wit',
+    'short-quotes': 'Short Quotes'
 };
 
 /**
@@ -105,7 +97,7 @@ function processPost(filename) {
             categoryName: categoryName,
             tags: frontmatter.tags || [],
             excerpt: excerpt,
-            url: `/blog/${slug}/`
+            url: `/${slug}/`
         };
     } catch (error) {
         console.error(`Error processing ${filename}:`, error.message);

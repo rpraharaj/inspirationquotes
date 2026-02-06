@@ -93,7 +93,7 @@ Edison reframed failure as discovery. Every wrong turn brings you closer to the 
 
 Bennett's words shift success from personal achievement to positive impact. True success leaves the world better than you found it.
 
-If you're looking for more inspiration to fuel your journey, explore our collection of <a href="/blog/motivational-success-quotes/">motivational success quotes</a> for deeper wisdom on achieving your goals.
+If you're looking for more inspiration to fuel your journey, explore our collection of <a href="/motivational-success-quotes/">motivational success quotes</a> for deeper wisdom on achieving your goals.
 
 ## Quick Motivational Quotes for Busy Professionals
 
@@ -411,7 +411,7 @@ Edison's persistence with the light bulb—over 1,000 attempts—proves that "on
 
 Keller, who overcame deafness and blindness, spoke with authority about adversity's transformative power.
 
-If you're an entrepreneur building something meaningful, don't miss our <a href="/blog/success-quotes-for-entrepreneurs/">success quotes for entrepreneurs and founders</a>—they're specifically curated for those brave enough to build their own path.
+If you're an entrepreneur building something meaningful, don't miss our <a href="/success-quotes-for-entrepreneurs/">success quotes for entrepreneurs and founders</a>—they're specifically curated for those brave enough to build their own path.
 
 ## Short Inspirational Quotes for Entrepreneurs and Creators
 

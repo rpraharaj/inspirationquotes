@@ -15,7 +15,7 @@ const pageDescription = "Get in touch with Inspiration Quotes Hub. Share a quote
 // Generate JSON-LD structured data for Contact page
 const schemas: Schema[] = [
   generateWebPageSchema({
-    name: 'Contact Us',
+    title: 'Contact Us',
     description: pageDescription,
     url: `${siteConfig.url}/contact`,
   }),
@@ -28,7 +28,7 @@ const schemas: Schema[] = [
 // Contact methods
 const contactMethods = [
   {
-    icon: 'mail',
+    icon: 'mail' as const,
     title: 'Email',
     description: 'Questions, feedback, corrections, or partnerships.',
     value: siteConfig.social.email,
@@ -36,7 +36,7 @@ const contactMethods = [
     cta: 'Send Email',
   },
   {
-    icon: 'book-open',
+    icon: 'book-open' as const,
     title: 'Submit a Quote',
     description: 'Share a favorite line with attribution or a source link.',
     value: 'Quote submission',
@@ -44,7 +44,7 @@ const contactMethods = [
     cta: 'Send a Quote',
   },
   {
-    icon: 'twitter',
+    icon: 'twitter' as const,
     title: 'X / Twitter',
     description: 'Follow along for fresh quotes and updates.',
     value: '@inspirationquoteshub',

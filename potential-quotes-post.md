@@ -12,33 +12,33 @@ All posts are marked as `to-do` in the `Post Created` column for tracking.
 | motivation-success | 150 Focus Quotes to Eliminate Distractions | focus-quotes-to-eliminate-distractions | ✅ complete |
 | motivation-success | 150 Perseverance Quotes for Tough Times | perseverance-quotes-for-tough-times | ✅ complete |
 | motivation-success | 150 Growth Mindset Quotes for Long-Term Success | growth-mindset-quotes-for-success | ✅ complete |
-| motivation-success | 150 Winning Quotes for Athletes and Competitors | winning-quotes-for-athletes | to-do |
-| motivation-success | 150 Goal-Setting Quotes to Plan and Achieve | goal-setting-quotes-to-achieve | to-do |
-| inspirational | 150 Inspirational Quotes to Lift Your Spirit | inspirational-quotes-to-lift-your-spirit | to-do |
-| inspirational | 150 Inspirational Quotes About Hope and Faith | inspirational-quotes-about-hope-and-faith | to-do |
-| inspirational | 150 Inspirational Quotes for Difficult Days | inspirational-quotes-for-difficult-days | to-do |
-| inspirational | 150 Inspirational Quotes for New Beginnings | inspirational-quotes-for-new-beginnings | to-do |
-| inspirational | 150 Positive Inspirational Quotes for Every Morning | positive-inspirational-quotes-for-mornings | to-do |
-| inspirational | 150 Inspirational Quotes About Change and Growth | inspirational-quotes-about-change-and-growth | to-do |
-| inspirational | 150 Inspirational Quotes for Students and Learners | inspirational-quotes-for-students | to-do |
-| inspirational | 150 Inspirational Quotes About Kindness | inspirational-quotes-about-kindness | to-do |
-| inspirational | 150 Inspirational Quotes for Women to Feel Strong | inspirational-quotes-for-women | to-do |
-| inspirational | 150 Inspirational Quotes to Keep You Going | inspirational-quotes-to-keep-you-going | to-do |
-| life-wisdom | 150 Life Quotes That Teach Real Wisdom | life-quotes-that-teach-wisdom | to-do |
-| life-wisdom | 150 Wise Quotes About Life Lessons | wise-quotes-about-life-lessons | to-do |
-| life-wisdom | 150 Quotes About Life and Happiness | quotes-about-life-and-happiness | to-do |
-| life-wisdom | 150 Quotes About Life Changing Moments | quotes-about-life-changing-moments | to-do |
-| life-wisdom | 150 Quotes About Time and Priorities | quotes-about-time-and-priorities | to-do |
-| life-wisdom | 150 Quotes About Simplicity and Living Well | quotes-about-simplicity-and-living-well | to-do |
-| life-wisdom | 150 Quotes About Choices and Consequences | quotes-about-choices-and-consequences | to-do |
-| life-wisdom | 150 Quotes About Learning from Mistakes | quotes-about-learning-from-mistakes | to-do |
-| life-wisdom | 150 Quotes About Meaning and Purpose | quotes-about-meaning-and-purpose | to-do |
-| life-wisdom | 150 Quotes About Letting Go and Moving On | quotes-about-letting-go-and-moving-on | to-do |
-| love-relationships | 150 Love Quotes for Couples and Partners | love-quotes-for-couples | to-do |
-| love-relationships | 150 Romantic Quotes to Share with Your Partner | romantic-quotes-to-share | to-do |
-| love-relationships | 150 Relationship Quotes About Trust and Respect | relationship-quotes-about-trust | to-do |
-| love-relationships | 150 Quotes About Long-Distance Love | long-distance-love-quotes | to-do |
-| love-relationships | 150 Quotes About Healthy Relationships | quotes-about-healthy-relationships | to-do |
+| motivation-success | 150 Winning Quotes for Athletes and Competitors | winning-quotes-for-athletes | ✅ complete |
+| motivation-success | 150 Goal-Setting Quotes to Plan and Achieve | goal-setting-quotes-to-achieve | ✅ complete |
+| inspirational | 150 Inspirational Quotes to Lift Your Spirit | inspirational-quotes-to-lift-your-spirit | ✅ complete |
+| inspirational | 150 Inspirational Quotes About Hope and Faith | inspirational-quotes-about-hope-and-faith | ✅ complete |
+| inspirational | 150 Inspirational Quotes for Difficult Days | inspirational-quotes-for-difficult-days | ✅ complete |
+| inspirational | 150 Inspirational Quotes for New Beginnings | inspirational-quotes-for-new-beginnings | ✅ complete |
+| inspirational | 150 Positive Inspirational Quotes for Every Morning | positive-inspirational-quotes-for-mornings | ✅ complete |
+| inspirational | 150 Inspirational Quotes About Change and Growth | inspirational-quotes-about-change-and-growth | ✅ complete |
+| inspirational | 150 Inspirational Quotes for Students and Learners | inspirational-quotes-for-students | ✅ complete |
+| inspirational | 150 Inspirational Quotes About Kindness | inspirational-quotes-about-kindness | ✅ complete |
+| inspirational | 150 Inspirational Quotes for Women to Feel Strong | inspirational-quotes-for-women | ✅ complete |
+| inspirational | 150 Inspirational Quotes to Keep You Going | inspirational-quotes-to-keep-you-going | ✅ complete |
+| life-wisdom | 150 Life Quotes That Teach Real Wisdom | life-quotes-that-teach-wisdom | ✅ complete |
+| life-wisdom | 150 Wise Quotes About Life Lessons | wise-quotes-about-life-lessons | ✅ complete |
+| life-wisdom | 150 Quotes About Life and Happiness | quotes-about-life-and-happiness | ✅ complete |
+| life-wisdom | 150 Quotes About Life Changing Moments | quotes-about-life-changing-moments | ✅ complete |
+| life-wisdom | 150 Quotes About Time and Priorities | quotes-about-time-and-priorities | ✅ complete |
+| life-wisdom | 150 Quotes About Simplicity and Living Well | quotes-about-simplicity-and-living-well | ✅ complete |
+| life-wisdom | 150 Quotes About Choices and Consequences | quotes-about-choices-and-consequences | ✅ complete |
+| life-wisdom | 150 Quotes About Learning from Mistakes | quotes-about-learning-from-mistakes | ✅ complete |
+| life-wisdom | 150 Quotes About Meaning and Purpose | quotes-about-meaning-and-purpose | ✅ complete |
+| life-wisdom | 150 Quotes About Letting Go and Moving On | letting-go-and-moving-on | ✅ complete |
+| love-relationships | 150 Love Quotes for Couples and Partners | love-quotes-for-couples | ✅ complete |
+| love-relationships | 150 Romantic Quotes to Share with Your Partner | romantic-quotes-to-share | ✅ complete |
+| love-relationships | 150 Relationship Quotes About Trust and Respect | relationship-quotes-about-trust | ✅ complete |
+| love-relationships | 150 Quotes About Long-Distance Love | long-distance-love-quotes | ✅ complete |
+| love-relationships | 150 Quotes About Healthy Relationships | quotes-about-healthy-relationships | ✅ complete |
 | love-relationships | 150 Quotes About Love and Commitment | quotes-about-love-and-commitment | to-do |
 | love-relationships | 150 Quotes About Love and Forgiveness | quotes-about-love-and-forgiveness | to-do |
 | love-relationships | 150 Quotes About True Love and Soulmates | quotes-about-true-love-and-soulmates | to-do |

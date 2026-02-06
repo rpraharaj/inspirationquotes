@@ -291,6 +291,7 @@ const filteredHeadings = headings.filter(h => h.depth === 2);
     
     // Toggle dropdown
     function toggleDropdown() {
+      if (!container || !toggle) return;
       isOpen = !isOpen;
       container.classList.toggle('open', isOpen);
       toggle.setAttribute('aria-expanded', isOpen.toString());
@@ -298,7 +299,7 @@ const filteredHeadings = headings.filter(h => h.depth === 2);
     
     // Close dropdown
     function closeDropdown() {
-      if (!isOpen) return;
+      if (!isOpen || !container || !toggle) return;
       isOpen = false;
       container.classList.remove('open');
       toggle.setAttribute('aria-expanded', 'false');
