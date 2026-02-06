@@ -139,7 +139,7 @@ This quote from <a href="https://www.britannica.com/biography/Thomas-Edison" tar
 > "Every problem is a gift—without problems we would not grow."
 > — Tony Robbins
 
-I've found these [motivational success quotes](/blog/motivational-success-quotes/) help me reframe challenges from obstacles into opportunities for growth.
+I've found these [motivational success quotes](/motivational-success-quotes/) help me reframe challenges from obstacles into opportunities for growth.
 
 > "Challenges are what make life interesting and overcoming them is what makes life meaningful."
 > — Joshua J. Marine
@@ -249,7 +249,7 @@ This quote hits hard because execution is where dreams die or come alive—ideas
 > "If people like you, they'll listen to you, but if they trust you, they'll do business with you."
 > — Zig Ziglar
 
-Building trust with customers is essential—these entrepreneurial insights align well with [inspirational quotes about perseverance](/blog/motivational-success-quotes/) when times get tough.
+Building trust with customers is essential—these entrepreneurial insights align well with [inspirational quotes about perseverance](/motivational-success-quotes/) when times get tough.
 
 ## Empowering Quotes About Entrepreneurial Resilience and Persistence
 
@@ -330,7 +330,7 @@ This quote from <a href="https://www.gatesnotes.com/" target="_blank" rel="noope
 
 ## Bold Quotes About Taking Risks and Betting on Yourself
 
-The first time I turned down a stable job to bet on my startup, people thought I was insane. Maybe I was. But every entrepreneur knows that calculated risk isn't recklessness—it's confidence in your ability to figure things out. These quotes remind me that playing it safe guarantees mediocrity. If you want extraordinary results, you have to make extraordinary choices. The world rewards those brave enough to bet on themselves when no one else will. Finding [motivational success quotes](/blog/motivational-success-quotes/) can help when you need that extra push to make a bold move.
+The first time I turned down a stable job to bet on my startup, people thought I was insane. Maybe I was. But every entrepreneur knows that calculated risk isn't recklessness—it's confidence in your ability to figure things out. These quotes remind me that playing it safe guarantees mediocrity. If you want extraordinary results, you have to make extraordinary choices. The world rewards those brave enough to bet on themselves when no one else will. Finding [motivational success quotes](/motivational-success-quotes/) can help when you need that extra push to make a bold move.
 
 > "Only those who dare to fail greatly can ever achieve greatly."
 > — Robert F. Kennedy

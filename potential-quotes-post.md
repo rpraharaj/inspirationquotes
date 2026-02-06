@@ -6,12 +6,12 @@ All posts are marked as `to-do` in the `Post Created` column for tracking.
 | --- | --- | --- | --- |
 | motivation-success | 150 Motivational Success Quotes to Fuel Your Goals | motivational-success-quotes | ✅ complete |
 | motivation-success | 150 Success Quotes for Entrepreneurs and Founders | success-quotes-for-entrepreneurs | ✅ complete |
-| motivation-success | 150 Short Success Quotes for Daily Motivation | short-success-quotes | to-do |
-| motivation-success | 150 Discipline Quotes to Stay Consistent and Win | discipline-quotes-to-stay-consistent | to-do |
-| motivation-success | 150 Hard Work Quotes That Actually Push You Forward | hard-work-quotes-that-push-you-forward | to-do |
-| motivation-success | 150 Focus Quotes to Eliminate Distractions | focus-quotes-to-eliminate-distractions | to-do |
-| motivation-success | 150 Perseverance Quotes for Tough Times | perseverance-quotes-for-tough-times | to-do |
-| motivation-success | 150 Growth Mindset Quotes for Long-Term Success | growth-mindset-quotes-for-success | to-do |
+| motivation-success | 150 Short Success Quotes for Daily Motivation | short-success-quotes | ✅ complete |
+| motivation-success | 150 Discipline Quotes to Stay Consistent and Win | discipline-quotes-to-stay-consistent | ✅ complete |
+| motivation-success | 150 Hard Work Quotes That Actually Push You Forward | hard-work-quotes-that-push-you-forward | ✅ complete |
+| motivation-success | 150 Focus Quotes to Eliminate Distractions | focus-quotes-to-eliminate-distractions | ✅ complete |
+| motivation-success | 150 Perseverance Quotes for Tough Times | perseverance-quotes-for-tough-times | ✅ complete |
+| motivation-success | 150 Growth Mindset Quotes for Long-Term Success | growth-mindset-quotes-for-success | ✅ complete |
 | motivation-success | 150 Winning Quotes for Athletes and Competitors | winning-quotes-for-athletes | to-do |
 | motivation-success | 150 Goal-Setting Quotes to Plan and Achieve | goal-setting-quotes-to-achieve | to-do |
 | inspirational | 150 Inspirational Quotes to Lift Your Spirit | inspirational-quotes-to-lift-your-spirit | to-do |

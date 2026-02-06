@@ -1,5 +1,5 @@
 /**
- * Frontmatter Updater for AI Agents Kit
+ * Frontmatter Updater for Inspiration Quotes Hub
  * 
  * Updates blog post frontmatter to point to the correct featured image.
  * 
@@ -17,7 +17,7 @@ const path = require('path');
 // ============================================
 
 const BLOG_DIR = path.join(__dirname, '../src/content/blog');
-const IMAGE_DIR = path.join(__dirname, '../public/images/featured');
+const IMAGE_DIR = path.join(__dirname, '../public/images/blog');
 
 // ============================================
 // HELPER FUNCTIONS
@@ -51,7 +51,7 @@ function extractFrontmatter(content) {
 
 function updatePostFrontmatter(postPath, slug) {
     const content = fs.readFileSync(postPath, 'utf8');
-    const newHeroImage = `/images/featured/${slug}.webp`;
+    const newHeroImage = `/images/blog/${slug}.webp`;
 
     // Replace heroImage in frontmatter
     const updated = content.replace(
@@ -104,7 +104,7 @@ function findPostsNeedingUpdate() {
         const content = fs.readFileSync(path.join(BLOG_DIR, postFile), 'utf8');
         const frontmatter = extractFrontmatter(content);
         const heroImage = frontmatter.heroImage || '';
-        const expectedImagePath = `/images/featured/${slug}.webp`;
+        const expectedImagePath = `/images/blog/${slug}.webp`;
 
         // Check if frontmatter already points to correct image
         if (heroImage !== expectedImagePath) {
@@ -131,24 +131,11 @@ function main() {
     if (args.length === 0) {
         console.log(`
 ╔══════════════════════════════════════════════════════════════╗
-║        AI Agents Kit - Frontmatter Updater                   ║
-╠══════════════════════════════════════════════════════════════╣
-║                                                              ║
-║  Usage:                                                      ║
-║    node scripts/update-frontmatter.cjs [slug]                ║
-║    node scripts/update-frontmatter.cjs --all                 ║
-║    node scripts/update-frontmatter.cjs --check               ║
-║                                                              ║
-║  Examples:                                                   ║
-║    node scripts/update-frontmatter.cjs claude-4-released     ║
-║    node scripts/update-frontmatter.cjs --all                 ║
-║                                                              ║
-║  Purpose:                                                    ║
-║    Updates blog post frontmatter to point to the correct     ║
-║    featured image path after image generation.               ║
-║                                                              ║
+║        Inspiration Quotes Hub - Frontmatter Updater          ║
 ╚══════════════════════════════════════════════════════════════╝
 `);
+        // Default to checking if no args (safe default) or show help
+        // But original script showed help. 
         process.exit(0);
     }
 
@@ -220,8 +207,7 @@ function main() {
     // Verify image exists
     if (!fs.existsSync(imagePath)) {
         console.error(`❌ Featured image not found: ${imagePath}`);
-        console.error(`   Generate the image first with:`);
-        console.error(`   node scripts/generate-featured-image.cjs "Title" ${slug}`);
+        console.error(`   Generate the image first.`);
         process.exit(1);
     }
 
@@ -232,7 +218,7 @@ function main() {
 
     if (result.success) {
         console.log(`✅ Frontmatter ${result.action} successfully!`);
-        console.log(`   heroImage: "/images/featured/${slug}.webp"`);
+        console.log(`   heroImage: "/images/blog/${slug}.webp"`);
     } else {
         console.error(`❌ Failed: ${result.error}`);
         process.exit(1);

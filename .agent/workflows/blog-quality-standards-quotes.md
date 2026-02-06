@@ -79,9 +79,47 @@ Every blog post MUST include:
 
 | ❌ Avoid | ✅ Use Instead |
 |----------|----------------|
-| \"Here are 50 quotes about success.\" | \"When I was struggling with self-doubt, these quotes reminded me of what's possible.\" |
-| \"These quotes will inspire you.\" | \"I keep coming back to these words whenever I need to refocus on my goals.\" |
-| \"Famous people said these quotes.\" | \"What I love about these quotes is how they capture universal truths in just a few words.\" |
+| "Here are 50 quotes about success." | "When I was struggling with self-doubt, these quotes reminded me of what's possible." |
+| "These quotes will inspire you." | "I keep coming back to these words whenever I need to refocus on my goals." |
+| "Famous people said these quotes." | "What I love about these quotes is how they capture universal truths in just a few words." |
+
+### Introduction Requirements
+
+**CRITICAL:** Keep introductions SHORT and CATCHY. Hook the reader immediately.
+
+**Maximum Length:** 3-4 short paragraphs (150-200 words maximum)
+
+**Structure:**
+1. **Hook** (1 paragraph) - Open with a relatable moment, pain point, or intriguing statement
+2. **Insight** (1 paragraph) - Share the key realization or lesson
+3. **Promise** (1 paragraph) - Tell them what they'll get and why it matters
+
+**Do:**
+- Start with "I" statements and personal experiences
+- Use short, punchy sentences
+- Create immediate emotional connection
+- Address a specific pain point or desire
+- End with a clear value proposition
+
+**Don't:**
+- Write long, meandering intros (3+ long paragraphs)
+- Use generic statements about the topic
+- Over-explain or provide too much background
+- Save the good stuff for later
+
+**Good Examples:**
+
+✅ "Last month, I hit a wall. Deadlines were piling up, motivation was tanking, and I couldn't seem to get started on anything. Then I stumbled across seven simple words that completely shifted my mindset: 'Done is better than perfect.' I stopped overthinking and started doing."
+
+✅ "That's the magic of short success quotes—they're espresso shots of wisdom. Small, concentrated, and instantly effective. No 20-minute reading sessions required."
+
+✅ "Here are 150 powerful, bite-sized quotes to fuel your goals and keep you moving forward."
+
+**Bad Examples:**
+
+❌ "There's something uniquely powerful about quotes that have inspired people for generations. Throughout history, great thinkers and leaders have shared wisdom that continues to resonate with us today..." [3 more paragraphs of background]
+
+❌ "In this comprehensive collection, we will explore various aspects of success through the lens of 150 carefully curated quotes from famous individuals across different fields and time periods..."
 
 ---
 
@@ -234,8 +272,9 @@ For EVERY quote in an article:
 
 - **Minimum:** 3 internal links per post
 - **Maximum:** 5 internal links
-- **Distribution:** Spread throughout different sections (not clustered)
-- **Placement:** Distribute across multiple H2 sections for natural flow
+- **Distribution:** **MUST spread throughout different H2 sections (NEVER cluster all in Conclusion)**
+- **Placement:** Distribute across at least 3 different H2 sections for natural flow
+- **Critical:** Do NOT place all internal links in the Conclusion section
 
 ### Quality Rules
 
@@ -256,7 +295,7 @@ For EVERY quote in an article:
 - ❌ Draft content
 
 **Valid link targets:**
-- ✅ Published blog posts: `/blog/[slug]/`
+- ✅ Published blog posts: `/[slug]/` (NO `/blog/` prefix in URLs)
 - ✅ Related quote collection posts that are live
 - ✅ Thematic blog posts that are published
 
@@ -266,21 +305,36 @@ Before adding an internal link:
 1. Verify the target post exists in `src/content/blog/`
 2. Confirm the post is published (not draft)
 3. Use the correct slug from the filename
-4. Use the `/blog/[slug]/` format with trailing slash
+4. Use the `/[slug]/` format with trailing slash (NO `/blog/` prefix)
+5. **Spread across different H2 sections** - never cluster all links in one section
 
 ### Format Examples
 
 **✅ CORRECT:**
 ```markdown
-If you're looking for more wisdom on this topic, explore our [perseverance quotes](/blog/perseverance-quotes/).
+## Focus Quotes for Deep Work
 
-For more inspiration, check out our collection of [quotes about strength](/blog/strength-quotes/).
+Deep work requires concentration. If you're serious about maintaining focus, our collection of [discipline quotes](/discipline-quotes-to-stay-consistent/) pairs perfectly with these strategies.
+
+## Inspirational Focus Quotes
+
+When notifications demand attention, these quotes help. For practical strategies on peak performance, check out [motivational success quotes](/motivational-success-quotes/).
+
+## Powerful Focus Quotes for Productivity
+
+When you need to push through resistance, our [hard work quotes](/hard-work-quotes-that-push-you-forward/) provide extra motivation.
 ```
 
 **❌ WRONG:**
 ```markdown
-[perseverance quotes](/quotes/perseverance-quotes)     ❌ Wrong path - don't use /quotes/
-[some post](/blog/unpublished-post/)                  ❌ Post doesn't exist yet
+[perseverance quotes](/blog/perseverance-quotes)      ❌ Wrong - don't use /blog/ prefix
+[perseverance quotes](/quotes/perseverance-quotes)    ❌ Wrong path - don't use /quotes/
+[some post](/unpublished-post/)                       ❌ Post doesn't exist yet
+
+## Conclusion
+
+Check out our [quotes](/motivational-success-quotes/), [more quotes](/discipline-quotes/), 
+and [even more quotes](/hard-work-quotes/).                      ❌ All links clustered in Conclusion
 ```
 
 ---
@@ -291,8 +345,9 @@ For more inspiration, check out our collection of [quotes about strength](/blog/
 
 - **Minimum:** 3 external links per post
 - **Maximum:** 5 external links
-- **Distribution:** Spread throughout different sections (not clustered)
-- **Placement:** Distribute across multiple H2 sections to high authority sites
+- **Distribution:** **MUST spread throughout different H2 sections (NEVER cluster all in Conclusion)**
+- **Placement:** Distribute across at least 3 different H2 sections to high authority sites
+- **Critical:** Do NOT place all external links in the Conclusion section
 
 ### Required Format (Google-Compliant)
 
@@ -317,6 +372,31 @@ For more inspiration, check out our collection of [quotes about strength](/blog/
 |---------------------|-------------------|
 | `[Maya Angelou biography](https://example.com)` | `<a href="https://example.com" target="_blank" rel="noopener">Maya Angelou's official biography</a>` |
 | `[Source](https://example.com)` | `<a href="https://example.com" target="_blank" rel="noopener">Original speech transcript</a>` |
+
+### Distribution Across H2 Sections
+
+**✅ CORRECT - Spread across sections:**
+```markdown
+## Focus Quotes for Deep Work
+
+Deep work requires protecting your attention... For a deeper dive into the science of sustained attention, I highly recommend exploring <a href="https://calnewport.com/" target="_blank" rel="noopener">Cal Newport's work on deep work</a>.
+
+## Inspirational Focus Quotes for Overcoming Distractions
+
+When notifications demand attention... For practical strategies on maintaining peak mental performance, check out <a href="https://www.tonyrobbins.com/" target="_blank" rel="noopener">Tony Robbins' resources on focus and productivity</a>.
+
+## Mindful Focus Quotes for Mental Clarity
+
+When your mind feels scattered... To develop a regular mindfulness practice, the <a href="https://www.headspace.com/" target="_blank" rel="noopener">Headspace app</a> offers excellent guided meditations.
+```
+
+**❌ WRONG - All clustered in Conclusion:**
+```markdown
+## Conclusion
+
+For further reading, explore <a href="https://example1.com">Site 1</a>, 
+<a href="https://example2.com">Site 2</a>, and <a href="https://example3.com">Site 3</a>.  ❌ All external links in Conclusion
+```
 
 ### Source Quality for Quotes
 
@@ -919,8 +999,9 @@ For each quote, provide AT LEAST ONE of:
 | Element | Minimum |
 |---------|---------|
 | **Word count** | 2,000-2,500 |
-| **Internal links** | 3 (spread across sections, `/blog/` paths only) |
-| **External links** | 3 (to high authority sites, spread across sections) |
+| **Introduction length** | 3-4 short paragraphs (150-200 words max) |
+| **Internal links** | 3 (spread across at least 3 different H2 sections, NO `/blog/` prefix) |
+| **External links** | 3 (spread across at least 3 different H2 sections, NOT clustered in Conclusion) |
 | **Personal anecdotes** | 2 |
 | **Human voice score** | 10/12 |
 | **Quote verification** | 100% (all quotes verified) |
@@ -933,12 +1014,17 @@ For each quote, provide AT LEAST ONE of:
 ### Zero Tolerance
 
 - AI banned phrases
+- Long, meandering introductions (must be 3-4 short paragraphs max)
+- Generic opening statements without personal hook
 - Incorrect quote attributions
 - Unverified quotes
 - H1 in body content
 - **H3 or H4 headings in quote posts**
 - "Click here" anchor text
 - **Internal links to `/quotes/` paths**
+- **Internal links with `/blog/` prefix in URLs**
+- **Internal links clustered in Conclusion (must be spread across H2 sections)**
+- **External links clustered in Conclusion (must be spread across H2 sections)**
 - **Internal links to unpublished posts**
 - Missing featured image
 - Featured image not meeting specs
@@ -981,11 +1067,28 @@ Every quote post should include:
 - Audience feedback suggests improvements
 - Cultural context evolves
 
-**Last updated:** 2026-02-05  
-**Version:** 1.1 (InspirationalQuotes Custom)  
+**Last updated:** 2026-02-06  
+**Version:** 1.2 (InspirationalQuotes Custom)  
 **Based on:** Universal Blog Quality Standards Template
 
 ### Changelog
+
+**v1.3 (2026-02-06)**
+- ✅ **CRITICAL**: Updated internal link URL format from `/blog/[slug]/` to `/[slug]/` (NO `/blog/` prefix)
+- ✅ **CRITICAL**: Added requirement to spread internal links across at least 3 different H2 sections
+- ✅ **CRITICAL**: Added requirement to spread external links across at least 3 different H2 sections
+- ✅ Added "clustering links in Conclusion" to Zero Tolerance list
+- ✅ Added `/blog/` prefix in URLs to Zero Tolerance list
+- ✅ Updated Quick Reference Card with new link distribution requirements
+- ✅ Added detailed examples showing proper link distribution across H2 sections
+- ✅ Added Distribution Across H2 Sections subsection for external links
+
+**v1.2 (2026-02-06)**
+- ✅ Added Introduction Requirements section with short & catchy guidelines
+- ✅ Specified 3-4 paragraph maximum (150-200 words) for intros
+- ✅ Added intro length to Quick Reference Card mandatory minimums
+- ✅ Added long intros to Zero Tolerance list
+- ✅ Provided good and bad examples for introductions
 
 **v1.1 (2026-02-05)**
 - ✅ Added critical AI image generation & cropping workflow (Section 13)
