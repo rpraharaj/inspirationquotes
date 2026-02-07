@@ -49,10 +49,10 @@ All posts are marked as `to-do` in the `Post Created` column for tracking.
 | friendship | 150 Quotes About Loyal Friends | quotes-about-loyal-friends | ✅ complete |
 | friendship | 150 Best Friend Quotes for Social Captions | best-friend-quotes-for-captions | ✅ complete |
 | friendship | 150 Quotes About Friendship and Trust | quotes-about-friendship-and-trust | ✅ complete |
-| friendship | 150 Quotes About Making New Friends | quotes-about-making-new-friends | to-do |
-| friendship | 150 Friendship Quotes About Support and Care | friendship-quotes-about-support | to-do |
-| friendship | 150 Short Friendship Quotes for Quick Messages | short-friendship-quotes | to-do |
-| friendship | 150 Quotes About True Friendship | quotes-about-true-friendship | to-do |
+| friendship | 150 Quotes About Making New Friends | quotes-about-making-new-friends | ✅ complete |
+| friendship | 150 Friendship Quotes About Support and Care | friendship-quotes-about-support | ✅ complete |
+| friendship | 150 Short Friendship Quotes for Quick Messages | short-friendship-quotes | ✅ complete |
+| friendship | 150 Quotes About True Friendship | quotes-about-true-friendship | ✅ complete |
 | friendship | 150 Friendship Quotes for Hard Times | friendship-quotes-for-hard-times | to-do |
 | family | 150 Family Quotes About Love and Togetherness | family-quotes-about-love-and-togetherness | to-do |
 | family | 150 Quotes About Parents and Family Values | quotes-about-parents-and-family-values | to-do |

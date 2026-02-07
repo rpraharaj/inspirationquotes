@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-02-07T05:26:30.179Z",
-  "count": 36,
+  "generated": "2026-02-07T07:22:11.038Z",
+  "count": 47,
   "posts": [
     {
       "id": "discipline-quotes-to-stay-consistent",
@@ -34,6 +34,42 @@
       ],
       "excerpt": "Last week, I sat down to write this article with a clear plan. Three hours later, I'd checked Instagram twelve times, reorganized my desk, and researched completely unrelated topics. Sound familiar? D...",
       "url": "/focus-quotes-to-eliminate-distractions/"
+    },
+    {
+      "id": "friendship-quotes-about-support",
+      "title": "150 Friendship Quotes About Support and Care to Lift a Friend's Spirit",
+      "description": "Discover 150 powerful friendship quotes about support and care. Perfect for reminding your best friends that you're always there for them, no matter what.",
+      "category": "friendship",
+      "categoryName": "Friendship",
+      "tags": [
+        "friendship",
+        "support",
+        "care",
+        "encouragement",
+        "loyalty"
+      ],
+      "excerpt": "Last year, when I was going through a particularly rough patch, I realized something fundamental about the people in my life. I didn't need grand gestures or expensive gifts; I just needed someone to...",
+      "url": "/friendship-quotes-about-support/"
+    },
+    {
+      "id": "friendship-quotes-for-best-friends",
+      "title": "150 Friendship Quotes to Celebrate Your Best Friends",
+      "description": "Discover 150 powerful friendship quotes that celebrate the bond between best friends. From deep connections to lifelong support, find the perfect words here.",
+      "category": "friendship",
+      "categoryName": "Friendship",
+      "tags": [],
+      "excerpt": "Last month, I found myself sitting on a park bench, scrolling through old photos and realizing just how much my best friends have shaped who I am today. We all have those moments where we realize that...",
+      "url": "/friendship-quotes-for-best-friends/"
+    },
+    {
+      "id": "funny-friendship-quotes",
+      "title": "150 Funny Friendship Quotes That Make You Laugh",
+      "description": "Discover 150 hilarious funny friendship quotes that celebrate the beautiful, chaotic, and witty side of true friendship. Perfect for best friends and social captions.",
+      "category": "friendship",
+      "categoryName": "Friendship",
+      "tags": [],
+      "excerpt": "Last week, my best friend and I were trying to assemble a piece of furniture that supposedly took \"twenty minutes.\" Three hours later, we were surrounded by leftover screws, a lopsided bookshelf, and...",
+      "url": "/funny-friendship-quotes/"
     },
     {
       "id": "goal-setting-quotes-to-achieve",
@@ -315,6 +351,16 @@
       "url": "/quotes-about-choices-and-consequences/"
     },
     {
+      "id": "quotes-about-friendship-and-trust",
+      "title": "150 Quotes About Friendship and Trust to Strengthen Your Bonds",
+      "description": "Explore 150 powerful quotes about friendship and trust. Discover the wisdom of authors and thinkers on loyalty, honesty, and rebuilding trust in your most important relationships.",
+      "category": "friendship",
+      "categoryName": "Friendship",
+      "tags": [],
+      "excerpt": "I've always believed that a friendship without trust is like a car without gas—you can stay in it all you want, but it won't go anywhere. Last summer, I had a falling out with a close friend over a si...",
+      "url": "/quotes-about-friendship-and-trust/"
+    },
+    {
       "id": "quotes-about-healthy-relationships",
       "title": "150 Quotes About Healthy Relationships to Build a Lasting Bond",
       "description": "Discover 150 powerful quotes about healthy relationships. From communication and trust to mutual respect and growth, find the wisdom you need for a thriving partnership.",
@@ -375,6 +421,41 @@
       "url": "/quotes-about-love-and-commitment/"
     },
     {
+      "id": "quotes-about-love-and-forgiveness",
+      "title": "150 Quotes About Love and Forgiveness to Heal Your Heart",
+      "description": "Discover 150 powerful quotes about love and forgiveness that will help you heal your relationships and find inner peace. Perfect for moving forward with grace.",
+      "category": "love-relationships",
+      "categoryName": "Love & Relationships",
+      "tags": [
+        "love",
+        "forgiveness",
+        "healing",
+        "relationships"
+      ],
+      "excerpt": "Last year, I found myself sitting in a quiet park, staring at a phone screen that felt like it weighed a thousand pounds. A long-standing friendship had fractured over a misunderstanding that, in hind...",
+      "url": "/quotes-about-love-and-forgiveness/"
+    },
+    {
+      "id": "quotes-about-loyal-friends",
+      "title": "150 Quotes About Loyal Friends to Celebrate Your Inner Circle",
+      "description": "Discover 150 powerful loyal friend quotes that celebrate the beauty of unwavering friendship, trust, and staying power through life's ups and downs.",
+      "category": "ai-news",
+      "categoryName": "ai-news",
+      "tags": [],
+      "excerpt": "Last year, during a particularly rough patch where it felt like everything was shifting under my feet, I realized something profound. It wasn't the number of people I knew that mattered, but the few w...",
+      "url": "/quotes-about-loyal-friends/"
+    },
+    {
+      "id": "quotes-about-making-new-friends",
+      "title": "150 Quotes About Making New Friends and Building Connections",
+      "description": "Discover 150 powerful quotes about making new friends that will inspire you to open your heart and expand your circle. Perfect for finding courage to meet new people.",
+      "category": "friendship",
+      "categoryName": "Friendship",
+      "tags": [],
+      "excerpt": "Last year, I found myself in a new city where I didn't know a single soul. Standing in a crowded coffee shop, I realized how much I'd taken my old friendships for granted. Making new friends as an adu...",
+      "url": "/quotes-about-making-new-friends/"
+    },
+    {
       "id": "quotes-about-meaning-and-purpose",
       "title": "150 Quotes About Meaning and Purpose to Ignite Your Inner Fire",
       "description": "Discover 150 powerful quotes about meaning and purpose that will help you find your true north and live a more intentional, fulfilling life today.",
@@ -421,6 +502,26 @@
       "url": "/quotes-about-time-and-priorities/"
     },
     {
+      "id": "quotes-about-true-friendship",
+      "title": "150 Quotes About True Friendship to Celebrate Real Bonds",
+      "description": "Discover 150 powerful quotes about true friendship that define loyalty and deep connection. Perfect for celebrating the people who stand by you through everything.",
+      "category": "friendship",
+      "categoryName": "Friendship",
+      "tags": [],
+      "excerpt": "Last week, I was looking through an old box of letters and found a note from my high school best friend. It wasn't anything profound—just a quick \"thinking of you\" during a week I was struggling—but i...",
+      "url": "/quotes-about-true-friendship/"
+    },
+    {
+      "id": "quotes-about-true-love-and-soulmates",
+      "title": "150 Quotes About True Love and Soulmates to Find Your Forever",
+      "description": "Discover 150 powerful quotes about true love and soulmates. From deep connections to finding your forever person, these words of wisdom capture the magic of real love.",
+      "category": "ai-news",
+      "categoryName": "ai-news",
+      "tags": [],
+      "excerpt": "I used to think the idea of a \"soulmate\" was something reserved for fairy tales and cheesy romance novels. The notion that there's one specific person out there who perfectly completes your soul felt,...",
+      "url": "/quotes-about-true-love-and-soulmates/"
+    },
+    {
       "id": "relationship-quotes-about-trust",
       "title": "150 Relationship Quotes About Trust and Respect to Strengthen Your Bond",
       "description": "Discover 150 powerful relationship quotes about trust and respect. These words of wisdom will help you build, heal, and maintain a deep connection with your partner.",
@@ -439,6 +540,37 @@
       "tags": [],
       "excerpt": "I used to think that romance was reserved for the big moments—the anniversaries, the candlelit dinners, or the dramatic gestures you see in the movies. But as I’ve grown older and shared more of my li...",
       "url": "/romantic-quotes-to-share/"
+    },
+    {
+      "id": "self-love-quotes-for-confidence",
+      "title": "150 Self-Love Quotes for Confidence and Care",
+      "description": "Discover 150 powerful self-love quotes to boost your confidence, prioritize self-care, and embrace your worth. Perfect for daily inspiration and healing.",
+      "category": "ai-news",
+      "categoryName": "ai-news",
+      "tags": [
+        "self-love",
+        "confidence",
+        "self-care",
+        "inspiration",
+        "mental-health"
+      ],
+      "excerpt": "I used to be my own harshest critic. For years, I believed that being hard on myself was the only way to stay motivated and achieve my goals. I'd replay my mistakes like a broken record, focusing on e...",
+      "url": "/self-love-quotes-for-confidence/"
+    },
+    {
+      "id": "short-friendship-quotes",
+      "title": "150 Short Friendship Quotes for Quick Messages",
+      "description": "Discover 150 short friendship quotes perfect for quick messages, texts, and captions. Express your appreciation for your best friends with these bite-sized words of wisdom.",
+      "category": "friendship",
+      "categoryName": "Friendship",
+      "tags": [
+        "friendship",
+        "short quotes",
+        "messages",
+        "appreciation"
+      ],
+      "excerpt": "Sometimes, the most profound things are best said in just a few words. I've always found that a quick text to a friend can completely change the trajectory of their day, and mine too. We often wait fo...",
+      "url": "/short-friendship-quotes/"
     },
     {
       "id": "short-success-quotes",

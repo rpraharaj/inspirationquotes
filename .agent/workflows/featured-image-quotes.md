@@ -191,90 +191,181 @@ For each quote post, extract:
 
 ### Step 1.2: Use Optimized AI Prompt Template for Quote Posts
 
-**Master Prompt Template (Quote Collection Style):**
+**PROBLEM:** AI models often generate **1024×1024 SQUARE** images even when asked for landscape.
+**SOLUTION:** We must prompt for a **SQUARE** image but instruct the AI to **COMPOSE FOR THE CENTER STRIP** with text included.
+
+**Master Prompt Template (Center-Strip Composition with Text):**
 
 ```
-Create a premium, abstract featured image for a quote collection blog post titled "[POST TITLE]".
+Create a premium, abstract featured image for a quote collection blog post.
 
-CRITICAL: The final output must be EXACTLY 1200 pixels wide x 630 pixels tall. 
-Design the image at this exact aspect ratio (1.91:1) from the start. 
-DO NOT squeeze or distort - use proper cropping if needed.
+POST TITLE (MUST INCLUDE): "[POST_TITLE]"
+THEME: [THEME/CATEGORY]
 
-CONTEXT: This is for a curated collection of [THEME] quotes designed to inspire and motivate readers.
+🚨 CRITICAL COMPOSITION RULE (Center-Strip Only):
+This image will be cropped to a wide landscape format (1.91:1). 
+You MUST generate a SQUARE image (1024x1024), but keep ALL content in the **MIDDLE 50% HORIZONTAL STRIP**.
 
-STYLE: Minimalist, high-end, abstract, aspirational, timeless.
-LAYOUT: Horizontal 1200x630px OG image format. The image should stand alone without text overlay (visual metaphor only).
+LAYOUT ZONES:
+- Top 25% (0-256px): Empty background, sky, or gradient (WILL BE CROPPED OUT)
+- Middle 50% (256-768px): SAFE ZONE - All content MUST be here
+- Bottom 25% (768-1024px): Empty background, ground, or shadow (WILL BE CROPPED OUT)
 
-VISUAL CONCEPTS:
-- Use abstract visual metaphors for [THEME_CONCEPT].
-- Focus on themes of: Growth, ascent, clarity, horizons, light, inner strength, wisdom, and balance.
-- Avoid human faces or realistic stock photo looks. Use geometric abstraction or stylized landscapes.
-- Examples: Stylized mountains, ascending stairs, winding paths, sun rays, horizon lines, geometric patterns suggesting growth/clarity.
+📝 TEXT REQUIREMENTS (CRITICAL):
+1. POST TITLE:
+   - Text: "[POST_TITLE]"
+   - Position: CENTER of the safe zone (vertically centered in middle 50%)
+   - Font: Bold, modern sans-serif (e.g., Inter, Montserrat, Poppins)
+   - Size: Large and prominent (readable at thumbnail size)
+   - Color: High contrast against background (White on dark, Dark on light)
+   - Alignment: Center-aligned
+   - Max width: 80% of image width (leave margins)
 
-COLOR PALETTE for [CATEGORY]:
-- Primary: Deep Navy Blue (#0F172A) and Gold/Bronze (#D4AF37)
-- Accents: White (#FFFFFF) for light/contrast, subtle Charcoal (#333333)
-- The overall look should be dark mode compatible but hopeful (contrast of dark and light)
-- Evoke feelings of: [EMOTIONAL_TONE]
+2. WATERMARK:
+   - Text: "www.inspirationquoteshub.com"
+   - Position: Bottom of safe zone (near the 768px line, but INSIDE safe zone)
+   - Position: Horizontally centered
+   - Font: Clean, minimal sans-serif
+   - Size: Small but readable (14-18pt equivalent)
+   - Color: Low-opacity white or gold (#FFFFFF at 40% or #D4AF37 at 50%)
+   - Style: Subtle, elegant
 
-MOOD:
-- Inspiring, sophisticated, calm, powerful, determined, reflective
-- The image should resonate with someone seeking [THEME] wisdom
+🎨 VISUAL METAPHOR (Background):
+- Use a strong, abstract visual metaphor for [THEME_CONCEPT]
+- [CONTEXTUAL_DETAIL]: For "[POST_TITLE]", the visual should evoke [EMOTIONAL_TONE]
+- The visual should complement the text, not compete with it
+- Keep background elements subtle enough that text remains highly readable
 
-WATERMARK:
-- Include the text "www.inspirationquoteshub.com" in the bottom right corner (20-30px from edges)
-- Font: Clean, minimal sans-serif
-- Color: Low-opacity white or gold (#FFFFFF at 40% or #D4AF37 at 50%), subtle but readable
+Examples by theme:
+- Success: Mountain peak silhouette in center strip, sky above, base below
+- Friendship: Interlocking golden rings behind the text
+- Love: Two merging paths with text overlaid
+- Discipline: Geometric grid pattern as subtle background
 
-SAFE ZONE:
-- Keep main visual interest in the center (middle 50%)
-- Leave breathing space at edges for social media crops
-- Ensure the composition works at both full size and thumbnail
+STYLE:
+- Minimalist, high-end, abstract, aspirational
+- Text must be CRISP and READABLE (not blurry or distorted)
+- NO faces or realistic humans (use silhouettes or geometry if needed)
+- Premium aesthetic suitable for social media sharing
+
+COLOR PALETTE:
+- Use [Specific_Colors_For_Theme] (e.g., Deep Navy & Gold for Success)
+- Ensure HIGH CONTRAST between text and background
+- Text should pop and be instantly readable
+
+REMEMBER: 
+- Top and bottom 25% will be cropped out - keep them simple
+- ALL text must be in the middle 50% safe zone
+- Title text is the PRIMARY element - make it bold and clear
+- Watermark is secondary - keep it subtle but present
 ```
 
 ### Category Visual Concepts & Color Palettes for Quote Posts
 
-| Category/Theme | Visual Concept | Symbols/Shapes | Emotional Tone |
-|----------------|----------------|----------------|----------------|
-| **Success/Achievement** | Ascent, peaks, overcoming obstacles | Mountain silhouette, upward arrow, stairs, sunrise, summit | Triumphant, Determined |
-| **Discipline/Focus** | Structure, consistency, unwavering path | Straight geometric lines, grid patterns, steady stairs, tunnel of light, compass | Resolute, Steady |
-| **Motivation/Inspiration** | Energy, forward movement, momentum | Dynamic arrows, road ahead, sun rays, expanding circles | Energized, Hopeful |
-| **Courage/Strength** | Resilience, standing firm, inner power | Strong foundations, pillars, shields, mountains, anchor | Bold, Unwavering |
-| **Wisdom/Life** | Clarity, horizons, reflection, depth | Calm water, open horizon, circle (enso), balanced stones, tree | Contemplative, Calm |
-| **Relationships/Love** | Connection, balance, harmony, unity | Interlocking rings, overlapping circles, bridge, intertwined paths | Warm, Connected |
-| **Entrepreneurship** | Vision, strategy, building, risk-taking | Abstract skyscrapers, chess pieces, keys, bridges, pathways | Ambitious, Strategic |
-| **Positive Thinking** | Light, energy, expansion, brightness | Sun rays, blooming geometry, expanding circles, light beams | Uplifting, Radiant |
-| **Hard Work/Perseverance** | Endurance, journey, persistence | Long winding path, marathon road, steps, climbing | Persistent, Resilient |
+| Category/Theme | Visual Concept (Center Strip Focus) | Emotional Tone | Colors |
+|----------------|----------------|----------------|--------|
+| **Success / Achievement** | **Center:** A glowing mountain peak, a golden staircase rising, or a key. **Top/Bottom:** Dark starry sky / deep shadow base. | Triumphant, Determined | Deep Navy (#0F172A) & Gold |
+| **Friendship / Connection** | **Center:** Interlocking golden rings, a bridge connecting two sides, or knotted roots. **Top/Bottom:** Soft blurred gradient. | Warm, Trusting, Loyal | Teal (#115E59) & Soft Gold |
+| **Love / Relationships** | **Center:** Two merging paths, a heart-shaped constellation, or a singular blooming rose. **Top/Bottom:** Deep velvet background. | Passionate, Gentle | Burgundy (#881337) & Rose Gold |
+| **Breakups / Healing** | **Center:** A cracked geometric shape mending with gold (Kintsugi), or a sun rising over a wall. **Top/Bottom:** Muted grey/blue fog. | Hopeful, Resilient | Slate Blue (#475569) & Silver |
+| **Discipline / Focus** | **Center:** A perfect sphere, a straight uninterrupted beam of light, or a compass needle. **Top/Bottom:** Clean, minimal void. | Sharp, Clear, Steady | Steel Blue (#1E3A8A) & White |
+| **Wisdom / Life** | **Center:** A lone tree silhouette, balanced stones, or an open book/scroll. **Top/Bottom:** Earth tones/Sky. | Calm, Reflective | Forest Green (#14532D) & Sage |
+| **Courage / Strength** | **Center:** A stone pillar resisting waves, a shield, or an anchor. **Top/Bottom:** Stormy sky/Rough sea. | Bold, Unwavering | Charcoal (#333333) & Bronze |
+| **Positive Thinking** | **Center:** A sunburst, opening flower, or prism refracting light. **Top/Bottom:** Bright white/yellow gradient. | Uplifting, Radiant | Bright Gold (#F59E0B) & White |
+
+### Practical Example: Filling the Prompt Template
+
+**For a post titled:** "150 Friendship Quotes to Celebrate Your Best Friends"
+
+**Filled Prompt:**
+```
+Create a premium, abstract featured image for a quote collection blog post.
+
+POST TITLE (MUST INCLUDE): "150 Friendship Quotes to Celebrate Your Best Friends"
+THEME: Friendship / Connection
+
+🚨 CRITICAL COMPOSITION RULE (Center-Strip Only):
+This image will be cropped to a wide landscape format (1.91:1). 
+You MUST generate a SQUARE image (1024x1024), but keep ALL content in the **MIDDLE 50% HORIZONTAL STRIP**.
+
+LAYOUT ZONES:
+- Top 25% (0-256px): Empty background, soft blurred gradient (WILL BE CROPPED OUT)
+- Middle 50% (256-768px): SAFE ZONE - All content MUST be here
+- Bottom 25% (768-1024px): Empty background, soft blurred gradient (WILL BE CROPPED OUT)
+
+📝 TEXT REQUIREMENTS (CRITICAL):
+1. POST TITLE:
+   - Text: "150 Friendship Quotes to Celebrate Your Best Friends"
+   - Position: CENTER of the safe zone (vertically centered in middle 50%)
+   - Font: Bold, modern sans-serif (Montserrat Bold or Poppins Bold)
+   - Size: Large and prominent (readable at thumbnail size)
+   - Color: White (#FFFFFF) on dark background
+   - Alignment: Center-aligned
+   - Max width: 80% of image width (leave margins)
+
+2. WATERMARK:
+   - Text: "www.inspirationquoteshub.com"
+   - Position: Bottom of safe zone (around 740px, but INSIDE safe zone)
+   - Position: Horizontally centered
+   - Font: Clean sans-serif
+   - Size: Small but readable (16pt equivalent)
+   - Color: Soft Gold (#D4AF37 at 50% opacity)
+   - Style: Subtle, elegant
+
+🎨 VISUAL METAPHOR (Background):
+- Use interlocking golden rings or a bridge connecting two sides as the central visual
+- The visual should evoke warmth, trust, and loyalty
+- Keep the background subtle - a soft teal (#115E59) to gold gradient
+- The visual should complement the text, not compete with it
+- Background elements should be abstract and minimalist
+
+STYLE:
+- Minimalist, high-end, abstract, aspirational
+- Text must be CRISP and READABLE (not blurry or distorted)
+- NO faces or realistic humans
+- Premium aesthetic suitable for social media sharing
+
+COLOR PALETTE:
+- Primary: Teal (#115E59) and Soft Gold (#D4AF37)
+- Text: White (#FFFFFF) for high contrast
+- Ensure HIGH CONTRAST between text and background
+- Text should pop and be instantly readable
+
+REMEMBER: 
+- Top and bottom 25% will be cropped out - keep them simple gradient
+- ALL text must be in the middle 50% safe zone
+- Title text is the PRIMARY element - make it bold and clear
+- Watermark is secondary - keep it subtle but present
+```
 
 ### Step 1.3: Generate and Process
 
-1. **Generate** image using the `generate_image` tool with the customized prompt above.
+1. **Generate** image using the `generate_image` tool.
+   - **Important:** Request a **Square (1:1)** aspect ratio if the tool allows, or just expect it. The prompt handles the composition.
 
 2. **Naming Rule Integration (CRITICAL):**
    - Use strict slug format: `[slug].webp`
-   - **NO numbers or years** in the filename
-   - ✅ CORRECT: `motivational-quotes.webp`, `success-quotes.webp`
-   - ❌ WRONG: `150-motivational-quotes.webp`, `quotes-2026.webp`, `100-success-quotes.webp`
+   - **NO numbers or years** (e.g., `friendship-quotes.webp`).
 
-3. **CRITICAL: Process, Crop & Optimize (The "Squeeze Prevention" Workflow)**
+3. **Process, Crop & Optimize (The "Squeeze Prevention" Workflow)**
    
-   Many AI generators create square images (e.g., 640×640). **DO NOT simply resize them to 1200x630** as this causes vertical squeezing.
+   Since we generated a square with a "safe zone" and text already included, we now crop to that zone.
    
-   **Use the `process-image.cjs` script which handles this correctly (cropping instead of resizing):**
+   **Use the `process-image.cjs` script:**
    
    // turbo
    ```bash
-   node scripts/process-image.cjs [generated_image_path] public/images/blog/[slug].webp --watermark
+   node scripts/process-image.cjs [generated_image_path] public/images/blog/[slug].webp
    ```
    
-   This script will:
-   - Check source dimensions
-   - Resize to larger dimension while maintaining aspect ratio
-   - Center-crop to exact 1200×630
-   - Verify dimensions
-   - Convert to WebP with optimal quality (75-85%)
-   - Apply watermark if needed
-   - Compress to target size (<100KB)
+   **Note:** The `--watermark` flag is optional since the AI should have already included the watermark. Only use it if the AI failed to add the watermark.
+   
+   **This script performs the Magic Crop:**
+   - **Detects Square Input:** Checks source dimensions (likely 1024x1024 or 640x640)
+   - **Targeted Crop:** Cuts out the **exact middle 1200x630 area** (Safe Zone)
+   - **Preserves Text & Content:** Because our prompt kept the top/bottom 25% empty and text in the middle, everything important is preserved!
+   - **No Distortion:** Verifies no vertical squeezing occurs.
+   - **Optimizes:** Converts to WebP (<100KB).
 
 4. **Verify Dimensions and Size:**
    // turbo
