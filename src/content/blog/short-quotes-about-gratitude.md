@@ -1,18 +1,18 @@
 ---
 title: "150 Short Quotes About Gratitude for Daily Inspiration"
 description: "Discover 150 powerful short quotes about gratitude that will shift your perspective and help you find joy in the small things. Perfect for quick morning boosts."
-pubDate: 2026-02-07
+pubDate: 2026-02-08
 heroImage: "/images/blog/short-quotes-about-gratitude.webp"
 category: "short-quotes"
 tags: ["gratitude", "thankfulness", "appreciation", "short-quotes"]
-author: "rajesh-praharaj"
+author: "Rajesh Praharaj"
 ---
 
 Last month, I hit a bit of a wall. It wasn't anything major, just a string of gray Tuesdays where everything felt like a chore—the commute, the emails, even my favorite morning coffee. I found myself focusing on everything that was going wrong, from a leaky faucet to a missed deadline. I’ve found that when I’m in that headspace, my world starts to shrink until I can only see my own frustrations.
 
 Then, I stumbled across a tiny four-word quote in an old journal: "Enough is a feast." It hit me like a sudden burst of sunlight. I realized I was so busy counting my problems that I’d completely stopped counting my blessings. That’s the magic of short gratitude quotes—they’re like "espresso shots" of wisdom that can instantly snap you back into a state of appreciation.
 
-In this collection, I’ve gathered 150 of my favorite brief sayings on being thankful. I keep these on my phone and in my notebook for those moments when I need a quick perspective shift. Whether you’re looking for a morning boost or a way to find peace during a tough day, these bite-sized reminders are here to help you remember that there is always, always something to be grateful for.
+I’ve gathered 150 of my favorite brief sayings on being thankful for those moments when you need a quick perspective shift. I keep these on my phone and in my notebook as daily reminders. Whether you’re looking for a morning boost or a way to find peace during a tough day, these bite-sized reminders are here to help you remember that there is always something to be grateful for.
 
 ## Short Gratitude Quotes for Your Morning Routine
 

@@ -1,8 +1,8 @@
 ---
 title: "150 Short Quotes About Courage to Ignite Your Inner Strength"
 description: "Discover 150 short quotes about courage that will help you face your fears. From minimalist mantras to powerful wisdom, these bite-sized quotes provide instant bravery."
-pubDate: 2026-02-07T10:00:00+05:30
-author: "Inspiration Quotes Hub"
+pubDate: 2026-02-08
+author: "Rajesh Praharaj"
 tags: ["short quotes", "courage quotes", "bravery", "strength", "inspiration"]
 category: "short-quotes"
 heroImage: "/images/blog/short-quotes-about-courage.webp"
@@ -12,7 +12,7 @@ I used to think that courage was something you were either born with or you were
 
 There have been days when I felt completely paralyzed by fear, unable to make a simple decision because I was so afraid of the outcome. In those moments, I didn't need a three-hour lecture on psychology or a thick biography of a world leader. What I needed was a spark. I needed a single, punchy sentence that could cut through the noise of my anxiety and remind me that I'm stronger than I feel. I've found that short, bite-sized quotes are like "espresso shots" for the soul—concentrated wisdom that hits fast and stays with you.
 
-This collection of 150 short quotes about courage is my personal toolkit for those moments of doubt. I've gathered these words because they've helped me "saddle up" even when my knees were shaking. Whether you're facing a major life change or just trying to get through a difficult Tuesday, I hope these words provide the same strength for you that they have for me.
+I've gathered these 150 short quotes about courage for those exact moments of doubt. I've curated these words because they've helped me "saddle up" even when my knees were shaking. Whether you're facing a major life change or just trying to get through a difficult Tuesday, I hope these words provide the same strength for you that they have for me.
 
 ## Bite-Sized Courage Quotes for Instant Bravery
 
