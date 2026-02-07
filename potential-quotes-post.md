@@ -4,18 +4,18 @@ All posts are marked as `to-do` in the `Post Created` column for tracking.
 
 | Category | SEO Post Name | Slug | Post Created | Content Review |
 | --- | --- | --- | --- | --- |
-| motivation-success | 150 Motivational Success Quotes to Fuel Your Goals | motivational-success-quotes | ✅ complete | to-do |
-| motivation-success | 150 Success Quotes for Entrepreneurs and Founders | success-quotes-for-entrepreneurs | ✅ complete | to-do |
-| motivation-success | 150 Short Success Quotes for Daily Motivation | short-success-quotes | ✅ complete | to-do |
-| motivation-success | 150 Discipline Quotes to Stay Consistent and Win | discipline-quotes-to-stay-consistent | ✅ complete | to-do |
-| motivation-success | 150 Hard Work Quotes That Actually Push You Forward | hard-work-quotes-that-push-you-forward | ✅ complete | to-do |
-| motivation-success | 150 Focus Quotes to Eliminate Distractions | focus-quotes-to-eliminate-distractions | ✅ complete | to-do |
-| motivation-success | 150 Perseverance Quotes for Tough Times | perseverance-quotes-for-tough-times | ✅ complete | to-do |
-| motivation-success | 150 Growth Mindset Quotes for Long-Term Success | growth-mindset-quotes-for-success | ✅ complete | to-do |
-| motivation-success | 150 Winning Quotes for Athletes and Competitors | winning-quotes-for-athletes | ✅ complete | to-do |
-| motivation-success | 150 Goal-Setting Quotes to Plan and Achieve | goal-setting-quotes-to-achieve | ✅ complete | to-do |
-| inspirational | 150 Inspirational Quotes to Lift Your Spirit | inspirational-quotes-to-lift-your-spirit | ✅ complete | to-do |
-| inspirational | 150 Inspirational Quotes About Hope and Faith | inspirational-quotes-about-hope-and-faith | ✅ complete | to-do |
+| motivation-success | 150 Motivational Success Quotes to Fuel Your Goals | motivational-success-quotes | ✅ complete | ✅ complete |
+| motivation-success | 150 Success Quotes for Entrepreneurs and Founders | success-quotes-for-entrepreneurs | ✅ complete | ✅ complete |
+| motivation-success | 150 Short Success Quotes for Daily Motivation | short-success-quotes | ✅ complete | ✅ complete |
+| motivation-success | 150 Discipline Quotes to Stay Consistent and Win | discipline-quotes-to-stay-consistent | ✅ complete | ✅ complete |
+| motivation-success | 150 Hard Work Quotes That Actually Push You Forward | hard-work-quotes-that-push-you-forward | ✅ complete | ✅ complete |
+| motivation-success | 150 Focus Quotes to Eliminate Distractions | focus-quotes-to-eliminate-distractions | ✅ complete | ✅ complete |
+| motivation-success | 150 Perseverance Quotes for Tough Times | perseverance-quotes-for-tough-times | ✅ complete | ✅ complete |
+| motivation-success | 150 Growth Mindset Quotes for Long-Term Success | growth-mindset-quotes-for-success | ✅ complete | ✅ complete |
+| motivation-success | 150 Winning Quotes for Athletes and Competitors | winning-quotes-for-athletes | ✅ complete | ✅ complete |
+| motivation-success | 150 Goal-Setting Quotes to Plan and Achieve | goal-setting-quotes-to-achieve | ✅ complete | ✅ complete |
+| inspirational | 150 Inspirational Quotes to Lift Your Spirit | inspirational-quotes-to-lift-your-spirit | ✅ complete | ✅ complete |
+| inspirational | 150 Inspirational Quotes About Hope and Faith | inspirational-quotes-about-hope-and-faith | ✅ complete | ✅ complete |
 | inspirational | 150 Inspirational Quotes for Difficult Days | inspirational-quotes-for-difficult-days | ✅ complete | to-do |
 | inspirational | 150 Inspirational Quotes for New Beginnings | inspirational-quotes-for-new-beginnings | ✅ complete | to-do |
 | inspirational | 150 Positive Inspirational Quotes for Every Morning | positive-inspirational-quotes-for-mornings | ✅ complete | to-do |
