@@ -39,16 +39,16 @@ All posts are marked as `to-do` in the `Post Created` column for tracking.
 | love-relationships | 150 Relationship Quotes About Trust and Respect | relationship-quotes-about-trust | ✅ complete |
 | love-relationships | 150 Quotes About Long-Distance Love | long-distance-love-quotes | ✅ complete |
 | love-relationships | 150 Quotes About Healthy Relationships | quotes-about-healthy-relationships | ✅ complete |
-| love-relationships | 150 Quotes About Love and Commitment | quotes-about-love-and-commitment | to-do |
-| love-relationships | 150 Quotes About Love and Forgiveness | quotes-about-love-and-forgiveness | to-do |
-| love-relationships | 150 Quotes About True Love and Soulmates | quotes-about-true-love-and-soulmates | to-do |
-| love-relationships | 150 Breakup Quotes to Help You Heal | breakup-quotes-to-help-you-heal | to-do |
-| love-relationships | 150 Self-Love Quotes for Confidence and Care | self-love-quotes-for-confidence | to-do |
-| friendship | 150 Friendship Quotes to Celebrate Your Best Friends | friendship-quotes-for-best-friends | to-do |
-| friendship | 150 Funny Friendship Quotes That Make You Laugh | funny-friendship-quotes | to-do |
-| friendship | 150 Quotes About Loyal Friends | quotes-about-loyal-friends | to-do |
-| friendship | 150 Best Friend Quotes for Social Captions | best-friend-quotes-for-captions | to-do |
-| friendship | 150 Quotes About Friendship and Trust | quotes-about-friendship-and-trust | to-do |
+| love-relationships | 150 Quotes About Love and Commitment | quotes-about-love-and-commitment | ✅ complete |
+| love-relationships | 150 Quotes About Love and Forgiveness | quotes-about-love-and-forgiveness | ✅ complete |
+| love-relationships | 150 Quotes About True Love and Soulmates | quotes-about-true-love-and-soulmates | ✅ complete |
+| love-relationships | 150 Breakup Quotes to Help You Heal | breakup-quotes-to-help-you-heal | ✅ complete |
+| love-relationships | 150 Self-Love Quotes for Confidence and Care | self-love-quotes-for-confidence | ✅ complete |
+| friendship | 150 Friendship Quotes to Celebrate Your Best Friends | friendship-quotes-for-best-friends | ✅ complete |
+| friendship | 150 Funny Friendship Quotes That Make You Laugh | funny-friendship-quotes | ✅ complete |
+| friendship | 150 Quotes About Loyal Friends | quotes-about-loyal-friends | ✅ complete |
+| friendship | 150 Best Friend Quotes for Social Captions | best-friend-quotes-for-captions | ✅ complete |
+| friendship | 150 Quotes About Friendship and Trust | quotes-about-friendship-and-trust | ✅ complete |
 | friendship | 150 Quotes About Making New Friends | quotes-about-making-new-friends | to-do |
 | friendship | 150 Friendship Quotes About Support and Care | friendship-quotes-about-support | to-do |
 | friendship | 150 Short Friendship Quotes for Quick Messages | short-friendship-quotes | to-do |
