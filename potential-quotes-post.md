@@ -97,7 +97,7 @@ All posts are marked as `to-do` in the `Post Created` column for tracking.
 | mindfulness-peace | 150 Mindfulness Quotes for Calm and Clarity | mindfulness-quotes-for-calm-and-clarity | ✅ complete |
 | mindfulness-peace | 150 Peace Quotes to Quiet the Mind | peace-quotes-to-quiet-the-mind | ✅ complete |
 | mindfulness-peace | 150 Quotes About Living in the Present | quotes-about-living-in-the-present | ✅ complete |
-| mindfulness-peace | 150 Quotes About Inner Peace | quotes-about-inner-peace | to-do |
+| mindfulness-peace | 150 Quotes About Inner Peace | quotes-about-inner-peace | ✅ complete |
 | mindfulness-peace | 150 Meditation Quotes for Daily Practice | meditation-quotes-for-daily-practice | to-do |
 | mindfulness-peace | 150 Quotes About Letting Go and Peace | quotes-about-letting-go-and-peace | to-do |
 | mindfulness-peace | 150 Quotes About Stillness and Silence | quotes-about-stillness-and-silence | to-do |

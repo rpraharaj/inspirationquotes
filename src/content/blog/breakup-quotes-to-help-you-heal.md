@@ -1,11 +1,8 @@
 ---
 heroImage: "/images/blog/breakup-quotes-to-help-you-heal.webp"
-heroImage: "/images/blog/breakup-quotes-to-help-you-heal.webp"
-heroImage: "/images/blog/breakup-quotes-to-help-you-heal.webp"
 title: "150 Breakup Quotes to Help You Heal and Move On"
 description: "Discover 150 powerful breakup quotes to help you navigate heartbreak, find the strength to let go, and embrace the journey of healing and new beginnings."
 pubDate: 2026-02-07
-heroImage: "/images/blog/breakup-quotes-to-help-you-heal.webp"
 category: "love-relationships"
 author: "rajesh-praharaj"
 ---

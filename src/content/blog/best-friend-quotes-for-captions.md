@@ -1,12 +1,9 @@
 ---
 heroImage: "/images/blog/best-friend-quotes-for-captions.webp"
-heroImage: "/images/blog/best-friend-quotes-for-captions.webp"
-heroImage: "/images/blog/best-friend-quotes-for-captions.webp"
 title: "150 Best Friend Quotes for Social Captions: The Ultimate Collection"
 description: "Discover the perfect best friend quotes for your social media captions. From funny and sweet to meaningful and aesthetic, find the right words for your bestie."
 pubDate: 2026-02-07
 author: "default"
-heroImage: "/images/blog/best-friend-quotes-for-captions.webp"
 category: "friendship"
 tags: ["friendship", "social media", "captions", "best friend", "inspirational"]
 ---
