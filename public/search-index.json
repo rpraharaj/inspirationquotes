@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-02-07T16:56:54.188Z",
-  "count": 104,
+  "generated": "2026-02-07T18:02:23.563Z",
+  "count": 119,
   "posts": [
     {
       "id": "best-friend-quotes-for-captions",
@@ -43,6 +43,22 @@
       "tags": [],
       "excerpt": "I remember a Tuesday evening, three years ago, when my entire world felt like it was collapsing in on itself. I was sitting on my kitchen floor, staring at a half-packed box, wondering how a relations...",
       "url": "/breakup-quotes-to-help-you-heal/"
+    },
+    {
+      "id": "clever-quotes-for-social-captions",
+      "title": "150 Clever Quotes for Social Captions to Boost Your Engagement",
+      "description": "Elevate your social media game with 150 clever quotes for captions. From witty one-liners to intellectual deep thoughts, find the perfect words for your next post.",
+      "category": "humor-wit",
+      "categoryName": "Humor & Wit",
+      "tags": [
+        "clever quotes",
+        "social captions",
+        "instagram captions",
+        "witty quotes",
+        "engagement"
+      ],
+      "excerpt": "I've spent far too many hours staring at a blinking cursor, wondering how to summarize a perfectly good photo with words that don't sound like a generic Hallmark card. We've all been there—you have th...",
+      "url": "/clever-quotes-for-social-captions/"
     },
     {
       "id": "confidence-quotes-to-believe-in-yourself",
@@ -170,6 +186,21 @@
       "url": "/funny-friendship-quotes/"
     },
     {
+      "id": "funny-love-quotes-for-couples",
+      "title": "150 Funny Love Quotes for Couples to Keep the Spark Alive",
+      "description": "Discover 150 funny love quotes for couples that capture the humor, quirks, and joy of being together. Perfect for keeping your relationship light and fun.",
+      "category": "humor-wit",
+      "categoryName": "Humor & Wit",
+      "tags": [
+        "love",
+        "humor",
+        "couples",
+        "relationships"
+      ],
+      "excerpt": "Last night, my partner and I spent twenty minutes arguing about the \"correct\" way to load the dishwasher. In the heat of the moment, it felt like a trial of character. But then, I caught my reflection...",
+      "url": "/funny-love-quotes-for-couples/"
+    },
+    {
       "id": "funny-quotes-to-make-you-laugh",
       "title": "150 Funny Quotes to Make You Laugh Out Loud",
       "description": "Need a good chuckle? Explore 150 hilarious funny quotes about life, work, relationships, and the absurdities of being human. Guaranteed to brighten your day!",
@@ -178,6 +209,21 @@
       "tags": [],
       "excerpt": "I've always believed that a day without laughter is a day wasted. There's something incredibly liberating about finding the humor in a situation that should probably be stressful. Last week, for insta...",
       "url": "/funny-quotes-to-make-you-laugh/"
+    },
+    {
+      "id": "funny-work-quotes",
+      "title": "150 Funny Work Quotes to Brighten Your Office Grind",
+      "description": "Inject some humor into your workday with 150 funny work quotes about Mondays, meetings, and office life. Perfect for office laughs and workplace sanity.",
+      "category": "humor-wit",
+      "categoryName": "Humor & Wit",
+      "tags": [
+        "funny quotes",
+        "work humor",
+        "office quotes",
+        "career sarcasm"
+      ],
+      "excerpt": "Last Tuesday, I found myself staring at a spreadsheet for forty-five minutes, wondering if the cells were actually vibrating or if I just needed more caffeine. We've all been there—the mid-afternoon s...",
+      "url": "/funny-work-quotes/"
     },
     {
       "id": "goal-setting-quotes-to-achieve",
@@ -656,6 +702,21 @@
       "url": "/quotes-about-choosing-happiness/"
     },
     {
+      "id": "quotes-about-comedy-and-life",
+      "title": "150 Quotes About Comedy and Life to Keep You Laughing",
+      "description": "Discover the best quotes about comedy and life. From stand-up wisdom to classic wit, these 150+ quotes explore how humor helps us navigate the human experience.",
+      "category": "humor-wit",
+      "categoryName": "Humor & Wit",
+      "tags": [
+        "comedy quotes",
+        "life humor",
+        "stand-up wisdom",
+        "witty quotes"
+      ],
+      "excerpt": "Last Tuesday, I found myself staring at a pile of bills and a broken dishwasher, feeling like the universe was playing a particularly cruel prank on me. I was about to spiral into a bad mood when I re...",
+      "url": "/quotes-about-comedy-and-life/"
+    },
+    {
       "id": "quotes-about-family-memories",
       "title": "150 Quotes About Family Memories to Cherish Forever",
       "description": "Discover 150 powerful quotes about family memories that celebrate childhood nostalgia, shared moments, and the bonds that last a lifetime.",
@@ -846,6 +907,21 @@
       "tags": [],
       "excerpt": "I used to think that joy was something I had to go out and find. I spent years chasing the \"big\" moments—the promotions, the exotic vacations, the major milestones—convinced that once I collected enou...",
       "url": "/quotes-about-joy-and-gratitude/"
+    },
+    {
+      "id": "quotes-about-laughter-and-joy",
+      "title": "150 Quotes About Laughter and Joy to Light Up Your Life",
+      "description": "Discover 150 powerful quotes about laughter and joy. From healing humor to heartfelt happiness, these words will remind you of life's greatest gifts.",
+      "category": "humor-wit",
+      "categoryName": "Humor & Wit",
+      "tags": [
+        "laughter",
+        "joy",
+        "happiness",
+        "positivity"
+      ],
+      "excerpt": "I’ve always believed that a day without laughter is a day wasted, but it wasn't until a few years ago that I truly understood why. I was going through a particularly heavy season—the kind where your f...",
+      "url": "/quotes-about-laughter-and-joy/"
     },
     {
       "id": "quotes-about-learning-from-mistakes",
@@ -1255,6 +1331,21 @@
       "url": "/short-family-quotes/"
     },
     {
+      "id": "short-friendship-quotes-for-texts",
+      "title": "150 Short Friendship Quotes for Texts to Send Your Bestie",
+      "description": "Discover 150 short friendship quotes perfect for quick texts, Instagram captions, and reminding your best friend how much they mean to you.",
+      "category": "short-quotes",
+      "categoryName": "Short Quotes",
+      "tags": [
+        "friendship",
+        "short quotes",
+        "texts",
+        "captions"
+      ],
+      "excerpt": "Last week, I was scrolling through my old messages when I found a simple \"I'm so glad we're friends\" text from my bestie. It was sent on a random Tuesday, but reading it again brought back all the war...",
+      "url": "/short-friendship-quotes-for-texts/"
+    },
+    {
       "id": "short-friendship-quotes",
       "title": "150 Short Friendship Quotes for Quick Messages",
       "description": "Discover 150 short friendship quotes perfect for quick messages, texts, and captions. Express your appreciation for your best friends with these bite-sized words of wisdom.",
@@ -1268,6 +1359,21 @@
       ],
       "excerpt": "Sometimes, the most profound things are best said in just a few words. I've always found that a quick text to a friend can completely change the trajectory of their day, and mine too. We often wait fo...",
       "url": "/short-friendship-quotes/"
+    },
+    {
+      "id": "short-funny-quotes",
+      "title": "150 Short Funny Quotes for Quick Smiles",
+      "description": "Discover the best short funny quotes and witty one-liners to brighten your day. Perfect for quick laughs, social media captions, and instant mood boosts.",
+      "category": "humor-wit",
+      "categoryName": "Humor & Wit",
+      "tags": [
+        "funny quotes",
+        "humor",
+        "short quotes",
+        "witty quotes"
+      ],
+      "excerpt": "There's something magical about a joke that lands in just a few words. Last Tuesday, I was having one of those mornings where everything felt like an uphill battle—my coffee was cold, my inbox was ove...",
+      "url": "/short-funny-quotes/"
     },
     {
       "id": "short-gratitude-quotes",
@@ -1301,6 +1407,52 @@
       "url": "/short-happiness-quotes/"
     },
     {
+      "id": "short-inspirational-quotes-with-big-impact",
+      "title": "150 Short Inspirational Quotes with Big Impact",
+      "description": "Discover 150 powerful, short inspirational quotes that deliver a big impact. Perfect for daily motivation, strength, and a positive mindset when you need it most.",
+      "category": "short-quotes",
+      "categoryName": "Short Quotes",
+      "tags": [
+        "short quotes",
+        "inspirational",
+        "motivation",
+        "success"
+      ],
+      "excerpt": "Last Tuesday, I found myself staring at a blank screen for three hours. My to-do list was mocking me, and the weight of \"getting it all done\" felt like an anchor. Just as I was about to close my lapto...",
+      "url": "/short-inspirational-quotes-with-big-impact/"
+    },
+    {
+      "id": "short-life-quotes-to-remember",
+      "title": "150 Short Life Quotes to Remember: Bite-Sized Wisdom for Daily Inspiration",
+      "description": "Discover 150 powerful short life quotes that pack a punch. From minimalist wisdom to deep insights, these brief sayings offer the perspective you need to live well.",
+      "category": "short-quotes",
+      "categoryName": "Short Quotes",
+      "tags": [
+        "life quotes",
+        "short quotes",
+        "wisdom",
+        "inspiration",
+        "daily quotes"
+      ],
+      "excerpt": "There are days when I feel like my brain is a browser with fifty tabs open. My to-do list is screaming, my phone is buzzing, and the weight of \"big life questions\" feels a little too heavy. In those m...",
+      "url": "/short-life-quotes-to-remember/"
+    },
+    {
+      "id": "short-love-quotes-for-quick-messages",
+      "title": "150 Short Love Quotes for Quick Messages",
+      "description": "Discover 150 powerful short love quotes perfect for quick texts, cards, and daily reminders. These sweet, romantic, and deep messages will brighten your partner's day.",
+      "category": "short-quotes",
+      "categoryName": "Short Quotes",
+      "tags": [
+        "love quotes",
+        "short quotes",
+        "romance",
+        "relationships"
+      ],
+      "excerpt": "Last Tuesday, I found myself staring at a blank text box for ten minutes. I wanted to send something special to my partner—just a little \"I'm thinking of you\" note—but everything I typed felt either t...",
+      "url": "/short-love-quotes-for-quick-messages/"
+    },
+    {
       "id": "short-mindfulness-quotes",
       "title": "150 Short Mindfulness Quotes for Quick Calm",
       "description": "Find instant peace with 150 short mindfulness quotes. Perfect for quick mental resets, reducing stress, and staying present during a busy day.",
@@ -1309,6 +1461,85 @@
       "tags": [],
       "excerpt": "I used to think mindfulness required a dedicated room, a special cushion, and at least twenty minutes of absolute silence. In my old apartment, which sat right above a busy intersection, that kind of...",
       "url": "/short-mindfulness-quotes/"
+    },
+    {
+      "id": "short-quotes-about-courage",
+      "title": "150 Short Quotes About Courage to Ignite Your Inner Strength",
+      "description": "Discover 150 short quotes about courage that will help you face your fears. From minimalist mantras to powerful wisdom, these bite-sized quotes provide instant bravery.",
+      "category": "short-quotes",
+      "categoryName": "Short Quotes",
+      "tags": [
+        "short quotes",
+        "courage quotes",
+        "bravery",
+        "strength",
+        "inspiration"
+      ],
+      "excerpt": "I used to think that courage was something you were either born with or you weren't. I imagined it as this grand, cinematic quality reserved for heroes in books or movies. But as I've navigated the up...",
+      "url": "/short-quotes-about-courage/"
+    },
+    {
+      "id": "short-quotes-about-gratitude",
+      "title": "150 Short Quotes About Gratitude for Daily Inspiration",
+      "description": "Discover 150 powerful short quotes about gratitude that will shift your perspective and help you find joy in the small things. Perfect for quick morning boosts.",
+      "category": "short-quotes",
+      "categoryName": "Short Quotes",
+      "tags": [
+        "gratitude",
+        "thankfulness",
+        "appreciation",
+        "short-quotes"
+      ],
+      "excerpt": "Last month, I hit a bit of a wall. It wasn't anything major, just a string of gray Tuesdays where everything felt like a chore—the commute, the emails, even my favorite morning coffee. I found myself...",
+      "url": "/short-quotes-about-gratitude/"
+    },
+    {
+      "id": "short-quotes-about-happiness",
+      "title": "150 Short Quotes About Happiness to Brighten Your Day",
+      "description": "Discover 150 powerful short quotes about happiness that will shift your perspective and bring more joy to your daily life. Perfect for quick inspiration.",
+      "category": "short-quotes",
+      "categoryName": "Short Quotes",
+      "tags": [
+        "happiness",
+        "joy",
+        "positivity",
+        "short-quotes"
+      ],
+      "excerpt": "I used to think that happiness was something I had to chase—a distant destination I’d finally reach once I checked enough boxes on my to-do list. But last year, during a particularly chaotic Tuesday w...",
+      "url": "/short-quotes-about-happiness/"
+    },
+    {
+      "id": "short-quotes-about-success",
+      "title": "150 Short Quotes About Success to Fuel Your Ambition",
+      "description": "Discover 150 short quotes about success that pack a punch. From minimalist mantras to powerful wisdom, these bite-sized quotes will keep you motivated and focused.",
+      "category": "short-quotes",
+      "categoryName": "Short Quotes",
+      "tags": [
+        "short quotes",
+        "success quotes",
+        "motivation",
+        "achievement",
+        "inspiration"
+      ],
+      "excerpt": "I used to think that inspiration required long, profound speeches or thick books filled with complex philosophy. But lately, I've realized that the most powerful shifts in my mindset often come from t...",
+      "url": "/short-quotes-about-success/"
+    },
+    {
+      "id": "short-quotes-for-daily-inspiration",
+      "title": "150 Short Quotes for Daily Inspiration to Fuel Your Soul",
+      "description": "Discover 150 short quotes for daily inspiration. These bite-sized words of wisdom will help you stay focused, positive, and motivated throughout your busy day.",
+      "category": "short-quotes",
+      "categoryName": "Short Quotes",
+      "tags": [
+        "short quotes",
+        "daily inspiration",
+        "motivation",
+        "positive quotes",
+        "inspirational sayings",
+        "success"
+      ],
+      "excerpt": "I used to think that inspiration required hours of reading or deep meditation. I’d set aside whole afternoons to \"find my center,\" only to end up more stressed because I’d fallen behind on my work. Th...",
+      "url": "/short-quotes-for-daily-inspiration/"
     },
     {
       "id": "short-success-quotes",
