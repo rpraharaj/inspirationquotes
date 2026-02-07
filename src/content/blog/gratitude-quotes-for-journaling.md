@@ -1,7 +1,7 @@
 ---
 title: "150 Gratitude Quotes for Journaling to Transform Your Life"
 description: "Discover 150 powerful gratitude quotes for journaling. Cultivate mindfulness, joy, and a positive mindset with these inspiring words for your daily writing practice."
-pubDate: 2026-02-07
+pubDate: 2026-02-08
 category: "gratitude"
 tags: ["gratitude quotes", "journaling", "mindfulness", "personal growth", "reflection", "positivity"]
 featured: true

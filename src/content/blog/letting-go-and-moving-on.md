@@ -1,10 +1,10 @@
 ---
 title: "150 Quotes About Letting Go and Moving On to Find Your Peace"
 description: "Discover 150 powerful quotes about letting go and moving on. Find the strength to release the past, heal your heart, and embrace a brighter new beginning."
-pubDate: 2026-02-06
+pubDate: 2026-02-08
 heroImage: "/images/blog/letting-go-and-moving-on.webp"
 category: "life-wisdom"
-author: "rajesh-praharaj"
+author: "default"
 ---
 
 I remember a time when I held onto a mistake I made at work for months. It ate at me every morning, a heavy knot in my stomach that wouldn't loosen. I was convinced that by replaying the moment, I could somehow change the outcome. It wasn't until I read a simple line by Mary Oliver—"Someone I loved once gave me a box full of darkness. It took me years to understand that this, too, was a gift"—that something finally shifted. I realized that my "box of darkness" wasn't meant to be carried forever; it was meant to be opened, understood, and then set down.

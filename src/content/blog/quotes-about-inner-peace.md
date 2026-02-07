@@ -1,7 +1,7 @@
 ---
-title: "150 Quotes About Inner Peace to Quiet Your Mind"
+title: "150 Quotes About Inner Peace to Quiet Your Mind and Find Calm"
 description: "Discover 150 powerful quotes about inner peace to help you find tranquility, reduce anxiety, and cultivate a calm mind amidst life's daily challenges."
-pubDate: 2026-02-07
+pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-inner-peace.webp"
 category: "mindfulness-peace"
 author: "Rajesh Praharaj"

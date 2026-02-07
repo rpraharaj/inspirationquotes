@@ -1,7 +1,7 @@
 ---
 title: "150 Heartwarming Quotes About Family Traditions to Build Lasting Bonds"
 description: "Discover 150 powerful quotes about family traditions that celebrate heritage, love, and the rituals that bind generations together."
-pubDate: "2026-02-07"
+pubDate: "2026-02-08"
 heroImage: "/images/blog/quotes-about-family-traditions.webp"
 category: "family"
 ---

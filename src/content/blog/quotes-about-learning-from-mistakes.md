@@ -1,10 +1,10 @@
 ---
 title: "150 Quotes About Learning from Mistakes to Help You Grow"
 description: "Discover 150 powerful quotes about learning from mistakes. These words of wisdom will inspire you to embrace failure as a stepping stone to success and personal growth."
-pubDate: 2026-02-06
+pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-learning-from-mistakes.webp"
 category: "life-wisdom"
-author: "Inspiration Quotes Hub"
+author: "default"
 tags: ["mistakes", "growth", "life lessons", "wisdom"]
 ---
 

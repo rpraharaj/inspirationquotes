@@ -1,7 +1,8 @@
 ---
 title: "150 Quotes About Positive Energy to Elevate Your Mindset"
 description: "Discover 150 powerful quotes about positive energy to lift your spirit, radiate good vibes, and transform your mindset for a more fulfilling life."
-pubDate: 2026-02-07
+pubDate: 2026-02-08
+author: "default"
 heroImage: "/images/blog/quotes-about-positive-energy.webp"
 category: "happiness-joy"
 tags: ["positive energy", "mindset", "uplifting", "inspiration"]

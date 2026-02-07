@@ -1,7 +1,7 @@
 ---
 title: "150 Perseverance Quotes for Tough Times"
 description: "Discover 150 perseverance quotes that will help you push through life's toughest challenges. These powerful words about resilience and determination will keep you going when quitting feels easier."
-pubDate: 2026-02-06T16:00:00+05:30
+pubDate: 2026-02-07
 author: "Inspiration Quotes Hub"
 tags: ["perseverance quotes", "resilience quotes", "never give up quotes", "tough times quotes", "determination quotes"]
 category: "motivation-success"

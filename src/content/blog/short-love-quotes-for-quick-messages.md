@@ -5,7 +5,7 @@ pubDate: 2026-02-07
 heroImage: "/images/blog/short-love-quotes-for-quick-messages.webp"
 category: "short-quotes"
 tags: ["love quotes", "short quotes", "romance", "relationships"]
-author: "Inspiration Quotes Team"
+author: "default"
 ---
 
 Last Tuesday, I found myself staring at a blank text box for ten minutes. I wanted to send something special to my partner—just a little "I'm thinking of you" note—but everything I typed felt either too long or too cheesy. Eventually, I just sent a heart emoji, which was fine, but it didn't quite capture that spark of connection I was feeling in that moment. That's when I realized the magic of short love quotes: they’re the perfect "espresso shots" of affection for our busy, digital lives.

@@ -90,10 +90,10 @@ Defeat is an event, not an identity. You can lose the battle and still win the w
 
 Focus dictates your reality. If you look for the light, the darkness naturally moves to the periphery of your vision.
 
-> "Character consists of what you do on the third and fourth tries."
-> — James A. Michener
+> "The difference between a successful person and others is not a lack of strength, not a lack of knowledge, but rather a lack of will."
+> — Vince Lombardi
 
-Anyone can try once. The people who change the world are the ones who are still there on the tenth attempt.
+The will to keep going is the most important asset in your toolkit. Anyone can try once, but the ones who win are the ones who refuse to quit.
 
 ## Motivational Words to Keep Moving Forward
 
@@ -134,10 +134,10 @@ This is my personal mantra. I don't care if I'm running or crawling, as long as 
 
 Respect the process. Progress has phases, and you can't skip the "keep going" part of the early stages.
 
-> "Success is walking from failure to failure with no loss of enthusiasm."
-> — Winston Churchill
+> "He who has a why to live can bear almost any how."
+> — Friedrich Nietzsche
 
-Maintaining your fire while it's raining is the ultimate test of a leader and a creator.
+Maintaining your fire while it's raining is much easier when you have a clear purpose driving you forward.
 
 > "Action is the foundational key to all success."
 > — Pablo Picasso
@@ -662,10 +662,10 @@ Identify your "something else." When that goal is big enough, your fear becomes 
 
 Risk is the entry fee for a life worth living. Pay it with a smile and keep moving.
 
-> "Success is not final, failure is not fatal: it is the courage to continue that counts."
-> — Winston Churchill
+> "A man is but the product of his thoughts. What he thinks, he becomes."
+> — Mahatma Gandhi
 
-I know I've shared this one before, but it bears repeating. The continuity is the goal.
+The internal narrative you choose determines the external reality you build.
 
 > "Courage is resistance to fear, mastery of fear—not absence of fear."
 > — Mark Twain
@@ -736,10 +736,10 @@ There is a specific kind of "keep going" that is required when you are simply, b
 
 This is the most important lesson in this entire collection. Exhaustion is a sign that you need a break, not a sign that your goal is wrong.
 
-> "Character consists of what you do on the third and fourth tries."
-> — James A. Michener
+> "A goal is not always meant to be reached, it often serves simply as something to aim at."
+> — Bruce Lee
 
-The first try is easy. The fourth try, when you're tired and discouraged, is where your true self is built.
+The first try is easy. The fourth try, when you're tired and discouraged, is where your true self is built by refusing to give up on the aim.
 
 > "The most certain way to succeed is always to try just one more time."
 > — Thomas Edison
@@ -786,8 +786,8 @@ A tiptoe counts as progress. Don't let the smallness of the step discourage you.
 
 I often tell myself this when I'm ready to quit. The finish line is usually invisible until you've already crossed it.
 
-> "Energy and persistence conquer all things."
-> — Benjamin Franklin
+> "A river cuts through rock, not because of its power, but because of its persistence."
+> — Jim Watkins
 
 Focus on managing your energy so you can maintain your persistence.
 

@@ -1,7 +1,7 @@
 ---
-title: "150 Quotes About True Love and Soulmates to Find Your Forever"
-description: "Discover 150 powerful quotes about true love and soulmates. From deep connections to finding your forever person, these words of wisdom capture the magic of real love."
-pubDate: 2026-02-07
+title: "150 Quotes About True Love and Soulmates for Your Forever"
+description: "Discover 150 powerful quotes about true love and soulmates. From deep connections to finding your person, these words of wisdom capture the magic of real love."
+pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-true-love-and-soulmates.webp"
 categories: ["love-relationships"]
 author: "Rajesh Praharaj"

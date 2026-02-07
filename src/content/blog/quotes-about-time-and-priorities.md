@@ -1,7 +1,7 @@
 ---
 title: "150 Quotes About Time and Priorities to Help You Focus"
 description: "Master your schedule and focus on what matters most with these 150 powerful quotes about time and priorities. Perfect for boosting productivity and finding balance."
-pubDate: 2026-02-06
+pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-time-and-priorities.webp"
 category: "life-wisdom"
 tags: ["time", "priorities", "productivity", "focus", "wisdom"]
@@ -568,6 +568,16 @@ When we "kill time," we are literally throwing away the minutes of our existence
 
 > "Time is a thief, stealing moments we can never regain."
 > — J.R. Ward
+
+> "Lost time is like a run in a stocking. It always gets worse."
+> — Anne Morrow Lindbergh
+
+Regretting the past can be useful if it prevents future mistakes, but don't let the regret itself become another way to lose time.
+
+> "If you don't have time to do it right, when will you have time to do it over?"
+> — John Wooden
+
+This is a classic reminder of the efficiency of quality. Doing it right the first time is the ultimate time-saver.
 
 > "The most important thing in life is knowing the most important things in life."
 > — David F. Jakielo

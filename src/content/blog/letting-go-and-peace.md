@@ -1,7 +1,7 @@
 ---
 title: "150 Quotes About Letting Go and Peace to Find Your Inner Calm"
 description: "Discover 150 powerful quotes about letting go and finding peace. Learn how to release the past, forgive, and embrace a life of emotional freedom and serenity."
-pubDate: 2026-02-07
+pubDate: 2026-02-08
 heroImage: "/images/blog/letting-go-and-peace.webp"
 category: "mindfulness-peace"
 tags: ["letting go", "inner peace", "forgiveness", "moving on", "mindfulness"]

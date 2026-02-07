@@ -1,9 +1,10 @@
 ---
 title: "150 Funny Quotes to Make You Laugh Out Loud"
 description: "Need a good chuckle? Explore 150 hilarious funny quotes about life, work, relationships, and the absurdities of being human. Guaranteed to brighten your day!"
-pubDate: "2026-02-07"
+pubDate: 2026-02-08
 heroImage: "/images/blog/funny-quotes-to-make-you-laugh.webp"
 category: "humor-wit"
+author: "default"
 ---
 
 I've always believed that a day without laughter is a day wasted. There's something incredibly liberating about finding the humor in a situation that should probably be stressful. Last week, for instance, I managed to pour orange juice into my cereal instead of milk while half-asleep. Instead of getting annoyed at the sticky mess, I just started laughing at my own incompetence. It's those little moments that remind us not to take life too seriously.

@@ -1,7 +1,7 @@
 ---
 title: "150 Growth Mindset Quotes for Long-Term Success"
 description: "Discover 150 growth mindset quotes from Carol Dweck and other visionaries that will transform how you view challenges, learning, and your own potential for success."
-pubDate: 2026-02-06T18:00:00+05:30
+pubDate: 2026-02-07
 author: "Inspiration Quotes Hub"
 tags: ["growth mindset quotes", "Carol Dweck quotes", "learning quotes", "self-improvement quotes", "mindset quotes"]
 category: "motivation-success"

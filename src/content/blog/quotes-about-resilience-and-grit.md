@@ -1,7 +1,7 @@
 ---
 title: "150 Quotes About Resilience and Grit to Build Mental Toughness"
 description: "Discover 150 powerful quotes about resilience and grit to help you overcome adversity and build mental toughness. Perfect for staying motivated during tough times."
-pubDate: 2026-02-07
+pubDate: "2026-02-08"
 category: "courage-confidence"
 tags: ["resilience quotes", "grit", "mental toughness", "perseverance", "inner strength", "overcoming adversity"]
 featured: true

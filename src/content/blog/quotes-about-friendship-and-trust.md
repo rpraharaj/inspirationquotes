@@ -1,7 +1,7 @@
 ---
 title: "150 Quotes About Friendship and Trust to Strengthen Your Bonds"
-description: "Explore 150 powerful quotes about friendship and trust. Discover the wisdom of authors and thinkers on loyalty, honesty, and rebuilding trust in your most important relationships."
-pubDate: 2026-02-07
+description: "Discover 150 powerful quotes about friendship and trust. Explore wisdom on loyalty, honesty, and rebuilding trust in your most important relationships."
+pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-friendship-and-trust.webp"
 category: "friendship"
 author: "Rajesh Praharaj"

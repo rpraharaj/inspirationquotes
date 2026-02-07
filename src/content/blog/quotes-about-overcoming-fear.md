@@ -1,7 +1,7 @@
 ---
 title: "150 Quotes About Overcoming Fear to Reclaim Your Power"
 description: "Discover 150 powerful quotes about overcoming fear. From facing anxiety to finding inner strength, these words of wisdom will inspire you to move forward."
-pubDate: 2026-02-07
+pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-overcoming-fear.webp"
 category: "courage-confidence"
 tags: ["overcoming fear", "courage", "inspiration", "mental strength"]

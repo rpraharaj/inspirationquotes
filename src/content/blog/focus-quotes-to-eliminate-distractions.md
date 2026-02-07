@@ -1,10 +1,11 @@
 ---
 title: "150 Focus Quotes to Eliminate Distractions"
 description: "Discover 150 powerful focus quotes to help you eliminate distractions and achieve your goals. Perfect for when you need to concentrate and get things done."
-pubDate: 2026-02-06T12:00:00Z
+pubDate: 2026-02-07
 heroImage: "/images/blog/focus-quotes-to-eliminate-distractions.webp"
 tags: ["focus quotes", "productivity", "motivation", "mindfulness", "concentration"]
 author: "Inspiration Quotes Hub"
+category: "motivation-success"
 ---
 
 Last week, I sat down to write this article with a clear plan. Three hours later, I'd checked Instagram twelve times, reorganized my desk, and researched completely unrelated topics. Sound familiar?

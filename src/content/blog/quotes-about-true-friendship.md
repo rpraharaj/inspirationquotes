@@ -159,8 +159,8 @@ Sometimes we don't need a paragraph; we just need a quick shot of wisdom to carr
 42. > "A friend to all is a friend to none."
     > — Aristotle
 
-43. > "The best mirror is an old friend."
-    > — George Herbert
+43. > "The most I can do for my friend is simply be his friend."
+    > — Henry David Thoreau
 
 44. > "Friendship is the wine of life."
     > — Edward Young
@@ -198,17 +198,17 @@ Sometimes we don't need a paragraph; we just need a quick shot of wisdom to carr
 55. > "Life was meant for good friends and great adventures."
     > — Unknown
 
-56. > "A true friend is a forever friend."
-    > — George MacDonald
+56. > "Each friend represents a world in us, a world possibly not born until they arrive."
+    > — Anaïs Nin
 
-57. > "Friendship's the wine of life."
-    > — Edward Young
+57. > "A single soul dwelling in two bodies."
+    > — Aristotle
 
-58. > "One's friends are that part of the human race with which one can be human."
-    > — George Santayana
+58. > "The meeting of two personalities is like the contact of two chemical substances: if there is any reaction, both are transformed."
+    > — C.G. Jung
 
-59. > "Friendship is the source of the greatest pleasures."
-    > — Thomas Aquinas
+59. > "True friendship is like sound health; the value of it is seldom known until it be lost."
+    > — Charles Caleb Colton
 
 ## Heartfelt True Friendship Quotes for Your Best Friend
 
@@ -335,8 +335,8 @@ The real test of any relationship isn't how you celebrate the wins, but how you 
 98. > "A true friend never gets in your way unless you happen to be going down."
     > — Arnold H. Glasgow
 
-99. > "Friendship is a sheltering tree."
-    > — Samuel Taylor Coleridge
+99. > "A friend is someone who makes it easy to believe in yourself."
+    > — Heidi Wills
 
 ## Beautiful Quotes on the Bond of Genuine Friendship
 
@@ -375,11 +375,11 @@ There's a specific kind of beauty in a friendship that has aged well. It’s lik
 110. > "The glory of friendship is the spiritual inspiration that comes when you discover that someone else believes in you."
      > — Ralph Waldo Emerson
 
-111. > "Friendship is another word for love."
-     > — Unknown
+111. > "Friendship marks a life even more deeply than love. Love risks degenerating into obsession, friendship is never anything but sharing."
+     > — Elie Wiesel
 
-112. > "A friend is what the heart needs all the time."
-     > — Henry van Dyke
+112. > "Silences make the real conversations between friends. Not the saying but the never needing to say is what counts."
+     > — Margaret Lee Runbeck
 
 113. > "Friends are the sailors who guide your rickety boat safely across the dangerous waters of life."
      > — Sare and Cate
@@ -390,8 +390,8 @@ There's a specific kind of beauty in a friendship that has aged well. It’s lik
 115. > "The greatest gift of life is friendship, and I have received it."
      > — Hubert H. Humphrey
 
-116. > "I have no notion of loving people by halves; it is not my nature."
-     > — Jane Austen
+116. > "A friend is someone who gives you total freedom to be yourself."
+     > — Jim Morrison
 
 117. > "Friends are like stars. You don't always see them, but you know they're always there."
      > — Christy Evans
@@ -409,8 +409,8 @@ While we might have hundreds of "friends" on social media, true friendship is ac
 120. > "Real friendship, like real poetry, is extremely rare — and precious as a pearl."
      > — Tahar Ben Jelloun
 
-121. > "True friends are like diamonds—bright, beautiful, valuable, and always in style."
-     > — Nicole Richie
+121. > "Friendship is the only thing in the world concerning the usefulness of which all mankind are agreed."
+     > — Marcus Tullius Cicero
 
 122. > "A faithful friend is a sturdy shelter; he who finds one finds a treasure."
      > — Unknown
@@ -457,11 +457,11 @@ While we might have hundreds of "friends" on social media, true friendship is ac
 136. > "The best friend is the one who brings out the best in you."
      > — Henry Ford
 
-137. > "Of all possessions, a friend is the most precious."
-     > — Herodotus
+137. > "I always felt that the great high privilege, relief and comfort of friendship was that one had to explain nothing."
+     > — Katherine Mansfield
 
-138. > "A friend may well be reckoned the masterpiece of nature."
-     > — Ralph Waldo Emerson
+138. > "Friendship is a strong and habitual inclination in two persons to promote the good and happiness of one another."
+     > — Eustace Budgell
 
 139. > "There is nothing better than a friend, unless it is a friend with chocolate."
      > — Linda Grayson
@@ -502,6 +502,18 @@ Friendship isn't a destination; it's a practice. It requires showing up, even wh
 
 150. > "I have no notion of loving people by halves; it is not my nature."
      > — Jane Austen
+
+151. > "A sweet friendship refreshes the soul."
+     > — Proverbs 27:9
+
+152. > "A friend is a second self."
+     > — Aristotle
+
+153. > "Friendship is the shadow of the evening, which increases with the setting sun of life."
+     > — Jean de La Fontaine
+
+154. > "Life is partly what we make it, and partly what it is made by the friends we choose."
+     > — Tennessee Williams
 
 ## Final Thoughts on the Wisdom of True Friendship
 

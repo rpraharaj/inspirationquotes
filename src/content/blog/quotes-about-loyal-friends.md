@@ -94,7 +94,7 @@ When I think about my oldest friends, the word that comes to mind isn't just "hi
 
 ## Inspiring Words on Loyalty and Trust in Friendship
 
-Trust is the foundation upon which every meaningful relationship is built. Without it, friendship is just a casual acquaintance. I've learned that trust isn't something you give once; it's something you build through a thousand small moments of integrity. For more on building these bonds, you might find our collection of [relationship quotes about trust](/relationship-quotes-about-trust/) helpful.
+Trust is the foundation upon which every meaningful relationship is built. Without it, friendship is just a casual acquaintance. I've learned that trust isn't something you give once; it's something you build through a thousand small moments of integrity. For more on building these bonds, you might find our collection of [relationship quotes about trust](/relationship-quotes-about-trust/) helpful. If you want to dive deeper into the science of how we form these lasting connections, <a href="https://www.psychologytoday.com/" target="_blank" rel="noopener">Psychology Today</a> offers some incredible insights into the mechanics of long-term loyalty and trust.
 
 16. > "Broken trust can be healed only by true friendship."
     > — Unknown
@@ -410,7 +410,7 @@ Consistency is the most underrated trait in any relationship. Having someone you
 
 ## Short Quotes About Loyalty to Share with Friends
 
-Sometimes, you don't need a paragraph; you just need a few words that hit the mark. Short, punchy quotes are perfect for text messages, social media captions, or a quick note of appreciation. These "espresso shots" of wisdom are exactly what I reach for when I want to send a quick "thinking of you" to my inner circle.
+Sometimes, you don't need a paragraph; you just need a few words that hit the mark. Short, punchy quotes are perfect for text messages, social media captions, or a quick note of appreciation. These "espresso shots" of wisdom are exactly what I reach for when I want to send a quick "thinking of you" to my inner circle. For those who appreciate how these sentiments are captured in verse, <a href="https://www.poetryfoundation.org/" target="_blank" rel="noopener">The Poetry Foundation</a> has some stunning examples of friendship-focused poetry that beautifully illustrates these loyal bonds.
 
 76. > "Love is friendship that has caught fire."
     > — Ann Landers
@@ -647,7 +647,7 @@ Integrity is the silent partner of loyalty. It’s about being the same person b
 
 ## Deep Friendship Loyalty Quotes for Soulmates and Kindred Spirits
 
-There is a level of friendship that transcends the ordinary—it's what I call "soul-level" loyalty. It's that feeling of finding a kindred spirit who speaks your language without you having to say a word. These quotes are dedicated to those deep, often inexplicable bonds that feel like they've existed for lifetimes.
+There is a level of friendship that transcends the ordinary—it's what I call "soul-level" loyalty. It's that feeling of finding a kindred spirit who speaks your language without you having to say a word. These quotes are dedicated to those deep, often inexplicable bonds that feel like they've existed for lifetimes. For a deeper look at the ethics and nature of these connections, I highly recommend exploring <a href="https://plato.stanford.edu/entries/friendship/" target="_blank" rel="noopener">Stanford's entry on the philosophy of friendship</a>.
 
 121. > "True friendship can afford true knowledge."
      > — Henry David Thoreau
@@ -803,6 +803,4 @@ Building an unbreakable bond takes time, patience, and a lot of grace. It's abou
      
      Puzo, the author of *The Godfather*, knew better than anyone the power of absolute devotion.
 
-Cultivating loyalty in your friendships is one of the most rewarding investments you can make in your personal happiness. For deeper dives into the history and philosophy of these connections, I highly recommend exploring <a href="https://plato.stanford.edu/entries/friendship/" target="_blank" rel="noopener">Stanford's entry on the philosophy of friendship</a>. Additionally, seeing how loyalty is portrayed in literature can be quite enlightening; <a href="https://www.poetryfoundation.org/" target="_blank" rel="noopener">The Poetry Foundation</a> has some stunning examples of friendship-focused verse. If you're looking for practical ways to strengthen your bonds, <a href="https://www.psychologytoday.com/" target="_blank" rel="noopener">Psychology Today</a> often features experts discussing the mechanics of long-term loyalty and trust.
-
-At the end of the day, loyalty isn't just about staying—it's about how you stay. It's about the quality of the presence, the depth of the trust, and the willingness to see someone through their darkest nights. I hope these quotes help you celebrate the people who have made your world a safer, kinder place just by being in it.
+Cultivating loyalty in your friendships is one of the most rewarding investments you can make in your personal happiness. At the end of the day, loyalty isn't just about staying—it's about how you stay. It's about the quality of the presence, the depth of the trust, and the willingness to see someone through their darkest nights. I hope these quotes help you celebrate the people who have made your world a safer, kinder place just by being in it.

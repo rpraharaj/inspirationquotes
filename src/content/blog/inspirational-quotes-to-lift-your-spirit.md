@@ -1,7 +1,7 @@
 ---
 title: "150 Inspirational Quotes to Lift Your Spirit When You Need It Most"
 description: "Discover 150 powerful inspirational quotes to lift your spirit and find hope. Perfect for tough days when you need a reminder of your inner strength and light."
-pubDate: 2026-02-06
+pubDate: 2026-02-07
 category: "inspirational"
 tags: ["inspirational quotes", "lift your spirit", "hope", "uplifting", "daily inspiration", "inner strength"]
 featured: true

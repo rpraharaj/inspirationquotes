@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-02-07T18:02:23.563Z",
-  "count": 119,
+  "generated": "2026-02-07T18:55:41.868Z",
+  "count": 120,
   "posts": [
     {
       "id": "best-friend-quotes-for-captions",
@@ -127,8 +127,8 @@
       "id": "focus-quotes-to-eliminate-distractions",
       "title": "150 Focus Quotes to Eliminate Distractions",
       "description": "Discover 150 powerful focus quotes to help you eliminate distractions and achieve your goals. Perfect for when you need to concentrate and get things done.",
-      "category": "ai-news",
-      "categoryName": "ai-news",
+      "category": "motivation-success",
+      "categoryName": "Motivation",
       "tags": [
         "focus quotes",
         "productivity",
@@ -229,9 +229,15 @@
       "id": "goal-setting-quotes-to-achieve",
       "title": "150 Goal-Setting Quotes to Plan and Achieve",
       "description": "Discover 150 powerful goal-setting quotes to help you plan, focus, and turn your dreams into reality. Perfect for staying motivated on your journey to success.",
-      "category": "ai-news",
-      "categoryName": "ai-news",
-      "tags": [],
+      "category": "motivation-success",
+      "categoryName": "Motivation",
+      "tags": [
+        "goal setting quotes",
+        "planning quotes",
+        "achievement",
+        "vision",
+        "success quotes"
+      ],
       "excerpt": "I used to treat goal setting like a New Year's Eve ritual—scribbling big dreams on a napkin, only to find it buried in a drawer three months later, completely forgotten. I had the ambition, but I lack...",
       "url": "/goal-setting-quotes-to-achieve/"
     },
@@ -331,7 +337,7 @@
     },
     {
       "id": "inspirational-quotes-about-change-and-growth",
-      "title": "150 Inspirational Quotes About Change and Growth to Transform Your Life",
+      "title": "150 Quotes About Change and Growth to Transform Your Life",
       "description": "Embrace transformation with 150 inspirational quotes about change and growth. Discover powerful wisdom to help you navigate life's transitions and evolve into your best self.",
       "category": "inspirational",
       "categoryName": "Inspirational",
@@ -365,7 +371,7 @@
     {
       "id": "inspirational-quotes-about-kindness",
       "title": "150 Inspirational Quotes About Kindness to Brighten Your Day",
-      "description": "Discover 150 powerful quotes about kindness that will remind you of the impact of a simple gesture. Perfect for finding daily inspiration and spreading positivity.",
+      "description": "150 powerful quotes about kindness to remind you of the impact of simple gestures. Find daily inspiration and spread positivity with these words of wisdom.",
       "category": "inspirational",
       "categoryName": "Inspirational",
       "tags": [],
@@ -375,7 +381,7 @@
     {
       "id": "inspirational-quotes-for-difficult-days",
       "title": "150 Inspirational Quotes for Difficult Days",
-      "description": "Discover 150 inspirational quotes for difficult days to help you find strength, hope, and resilience. These powerful words will guide you through life's toughest moments.",
+      "description": "Discover 150 inspirational quotes for difficult days to help you find strength and resilience. These powerful words will guide you through life's toughest moments.",
       "category": "inspirational",
       "categoryName": "Inspirational",
       "tags": [
@@ -390,8 +396,8 @@
     },
     {
       "id": "inspirational-quotes-for-new-beginnings",
-      "title": "150 Inspirational Quotes for New Beginnings: Embrace Your Fresh Start",
-      "description": "Discover 150 powerful quotes for new beginnings to inspire your fresh start. Find the courage to let go, embrace change, and step into your next chapter with hope.",
+      "title": "150 Inspirational Quotes for New Beginnings",
+      "description": "Discover 150 powerful quotes for new beginnings to inspire your fresh start. Find the courage to let go and step into your next chapter with hope.",
       "category": "inspirational",
       "categoryName": "Inspirational",
       "tags": [],
@@ -400,8 +406,8 @@
     },
     {
       "id": "inspirational-quotes-for-students",
-      "title": "150 Inspirational Quotes for Students and Learners to Stay Motivated",
-      "description": "Discover 150 powerful inspirational quotes for students and learners. From overcoming exam stress to finding your passion for learning, these quotes will fuel your academic journey.",
+      "title": "150 Quotes for Students and Learners to Stay Motivated",
+      "description": "150 powerful quotes for students and learners. Overcome exam stress and find your passion for learning with these motivational words of wisdom.",
       "category": "inspirational",
       "categoryName": "Inspirational",
       "tags": [],
@@ -940,7 +946,7 @@
     },
     {
       "id": "quotes-about-life-and-happiness",
-      "title": "150 Quotes About Life and Happiness to Brighten Your Perspective",
+      "title": "150 Quotes About Life and Happiness: Finding Daily Joy",
       "description": "Discover 150 powerful quotes about life and happiness that will remind you to find joy in every moment. Perfect for finding inspiration and inner peace.",
       "category": "life-wisdom",
       "categoryName": "Life Wisdom",
@@ -950,7 +956,7 @@
     },
     {
       "id": "quotes-about-life-changing-moments",
-      "title": "150 Quotes About Life Changing Moments",
+      "title": "150 Quotes About Life Changing Moments: Embrace New Chapters",
       "description": "Discover 150 powerful quotes about life changing moments. Explore wisdom on transformation, pivotal decisions, and finding courage during major life shifts.",
       "category": "life-wisdom",
       "categoryName": "Life Wisdom",
@@ -1509,6 +1515,21 @@
       "url": "/short-quotes-about-happiness/"
     },
     {
+      "id": "short-quotes-about-peace",
+      "title": "150 Short Quotes About Peace to Calm Your Mind",
+      "description": "Discover 150 powerful short quotes about peace to quiet your mind and find inner tranquility. Perfect for daily inspiration and finding calm in a busy world.",
+      "category": "short-quotes",
+      "categoryName": "Short Quotes",
+      "tags": [
+        "peace",
+        "inner-peace",
+        "calm",
+        "short-quotes"
+      ],
+      "excerpt": "I remember a time when my life felt like a radio tuned to static. Every notification, every deadline, and every minor inconvenience seemed to amplify the noise in my head until I couldn't hear my own...",
+      "url": "/short-quotes-about-peace/"
+    },
+    {
       "id": "short-quotes-about-success",
       "title": "150 Short Quotes About Success to Fuel Your Ambition",
       "description": "Discover 150 short quotes about success that pack a punch. From minimalist mantras to powerful wisdom, these bite-sized quotes will keep you motivated and focused.",
@@ -1604,8 +1625,8 @@
       "id": "winning-quotes-for-athletes",
       "title": "150 Winning Quotes for Athletes and Competitors",
       "description": "Discover 150 powerful winning quotes for athletes. Fuel your competitive spirit with wisdom from legends like Michael Jordan, Serena Williams, and Muhammad Ali.",
-      "category": "ai-news",
-      "categoryName": "ai-news",
+      "category": "motivation-success",
+      "categoryName": "Motivation",
       "tags": [
         "winning quotes",
         "sports quotes",
@@ -1618,8 +1639,8 @@
     },
     {
       "id": "wise-quotes-about-life-lessons",
-      "title": "150 Wise Quotes About Life Lessons: Timeless Wisdom for Growth",
-      "description": "Discover 150 powerful wise quotes about life lessons that will inspire personal growth, offer perspective, and help you navigate life's challenges with grace.",
+      "title": "150 Wise Quotes About Life Lessons: Wisdom for Growth",
+      "description": "Discover 150 powerful wise quotes about life lessons to inspire personal growth and help you navigate life's challenges with grace.",
       "category": "life-wisdom",
       "categoryName": "Life Wisdom",
       "tags": [

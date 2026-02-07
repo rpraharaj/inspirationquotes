@@ -1,10 +1,10 @@
 ---
 title: "150 Short Mindfulness Quotes for Quick Calm"
 description: "Find instant peace with 150 short mindfulness quotes. Perfect for quick mental resets, reducing stress, and staying present during a busy day."
-pubDate: 2026-02-07
+pubDate: 2026-02-08
 heroImage: "/images/blog/short-mindfulness-quotes.webp"
 category: "mindfulness-peace"
-author: "Rajesh Praharaj"
+author: "default"
 ---
 
 I used to think mindfulness required a dedicated room, a special cushion, and at least twenty minutes of absolute silence. In my old apartment, which sat right above a busy intersection, that kind of silence was about as common as a sunny day in London. I'd wait for the "perfect" moment to be mindful, and surprise—it never came. I was constantly stressed, perpetually rushing, and my mind felt like it was being pulled in six different directions at once.

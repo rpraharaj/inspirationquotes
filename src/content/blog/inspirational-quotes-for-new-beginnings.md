@@ -1,7 +1,7 @@
 ---
-title: "150 Inspirational Quotes for New Beginnings: Embrace Your Fresh Start"
-description: "Discover 150 powerful quotes for new beginnings to inspire your fresh start. Find the courage to let go, embrace change, and step into your next chapter with hope."
-pubDate: 2026-02-06
+title: "150 Inspirational Quotes for New Beginnings"
+description: "Discover 150 powerful quotes for new beginnings to inspire your fresh start. Find the courage to let go and step into your next chapter with hope."
+pubDate: 2026-02-08
 heroImage: "/images/blog/inspirational-quotes-for-new-beginnings.webp"
 category: "inspirational"
 author: "Rajesh Praharaj"

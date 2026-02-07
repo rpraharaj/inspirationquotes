@@ -2,7 +2,7 @@
 heroImage: "/images/blog/quotes-about-stillness-and-silence.webp"
 title: "150 Quotes About Stillness and Silence to Find Inner Peace"
 description: "Discover 150 powerful quotes about stillness and silence to help you find inner calm, clarity, and strength in a noisy world. Perfect for meditation and reflection."
-pubDate: 2026-02-07
+pubDate: 2026-02-08
 author: "default"
 category: "mindfulness-peace"
 tags: ["stillness", "silence", "mindfulness", "inner-peace", "meditation"]

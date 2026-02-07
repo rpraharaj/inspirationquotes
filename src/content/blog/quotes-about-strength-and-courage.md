@@ -1,7 +1,7 @@
 ---
 title: "150 Quotes About Strength and Courage to Fuel Your Resilience"
 description: "Discover 150 powerful quotes about strength and courage to help you face challenges and find inner bravery. Perfect for difficult times and daily inspiration."
-pubDate: 2026-02-07
+pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-strength-and-courage.webp"
 category: "courage-confidence"
 tags: ["strength", "courage", "resilience", "inner strength", "bravery"]

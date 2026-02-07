@@ -1,7 +1,7 @@
 ---
-title: "150 Quotes About Gratitude and Happiness to Brighten Your Life"
+title: "150 Gratitude and Happiness Quotes to Brighten Your Life"
 description: "Discover 150 powerful quotes about gratitude and happiness. Learn how cultivating a thankful heart leads to a more joyful and fulfilling life today."
-pubDate: "2026-02-07"
+pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-gratitude-and-happiness.webp"
 category: "gratitude"
 tags: ["gratitude quotes", "happiness quotes", "inspirational quotes", "positive thinking"]

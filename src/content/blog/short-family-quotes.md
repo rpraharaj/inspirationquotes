@@ -1,7 +1,7 @@
 ---
 title: 150 Short Family Quotes for Photos and Captions
 description: Discover 150 short family quotes perfect for your photos and captions. From funny sayings to heartwarming one-liners, find the perfect words to share your love.
-pubDate: 2026-02-07
+pubDate: 2026-02-08
 category: family
 heroImage: "/images/blog/short-family-quotes.webp"
 tags: ["family", "quotes", "captions", "instagram"]

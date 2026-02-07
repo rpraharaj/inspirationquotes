@@ -27,14 +27,8 @@ Strength isn't always about being the loudest person in the room. Often, it's th
 > "Knowing what must be done does away with fear."
 > — Rosa Parks
 
-> "I have learned over the years that when one's mind is made up, this diminishes fear; knowing what must be done does away with fear."
-> — Rosa Parks
-
 > "You have what it takes to be a victorious, independent, fearless woman."
 > — Tyra Banks
-
-> "I'm not afraid of storms, for I am learning how to sail my ship."
-> — Mary Louise Alcott
 
 > "Beware; for I am fearless, and therefore powerful."
 > — Mary Shelley
@@ -62,6 +56,12 @@ Strength isn't always about being the loudest person in the room. Often, it's th
 
 > "I will not have my life narrowed down. I will not bow down to somebody else's whim or to someone else's ignorance."
 > — bell hooks
+
+> "Don't be afraid to speak your mind. Even if your voice shakes, you must say what needs to be said."
+> — Maggie Kuhn
+
+> "You may not control all the events that happen to you, but you can decide not to be reduced by them."
+> — Maya Angelou
 
 ## Inspirational Words on Confidence and Self-Belief
 
@@ -137,8 +137,8 @@ Stepping into leadership roles often means breaking through barriers that weren'
 > "We need to reshape our own perception of how we view ourselves. We have to step up as women and take the lead."
 > — Beyoncé
 
-> "I never dreamed about success. I worked for it."
-> — Estée Lauder
+> "Success isn't about how much money you make; it's about the difference you make in people's lives."
+> — Michelle Obama
 
 > "If your actions create a legacy that inspires others to dream more, learn more, do more and become more, then, you are an excellent leader."
 > — Dolly Parton
@@ -474,8 +474,8 @@ There's a special kind of magic that happens when women support one another. I'v
 > "No one changes the world who isn't obsessed."
 > — Billie Jean King
 
-> "Make the most of yourself by fanning the tiny, inner sparks of possibility into flames of achievement."
-> — Golda Meir
+> "Success is only meaningful and enjoyable if it feels like your own."
+> — Michelle Obama
 
 > "I do not wish [women] to have power over men; but over themselves."
 > — Mary Wollstonecraft

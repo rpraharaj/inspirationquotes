@@ -1,7 +1,7 @@
 ---
 title: "150 Quotes About Mindful Living to Inspire Daily Presence"
 description: "Discover 150 powerful mindful living quotes that will help you stay present and find peace. Perfect for anyone looking to embrace mindfulness in their daily life."
-pubDate: "Feb 07 2026"
+pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-mindful-living.webp"
 category: "mindfulness-peace"
 author: "default"

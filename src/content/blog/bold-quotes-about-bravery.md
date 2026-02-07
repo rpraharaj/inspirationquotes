@@ -1,10 +1,10 @@
 ---
 title: "150 Bold Quotes About Bravery to Face Your Fears"
 description: "Discover 150 bold quotes about bravery that will inspire you to face your fears and take risks. These powerful words of courage will help you stay strong and move forward."
-pubDate: 2026-02-07
+pubDate: 2026-02-08
 heroImage: "/images/blog/bold-quotes-about-bravery.webp"
 category: "courage-confidence"
-author: "default"
+author: "Rajesh Praharaj"
 tags: ["bravery", "courage", "inspiration", "bold"]
 ---
 

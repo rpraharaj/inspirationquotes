@@ -18,7 +18,7 @@ Here are 150 powerful, short friendship quotes to help you celebrate the people 
 
 ## Short Friendship Quotes for Best Friends
 
-Best friends are the siblings we choose for ourselves. In my own life, my best friend has been the person who knows my coffee order and my deepest fears in equal measure. These short quotes capture that unique, unbreakable bond that doesn't need many words to be understood. When you share these with your closest circle, you're acknowledging a history that spans beyond simple conversation.
+Best friends are the siblings we choose for ourselves. In my own life, my best friend has been the person who knows my coffee order and my deepest fears in equal measure. These short quotes capture that unique, unbreakable bond that doesn't need many words to be understood. When you share these with your closest circle, you're acknowledging a history that spans beyond simple conversation. For a deeper look at the cultural significance of these bonds, <a href="https://plato.stanford.edu/entries/friendship/" target="_blank" rel="noopener">the Stanford Encyclopedia of Philosophy offers a profound exploration of the nature of friendship</a>.
 
 > "A best friend is like a four-leaf clover: hard to find and lucky to have."
 > — Irish Proverb

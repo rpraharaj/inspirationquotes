@@ -566,4 +566,196 @@ Patience is the greatest gift an old friend can give. That, and a very large gla
 
 A final, sincere note: find your "weirdo," keep them close, and never stop laughing at each other.
 
+## Funny Friendship Quotes for Work and Office Buddies
+
+Surviving a 9-to-5 is significantly easier when you have a "work spouse" to exchange looks with during long meetings. I've found that some of my most loyal friendships started over a shared frustration with the office printer or a mutual love for Friday afternoon coffee runs. For more relatable insights on professional bonds, <a href="https://www.themuse.com/advice/work-friendship-quotes" target="_blank" rel="noopener">The Muse</a> offers a great collection of quotes that perfectly capture the office experience. These quotes celebrate the people who make the professional world a little more tolerable.
+
+106. > "Work is much better when you have a friend to complain with." 
+     > — Unknown
+     A shared eye-roll is the ultimate bonding experience in any corporate environment.
+
+107. > "A work friend is someone who knows exactly which meetings could have been an email." 
+     > — Unknown
+     They are the silent partners in your daily quest for productivity and sanity.
+
+108. > "We're friends because we both hate the same coworkers." 
+     > — Unknown
+     Nothing builds a bond faster than a common enemy in the cubicle next door.
+
+109. > "I only come to work for the snacks and the gossip with you." 
+     > — Unknown
+     The social aspect of the office is often the only thing keeping us from hitting the "snooze" button forever.
+
+110. > "Work bestie: The person who keeps you from quitting every single Tuesday." 
+     > — Unknown
+     Tuesdays are notoriously difficult; having a teammate makes the mountain feel like a molehill.
+
+111. > "My office friend is the only one who knows my true 'meeting' face." 
+     > — Unknown
+     That specific look of concentrated interest that is actually just a daydream about lunch.
+
+112. > "Friends don't let friends go to the breakroom alone." 
+     > — Unknown
+     Safety in numbers is a vital strategy when the free donuts are announced.
+
+113. > "We go together like coffee and Monday mornings." 
+     > — Unknown
+     A necessary combination for survival in the modern workplace.
+
+114. > "A true work friend is one who tells you when you have food in your teeth before a big presentation." 
+     > — Unknown
+     This is the highest form of professional loyalty and care.
+
+115. > "Our friendship is the only thing on my resume that actually matters." 
+     > — Unknown
+     The skills are replaceable; the connections are the real career win.
+
+116. > "I'm so glad we work together so I have someone to judge everyone with." 
+     > — Unknown
+     Collaborative observation is a very refined and necessary workplace skill.
+
+117. > "Work is just a place I go to wait for my next conversation with you." 
+     > — Unknown
+     The tasks are secondary to the high-quality banter.
+
+118. > "You're the reason I haven't 'replied all' with my honest opinion yet." 
+     > — Unknown
+     A good friend acts as a filter for our most impulsive professional urges.
+
+119. > "Best friends: The ones who can communicate an entire HR violation with just one look." 
+     > — Unknown
+     Non-verbal communication is the secret language of a great office bond.
+
+120. > "I'd follow you to any company, as long as they have a good coffee machine." 
+     > — Unknown
+     Loyalty follows the person, not the logo.
+
+## Hilarious Deep Friendship Quotes for the Weirdos
+
+Real friendship is about finding someone whose brand of "crazy" perfectly complements your own. I've always felt that the people who see your strangest habits and decide to join in are the ones worth keeping forever. These quotes are for the kindred spirits who have moved past "normal" and into the beautiful territory of shared absurdity.
+
+121. > "I think we'll be friends forever because we're both too weird for anyone else." 
+     > — Unknown
+     Exclusivity based on mutual strangeness is a very solid foundation for a bond.
+
+122. > "Friendship is finding the person you can be annoying with." 
+     > — Unknown
+     Being able to be your most irritating self without judgment is the ultimate freedom.
+
+123. > "I love that I can be completely silent with you and it’s not awkward, just weird." 
+     > — Unknown
+     The transition from "comfortable silence" to "shared weird silence" is a major milestone.
+
+124. > "We are best friends. Always remember that if you fall, I will pick you up... after I finish laughing and recording it." 
+     > — Unknown
+     Documenting the disaster is a vital part of the supportive process.
+
+125. > "You're the only person I'd share my search history with. Just kidding, no one sees that." 
+     > — Unknown
+     There are limits to every friendship, even the ones built on total weirdness.
+
+126. > "If you were a bird, I'd fly with you. If you were a fish, I'd swim with you. If you were a weirdo... wait, you already are." 
+     > — Unknown
+     Acceptance of the present reality is the first step toward a deep connection.
+
+127. > "My best friend is the one who knows exactly which meme will ruin my life in the best way." 
+     > — Unknown
+     Digital curation is the modern love language of the "weirdo" tribe.
+
+128. > "We go together like 'copy' and 'paste' — redundant but necessary." 
+     > — Unknown
+     A funny take on the synchronicity that often happens between best friends.
+
+129. > "I hope we're friends until we're old enough to cause trouble in the retirement home." 
+     > — Unknown
+     The long-term goal for every eccentric pair of besties.
+
+130. > "A true friend is someone who thinks you're a good egg even if you're slightly cracked." 
+     > — Unknown
+     The cracks are where the light—and the humor—gets in.
+
+131. > "I'd take a bullet for you, but I'd definitely complain about it for the next fifty years." 
+     > — Unknown
+     Loyalty with a side of lifelong nagging is the most authentic form of friendship.
+
+132. > "You're my favorite person to be socially awkward with." 
+     > — Unknown
+     Hiding in the corner of a party is much more fun when you have a teammate.
+
+133. > "We've been friends for so long I can't remember which one of us is the bad influence." 
+     > — Unknown
+     It's a collaborative descent into mischief.
+
+134. > "If anyone saw our group chat, we'd probably be in a padded room together." 
+     > — Unknown
+     The digital record of a friendship is often the most hilariously incriminating evidence.
+
+135. > "You're the only one I can be truly 'unhinged' with." 
+     > — Unknown
+     Exhaling the internal chaos is only safe with the right person.
+
+## Witty Quotes on the Chaos of Long-Term Friendship
+
+The longer you know someone, the more "incriminating evidence" you have on them. I've found that my oldest friends are the ones I'm most careful to keep happy, purely because they know where all the metaphorical bodies are buried. These final quotes celebrate the messy, beautiful, and slightly dangerous reality of knowing someone for decades.
+
+136. > "Friendship is like a bank account. You can't keep taking out without putting something in." 
+     > — Unknown
+     A practical reminder that even the funniest bonds require consistent investment.
+
+137. > "We'll be friends 'til we're old and senile, then we can be new friends." 
+     > — Unknown
+     The "reset button" strategy for eternal companionship.
+
+138. > "A loyal friend laughs at your jokes when they're not so good, and sympathizes with your problems when they're not so bad." 
+     > — Arnold H. Glasgow
+     Grace is the secret ingredient in the recipe for a long-term bond.
+
+139. > "The only thing tighter than our friendship is our jeans after brunch." 
+     > — Unknown
+     Shared culinary adventures are a vital part of the long-term history.
+
+140. > "Best friends: they know how crazy you are and still choose to be seen with you in public." 
+     > — Unknown
+     Public association is the ultimate test of endurance for any friendship.
+
+141. > "I don't need a friend who changes when I change and who nods when I nod; my shadow does that much better." 
+     > — Plutarch
+     A true friend provides the friction that helps us grow over time.
+
+142. > "Friendship improves happiness and abates misery, by the doubling of our joy and the dividing of our grief." 
+     > — Joseph Addison
+     The math of a decade-long bond is always in favor of the heart.
+
+143. > "There is nothing better than a friend, unless it is a friend with chocolate." 
+     > — Linda Grayson
+     Shared snacks are the universal currency of long-term loyalty.
+
+144. > "Friends are the siblings God never gave us." 
+     > — Mencius
+     The chosen family is often the one that survives the most "seasons" of our lives.
+
+145. > "True friendship is a plant of slow growth and must undergo and withstand the shocks of adversity." 
+     > — George Washington
+     Even presidents knew that the "chaos" of time only makes a bond more resilient.
+
+146. > "Life is an awful, ugly place to not have a best friend." 
+     > — Sarah Dessen
+     The world is a lot less intimidating when you have a permanent teammate.
+
+147. > "A good friend will always stab you in the front." 
+     > — Oscar Wilde
+     The brutal honesty of an old friend is more valuable than the soft lies of a new acquaintance.
+
+148. > "It's the friends you can call up at 4 a.m. that matter." 
+     > — Marlene Dietrich
+     The "emergency contact" status is the highest honor in the world of friendship.
+
+149. > "No road is long with good company." 
+     > — Turkish Proverb
+     The journey matters so much less than the people walking alongside you.
+
+150. > "A true friend is a forever friend." 
+     > — George MacDonald
+     Ending on the most important truth: real loyalty has no expiration date.
+
 Through all the lopsided bookshelves and 4 a.m. crises, it’s the laughter that sticks. These funny friendship quotes are more than just punchlines—they’re the soundtrack to our best memories. So go ahead, send that "ugly selfie" or share that "unnecessary caption." Life is too short to be serious, especially when you have a best friend to be ridiculous with.

@@ -1,10 +1,10 @@
 ---
 title: "150 Funny Love Quotes for Couples to Keep the Spark Alive"
 description: "Discover 150 funny love quotes for couples that capture the humor, quirks, and joy of being together. Perfect for keeping your relationship light and fun."
-pubDate: "Feb 07 2026"
+pubDate: "2026-02-08"
 heroImage: "/images/blog/funny-love-quotes-for-couples.webp"
 category: "humor-wit"
-author: "default"
+author: "InspirationQuotes Staff"
 tags: ["love", "humor", "couples", "relationships"]
 ---
 

@@ -1,9 +1,10 @@
 ---
 title: "150 Quotes About Meaning and Purpose to Ignite Your Inner Fire"
 description: "Discover 150 powerful quotes about meaning and purpose that will help you find your true north and live a more intentional, fulfilling life today."
-pubDate: 2026-02-06
+pubDate: 2026-02-08
 category: "life-wisdom"
 heroImage: "/images/blog/quotes-about-meaning-and-purpose.webp"
+author: "default"
 tags: ["meaning", "purpose", "life wisdom", "inspiration"]
 ---
 

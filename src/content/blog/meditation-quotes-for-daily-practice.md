@@ -1,7 +1,7 @@
 ---
-title: "150 Meditation Quotes for Daily Practice to Find Your Inner Calm"
+title: "150 Meditation Quotes for Daily Practice and Inner Calm"
 description: "Discover 150 powerful meditation quotes to deepen your daily practice. From Zen masters to modern teachers, find the words you need for peace and clarity."
-pubDate: "2026-02-07"
+pubDate: 2026-02-08
 category: "mindfulness-peace"
 author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/meditation-quotes-for-daily-practice.webp"
