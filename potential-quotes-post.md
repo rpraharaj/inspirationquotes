@@ -105,9 +105,9 @@ All posts are marked as `to-do` in the `Post Created` column for tracking.
 | mindfulness-peace | 150 Quotes About Mindful Living | quotes-about-mindful-living | ✅ complete |
 | mindfulness-peace | 150 Quotes About Breathing and Calm | quotes-about-breathing-and-calm | ✅ complete |
 | humor-wit | 150 Funny Quotes to Make You Laugh | funny-quotes-to-make-you-laugh | ✅ complete |
-| humor-wit | 150 Witty Quotes About Life | witty-quotes-about-life | to-do |
-| humor-wit | 150 Sarcastic Quotes with a Clever Twist | sarcastic-quotes-with-a-clever-twist | to-do |
-| humor-wit | 150 Quotes About Humor and Positivity | quotes-about-humor-and-positivity | to-do |
+| humor-wit | 155 Witty Quotes About Life | witty-quotes-about-life | ✅ complete |
+| humor-wit | 150 Sarcastic Quotes with a Clever Twist | sarcastic-quotes-with-a-clever-twist | ✅ complete |
+| humor-wit | 150 Quotes About Humor and Positivity | quotes-about-humor-and-positivity | ✅ complete |
 | humor-wit | 150 Funny Work Quotes for Office Laughs | funny-work-quotes | to-do |
 | humor-wit | 150 Clever Quotes for Social Captions | clever-quotes-for-social-captions | to-do |
 | humor-wit | 150 Quotes About Laughter and Joy | quotes-about-laughter-and-joy | to-do |

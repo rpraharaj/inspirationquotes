@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generated": "2026-02-07T15:16:49.873Z",
-  "count": 93,
+  "generated": "2026-02-07T16:54:33.033Z",
+  "count": 104,
   "posts": [
     {
       "id": "best-friend-quotes-for-captions",
@@ -168,6 +168,16 @@
       "tags": [],
       "excerpt": "Last week, my best friend and I were trying to assemble a piece of furniture that supposedly took \"twenty minutes.\" Three hours later, we were surrounded by leftover screws, a lopsided bookshelf, and...",
       "url": "/funny-friendship-quotes/"
+    },
+    {
+      "id": "funny-quotes-to-make-you-laugh",
+      "title": "150 Funny Quotes to Make You Laugh Out Loud",
+      "description": "Need a good chuckle? Explore 150 hilarious funny quotes about life, work, relationships, and the absurdities of being human. Guaranteed to brighten your day!",
+      "category": "humor-wit",
+      "categoryName": "Humor & Wit",
+      "tags": [],
+      "excerpt": "I've always believed that a day without laughter is a day wasted. There's something incredibly liberating about finding the humor in a situation that should probably be stressful. Last week, for insta...",
+      "url": "/funny-quotes-to-make-you-laugh/"
     },
     {
       "id": "goal-setting-quotes-to-achieve",
@@ -420,6 +430,22 @@
       "url": "/letting-go-and-moving-on/"
     },
     {
+      "id": "letting-go-and-peace",
+      "title": "150 Quotes About Letting Go and Peace to Find Your Inner Calm",
+      "description": "Discover 150 powerful quotes about letting go and finding peace. Learn how to release the past, forgive, and embrace a life of emotional freedom and serenity.",
+      "category": "mindfulness-peace",
+      "categoryName": "Mindfulness & Peace",
+      "tags": [
+        "letting go",
+        "inner peace",
+        "forgiveness",
+        "moving on",
+        "mindfulness"
+      ],
+      "excerpt": "Last summer, I found myself sitting by a small lake, clutching a journal filled with regrets I couldn't seem to shake. I was exhausted from trying to control every outcome and replay every mistake in...",
+      "url": "/letting-go-and-peace/"
+    },
+    {
       "id": "life-quotes-that-teach-wisdom",
       "title": "150 Life Quotes That Teach Real Wisdom",
       "description": "Discover 150 powerful life quotes that teach real wisdom. From ancient philosophers to modern thinkers, find the inspiration you need to live well.",
@@ -453,6 +479,21 @@
       "tags": [],
       "excerpt": "I remember the first time I realized that love wasn't just a feeling, but a series of quiet, everyday choices. My partner and I were sitting in a crowded cafe, trying to navigate a particularly stress...",
       "url": "/love-quotes-for-couples/"
+    },
+    {
+      "id": "meditation-quotes-for-daily-practice",
+      "title": "150 Meditation Quotes for Daily Practice to Find Your Inner Calm",
+      "description": "Discover 150 powerful meditation quotes to deepen your daily practice. From Zen masters to modern teachers, find the words you need for peace and clarity.",
+      "category": "mindfulness-peace",
+      "categoryName": "Mindfulness & Peace",
+      "tags": [
+        "meditation",
+        "mindfulness",
+        "inner peace",
+        "daily practice"
+      ],
+      "excerpt": "I remember the first time I tried to sit in silence. It was a Tuesday morning, the sun was barely peeking through the blinds, and I was convinced I could \"master\" meditation in ten minutes. Instead, m...",
+      "url": "/meditation-quotes-for-daily-practice/"
     },
     {
       "id": "mindfulness-quotes-for-calm-and-clarity",
@@ -571,6 +612,22 @@
       "tags": [],
       "excerpt": "Last week, I found myself sitting at my kitchen table, staring at a mounting pile of bills and a laptop screen full of unanswered emails. I felt overwhelmed, stretched thin, and honestly, a bit resent...",
       "url": "/quotes-about-being-thankful/"
+    },
+    {
+      "id": "quotes-about-breathing-and-calm",
+      "title": "150 Quotes About Breathing and Calm to Find Your Inner Peace",
+      "description": "Discover 150 powerful quotes about breathing and calm. Learn how conscious breathing can transform your stress into serenity and anchor you in the present moment.",
+      "category": "mindfulness-peace",
+      "categoryName": "Mindfulness & Peace",
+      "tags": [
+        "breathing",
+        "calm",
+        "inner peace",
+        "mindfulness",
+        "serenity"
+      ],
+      "excerpt": "I used to think that \"just breathe\" was the most annoying advice someone could give when I was stressed. It felt too simple, almost dismissive of the chaos I was feeling. But during a particularly ove...",
+      "url": "/quotes-about-breathing-and-calm/"
     },
     {
       "id": "quotes-about-choices-and-consequences",
@@ -755,6 +812,32 @@
       "url": "/quotes-about-home-and-family/"
     },
     {
+      "id": "quotes-about-humor-and-positivity",
+      "title": "150 Quotes About Humor and Positivity to Brighten Your Outlook",
+      "description": "Discover 150 powerful quotes about humor and positivity that will shift your perspective, lift your spirit, and remind you to laugh through life's challenges.",
+      "category": "humor-wit",
+      "categoryName": "Humor & Wit",
+      "tags": [
+        "humor",
+        "positivity",
+        "optimism",
+        "laughter",
+        "life wisdom"
+      ],
+      "excerpt": "I've always believed that a well-timed joke is more than just a distraction—it's a survival tool. There have been weeks where my to-do list felt like a mountain and my energy felt like a puddle, but t...",
+      "url": "/quotes-about-humor-and-positivity/"
+    },
+    {
+      "id": "quotes-about-inner-peace",
+      "title": "150 Quotes About Inner Peace to Quiet Your Mind",
+      "description": "Discover 150 powerful quotes about inner peace to help you find tranquility, reduce anxiety, and cultivate a calm mind amidst life's daily challenges.",
+      "category": "mindfulness-peace",
+      "categoryName": "Mindfulness & Peace",
+      "tags": [],
+      "excerpt": "I remember a Saturday morning last spring when I woke up with my heart racing before I'd even opened my eyes. There was no \"emergency,\" just the weight of a thousand tiny expectations and the low-humm...",
+      "url": "/quotes-about-inner-peace/"
+    },
+    {
       "id": "quotes-about-joy-and-gratitude",
       "title": "150 Quotes About Joy and Gratitude for a More Meaningful Life",
       "description": "Discover 150 powerful quotes about joy and gratitude. Learn how cultivating thankfulness can lead to a more joyful, fulfilled, and positive life every day.",
@@ -896,6 +979,21 @@
       "url": "/quotes-about-meaning-and-purpose/"
     },
     {
+      "id": "quotes-about-mindful-living",
+      "title": "150 Quotes About Mindful Living to Inspire Daily Presence",
+      "description": "Discover 150 powerful mindful living quotes that will help you stay present and find peace. Perfect for anyone looking to embrace mindfulness in their daily life.",
+      "category": "mindfulness-peace",
+      "categoryName": "Mindfulness & Peace",
+      "tags": [
+        "mindfulness",
+        "presence",
+        "inner peace",
+        "conscious living"
+      ],
+      "excerpt": "Last Tuesday, I found myself standing in my kitchen, staring at my empty coffee mug, and I realized I had absolutely no memory of drinking it. I’d been so busy scrolling through emails and mentally pl...",
+      "url": "/quotes-about-mindful-living/"
+    },
+    {
       "id": "quotes-about-overcoming-fear",
       "title": "150 Quotes About Overcoming Fear to Reclaim Your Power",
       "description": "Discover 150 powerful quotes about overcoming fear. From facing anxiety to finding inner strength, these words of wisdom will inspire you to move forward.",
@@ -1008,6 +1106,22 @@
       "url": "/quotes-about-smiling-and-laughter/"
     },
     {
+      "id": "quotes-about-stillness-and-silence",
+      "title": "150 Quotes About Stillness and Silence to Find Inner Peace",
+      "description": "Discover 150 powerful quotes about stillness and silence to help you find inner calm, clarity, and strength in a noisy world. Perfect for meditation and reflection.",
+      "category": "mindfulness-peace",
+      "categoryName": "Mindfulness & Peace",
+      "tags": [
+        "stillness",
+        "silence",
+        "mindfulness",
+        "inner-peace",
+        "meditation"
+      ],
+      "excerpt": "A few years ago, I found myself in a season of constant, overwhelming noise. Between the relentless ping of notifications and the internal chatter of my own anxieties, I felt completely drained and di...",
+      "url": "/quotes-about-stillness-and-silence/"
+    },
+    {
       "id": "quotes-about-strength-and-courage",
       "title": "150 Quotes About Strength and Courage to Fuel Your Resilience",
       "description": "Discover 150 powerful quotes about strength and courage to help you face challenges and find inner bravery. Perfect for difficult times and daily inspiration.",
@@ -1088,6 +1202,16 @@
       "tags": [],
       "excerpt": "I used to think that romance was reserved for the big moments—the anniversaries, the candlelit dinners, or the dramatic gestures you see in the movies. But as I’ve grown older and shared more of my li...",
       "url": "/romantic-quotes-to-share/"
+    },
+    {
+      "id": "sarcastic-quotes-with-a-clever-twist",
+      "title": "150 Sarcastic Quotes with a Clever Twist to Spice Up Your Wit",
+      "description": "Discover 150 sarcastic quotes with a clever twist. From work and life to love and society, these witty sayings will sharpen your humor and brighten your day.",
+      "category": "humor-wit",
+      "categoryName": "Humor & Wit",
+      "tags": [],
+      "excerpt": "I've always believed that a well-timed sarcastic remark is like a perfectly seasoned dish—it adds just the right amount of bite. Last week, during a particularly grueling meeting that could have been...",
+      "url": "/sarcastic-quotes-with-a-clever-twist/"
     },
     {
       "id": "self-love-quotes-for-confidence",
@@ -1175,6 +1299,16 @@
       ],
       "excerpt": "Last Tuesday, I found myself staring at a mounting to-do list, feeling completely overwhelmed. My coffee had gone cold, and the gray sky outside wasn't helping my mood. Then, I saw a sticky note I'd w...",
       "url": "/short-happiness-quotes/"
+    },
+    {
+      "id": "short-mindfulness-quotes",
+      "title": "150 Short Mindfulness Quotes for Quick Calm",
+      "description": "Find instant peace with 150 short mindfulness quotes. Perfect for quick mental resets, reducing stress, and staying present during a busy day.",
+      "category": "mindfulness-peace",
+      "categoryName": "Mindfulness & Peace",
+      "tags": [],
+      "excerpt": "I used to think mindfulness required a dedicated room, a special cushion, and at least twenty minutes of absolute silence. In my old apartment, which sat right above a busy intersection, that kind of...",
+      "url": "/short-mindfulness-quotes/"
     },
     {
       "id": "short-success-quotes",
@@ -1267,6 +1401,22 @@
       ],
       "excerpt": "I've always believed that life is the ultimate classroom, though its lessons often come without a syllabus. Last year, when I was struggling to find balance between my career and personal life, I felt...",
       "url": "/wise-quotes-about-life-lessons/"
+    },
+    {
+      "id": "witty-quotes-about-life",
+      "title": "155 Witty Quotes About Life to Sharpen Your Perspective",
+      "description": "Discover 155 witty quotes about life that blend humor with profound wisdom. Perfect for a quick laugh and a fresh outlook on daily challenges.",
+      "category": "humor-wit",
+      "categoryName": "Humor & Wit",
+      "tags": [
+        "witty quotes",
+        "life quotes",
+        "humorous quotes",
+        "wisdom",
+        "clever sayings"
+      ],
+      "excerpt": "I’ve always believed that if you can’t laugh at life, you’re probably doing it wrong. There was a Tuesday last month when everything seemed to go sideways—I spilled coffee on my laptop, missed a deadl...",
+      "url": "/witty-quotes-about-life/"
     }
   ]
 }
