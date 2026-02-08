@@ -2,9 +2,9 @@
 	"name": "astro-blog-starter-template",
 	"description": "Build a personal website, blog, or portfolio with Astro.",
 	"cloudflare": {
-		"label": "Astro Framework Starter",
+		"label": "Inspiration Quotes Hub",
 		"products": [
-			"Workers"
+			"Pages"
 		],
 		"categories": [],
 		"preview_icon_url": "https://imagedelivery.net/wSMYJvS3Xw-n339CbDyDIA/394ca3c9-d351-4036-035a-9f6dfa26dd00/public",
@@ -12,7 +12,6 @@
 		"publish": true
 	},
 	"dependencies": {
-		"@astrojs/cloudflare": "12.6.12",
 		"@astrojs/mdx": "4.3.12",
 		"@astrojs/partytown": "^2.1.4",
 		"@astrojs/rss": "4.0.14",
@@ -35,11 +34,10 @@
 		"build": "npm run build:search && astro build && node scripts/enhance-sitemap.mjs",
 		"build:search": "node scripts/build-search-index.cjs",
 		"build-analytics": "node scripts/build-blog-analytics.cjs",
-		"cf-typegen": "wrangler types",
-		"check": "astro build && tsc && wrangler deploy --dry-run",
-		"deploy": "wrangler deploy",
+		"check": "astro build && tsc",
+		"deploy": "wrangler pages deploy dist",
 		"dev": "astro dev",
-		"preview": "astro build && wrangler dev",
+		"preview": "astro preview",
 		"serve-dashboard": "npm run build-analytics && npx serve blogpost-content-plan -l 3333",
 		"validate:authors": "node scripts/validate-authors.js",
 		"fix:authors": "node scripts/update-authors.js"

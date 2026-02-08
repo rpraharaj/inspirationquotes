@@ -2,12 +2,12 @@
 import { defineConfig } from "astro/config";
 import mdx from "@astrojs/mdx";
 import sitemap from "@astrojs/sitemap";
-import cloudflare from "@astrojs/cloudflare";
 import tailwind from "@astrojs/tailwind";
 
 // https://astro.build/config
 export default defineConfig({
-	site: "https://aiagentskit.com",
+	site: "https://inspirationquoteshub.com",
+	output: "static", // Pure static site - no server/worker needed
 	integrations: [
 		mdx(),
 		sitemap({
@@ -15,10 +15,6 @@ export default defineConfig({
 		}),
 		tailwind({ applyBaseStyles: false }),
 	],
-	adapter: cloudflare({
-		platformProxy: {
-			enabled: true,
-		},
-	}),
+	// No adapter needed for static sites
 });
 
