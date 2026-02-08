@@ -163,6 +163,7 @@ const schemas: Schema[] = [articleSchema, breadcrumbSchema];
                 height={630}
                 class="w-full h-full object-cover"
                 loading="eager"
+                fetchpriority="high"
                 decoding="async"
               />
             </div>
@@ -340,18 +341,37 @@ const schemas: Schema[] = [articleSchema, breadcrumbSchema];
       const article = document.querySelector('article');
       
       if (progressBar && article) {
+        let ticking = false;
+        
         function updateProgress() {
           if (!progressBar || !article) return;
+          
+          // Batch all DOM reads together
           const articleRect = article.getBoundingClientRect();
           const articleHeight = article.offsetHeight;
           const windowHeight = window.innerHeight;
           const scrolled = Math.max(0, -articleRect.top);
           const total = articleHeight - windowHeight;
           const progress = Math.min(100, (scrolled / total) * 100);
-          progressBar.style.width = `${progress}%`;
+          
+          // Then batch all DOM writes together
+          requestAnimationFrame(() => {
+            if (progressBar) {
+              progressBar.style.width = `${progress}%`;
+            }
+          });
+          
+          ticking = false;
         }
         
-        window.addEventListener('scroll', updateProgress, { passive: true });
+        function requestTick() {
+          if (!ticking) {
+            ticking = true;
+            requestAnimationFrame(updateProgress);
+          }
+        }
+        
+        window.addEventListener('scroll', requestTick, { passive: true });
         updateProgress();
       }
     </script>

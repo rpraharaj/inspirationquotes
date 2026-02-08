@@ -102,4 +102,60 @@ npx lighthouse https://your-site.com --output=html --output-path=./lighthouse.ht
 
 ---
 
-*Last updated: 2026-01-05*
+## ✅ Implemented Optimizations (2026-02-08)
+
+### LCP Optimization
+- [x] **fetchpriority="high"** on hero images in blog posts
+- [x] **fetchpriority="high"** on first blog post image in blog index
+- [x] **loading="eager"** for above-the-fold images
+- [x] **Preconnect** to Google Analytics domain
+
+### Forced Reflow Prevention
+- [x] **requestAnimationFrame** for reading progress bar
+- [x] **Throttling** scroll events with ticking flag
+- [x] **Batched DOM reads and writes** to prevent layout thrashing
+
+### Best Practices
+```javascript
+// ✅ GOOD - Prevent forced reflow with RAF
+let ticking = false;
+
+function updateProgress() {
+  // Batch all DOM reads
+  const rect = element.getBoundingClientRect();
+  const height = element.offsetHeight;
+  
+  // Batch all DOM writes in RAF
+  requestAnimationFrame(() => {
+    element.style.width = `${progress}%`;
+  });
+  
+  ticking = false;
+}
+
+function requestTick() {
+  if (!ticking) {
+    ticking = true;
+    requestAnimationFrame(updateProgress);
+  }
+}
+
+window.addEventListener('scroll', requestTick, { passive: true });
+```
+
+```astro
+<!-- ✅ GOOD - Optimize LCP image -->
+<img 
+  src={heroImage} 
+  alt="..."
+  width={1200}
+  height={630}
+  loading="eager"
+  fetchpriority="high"
+  decoding="async"
+/>
+```
+
+---
+
+*Last updated: 2026-02-08*

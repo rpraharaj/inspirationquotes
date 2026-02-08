@@ -101,6 +101,7 @@ function getReadingTime(content: string): string {
                     height={index === 0 ? 540 : 270}
                     class="w-full h-full object-cover transition-all duration-500 group-hover:scale-105"
                     loading={index < 3 ? 'eager' : 'lazy'}
+                    fetchpriority={index === 0 ? 'high' : 'auto'}
                     decoding="async"
                   />
                 ) : (
