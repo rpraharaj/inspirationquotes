@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generated": "2026-02-07T18:55:41.868Z",
+  "generated": "2026-02-08T08:31:15.839Z",
   "count": 120,
   "posts": [
     {
@@ -41,13 +41,13 @@
       "category": "love-relationships",
       "categoryName": "Love & Relationships",
       "tags": [],
-      "excerpt": "I remember a Tuesday evening, three years ago, when my entire world felt like it was collapsing in on itself. I was sitting on my kitchen floor, staring at a half-packed box, wondering how a relations...",
+      "excerpt": "I remember a Tuesday evening three years ago when my world felt like it was collapsing. Sitting on my kitchen floor, staring at a half-packed box, I wondered how a relationship that once felt like hom...",
       "url": "/breakup-quotes-to-help-you-heal/"
     },
     {
       "id": "clever-quotes-for-social-captions",
-      "title": "150 Clever Quotes for Social Captions to Boost Your Engagement",
-      "description": "Elevate your social media game with 150 clever quotes for captions. From witty one-liners to intellectual deep thoughts, find the perfect words for your next post.",
+      "title": "150 Clever Quotes for Social Captions to Boost Engagement",
+      "description": "Elevate your social media with 150 clever captions. From witty one-liners to deep thoughts, find the perfect words to stop the scroll and boost engagement.",
       "category": "humor-wit",
       "categoryName": "Humor & Wit",
       "tags": [
@@ -114,12 +114,7 @@
       "description": "Discover 150 heartwarming family quotes about love and togetherness. From short sayings to deep wisdom, find the perfect words to celebrate your family bonds.",
       "category": "family",
       "categoryName": "Family",
-      "tags": [
-        "family quotes",
-        "togetherness",
-        "love",
-        "home"
-      ],
+      "tags": [],
       "excerpt": "I remember a rainy Sunday afternoon when my grandfather gathered us all around the old oak dining table. There were no phones, no televisions humming in the background—just the sound of rain against t...",
       "url": "/family-quotes-about-love-and-togetherness/"
     },
@@ -463,7 +458,7 @@
     },
     {
       "id": "joy-quotes-that-spread-positivity",
-      "title": "150 Joy Quotes That Spread Positivity",
+      "title": "150 Joy Quotes That Spread Positivity and Lift Your Spirit",
       "description": "Discover 150 powerful joy quotes to lift your spirit and spread positivity. Perfect for finding happiness in small things and sharing light with others.",
       "category": "happiness-joy",
       "categoryName": "Happiness & Joy",
@@ -524,7 +519,7 @@
     },
     {
       "id": "love-quotes-for-couples",
-      "title": "150 Love Quotes for Couples and Partners to Strengthen Your Bond",
+      "title": "150 Love Quotes for Couples to Strengthen Your Bond",
       "description": "Discover 150 heartfelt love quotes for couples and partners. From romantic whispers to deep wisdom on partnership, these words will inspire your journey together.",
       "category": "love-relationships",
       "categoryName": "Love & Relationships",
@@ -534,7 +529,7 @@
     },
     {
       "id": "meditation-quotes-for-daily-practice",
-      "title": "150 Meditation Quotes for Daily Practice to Find Your Inner Calm",
+      "title": "150 Meditation Quotes for Daily Practice and Inner Calm",
       "description": "Discover 150 powerful meditation quotes to deepen your daily practice. From Zen masters to modern teachers, find the words you need for peace and clarity.",
       "category": "mindfulness-peace",
       "categoryName": "Mindfulness & Peace",
@@ -576,7 +571,7 @@
     },
     {
       "id": "peace-quotes-to-quiet-the-mind",
-      "title": "150 Peace Quotes to Quiet the Mind",
+      "title": "150 Peace Quotes to Quiet the Mind and Find Inner Serenity",
       "description": "Discover 150 powerful peace quotes to calm your mind, reduce stress, and find inner serenity. Perfect for moments when you need to quiet the noise and refocus.",
       "category": "mindfulness-peace",
       "categoryName": "Mindfulness & Peace",
@@ -625,7 +620,7 @@
     },
     {
       "id": "quotes-about-appreciation-and-thanks",
-      "title": "150 Heartfelt Quotes About Appreciation and Thanks to Lift Your Spirit",
+      "title": "150 Quotes About Appreciation and Thanks to Lift Your Spirit",
       "description": "Discover 150 powerful quotes about appreciation and thanks. From professional recognition to deep gratitude for loved ones, these words will help you express your thanks.",
       "category": "gratitude",
       "categoryName": "Gratitude",
@@ -657,7 +652,7 @@
     },
     {
       "id": "quotes-about-being-thankful",
-      "title": "150 Quotes About Being Thankful to Appreciate Life's Blessings",
+      "title": "150 Quotes About Being Thankful to Appreciate Life",
       "description": "Discover 150 powerful quotes about being thankful that will help you appreciate every moment. From short sayings to deep wisdom, find the perfect words of gratitude.",
       "category": "gratitude",
       "categoryName": "Gratitude",
@@ -779,7 +774,7 @@
     },
     {
       "id": "quotes-about-finding-joy",
-      "title": "150 Quotes About Finding Joy in Small Things",
+      "title": "150 Quotes About Finding Joy in Small Things and Simple Pleasures",
       "description": "Discover 150 inspiring quotes about finding joy in small things and simple pleasures. Learn how to appreciate the little moments that make life beautiful.",
       "category": "happiness-joy",
       "categoryName": "Happiness & Joy",
@@ -796,7 +791,7 @@
     {
       "id": "quotes-about-friendship-and-trust",
       "title": "150 Quotes About Friendship and Trust to Strengthen Your Bonds",
-      "description": "Explore 150 powerful quotes about friendship and trust. Discover the wisdom of authors and thinkers on loyalty, honesty, and rebuilding trust in your most important relationships.",
+      "description": "Discover 150 powerful quotes about friendship and trust. Explore wisdom on loyalty, honesty, and rebuilding trust in your most important relationships.",
       "category": "friendship",
       "categoryName": "Friendship",
       "tags": [],
@@ -815,7 +810,7 @@
     },
     {
       "id": "quotes-about-gratitude-and-happiness",
-      "title": "150 Quotes About Gratitude and Happiness to Brighten Your Life",
+      "title": "150 Gratitude and Happiness Quotes to Brighten Your Life",
       "description": "Discover 150 powerful quotes about gratitude and happiness. Learn how cultivating a thankful heart leads to a more joyful and fulfilling life today.",
       "category": "gratitude",
       "categoryName": "Gratitude",
@@ -847,8 +842,8 @@
       "id": "quotes-about-happiness-and-peace",
       "title": "150 Quotes About Happiness and Peace to Find Your Inner Calm",
       "description": "Discover 150 powerful quotes about happiness and peace to help you find inner calm and daily joy. Perfect for moments when you need a reminder to breathe and smile.",
-      "category": "ai-news",
-      "categoryName": "ai-news",
+      "category": "happiness-joy",
+      "categoryName": "Happiness & Joy",
       "tags": [],
       "excerpt": "I used to think that happiness was a destination—a place I'd finally arrive at once I checked enough boxes on my to-do list. I chased the big wins, the promotions, and the milestones, believing that p...",
       "url": "/quotes-about-happiness-and-peace/"
@@ -860,7 +855,7 @@
       "category": "love-relationships",
       "categoryName": "Love & Relationships",
       "tags": [],
-      "excerpt": "I used to think that a healthy relationship was something you simply \"found,\" like a lucky coin on the sidewalk. I spent my early twenties waiting for that perfect, effortless connection where everyth...",
+      "excerpt": "I spent my early twenties waiting for that perfect, effortless connection where everything just clicked. It took a few painful lessons to realize that a healthy bond isn't found—it's built, brick by b...",
       "url": "/quotes-about-healthy-relationships/"
     },
     {
@@ -896,7 +891,7 @@
     },
     {
       "id": "quotes-about-inner-peace",
-      "title": "150 Quotes About Inner Peace to Quiet Your Mind",
+      "title": "150 Quotes About Inner Peace to Quiet Your Mind and Find Calm",
       "description": "Discover 150 powerful quotes about inner peace to help you find tranquility, reduce anxiety, and cultivate a calm mind amidst life's daily challenges.",
       "category": "mindfulness-peace",
       "categoryName": "Mindfulness & Peace",
@@ -986,7 +981,7 @@
     },
     {
       "id": "quotes-about-living-in-the-present",
-      "title": "150 Quotes About Living in the Present Moment for Daily Mindfulness",
+      "title": "150 Quotes About Living in the Present for Daily Mindfulness",
       "description": "Discover 150 powerful quotes about living in the present. These words of wisdom on mindfulness and being in the now will help you find peace and mental clarity.",
       "category": "ai-news",
       "categoryName": "ai-news",
@@ -1016,13 +1011,8 @@
       "description": "Discover 150 powerful quotes about love and forgiveness that will help you heal your relationships and find inner peace. Perfect for moving forward with grace.",
       "category": "love-relationships",
       "categoryName": "Love & Relationships",
-      "tags": [
-        "love",
-        "forgiveness",
-        "healing",
-        "relationships"
-      ],
-      "excerpt": "Last year, I found myself sitting in a quiet park, staring at a phone screen that felt like it weighed a thousand pounds. A long-standing friendship had fractured over a misunderstanding that, in hind...",
+      "tags": [],
+      "excerpt": "Last year, I sat in a quiet park, staring at a phone screen that felt like it weighed a thousand pounds. A long-standing friendship had fractured over a small misunderstanding that felt like an insurm...",
       "url": "/quotes-about-love-and-forgiveness/"
     },
     {
@@ -1038,7 +1028,7 @@
     {
       "id": "quotes-about-making-new-friends",
       "title": "150 Quotes About Making New Friends and Building Connections",
-      "description": "Discover 150 powerful quotes about making new friends that will inspire you to open your heart and expand your circle. Perfect for finding courage to meet new people.",
+      "description": "Discover 150 powerful quotes about making new friends. Find inspiration to open your heart and expand your circle with these courageous words.",
       "category": "friendship",
       "categoryName": "Friendship",
       "tags": [],
@@ -1175,7 +1165,7 @@
     {
       "id": "quotes-about-smiling-and-laughter",
       "title": "150 Quotes About Smiling and Laughter to Brighten Your Day",
-      "description": "Discover 150 powerful quotes about smiling and laughter that will lift your spirits. From the science of joy to the magic of a giggle, these words celebrate life's brightest moments.",
+      "description": "Discover 150 powerful quotes about smiling and laughter to lift your spirits. Celebrate life's brightest moments with the magic of a giggle and a smile.",
       "category": "happiness-joy",
       "categoryName": "Happiness & Joy",
       "tags": [
@@ -1257,8 +1247,8 @@
     },
     {
       "id": "quotes-about-true-love-and-soulmates",
-      "title": "150 Quotes About True Love and Soulmates to Find Your Forever",
-      "description": "Discover 150 powerful quotes about true love and soulmates. From deep connections to finding your forever person, these words of wisdom capture the magic of real love.",
+      "title": "150 Quotes About True Love and Soulmates for Your Forever",
+      "description": "Discover 150 powerful quotes about true love and soulmates. From deep connections to finding your person, these words of wisdom capture the magic of real love.",
       "category": "ai-news",
       "categoryName": "ai-news",
       "tags": [],
@@ -1267,17 +1257,17 @@
     },
     {
       "id": "relationship-quotes-about-trust",
-      "title": "150 Relationship Quotes About Trust and Respect to Strengthen Your Bond",
+      "title": "150 Relationship Quotes About Trust and Respect",
       "description": "Discover 150 powerful relationship quotes about trust and respect. These words of wisdom will help you build, heal, and maintain a deep connection with your partner.",
-      "category": "ai-news",
-      "categoryName": "ai-news",
+      "category": "love-relationships",
+      "categoryName": "Love & Relationships",
       "tags": [],
       "excerpt": "I remember a time when my partner and I were navigating a particularly rocky season. It wasn't that we didn't love each other—the love was always there—but the communication had frayed, and for the fi...",
       "url": "/relationship-quotes-about-trust/"
     },
     {
       "id": "romantic-quotes-to-share",
-      "title": "150 Romantic Quotes to Share with Your Partner to Spark Connection",
+      "title": "150 Romantic Quotes to Share with Your Partner",
       "description": "Discover 150 deeply romantic quotes to share with your partner. From literary classics to cinematic whispers, these words will help you express your deepest feelings.",
       "category": "love-relationships",
       "categoryName": "Love & Relationships",
@@ -1415,7 +1405,7 @@
     {
       "id": "short-inspirational-quotes-with-big-impact",
       "title": "150 Short Inspirational Quotes with Big Impact",
-      "description": "Discover 150 powerful, short inspirational quotes that deliver a big impact. Perfect for daily motivation, strength, and a positive mindset when you need it most.",
+      "description": "Discover 150 powerful, short inspirational quotes with big impact. Perfect for daily motivation, strength, and a positive mindset when you need it most.",
       "category": "short-quotes",
       "categoryName": "Short Quotes",
       "tags": [
@@ -1440,7 +1430,7 @@
         "inspiration",
         "daily quotes"
       ],
-      "excerpt": "There are days when I feel like my brain is a browser with fifty tabs open. My to-do list is screaming, my phone is buzzing, and the weight of \"big life questions\" feels a little too heavy. In those m...",
+      "excerpt": "There are days when my brain feels like a browser with fifty tabs open. My to-do list is screaming, my phone is buzzing, and the weight of \"big life questions\" feels a little too heavy. In those momen...",
       "url": "/short-life-quotes-to-remember/"
     },
     {
@@ -1656,7 +1646,7 @@
     },
     {
       "id": "witty-quotes-about-life",
-      "title": "155 Witty Quotes About Life to Sharpen Your Perspective",
+      "title": "155 Witty Quotes About Life to Sharpen Your Outlook",
       "description": "Discover 155 witty quotes about life that blend humor with profound wisdom. Perfect for a quick laugh and a fresh outlook on daily challenges.",
       "category": "humor-wit",
       "categoryName": "Humor & Wit",

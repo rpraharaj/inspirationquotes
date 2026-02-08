@@ -2,6 +2,7 @@
 title: "150 Quotes About Choosing Happiness for Daily Inspiration"
 description: "Discover 150 powerful quotes about choosing happiness. Learn how to make the decision to be joyful every day, regardless of your circumstances."
 pubDate: "2026-02-08"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-choosing-happiness.webp"
 category: "happiness-joy"
 ---

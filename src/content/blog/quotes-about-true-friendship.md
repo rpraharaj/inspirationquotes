@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about true friendship that define loy
 pubDate: 2026-02-07
 heroImage: "/images/blog/quotes-about-true-friendship.webp"
 category: "friendship"
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last week, I was looking through an old box of letters and found a note from my high school best friend. It wasn't anything profound—just a quick "thinking of you" during a week I was struggling—but it reminded me that true friendship isn't about the grand gestures. It's about the steady, quiet presence of someone who knows your story and chooses to stay.

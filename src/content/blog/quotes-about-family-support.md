@@ -2,6 +2,7 @@
 title: "150 Heartwarming Quotes About Family Support and Strength"
 description: "Discover 150 powerful quotes about family support. These inspirational sayings remind us of the strength and comfort found in our closest bonds during tough times."
 pubDate: "2026-02-08"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-family-support.webp"
 category: "family"
 tags: ["family", "support", "strength", "inspiration"]

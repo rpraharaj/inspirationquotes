@@ -2,7 +2,7 @@
 title: "150 Joy Quotes That Spread Positivity and Lift Your Spirit"
 description: "Discover 150 powerful joy quotes to lift your spirit and spread positivity. Perfect for finding happiness in small things and sharing light with others."
 pubDate: 2026-02-08
-author: "default"
+author: "Inspiration Quotes Hub"
 category: "happiness-joy"
 heroImage: "/images/blog/joy-quotes-that-spread-positivity.webp"
 ---
@@ -35,7 +35,7 @@ When we feel joy, we are essentially saying "thank you" to life itself for the e
 > "The most wasted of all days is one without laughter."
 > — E.E. Cummings
 
-A day without laughter feels incomplete, as if we've missed out on the music of existence.
+A day without laughter feels incomplete, as if we've missed out on the music of existence. For more ways to invite this lighthearted energy, our collection of [quotes about laughter and joy](/quotes-about-laughter-and-joy/) is a perfect resource for daily smiles.
 
 > "Joy is what happens to us when we allow ourselves to recognize how good things really are."
 > — Marianne Williamson

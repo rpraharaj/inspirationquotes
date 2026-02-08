@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 heroImage: "/images/blog/letting-go-and-peace.webp"
 category: "mindfulness-peace"
 tags: ["letting go", "inner peace", "forgiveness", "moving on", "mindfulness"]
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 featured: true
 ---
 

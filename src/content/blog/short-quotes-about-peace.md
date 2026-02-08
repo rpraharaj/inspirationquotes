@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 heroImage: "/images/blog/short-quotes-about-peace.webp"
 category: "short-quotes"
 tags: ["peace", "inner-peace", "calm", "short-quotes"]
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I remember a time when my life felt like a radio tuned to static. Every notification, every deadline, and every minor inconvenience seemed to amplify the noise in my head until I couldn't hear my own thoughts. I was constantly "on," rushing from one task to the next, convinced that peace was something I'd find only when everything was finally finished. But the to-do list never ended, and the static only got louder.

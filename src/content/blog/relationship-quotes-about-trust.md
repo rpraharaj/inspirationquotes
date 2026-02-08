@@ -4,7 +4,7 @@ description: "Discover 150 powerful relationship quotes about trust and respect.
 pubDate: 2026-02-08
 heroImage: "/images/blog/relationship-quotes-about-trust.webp"
 category: "love-relationships"
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I remember a time when my partner and I were navigating a particularly rocky season. It wasn't that we didn't love each other—the love was always there—but the communication had frayed, and for the first time, the foundation of trust felt a little shaky. I realized then that love is the engine, but trust and respect are the steering and the brakes. Without them, you're just moving fast in an uncertain direction.

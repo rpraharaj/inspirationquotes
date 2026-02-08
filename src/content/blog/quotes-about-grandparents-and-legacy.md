@@ -4,7 +4,7 @@ description: "Discover 150 heartwarming quotes about grandparents and the power 
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-grandparents-and-legacy.webp"
 category: "family"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 There's a special kind of magic that lives in a grandparent's home. I still remember the smell of cinnamon and old books that filled my grandmother’s kitchen—a place where time seemed to slow down and every problem could be solved with a cup of tea and a story. It wasn't just about the treats; it was about the feeling of being connected to something much larger than myself. These moments shaped my understanding of what it means to belong to a family.

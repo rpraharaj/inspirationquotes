@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 categories: ["love-relationships"]
 tags: ["self-love", "confidence", "self-care", "inspiration", "mental-health"]
 heroImage: "/images/blog/self-love-quotes-for-confidence.webp"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I used to be my own harshest critic. For years, I believed that being hard on myself was the only way to stay motivated and achieve my goals. I'd replay my mistakes like a broken record, focusing on every perceived flaw while ignoring every win. It was exhausting, and honestly, it didn't make me any more successful—it just made me more miserable.

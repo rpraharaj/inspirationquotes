@@ -4,7 +4,7 @@ description: "Discover 150+ powerful friendship quotes for hard times. These wor
 pubDate: "2026-02-08"
 heroImage: "/images/blog/friendship-quotes-for-hard-times.webp"
 category: "friendship"
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last winter, my closest friend went through a devastating loss that left her feeling completely adrift. I remember sitting in my car for twenty minutes before walking into her house, staring at my phone and searching for the "right" words to say. I wanted to take away her pain, but I knew I couldn't. What I eventually realized was that she didn't need a solution; she just needed to know I wasn't going anywhere.

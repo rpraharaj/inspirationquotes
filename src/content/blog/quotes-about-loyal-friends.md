@@ -4,7 +4,7 @@ description: "Discover 150 powerful loyal friend quotes that celebrate the beaut
 pubDate: 2026-02-07
 heroImage: "/images/blog/quotes-about-loyal-friends.webp"
 categories: ["friendship"]
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last year, during a particularly rough patch where it felt like everything was shifting under my feet, I realized something profound. It wasn't the number of people I knew that mattered, but the few who didn't flinch when things got messy. We often celebrate the "fun" friends, but there is a quiet, indestructible beauty in the loyal ones.

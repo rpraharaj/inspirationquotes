@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 heroImage: "/images/blog/short-quotes-about-gratitude.webp"
 category: "short-quotes"
 tags: ["gratitude", "thankfulness", "appreciation", "short-quotes"]
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last month, I hit a bit of a wall. It wasn't anything major, just a string of gray Tuesdays where everything felt like a chore—the commute, the emails, even my favorite morning coffee. I found myself focusing on everything that was going wrong, from a leaky faucet to a missed deadline. I’ve found that when I’m in that headspace, my world starts to shrink until I can only see my own frustrations.

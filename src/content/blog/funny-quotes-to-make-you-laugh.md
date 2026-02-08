@@ -4,7 +4,7 @@ description: "Need a good chuckle? Explore 150 hilarious funny quotes about life
 pubDate: 2026-02-08
 heroImage: "/images/blog/funny-quotes-to-make-you-laugh.webp"
 category: "humor-wit"
-author: "default"
+author: "Inspiration Quotes Hub"
 ---
 
 I've always believed that a day without laughter is a day wasted. There's something incredibly liberating about finding the humor in a situation that should probably be stressful. Last week, for instance, I managed to pour orange juice into my cereal instead of milk while half-asleep. Instead of getting annoyed at the sticky mess, I just started laughing at my own incompetence. It's those little moments that remind us not to take life too seriously.
@@ -140,7 +140,7 @@ One of those universal truths that you notice more and more as you get older.
 > "My life feels like a test I didn't study for."
 > — Unknown
 
-And I'm pretty sure I'm using the wrong kind of pencil, too.
+And I'm pretty sure I'm using the wrong kind of pencil, too. For more witty observations on our daily existence, explore our collection of [quotes about comedy and life](/quotes-about-comedy-and-life/) to keep the laughter going.
 
 ## Hilarious Quotes About Work and Career
 

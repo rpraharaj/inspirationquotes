@@ -36,19 +36,11 @@ const contactMethods = [
     cta: 'Send Email',
   },
   {
-    icon: 'book-open' as const,
-    title: 'Submit a Quote',
-    description: 'Share a favorite line with attribution or a source link.',
-    value: 'Quote submission',
-    href: `mailto:${siteConfig.social.email}?subject=Quote%20Submission`,
-    cta: 'Send a Quote',
-  },
-  {
-    icon: 'twitter' as const,
-    title: 'X / Twitter',
-    description: 'Follow along for fresh quotes and updates.',
-    value: '@inspirationquoteshub',
-    href: siteConfig.social.twitter,
+    icon: 'pinterest' as const,
+    title: 'Pinterest',
+    description: 'Follow along for fresh quotes and visual inspiration.',
+    value: '@inspirationquoteshubcom',
+    href: siteConfig.social.pinterest,
     cta: 'Follow Us',
     external: true,
   },
@@ -59,10 +51,6 @@ const faqItems = [
   {
     question: 'How quickly do you respond to emails?',
     answer: 'We aim to respond within 24-48 hours on business days. If something is time-sensitive, mention it in the subject line.',
-  },
-  {
-    question: 'Can I submit a quote?',
-    answer: 'Yes. Please include the exact quote, author, and a reliable source link or reference if you have it.',
   },
   {
     question: 'How do you verify sources?',
@@ -99,14 +87,14 @@ const faqItems = [
       
       <!-- Contact Methods Grid -->
       <section class="mb-16 animate-slide-up">
-        <div class="grid md:grid-cols-3 gap-6">
+        <div class="grid md:grid-cols-2 gap-6 max-w-3xl mx-auto">
           {contactMethods.map((method) => (
-            <div class="contact-card group p-6 border border-border rounded-xl bg-background hover:border-border-strong hover:bg-background-secondary transition-all">
-              <div class="w-12 h-12 flex items-center justify-center rounded-xl bg-background-secondary border border-border text-foreground-secondary group-hover:text-foreground transition-colors mb-5">
-                <Icon name={method.icon} size={24} strokeWidth={1.5} />
+            <div class="contact-card group p-8 border border-border rounded-xl bg-background hover:border-border-strong hover:bg-background-secondary transition-all">
+              <div class="w-14 h-14 flex items-center justify-center rounded-xl bg-background-secondary border border-border text-foreground-secondary group-hover:text-foreground transition-colors mb-6">
+                <Icon name={method.icon} size={28} strokeWidth={1.5} />
               </div>
-              <h2 class="text-lg font-bold mb-2">{method.title}</h2>
-              <p class="text-sm text-foreground-secondary mb-4">
+              <h2 class="text-xl font-bold mb-3">{method.title}</h2>
+              <p class="text-sm text-foreground-secondary mb-5">
                 {method.description}
               </p>
               <a 
@@ -118,7 +106,7 @@ const faqItems = [
                 {method.cta}
                 <Icon name={method.external ? 'external-link' : 'arrow-right'} size={16} />
               </a>
-              <p class="mt-3 text-sm font-mono text-foreground-tertiary">
+              <p class="mt-4 text-sm font-mono text-foreground-tertiary">
                 {method.value}
               </p>
             </div>
@@ -157,54 +145,6 @@ const faqItems = [
         </div>
       </section>
 
-      <!-- What to Include Section -->
-      <section class="mb-16 animate-slide-up stagger-2">
-        <h2 class="text-2xl font-bold tracking-tight mb-6 text-center">
-          What to Include in Your Message
-        </h2>
-        <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
-          <div class="p-5 border border-border rounded-xl bg-background">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
-              <Icon name="mail" size={20} />
-            </div>
-            <h3 class="font-bold mb-2">Subject Line</h3>
-            <p class="text-sm text-foreground-secondary">
-              A clear subject helps us route your request quickly.
-            </p>
-          </div>
-          
-          <div class="p-5 border border-border rounded-xl bg-background">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
-              <Icon name="book-open" size={20} />
-            </div>
-            <h3 class="font-bold mb-2">Quote + Author</h3>
-            <p class="text-sm text-foreground-secondary">
-              Include the exact wording and who said it.
-            </p>
-          </div>
-          
-          <div class="p-5 border border-border rounded-xl bg-background">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
-              <Icon name="external-link" size={20} />
-            </div>
-            <h3 class="font-bold mb-2">Source Link</h3>
-            <p class="text-sm text-foreground-secondary">
-              Add a book, article, or interview reference if available.
-            </p>
-          </div>
-          
-          <div class="p-5 border border-border rounded-xl bg-background">
-            <div class="w-10 h-10 flex items-center justify-center rounded-lg bg-background-secondary mb-4 border border-border">
-              <Icon name="message-square" size={20} />
-            </div>
-            <h3 class="font-bold mb-2">Your Note</h3>
-            <p class="text-sm text-foreground-secondary">
-              Share why the quote matters or how you'd like it used.
-            </p>
-          </div>
-        </div>
-      </section>
-
       <!-- FAQ Section -->
       <section class="animate-slide-up stagger-3">
         <h2 class="text-2xl font-bold tracking-tight mb-6 text-center">
@@ -234,22 +174,13 @@ const faqItems = [
         </p>
         <div class="flex items-center justify-center gap-4">
           <a 
-            href={siteConfig.social.twitter}
+            href={siteConfig.social.pinterest}
             target="_blank"
             rel="noopener noreferrer"
             class="p-3 text-foreground-tertiary hover:text-foreground hover:bg-background-secondary rounded-xl transition-colors border border-transparent hover:border-border"
-            aria-label="Follow on X / Twitter"
+            aria-label="Follow on Pinterest"
           >
-            <Icon name="twitter" size={24} />
-          </a>
-          <a 
-            href={siteConfig.social.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            class="p-3 text-foreground-tertiary hover:text-foreground hover:bg-background-secondary rounded-xl transition-colors border border-transparent hover:border-border"
-            aria-label="Follow on GitHub"
-          >
-            <Icon name="github" size={24} />
+            <Icon name="pinterest" size={24} />
           </a>
           <a 
             href={`mailto:${siteConfig.social.email}`}

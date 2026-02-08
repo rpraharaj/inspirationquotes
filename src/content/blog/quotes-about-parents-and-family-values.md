@@ -4,7 +4,7 @@ description: "Discover 150 heartfelt quotes about parents and family values. The
 pubDate: "2026-02-08"
 heroImage: "/images/blog/quotes-about-parents-and-family-values.webp"
 category: "family"
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last weekend, I found myself sitting in my parents' living room, flipping through a dusty old photo album. I stopped at a polaroid of my father teaching me how to ride a bike. I remember the fear I felt, and the steady, reassuring pressure of his hand on the back of my seat. It's funny how a single image can bring back the feeling of being completely safe and supported. That moment reminded me that the values my parents instilled in me—patience, persistence, and unconditional love—are the foundation of everything I've built since.

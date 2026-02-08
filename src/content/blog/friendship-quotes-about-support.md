@@ -4,7 +4,7 @@ description: "Discover 150 powerful friendship quotes about support and care. Pe
 pubDate: 2026-02-07
 heroImage: "/images/blog/friendship-quotes-about-support.webp"
 category: "friendship"
-author: "default"
+author: "Inspiration Quotes Hub"
 tags: ["friendship", "support", "care", "encouragement", "loyalty"]
 ---
 

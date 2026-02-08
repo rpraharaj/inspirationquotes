@@ -2,6 +2,7 @@
 title: "150 Quotes About Joy and Gratitude for a More Meaningful Life"
 description: "Discover 150 powerful quotes about joy and gratitude. Learn how cultivating thankfulness can lead to a more joyful, fulfilled, and positive life every day."
 pubDate: "2026-02-08"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-joy-and-gratitude.webp"
 category: "happiness-joy"
 ---

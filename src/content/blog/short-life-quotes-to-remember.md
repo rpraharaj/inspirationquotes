@@ -4,7 +4,7 @@ description: "Discover 150 powerful short life quotes that pack a punch. From mi
 pubDate: 2026-02-07
 heroImage: "/images/blog/short-life-quotes-to-remember.webp"
 category: "short-quotes"
-author: "default"
+author: "Inspiration Quotes Hub"
 tags: ["life quotes", "short quotes", "wisdom", "inspiration", "daily quotes"]
 featured: true
 ---

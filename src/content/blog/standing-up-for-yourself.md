@@ -5,7 +5,7 @@ pubDate: "2026-02-08"
 heroImage: "/images/blog/standing-up-for-yourself.webp"
 category: "courage-confidence"
 tags: ["standing up for yourself", "self-respect", "boundaries", "finding your voice", "confidence"]
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 ---
 
 I used to be the person who said "yes" to everything, even when my heart was screaming "no." I thought that being a "people pleaser" was a virtue, but in reality, I was just slowly losing myself. It took a particularly difficult situation at work—where I let someone else take credit for months of my hard work—to realize that if I didn't stand up for myself, nobody else was going to do it for me.

@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 heroImage: "/images/blog/confidence-quotes-to-believe-in-yourself.webp"
 category: "courage-confidence"
 tags: ["confidence", "self-belief", "motivation", "inspiration"]
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 For a long time, I walked through life feeling like I was playing a character in someone else's story. I’d second-guess every email, stay silent in meetings where I had the answer, and wait for "permission" to chase the things I actually wanted. My inner critic wasn't just a voice; it was a full-time narrator telling me I wasn't ready, wasn't smart enough, or simply wasn't *that* person.
@@ -457,7 +457,7 @@ Don't play small. The world doesn't benefit from you shrinking.
 87. > "Confidence is silent. Insecurity is loud."
 > — Unknown
 
-True confidence doesn't need to shout to be heard.
+True confidence doesn't need to shout to be heard. For quick daily boosts, our collection of [short confidence quotes](/short-confidence-quotes/) is perfect for keeping your spirits high when you're on the move.
 
 88. > "Your vibe attracts your tribe."
 > — Unknown

@@ -4,7 +4,7 @@ description: "Discover 150 powerful friendship quotes that celebrate the bond be
 pubDate: 2026-02-07
 heroImage: "/images/blog/friendship-quotes-for-best-friends.webp"
 category: "friendship"
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last month, I found myself sitting on a park bench, scrolling through old photos and realizing just how much my best friends have shaped who I am today. We all have those moments where we realize that life isn't just about the goals we hit, but the people who stood by us while we were trying to reach them. These quotes aren't just words on a page; they're reflections of the laughter, the shared secrets, and the unwavering support that defines a true friendship.
@@ -194,8 +194,14 @@ There is something truly sacred about a friendship that survives the test of tim
     There’s a specific kind of safety in being around people who knew you before you had "figured it all out."
 
 43. > "Old friends pass away, new friends appear. It is just like the days. An old day passes, a new day arrives."
+
     > — Dalai Lama
-    While we cherish the old, we must also remain open to the new energies that people bring into our lives.
+
+
+
+While we cherish the old, we must also remain open to the new energies that people bring into our lives. For those looking to expand their circle, our guide on [quotes about making new friends](/quotes-about-making-new-friends/) offers encouragement for building new connections.
+
+
 
 44. > "Friendship is the source of the greatest pleasures, and without friends even the most agreeable pursuits become tedious."
     > — Thomas Aquinas

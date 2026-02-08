@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about making new friends. Find inspir
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-making-new-friends.webp"
 category: "friendship"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last year, I found myself in a new city where I didn't know a single soul. Standing in a crowded coffee shop, I realized how much I'd taken my old friendships for granted. Making new friends as an adult can feel like navigating a minefield of awkward "hellos" and uncertain small talk. It's a vulnerable process, but I've learned that every deep connection starts with a simple moment of courage.

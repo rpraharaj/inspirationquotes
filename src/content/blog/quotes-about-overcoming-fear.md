@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-overcoming-fear.webp"
 category: "courage-confidence"
 tags: ["overcoming fear", "courage", "inspiration", "mental strength"]
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I remember a time, not too long ago, when the mere thought of speaking in front of a small group made my heart race and my palms sweat. I spent weeks overthinking every possible thing that could go wrong, paralyzed by a fear that felt much bigger than the reality of the situation. It wasn't until I stumbled across a few simple words that my perspective began to shift. I realized that fear wasn't there to stop me; it was there to show me where I needed to grow.

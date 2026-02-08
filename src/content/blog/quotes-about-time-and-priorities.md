@@ -2,6 +2,7 @@
 title: "150 Quotes About Time and Priorities to Help You Focus"
 description: "Master your schedule and focus on what matters most with these 150 powerful quotes about time and priorities. Perfect for boosting productivity and finding balance."
 pubDate: 2026-02-08
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-time-and-priorities.webp"
 category: "life-wisdom"
 tags: ["time", "priorities", "productivity", "focus", "wisdom"]

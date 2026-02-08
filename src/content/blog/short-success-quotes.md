@@ -251,7 +251,7 @@ Disney spoke from experience when he said this. Dreams require brave action to b
 > "Start where you are. Use what you have. Do what you can."
 > — Arthur Ashe
 
-Ashe's three-part formula eliminates excuses. You don't need perfect conditions to begin—you just need to begin.
+Ashe's three-part formula eliminates excuses. You don't need perfect conditions to begin—you just need to begin. For more quick motivation, our collection of [short quotes about success](/short-quotes-about-success/) provides the focus you need to reach your milestones.
 
 ## Concise Quotes About Hard Work and Persistence
 

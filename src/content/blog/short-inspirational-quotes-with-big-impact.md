@@ -2,7 +2,7 @@
 title: "150 Short Inspirational Quotes with Big Impact"
 description: "Discover 150 powerful, short inspirational quotes with big impact. Perfect for daily motivation, strength, and a positive mindset when you need it most."
 pubDate: 2026-02-07
-author: "default"
+author: "Inspiration Quotes Hub"
 featured: false
 heroImage: "/images/blog/short-inspirational-quotes-with-big-impact.webp"
 category: "short-quotes"

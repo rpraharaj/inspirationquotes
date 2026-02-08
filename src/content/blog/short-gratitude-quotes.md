@@ -5,7 +5,7 @@ pubDate: 2026-02-07
 heroImage: "/images/blog/short-gratitude-quotes.webp"
 category: "gratitude"
 tags: ["gratitude", "daily practice", "short quotes", "mindfulness", "thankfulness"]
-author: "default"
+author: "Inspiration Quotes Hub"
 ---
 
 Last Tuesday, I found myself staring at a pile of dishes, a blinking cursor on an empty screen, and a general sense of being "stuck." It wasn't a major crisis, just one of those days where the weight of daily life felt a bit too heavy. I've found that in these moments, my brain tends to default to what's missing rather than what's present.
@@ -284,7 +284,7 @@ It’s a shift from seeing life as a series of chores to seeing it as a series o
 > "Nothing is more honorable than a grateful heart."
 > — Lucius Annaeus Seneca
 
-True honor isn't found in what we take, but in how we appreciate what we've been given.
+True honor isn't found in what we take, but in how we appreciate what we've been given. For more concentrated inspiration, explore our list of [short quotes about gratitude](/short-quotes-about-gratitude/) for daily practice.
 
 > "Gratitude is the fairest blossom which springs from the soul."
 > — Henry Ward Beecher

@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about love and forgiveness that will 
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-love-and-forgiveness.webp"
 category: "love-relationships"
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last year, I sat in a quiet park, staring at a phone screen that felt like it weighed a thousand pounds. A long-standing friendship had fractured over a small misunderstanding that felt like an insurmountable wall. I was hurt and convinced I was "right," but the weight of that resentment soon felt heavier than the original hurt.

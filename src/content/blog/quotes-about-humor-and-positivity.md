@@ -2,7 +2,7 @@
 title: "150 Quotes About Humor and Positivity to Brighten Your Outlook"
 description: "Discover 150 powerful quotes about humor and positivity that will shift your perspective, lift your spirit, and remind you to laugh through life's challenges."
 pubDate: 2026-02-08
-author: "Inspiration Quotes Hub Team"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-humor-and-positivity.webp"
 category: "humor-wit"
 tags: ["humor", "positivity", "optimism", "laughter", "life wisdom"]

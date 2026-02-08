@@ -2,6 +2,7 @@
 title: "150 Quotes About Happiness and Peace to Find Your Inner Calm"
 description: "Discover 150 powerful quotes about happiness and peace to help you find inner calm and daily joy. Perfect for moments when you need a reminder to breathe and smile."
 pubDate: 2026-02-08
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-happiness-and-peace.webp"
 category: "happiness-joy"
 ---

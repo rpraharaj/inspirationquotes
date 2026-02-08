@@ -4,7 +4,7 @@ description: "Discover 150 bold quotes about bravery that will inspire you to fa
 pubDate: 2026-02-08
 heroImage: "/images/blog/bold-quotes-about-bravery.webp"
 category: "courage-confidence"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 tags: ["bravery", "courage", "inspiration", "bold"]
 ---
 
@@ -421,7 +421,7 @@ A reminder that fear is the only environment where bravery can actually exist.
 
 ## Short and Bold Sayings About Being Courageous and Daring
 
-Sometimes we don't need a long lecture on bravery; we just need a quick punch of inspiration to get us through the next five minutes. I keep a few of these short sayings on post-it notes around my workspace. They serve as "espresso shots" of wisdom when I'm feeling hesitant. If you're pushing through a difficult project, these [hard work quotes that actually push you forward](/hard-work-quotes-that-push-you-forward/) can offer that same quick boost. These bite-sized reminders are perfect for a quick mental reset.
+Sometimes we don't need a long lecture on bravery; we just need a quick punch of inspiration to get us through the next five minutes. I keep a few of these short sayings on post-it notes around my workspace. They serve as "espresso shots" of wisdom when I'm feeling hesitant. If you need an instant dose of bravery, our collection of [short quotes about courage](/short-quotes-about-courage/) is here to ignite your inner fire. If you're pushing through a difficult project, these [hard work quotes that actually push you forward](/hard-work-quotes-that-push-you-forward/) can offer that same quick boost. These bite-sized reminders are perfect for a quick mental reset.
 
 88. > "Leap and the net will appear."
     > — John Burroughs

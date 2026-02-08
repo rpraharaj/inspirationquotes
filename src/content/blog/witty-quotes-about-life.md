@@ -4,7 +4,7 @@ description: "Discover 155 witty quotes about life that blend humor with profoun
 pubDate: 2026-02-08
 heroImage: "/images/blog/witty-quotes-about-life.webp"
 category: "humor-wit"
-author: "Inspiration Quotes Hub Team"
+author: "Inspiration Quotes Hub"
 tags: ["witty quotes", "life quotes", "humorous quotes", "wisdom", "clever sayings"]
 ---
 

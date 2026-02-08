@@ -2,6 +2,7 @@
 title: "150 Sarcastic Quotes with a Clever Twist to Spice Up Your Wit"
 description: "Discover 150 sarcastic quotes with a clever twist. From work and life to love and society, these witty sayings will sharpen your humor and brighten your day."
 pubDate: "2026-02-08"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/sarcastic-quotes-with-a-clever-twist.webp"
 category: "humor-wit"
 ---

@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about learning from mistakes. These w
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-learning-from-mistakes.webp"
 category: "life-wisdom"
-author: "default"
+author: "Inspiration Quotes Hub"
 tags: ["mistakes", "growth", "life lessons", "wisdom"]
 ---
 

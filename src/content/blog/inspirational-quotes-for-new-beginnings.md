@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes for new beginnings to inspire your fr
 pubDate: 2026-02-08
 heroImage: "/images/blog/inspirational-quotes-for-new-beginnings.webp"
 category: "inspirational"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last year, I found myself standing at a crossroads I never expected. My long-term project had just folded, and for the first time in a decade, I didn't know what Monday morning would look like. It was terrifying, honestly. I felt like I was losing my identity, but then I stumbled across a simple truth: every ending is just a doorway to something else.

@@ -2,7 +2,7 @@
 title: "150 Quotes for Students and Learners to Stay Motivated"
 description: "150 powerful quotes for students and learners. Overcome exam stress and find your passion for learning with these motivational words of wisdom."
 pubDate: 2026-02-08
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 category: "inspirational"
 heroImage: "/images/blog/inspirational-quotes-for-students.webp"
 ---

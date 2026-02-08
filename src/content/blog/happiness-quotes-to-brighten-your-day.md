@@ -4,7 +4,7 @@ description: "Discover 150 powerful happiness quotes to boost your mood and find
 pubDate: 2026-02-08
 heroImage: "/images/blog/happiness-quotes-to-brighten-your-day.webp"
 category: "happiness-joy"
-author: "default"
+author: "Inspiration Quotes Hub"
 tags: ["happiness", "joy", "positivity", "inspiration"]
 ---
 
@@ -132,6 +132,8 @@ When the world doesn't provide the light we need, we have the capacity to genera
 
 > "A sunny smile scatters the night and makes the day worth living."
 > — F. Scott Fitzgerald
+
+Sometimes the best way to lift your mood is through laughter. Our collection of [quotes about humor and positivity](/quotes-about-humor-and-positivity/) is specifically designed to brighten your outlook when you need it most.
 
 > "Happiness is a gift and the trick is not to expect it, but to delight in it when it comes."
 > — Charles Dickens

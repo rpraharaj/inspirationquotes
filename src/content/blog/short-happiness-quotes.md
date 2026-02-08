@@ -2,6 +2,7 @@
 title: "150 Short Happiness Quotes for Daily Inspiration"
 description: "Discover 150 powerful short happiness quotes to brighten your day and lift your spirit. Perfect for quick inspiration, social captions, and daily motivation."
 pubDate: 2026-02-08
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/short-happiness-quotes.webp"
 category: "happiness-joy"
 tags: ["happiness", "short quotes", "inspiration", "daily joy"]
@@ -149,7 +150,7 @@ Don't forget to reward yourself for the small wins along the way.
 > "The power of finding beauty in the humblest things makes home happy and life lovely."
 > — Louisa May Alcott
 
-When we change our lens, the world around us changes too.
+When we change our lens, the world around us changes too. To keep this positive momentum, check out our collection of [short quotes about happiness](/short-quotes-about-happiness/) for your daily dose of joy.
 
 > "Count your life by smiles, not tears."
 > — John Lennon

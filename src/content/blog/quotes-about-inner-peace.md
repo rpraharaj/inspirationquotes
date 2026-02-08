@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about inner peace to help you find tr
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-inner-peace.webp"
 category: "mindfulness-peace"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I remember a Saturday morning last spring when I woke up with my heart racing before I'd even opened my eyes. There was no "emergency," just the weight of a thousand tiny expectations and the low-humming anxiety of a busy life. I realized then that I was waiting for the world to get quiet so I could finally feel at peace. But the world doesn't work that way. I had to learn that peace isn't a destination; it's the rhythm you choose to walk to, even when the music around you is chaotic.

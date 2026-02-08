@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-strength-and-courage.webp"
 category: "courage-confidence"
 tags: ["strength", "courage", "resilience", "inner strength", "bravery"]
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I've always believed that strength isn't something we're born with; it's something we build in the quiet moments when we decide not to give up. Last winter, when I was facing a significant personal setback that felt like a mountain I couldn't climb, I found myself searching for something to anchor my mind. I didn't need a grand solution—I just needed enough courage to take the next step.

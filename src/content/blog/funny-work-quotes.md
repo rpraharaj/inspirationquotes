@@ -2,6 +2,7 @@
 title: "150 Funny Work Quotes to Brighten Your Office Grind"
 description: "Inject some humor into your workday with 150 funny work quotes about Mondays, meetings, and office life. Perfect for office laughs and workplace sanity."
 pubDate: 2026-02-08
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/funny-work-quotes.webp"
 category: "humor-wit"
 tags: ["funny quotes", "work humor", "office quotes", "career sarcasm"]
@@ -298,7 +299,7 @@ To err is human; to blame it on the boss is strategic. My boss told me to have a
 
 ## Witty Coworker Quotes for Workplace Comrades
 
-Coworkers are like Christmas lights: they hang together, half of them don't work, and the other half aren't so bright. But in all seriousness, the people you share the grind with are the ones who make it bearable. We gossip so well—it's practically team building. If you're building a supportive team, our [friendship quotes](/funny-friendship-quotes/) might help break the ice.
+Coworkers are like Christmas lights: they hang together, half of them don't work, and the other half aren't so bright. But in all seriousness, the people you share the grind with are the ones who make it bearable. We gossip so well—it's practically team building. If you're building a supportive team, our [friendship quotes](/funny-friendship-quotes/) might help break the ice. For those moments when you want to show genuine gratitude, our collection of [quotes about appreciation at work](/quotes-about-appreciation-at-work/) is a perfect way to boost morale and strengthen those professional bonds.
 
 90. > "I'd be unstoppable if not for my coworkers."
     > — Unknown

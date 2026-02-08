@@ -2,6 +2,7 @@
 title: "150 Quotes About Breathing and Calm to Find Your Inner Peace"
 description: "Discover 150 powerful quotes about breathing and calm. Learn how conscious breathing can transform your stress into serenity and anchor you in the present moment."
 pubDate: 2026-02-08
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-breathing-and-calm.webp"
 category: "mindfulness-peace"
 tags: ["breathing", "calm", "inner peace", "mindfulness", "serenity"]

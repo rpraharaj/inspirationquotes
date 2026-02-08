@@ -5,7 +5,7 @@ pubDate: 2026-02-07
 category: "gratitude"
 tags: ["workplace", "appreciation", "gratitude", "leadership", "teamwork", "workplace culture"]
 featured: true
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-appreciation-at-work.webp"
 ---
 

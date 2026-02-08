@@ -4,7 +4,7 @@ description: "Explore 150 powerful quotes about love and commitment. These inspi
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-love-and-commitment.webp"
 category: "love-relationships"
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I used to think that love was just a feeling—a sudden spark that would keep itself alive. But after a decade of navigating life’s ups and downs with my partner, I’ve realized that the spark is just the beginning. The real magic happens in the choosing. It’s the quiet, steady commitment to show up, even when things aren’t perfect, that transforms a simple romance into a lifelong partnership.

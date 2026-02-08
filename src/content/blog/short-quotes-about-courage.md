@@ -2,7 +2,7 @@
 title: "150 Short Quotes About Courage to Ignite Your Inner Strength"
 description: "Discover 150 short quotes about courage that will help you face your fears. From minimalist mantras to powerful wisdom, these bite-sized quotes provide instant bravery."
 pubDate: 2026-02-08
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 tags: ["short quotes", "courage quotes", "bravery", "strength", "inspiration"]
 category: "short-quotes"
 heroImage: "/images/blog/short-quotes-about-courage.webp"

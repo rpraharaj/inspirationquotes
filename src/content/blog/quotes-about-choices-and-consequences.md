@@ -2,6 +2,7 @@
 title: "150 Quotes About Choices and Consequences to Shape Your Future"
 description: "Discover 150 powerful quotes about choices and consequences. Learn how your decisions shape your destiny and find the inspiration to make wise choices today."
 pubDate: 2026-02-08
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-choices-and-consequences.webp"
 category: "life-wisdom"
 tags: ["choices quotes", "consequences", "decisions", "life wisdom", "responsibility"]

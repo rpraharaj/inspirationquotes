@@ -2,7 +2,7 @@
 title: "150 Inspirational Quotes About Kindness to Brighten Your Day"
 description: "150 powerful quotes about kindness to remind you of the impact of simple gestures. Find daily inspiration and spread positivity with these words of wisdom."
 pubDate: 2026-02-08
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/inspirational-quotes-about-kindness.webp"
 category: "inspirational"
 ---

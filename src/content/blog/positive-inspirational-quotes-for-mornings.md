@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 category: "inspirational"
 tags: ["positive quotes", "morning inspiration", "daily motivation", "inspirational quotes", "mindset", "happiness"]
 featured: true
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/positive-inspirational-quotes-for-mornings.webp"
 ---
 

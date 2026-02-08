@@ -3,7 +3,7 @@ title: "150 Quotes About Living in the Present for Daily Mindfulness"
 description: "Discover 150 powerful quotes about living in the present. These words of wisdom on mindfulness and being in the now will help you find peace and mental clarity."
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-living-in-the-present.webp"
-author: "default"
+author: "Inspiration Quotes Hub"
 categories: ["mindfulness-peace"]
 tags: ["living in the present", "mindfulness", "inner peace", "present moment", "carpe diem"]
 ---

@@ -4,7 +4,7 @@ description: "Discover 150 short friendship quotes perfect for quick texts, Inst
 pubDate: 2026-02-07
 heroImage: "/images/blog/short-friendship-quotes-for-texts.webp"
 category: "short-quotes"
-author: "default"
+author: "Inspiration Quotes Hub"
 tags: ["friendship", "short quotes", "texts", "captions"]
 ---
 

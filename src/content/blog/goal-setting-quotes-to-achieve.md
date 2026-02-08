@@ -4,7 +4,7 @@ description: "Discover 150 powerful goal-setting quotes to help you plan, focus,
 pubDate: 2026-02-07
 category: "motivation-success"
 heroImage: "/images/blog/goal-setting-quotes-to-achieve.webp"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 tags: ["goal setting quotes", "planning quotes", "achievement", "vision", "success quotes"]
 ---
 

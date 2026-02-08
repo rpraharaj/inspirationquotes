@@ -2,7 +2,7 @@
 title: "150 Quotes About Living a Happy Life to Inspire Your Journey"
 description: "Discover 150 powerful quotes about living a happy life. From finding inner peace to choosing joy every day, these words of wisdom will lift your spirit."
 pubDate: "2026-02-08"
-author: "default"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-living-a-happy-life.webp"
 category: "happiness-joy"
 tags: ["happiness", "joy", "life wisdom", "positive thinking"]

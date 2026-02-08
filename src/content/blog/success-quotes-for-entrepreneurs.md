@@ -5,7 +5,7 @@ pubDate: 2026-02-07
 category: "motivation-success"
 tags: ["success quotes", "entrepreneurship", "startup quotes", "business motivation", "founder mindset", "entrepreneurial success"]
 featured: true
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/success-quotes-for-entrepreneurs.webp"
 ---
 

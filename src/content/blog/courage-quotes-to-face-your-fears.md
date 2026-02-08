@@ -5,7 +5,7 @@ pubDate: 2026-02-07
 category: "courage-confidence"
 tags: ["courage quotes", "bravery", "overcoming fear", "inner strength", "inspiration", "confidence"]
 featured: true
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/courage-quotes-to-face-your-fears.webp"
 ---
 
@@ -506,7 +506,7 @@ There is a deep connection between peace and courage. When we are centered and a
 
 ## Uplifting Sayings for Bold Living and Taking Risks
 
-A life without risk is a life without growth. I've realized that my biggest regrets aren't the times I failed, but the times I didn't even try because I was afraid of looking foolish. Bold living isn't about being reckless; it's about being willing to put yourself out there for the things that truly matter. It's about saying "yes" to life, even when "no" feels safer. These uplifting sayings remind me that the magic happens when we dare to step into the arena and give it our all.
+A life without risk is a life without growth. I've realized that my biggest regrets aren't the times I failed, but the times I didn't even try because I was afraid of looking foolish. Bold living isn't about being reckless; it's about being willing to put yourself out there for the things that truly matter. Our collection of [quotes about taking risks](/quotes-about-taking-risks/) provides the extra push you need to step into the arena. It's about saying "yes" to life, even when "no" feels safer. These uplifting sayings remind me that the magic happens when we dare to step into the arena and give it our all.
 
 136. > "Life is a progress, and not a station."
      > — Ralph Waldo Emerson

@@ -3,7 +3,7 @@ title: "150 Winning Quotes for Athletes and Competitors"
 description: "Discover 150 powerful winning quotes for athletes. Fuel your competitive spirit with wisdom from legends like Michael Jordan, Serena Williams, and Muhammad Ali."
 pubDate: 2026-02-07
 heroImage: "/images/blog/winning-quotes-for-athletes.webp"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 tags: ["winning quotes", "sports quotes", "athlete motivation", "competition", "success"]
 category: "motivation-success"
 ---

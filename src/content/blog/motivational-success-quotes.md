@@ -5,7 +5,7 @@ pubDate: 2026-02-07
 category: "motivation-success"
 tags: ["motivational quotes", "success quotes", "achievement", "goal setting", "inspiration", "personal growth"]
 featured: true
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/motivational-success-quotes.webp"
 ---
 
@@ -107,7 +107,7 @@ Mastery of the fundamentals is what separates the pros from the amateurs.
 > "Success is peace of mind, which is a direct result of self-satisfaction in knowing you made the effort to become the best of which you are capable."
 > — John Wooden
 
-If you know you gave your all, you've already won, regardless of the external outcome.
+If you know you gave your all, you've already won, regardless of the external outcome. For those in the competitive arena, our collection of [winning quotes for athletes](/winning-quotes-for-athletes/) offers targeted inspiration for peak performance.
 
 > "If you really want to do something, you'll find a way. If you don't, you'll find an excuse."
 > — Jim Rohn

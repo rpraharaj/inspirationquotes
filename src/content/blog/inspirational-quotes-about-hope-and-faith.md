@@ -5,7 +5,7 @@ pubDate: 2026-02-07
 heroImage: "/images/blog/inspirational-quotes-about-hope-and-faith.webp"
 category: "inspirational"
 tags: ["hope", "faith", "inspiration", "strength", "perseverance"]
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last year, I found myself in a season where it felt like the ground was constantly shifting beneath my feet. Every plan I made seemed to unravel, and the path forward was obscured by a thick fog of uncertainty. It was during those quiet, heavy nights that I realized how much I leaned on a few simple words of wisdom to keep my head above water.

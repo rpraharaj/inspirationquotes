@@ -3,7 +3,7 @@ heroImage: "/images/blog/best-friend-quotes-for-captions.webp"
 title: "150 Best Friend Quotes for Social Captions: The Ultimate Collection"
 description: "Discover the perfect best friend quotes for your social media captions. From funny and sweet to meaningful and aesthetic, find the right words for your bestie."
 pubDate: 2026-02-08
-author: "default"
+author: "Inspiration Quotes Hub"
 category: "friendship"
 tags: ["friendship", "social media", "captions", "best friend", "inspirational"]
 ---
@@ -12,7 +12,7 @@ I remember the first time I tried to post a photo with my best friend, Sarah. It
 
 We've all been there. You have a great photo, the lighting is hitting just right, and your bestie looks incredible, but your brain goes blank when it's time to hit "post." Whether you're celebrating a birthday, a random Tuesday coffee date, or a massive life milestone, finding the right words matters. These quotes aren't just filler; they're a way to honor the people who make our lives infinitely better.
 
-In this collection, I've curated over 150 of my favorite best friend quotes for social media. I've found that having a go-to list makes sharing those moments so much easier, allowing you to focus on the memories rather than the mechanics of a caption. From witty one-liners to deep reflections on soul connections, here's everything you need to celebrate your tribe.
+In this collection, I've curated over 150 of my favorite best friend quotes for social media. I've found that having a go-to list makes sharing those moments so much easier, allowing you to focus on the memories rather than the mechanics of a caption. From witty one-liners to deep reflections on soul connections, here's everything you need to celebrate your tribe. For even more creative ideas, check out our collection of [clever quotes for social captions](/clever-quotes-for-social-captions/) to make your posts truly stand out.
 
 ## Short Best Friend Quotes for Quick Captions
 

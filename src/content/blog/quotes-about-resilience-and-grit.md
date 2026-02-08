@@ -5,7 +5,7 @@ pubDate: "2026-02-08"
 category: "courage-confidence"
 tags: ["resilience quotes", "grit", "mental toughness", "perseverance", "inner strength", "overcoming adversity"]
 featured: true
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-resilience-and-grit.webp"
 ---
 

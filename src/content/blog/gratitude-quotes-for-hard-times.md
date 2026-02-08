@@ -2,6 +2,7 @@
 title: "150 Gratitude Quotes for Hard Times: Finding Light in the Dark"
 description: "Discover 150 powerful gratitude quotes for hard times to help you find strength, perspective, and hope during life's most challenging moments."
 pubDate: 2026-02-07
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/gratitude-quotes-for-hard-times.webp"
 category: "gratitude"
 tags: ["gratitude", "hard times", "inspiration", "resilience"]

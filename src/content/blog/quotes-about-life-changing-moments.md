@@ -2,6 +2,7 @@
 title: "150 Quotes About Life Changing Moments: Embrace New Chapters"
 description: "Discover 150 powerful quotes about life changing moments. Explore wisdom on transformation, pivotal decisions, and finding courage during major life shifts."
 pubDate: 2026-02-08
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-life-changing-moments.webp"
 category: "life-wisdom"
 tags: ["life changing quotes", "transformation", "life lessons", "wisdom"]

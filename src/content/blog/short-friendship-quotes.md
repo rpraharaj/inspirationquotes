@@ -4,7 +4,7 @@ description: "Discover 150 short friendship quotes perfect for quick messages, t
 pubDate: 2026-02-07
 heroImage: "/images/blog/short-friendship-quotes.webp"
 category: "friendship"
-author: "default"
+author: "Inspiration Quotes Hub"
 tags: ["friendship", "short quotes", "messages", "appreciation"]
 ---
 
@@ -474,7 +474,7 @@ Knowing that someone is committed to the relationship provides a deep sense of e
 
 ## Short Friendship Quotes for Text Messages
 
-With how busy life gets these days, a quick text is often all we have time for, but it can mean everything. I try to send at least one "thinking of you" message every week to someone I haven't seen in a while. These short quotes are perfect for those moments when you want to send a little sunshine through the screen. For more ideas on how to craft the perfect message, explore our collection of [best friend quotes for captions](/best-friend-quotes-for-captions/).
+With how busy life gets these days, a quick text is often all we have time for, but it can mean everything. I try to send at least one "thinking of you" message every week to someone I haven't seen in a while. These short quotes are perfect for those moments when you want to send a little sunshine through the screen. For even more quick ideas, check out our collection of [short friendship quotes for texts](/short-friendship-quotes-for-texts/) to keep your conversations bright. For more ideas on how to craft the perfect message, explore our collection of [best friend quotes for captions](/best-friend-quotes-for-captions/).
 
 > "Just a quick note to say I'm glad you're in my life."
 > — Unknown

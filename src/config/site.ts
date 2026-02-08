@@ -14,9 +14,8 @@ export const siteConfig = {
 
     // Social Links
     social: {
-        twitter: 'https://x.com/inspirationquoteshub',
-        github: 'https://github.com/inspirationquoteshub',
-        email: 'hello@inspirationquoteshub.com',
+        pinterest: 'https://pinterest.com/inspirationquoteshubcom/',
+        email: 'inspirationquoteshub.com@gmail.com',
     },
 
     // Navigation

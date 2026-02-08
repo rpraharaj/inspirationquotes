@@ -2,7 +2,7 @@
 title: "150 Peace Quotes to Quiet the Mind and Find Inner Serenity"
 description: "Discover 150 powerful peace quotes to calm your mind, reduce stress, and find inner serenity. Perfect for moments when you need to quiet the noise and refocus."
 pubDate: 2026-02-08
-author: "default"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/peace-quotes-to-quiet-the-mind.webp"
 category: "mindfulness-peace"
 tags: ["peace quotes", "inner peace", "quiet the mind", "mental clarity", "mindfulness"]
@@ -95,7 +95,7 @@ Sri Chinmoy often spoke about the "silence-heart," suggesting that our spiritual
 
 ## Short Peace Quotes to Calm the Mind and Soul
 
-When I'm feeling overwhelmed, I don't always have the mental bandwidth for a long philosophical essay. Sometimes, I just need a "micro-dose" of wisdom—a short, punchy sentence that I can repeat to myself like a mantra. These short quotes are perfect for those moments when you need an immediate shift in perspective. They are small but mighty reminders that peace is always just one thought away.
+When I'm feeling overwhelmed, I don't always have the mental bandwidth for a long philosophical essay. Sometimes, I just need a "micro-dose" of wisdom—a short, punchy sentence that I can repeat to myself like a mantra. These short quotes are perfect for those moments when you need an immediate shift in perspective. They are small but mighty reminders that peace is always just one thought away. For more bite-sized serenity, explore our dedicated list of [short quotes about peace](/short-quotes-about-peace/) to find instant calm.
 
 16. > "Peace is always beautiful."
 > — Walt Whitman

@@ -3,7 +3,7 @@ title: "150 Quotes About Life and Happiness: Finding Daily Joy"
 description: "Discover 150 powerful quotes about life and happiness that will remind you to find joy in every moment. Perfect for finding inspiration and inner peace."
 pubDate: 2026-02-08
 category: "life-wisdom"
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-life-and-happiness.webp"
 ---
 

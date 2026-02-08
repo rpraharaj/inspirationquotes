@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about friendship and trust. Explore w
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-friendship-and-trust.webp"
 category: "friendship"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I've always believed that a friendship without trust is like a car without gas—you can stay in it all you want, but it won't go anywhere. Last summer, I had a falling out with a close friend over a simple misunderstanding that snowballed because we hadn't quite mastered the art of being fully honest with each other. It was a painful lesson, but it taught me that trust isn't just a "nice to have"; it's the literal oxygen of any lasting connection.

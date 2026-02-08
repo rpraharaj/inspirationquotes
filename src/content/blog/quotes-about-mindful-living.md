@@ -4,7 +4,7 @@ description: "Discover 150 powerful mindful living quotes that will help you sta
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-mindful-living.webp"
 category: "mindfulness-peace"
-author: "default"
+author: "Inspiration Quotes Hub"
 tags: ["mindfulness", "presence", "inner peace", "conscious living"]
 ---
 

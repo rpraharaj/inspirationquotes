@@ -19,7 +19,7 @@ updatedDate: 2026-01-17          # Same as pubDate for new posts
 category: "ai-agents"            # Singular, from valid list
 keywords: ["primary keyword", "secondary keyword", "tertiary keyword"]
 heroImage: "/images/featured/post-slug.webp"
-author: "AI Agents Kit"
+author: "Inspiration Quotes Hub"
 readTime: 15                     # Estimated minutes
 tags: ["Tag 1", "Tag 2"]         # Optional
 difficulty: "intermediate"       # beginner|intermediate|advanced

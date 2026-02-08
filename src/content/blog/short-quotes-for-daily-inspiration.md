@@ -5,7 +5,7 @@ pubDate: "2026-02-08"
 category: "short-quotes"
 tags: ["short quotes", "daily inspiration", "motivation", "positive quotes", "inspirational sayings", "success"]
 featured: true
-author: "InspirationQuotes Staff"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/short-quotes-for-daily-inspiration.webp"
 ---
 

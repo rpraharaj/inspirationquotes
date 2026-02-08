@@ -4,7 +4,7 @@ description: "Discover 150 powerful short confidence quotes to boost your self-e
 pubDate: "2026-02-08"
 heroImage: "/images/blog/short-confidence-quotes.webp"
 category: "courage-confidence"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last Tuesday, I found myself staring at a blank screen for three hours. I had a presentation due, and despite knowing my subject inside out, a tiny voice in the back of my head was whispering that I wasn't ready. We've all been there—that moment where our confidence seems to evaporate just when we need it most. I've found that in those moments, I don't need a long lecture or a self-help book; I just need a quick spark to remind me of what I'm capable of.

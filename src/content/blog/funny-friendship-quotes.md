@@ -4,7 +4,7 @@ description: Discover 150 hilarious funny friendship quotes that celebrate the b
 pubDate: 2026-02-07
 heroImage: "/images/blog/funny-friendship-quotes.webp"
 category: "friendship"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last week, my best friend and I were trying to assemble a piece of furniture that supposedly took "twenty minutes." Three hours later, we were surrounded by leftover screws, a lopsided bookshelf, and tears of laughter. That’s the thing about real friendship—it’s not always pretty, but it’s always hilarious.

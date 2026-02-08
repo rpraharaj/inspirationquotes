@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about letting go and moving on. Find 
 pubDate: 2026-02-08
 heroImage: "/images/blog/letting-go-and-moving-on.webp"
 category: "life-wisdom"
-author: "default"
+author: "Inspiration Quotes Hub"
 ---
 
 I remember a time when I held onto a mistake I made at work for months. It ate at me every morning, a heavy knot in my stomach that wouldn't loosen. I was convinced that by replaying the moment, I could somehow change the outcome. It wasn't until I read a simple line by Mary Oliver—"Someone I loved once gave me a box full of darkness. It took me years to understand that this, too, was a gift"—that something finally shifted. I realized that my "box of darkness" wasn't meant to be carried forever; it was meant to be opened, understood, and then set down.
@@ -320,7 +320,7 @@ When you stop demanding that the world behave a certain way, you give yourself t
 > "If you realize that all things change, there is nothing you will try to hold onto."
 > — Lao Tzu
 
-Everything in the physical world is temporary; learning to flow with that transience is the secret to a peaceful life.
+Everything in the physical world is temporary; learning to flow with that transience is the secret to a peaceful life. For a more focused exploration of tranquility, our companion piece on [quotes about letting go and peace](/letting-go-and-peace/) offers additional paths to inner calm.
 
 ## Mindful Quotes for Finding Peace in Letting Go
 

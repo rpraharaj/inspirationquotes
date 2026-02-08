@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about true love and soulmates. From d
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-true-love-and-soulmates.webp"
 categories: ["love-relationships"]
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I used to think the idea of a "soulmate" was something reserved for fairy tales and cheesy romance novels. The notion that there's one specific person out there who perfectly completes your soul felt, frankly, a bit unrealistic. But then I met someone who changed everything. It wasn't a lightning bolt moment; it was a slow realization that being with them felt like coming home after a very long journey.

@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 category: "inspirational"
 tags: ["change quotes", "growth quotes", "transformation", "personal development", "inspirational", "life lessons"]
 featured: true
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/inspirational-quotes-about-change-and-growth.webp"
 ---
 

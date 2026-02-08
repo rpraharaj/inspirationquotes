@@ -4,7 +4,7 @@ description: "Discover 150 powerful long-distance love quotes to keep your conne
 pubDate: 2026-02-08
 heroImage: "/images/blog/long-distance-love-quotes.webp"
 category: "love-relationships"
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I still remember the silence of the airport terminal after saying goodbye for the fourth time that year. The air felt heavy, and the space between us—thousands of miles of ocean and land—seemed almost insurmountable. I walked back to my car, clutching a small note they'd left in my pocket, and realized that long-distance love isn't just about waiting; it's about the extraordinary strength of two people who refuse to let geography define their connection.

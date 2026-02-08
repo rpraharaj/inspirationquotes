@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about being thankful that will help y
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-being-thankful.webp"
 category: "gratitude"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Last week, I found myself sitting at my kitchen table, staring at a mounting pile of bills and a laptop screen full of unanswered emails. I felt overwhelmed, stretched thin, and honestly, a bit resentful. It's easy to fall into the trap of focusing on what's missing, isn't it? We get so caught up in the "next thing" that we forget to look at the "now thing."

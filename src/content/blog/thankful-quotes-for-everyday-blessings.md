@@ -2,6 +2,7 @@
 title: "150 Thankful Quotes for Everyday Blessings"
 description: "Discover 150 powerful thankful quotes to help you appreciate the everyday blessings in your life. Perfect for finding peace, joy, and perspective."
 pubDate: 2026-02-08
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/thankful-quotes-for-everyday-blessings.webp"
 category: "gratitude"
 ---

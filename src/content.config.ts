@@ -36,7 +36,7 @@ const blog = defineCollection({
 		tags: z.array(z.string()).default([]),
 		difficulty: z.enum(['beginner', 'intermediate', 'advanced']).optional(),
 		featured: z.boolean().default(false),
-		author: z.string().default('Vibe Coder'),
+		author: z.string().default('Inspiration Quotes Hub'),
 		// Optional series support for multi-part tutorials
 		series: z.string().optional(),
 		seriesOrder: z.number().optional(),

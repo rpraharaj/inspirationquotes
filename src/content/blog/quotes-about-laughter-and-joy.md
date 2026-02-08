@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about laughter and joy. From healing 
 pubDate: "2026-02-08"
 heroImage: "/images/blog/quotes-about-laughter-and-joy.webp"
 category: "humor-wit"
-author: "InspirationQuotes Staff"
+author: "Inspiration Quotes Hub"
 tags: ["laughter", "joy", "happiness", "positivity"]
 ---
 

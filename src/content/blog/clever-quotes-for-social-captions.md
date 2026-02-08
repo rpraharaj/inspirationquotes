@@ -3,7 +3,7 @@ title: "150 Clever Quotes for Social Captions to Boost Engagement"
 description: "Elevate your social media with 150 clever captions. From witty one-liners to deep thoughts, find the perfect words to stop the scroll and boost engagement."
 pubDate: 2026-02-08
 heroImage: "/images/blog/clever-quotes-for-social-captions.webp"
-author: "Inspiration Quotes Hub Team"
+author: "Inspiration Quotes Hub"
 tags: ["clever quotes", "social captions", "instagram captions", "witty quotes", "engagement"]
 category: "humor-wit"
 ---

@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about taking risks that will inspire 
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-taking-risks.webp"
 category: "courage-confidence"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I remember standing at the edge of a literal cliff in Acadia National Park a few years ago. My heart was hammering against my ribs, and every instinct I had was screaming at me to stay on the solid, safe path. But there was a view just a few feet lower—on a rocky outcrop that required a bit of a leap—that I knew would be breathtaking. I hesitated for what felt like an hour. When I finally took that jump, the perspective I gained wasn't just visual; it was mental. I realized that the most beautiful things in my life have always been just on the other side of a "scary" decision.

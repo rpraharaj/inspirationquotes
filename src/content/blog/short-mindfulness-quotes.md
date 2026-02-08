@@ -4,7 +4,7 @@ description: "Find instant peace with 150 short mindfulness quotes. Perfect for 
 pubDate: 2026-02-08
 heroImage: "/images/blog/short-mindfulness-quotes.webp"
 category: "mindfulness-peace"
-author: "default"
+author: "Inspiration Quotes Hub"
 ---
 
 I used to think mindfulness required a dedicated room, a special cushion, and at least twenty minutes of absolute silence. In my old apartment, which sat right above a busy intersection, that kind of silence was about as common as a sunny day in London. I'd wait for the "perfect" moment to be mindful, and surprise—it never came. I was constantly stressed, perpetually rushing, and my mind felt like it was being pulled in six different directions at once.

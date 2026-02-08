@@ -2,6 +2,7 @@
 title: "150 Quotes About Self-Belief to Unlock Your Full Potential"
 description: "Discover 150 powerful quotes about self-belief to boost your confidence, overcome doubt, and achieve your goals. Timeless wisdom to help you believe in yourself."
 pubDate: "2026-02-08"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-self-belief.webp"
 category: "courage-confidence"
 tags: ["self-belief", "confidence", "motivation", "success"]

@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about family memories that celebrate 
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-family-memories.webp"
 category: "family"
-author: "default"
+author: "Inspiration Quotes Hub"
 tags: ["family", "memories", "nostalgia", "wisdom"]
 ---
 

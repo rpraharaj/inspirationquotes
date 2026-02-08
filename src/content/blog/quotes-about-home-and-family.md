@@ -2,6 +2,7 @@
 title: "150 Quotes About Home and Family to Warm Your Heart"
 description: "Discover 150 heartwarming quotes about home and family. From short sayings to deep wisdom, find the perfect words to celebrate the comfort and love of home."
 pubDate: 2026-02-08
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-home-and-family.webp"
 category: "family"
 tags: ["home and family quotes", "inspirational quotes", "family unity", "comfort of home"]

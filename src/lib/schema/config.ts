@@ -28,8 +28,7 @@ export function getOrganizationSchema(): OrganizationSchema {
         },
         description: siteConfig.description,
         sameAs: [
-            siteConfig.social.twitter,
-            siteConfig.social.github,
+            siteConfig.social.pinterest,
         ].filter(Boolean),
     };
 }
@@ -49,18 +48,17 @@ export function getDefaultAuthorSchema(): PersonSchema {
         description: siteConfig.authorBio.bio,
         jobTitle: siteConfig.authorBio.role,
         knowsAbout: [
-            'Artificial Intelligence',
-            'AI Agents',
-            'Large Language Models',
-            'Prompt Engineering',
-            'Model Context Protocol',
-            'Python',
-            'TypeScript',
-            'Machine Learning',
+            'Inspirational Quotes',
+            'Motivational Wisdom',
+            'Life Philosophy',
+            'Personal Development',
+            'Mindfulness',
+            'Literature',
+            'Poetry',
+            'Self-Improvement',
         ],
         sameAs: [
-            siteConfig.social.twitter,
-            siteConfig.social.github,
+            siteConfig.social.pinterest,
         ].filter(Boolean),
     };
 }

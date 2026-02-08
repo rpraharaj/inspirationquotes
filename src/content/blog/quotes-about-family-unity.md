@@ -2,6 +2,7 @@
 title: "150 Quotes About Family Unity to Strengthen Your Bonds"
 description: "Discover 150 powerful quotes about family unity and strength. From short sayings to deep wisdom, find the inspiration you need to keep your family together and strong."
 pubDate: 2026-02-08
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-family-unity.webp"
 category: "family"
 tags: ["family unity", "togetherness", "strength", "family bonds"]

@@ -1,7 +1,7 @@
 ---
 title: "150 Growth Mindset Quotes for Long-Term Success"
 description: "Discover 150 growth mindset quotes from Carol Dweck and other visionaries that will transform how you view challenges, learning, and your own potential for success."
-pubDate: 2026-02-07
+pubDate: 2026-02-08
 author: "Inspiration Quotes Hub"
 tags: ["growth mindset quotes", "Carol Dweck quotes", "learning quotes", "self-improvement quotes", "mindset quotes"]
 category: "motivation-success"
@@ -93,7 +93,7 @@ We can never predict what someone might achieve with the right mindset and effor
 
 Instilling a love of growth creates lifelong learners.
 
-If you're struggling to maintain momentum through difficult challenges, our collection of <a href="/perseverance-quotes-for-tough-times/">perseverance quotes for tough times</a> will help you push through when growth feels uncomfortable.
+If you're struggling to maintain momentum through difficult challenges, our collection of [perseverance quotes for tough times](/perseverance-quotes-for-tough-times/) will help you push through when growth feels uncomfortable.
 
 ## Quotes About the Power of Yet and Learning from Mistakes
 
@@ -176,7 +176,7 @@ Playing it safe ensures mediocrity; greatness requires risk.
 
 For a deeper understanding of how the word "yet" transforms learning outcomes, explore <a href="https://www.ted.com/talks/carol_dweck_the_power_of_believing_that_you_can_improve" target="_blank" rel="noopener">Carol Dweck's TED Talk on the power of believing you can improve</a>, where she explains how this simple linguistic shift creates powerful psychological change.
 
-Building resilience requires consistent effort over time. Our <a href="/hard-work-quotes-that-push-you-forward/">hard work quotes that push you forward</a> offer additional inspiration for putting in the daily effort that builds unshakeable resilience.
+Building resilience requires consistent effort over time. Our [hard work quotes that push you forward](/hard-work-quotes-that-push-you-forward/) offer additional inspiration for putting in the daily effort that builds unshakeable resilience.
 
 ## Growth Mindset Quotes for Students and Lifelong Learners
 
@@ -257,7 +257,7 @@ Mastery is simply the accumulation of beginner steps.
 
 Curiosity is the engine of perpetual growth.
 
-When you're working toward long-term goals and need sustained motivation, our <a href="/motivational-success-quotes/">motivational success quotes</a> collection offers powerful words to fuel your ambition and keep your eyes on the prize.
+When you're working toward long-term goals and need sustained motivation, our [motivational success quotes](/motivational-success-quotes/) collection offers powerful words to fuel your ambition and keep your eyes on the prize.
 
 ## Quotes About Effort and Process Over Talent
 
@@ -338,7 +338,7 @@ Easy wins feel hollow while hard-fought victories feel satisfying.
 
 Persistence can compensate for lack of exceptional ability.
 
-For entrepreneurs building businesses through consistent effort, our collection of <a href="/success-quotes-for-entrepreneurs/">success quotes for entrepreneurs</a> provides targeted wisdom from founders who turned persistence into prosperity.
+For entrepreneurs building businesses through consistent effort, our collection of [success quotes for entrepreneurs](/success-quotes-for-entrepreneurs/) provides targeted wisdom from founders who turned persistence into prosperity.
 
 ## Short Growth Mindset Quotes for Daily Motivation
 
@@ -444,7 +444,7 @@ Focus on the process of improvement.
 
 With effort and time, skills can be developed.
 
-For more quick, powerful motivation you can carry with you throughout the day, check out our collection of <a href="/short-success-quotes/">short success quotes</a> designed to deliver maximum impact in minimum words.
+For more quick, powerful motivation you can carry with you throughout the day, check out our collection of [short success quotes](/short-success-quotes/) designed to deliver maximum impact in minimum words.
 
 ## Famous Growth Mindset Quotes from Leaders and Innovators
 

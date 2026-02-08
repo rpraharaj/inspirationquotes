@@ -4,7 +4,7 @@ title: "150 Breakup Quotes to Help You Heal and Move On"
 description: "Discover 150 powerful breakup quotes to help you navigate heartbreak, find the strength to let go, and embrace the journey of healing and new beginnings."
 pubDate: 2026-02-08
 category: "love-relationships"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I remember a Tuesday evening three years ago when my world felt like it was collapsing. Sitting on my kitchen floor, staring at a half-packed box, I wondered how a relationship that once felt like home could suddenly feel like a house on fire. I didn't need a ten-step plan; I just needed to know that someone else had survived this hollow ache.

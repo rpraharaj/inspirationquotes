@@ -4,7 +4,7 @@ description: "Discover 150 funny love quotes for couples that capture the humor,
 pubDate: "2026-02-08"
 heroImage: "/images/blog/funny-love-quotes-for-couples.webp"
 category: "humor-wit"
-author: "InspirationQuotes Staff"
+author: "Inspiration Quotes Hub"
 tags: ["love", "humor", "couples", "relationships"]
 ---
 

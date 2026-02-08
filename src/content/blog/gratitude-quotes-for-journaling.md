@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 category: "gratitude"
 tags: ["gratitude quotes", "journaling", "mindfulness", "personal growth", "reflection", "positivity"]
 featured: true
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/gratitude-quotes-for-journaling.webp"
 ---
 

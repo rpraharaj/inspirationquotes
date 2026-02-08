@@ -4,7 +4,7 @@ description: "Discover 150 powerful quotes about healthy relationships. From com
 pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-healthy-relationships.webp"
 category: "love-relationships"
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I spent my early twenties waiting for that perfect, effortless connection where everything just clicked. It took a few painful lessons to realize that a healthy bond isn't found—it's built, brick by brick, through intentional choices. 

@@ -2,6 +2,7 @@
 title: "150 Heartfelt Quotes About Gratitude for Friends and Family"
 description: "Discover 150 powerful quotes about gratitude for friends and family. Express your appreciation for the people who matter most with these inspiring words."
 pubDate: 2026-02-07
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-gratitude-for-family.webp"
 category: "gratitude"
 tags: ["gratitude quotes", "family appreciation", "friendship quotes", "thankfulness"]

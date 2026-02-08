@@ -6,7 +6,7 @@ category: family
 heroImage: "/images/blog/short-family-quotes.webp"
 tags: ["family", "quotes", "captions", "instagram"]
 featured: false
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 ---
 
 I remember scrolling through my phone last Sunday, trying to find the perfect words for a photo of my siblings and me laughing at our cousin's wedding. We were all a bit disheveled, someone was mid-blink, but the joy was palpable. I wanted a caption that captured that feeling without being a novel.

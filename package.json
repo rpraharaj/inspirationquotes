@@ -40,7 +40,9 @@
 		"deploy": "wrangler deploy",
 		"dev": "astro dev",
 		"preview": "astro build && wrangler dev",
-		"serve-dashboard": "npm run build-analytics && npx serve blogpost-content-plan -l 3333"
+		"serve-dashboard": "npm run build-analytics && npx serve blogpost-content-plan -l 3333",
+		"validate:authors": "node scripts/validate-authors.js",
+		"fix:authors": "node scripts/update-authors.js"
 	},
 	"type": "module"
 }

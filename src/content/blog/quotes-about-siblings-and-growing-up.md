@@ -4,7 +4,7 @@ description: "Discover 150 heartwarming, funny, and inspirational quotes about s
 pubDate: "2026-02-08"
 heroImage: "/images/blog/quotes-about-siblings-and-growing-up.webp"
 category: "family"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 Growing up with a sibling is like having a built-in best friend, a lifelong rival, and a personal historian all wrapped into one. I remember the rainy Saturday afternoons spent building forts out of couch cushions with my brother, arguing over who got the "good" pillow, and eventually falling asleep side-by-side. Those moments seemed so small then, but looking back, they were the foundation of everything I know about loyalty and love.

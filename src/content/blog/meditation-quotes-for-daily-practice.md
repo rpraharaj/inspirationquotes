@@ -119,6 +119,8 @@ Being present is the core of mindfulness. With so many distractions pulling at o
 29. > "Life is a dance. Mindfulness is witnessing that dance."
     > — Amit Ray
 
+To bring this awareness into every aspect of your day, see our collection of [quotes about mindful living](/quotes-about-mindful-living/) for daily inspiration.
+
 30. > "Every time we become aware of a thought, as opposed to being lost in a thought, we experience that opening of the mind."
     > — Joseph Goldstein
 

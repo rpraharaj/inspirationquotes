@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 heroImage: "/images/blog/short-quotes-about-happiness.webp"
 category: "short-quotes"
 tags: ["happiness", "joy", "positivity", "short-quotes"]
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I used to think that happiness was something I had to chase—a distant destination I’d finally reach once I checked enough boxes on my to-do list. But last year, during a particularly chaotic Tuesday when everything seemed to be going wrong, I stumbled across a simple seven-word sentence that changed everything: "Happiness is a way of travel, not a destination." It hit me like a bolt of lightning, reminding me that I was so focused on where I was going that I forgot to enjoy the walk.

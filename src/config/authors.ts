@@ -15,8 +15,7 @@ export interface Author {
     experience?: string;
     achievements?: string[];
     social?: {
-        twitter?: string;
-        github?: string;
+        pinterest?: string;
         linkedin?: string;
         website?: string;
     };
@@ -37,7 +36,7 @@ export const authors: Record<string, Author> = {
             'Spotlights voices across cultures and eras',
         ],
         social: {
-            twitter: 'https://x.com/inspirationquoteshub',
+            pinterest: 'https://pinterest.com/inspirationquoteshubcom/',
             website: 'https://inspirationquoteshub.com',
         },
     },
@@ -48,8 +47,7 @@ export const authors: Record<string, Author> = {
         avatar: '/authors/guest-avatar.webp',
         role: 'Guest Contributor',
         social: {
-            twitter: 'https://twitter.com/guest',
-            github: 'https://github.com/guest',
+            website: 'https://example.com/guest',
         },
     },
     'tech-lead': {
@@ -59,7 +57,6 @@ export const authors: Record<string, Author> = {
         avatar: '/authors/tech-lead-avatar.webp',
         role: 'Technical Lead',
         social: {
-            github: 'https://github.com/alexchen',
             linkedin: 'https://linkedin.com/in/alexchen',
         },
     },

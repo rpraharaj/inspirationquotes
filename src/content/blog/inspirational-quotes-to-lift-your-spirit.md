@@ -5,7 +5,7 @@ pubDate: 2026-02-07
 category: "inspirational"
 tags: ["inspirational quotes", "lift your spirit", "hope", "uplifting", "daily inspiration", "inner strength"]
 featured: true
-author: "Vibe Coder"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/inspirational-quotes-to-lift-your-spirit.webp"
 ---
 
@@ -329,7 +329,7 @@ We have to learn to treat our future selves with the same kindness and respect w
 > "Perhaps because complexity is a way to avoid facing the reality that what really matters... is simply showing up and doing the work."
 > — Brad Stulberg
 
-Stop overthinking and start doing. Inspiration follows action, not the other way around.
+Stop overthinking and start doing. Inspiration follows action, not the other way around. For quick reminders you can carry with you, our collection of [short inspirational quotes with big impact](/short-inspirational-quotes-with-big-impact/) provides immediate wisdom for any moment.
 
 ## Inspirational Wisdom to Ignite Your Inner Light
 

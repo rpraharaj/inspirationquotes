@@ -2,6 +2,7 @@
 title: "150 Quotes About Simplicity and Living Well"
 description: "Discover 150 powerful quotes about simplicity and living well. From minimalist philosophy to slow living wisdom, find the inspiration to declutter your life and mind."
 pubDate: 2026-02-08
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/quotes-about-simplicity-and-living-well.webp"
 category: "life-wisdom"
 tags: ["simplicity quotes", "minimalism", "living well", "slow living"]

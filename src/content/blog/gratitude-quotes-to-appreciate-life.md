@@ -2,6 +2,7 @@
 title: "150 Gratitude Quotes to Appreciate Life"
 description: "Discover 150 powerful gratitude quotes to remind you of life's blessings. Perfect for finding peace, joy, and appreciation in every moment."
 pubDate: "2026-02-08"
+author: "Inspiration Quotes Hub"
 heroImage: "/images/blog/gratitude-quotes-to-appreciate-life.webp"
 category: "gratitude"
 tags: ["gratitude", "appreciation", "thankfulness", "positive-thinking"]
@@ -148,6 +149,8 @@ When I went through a major career setback in 2024, the last thing I wanted to d
 
 > "Two kinds of gratitude: The sudden kind we feel for what we take; the larger kind we feel for what we give."
 > — Edwin Arlington Robinson
+
+During these tough stretches, maintaining a positive outlook can be difficult. Our dedicated list of [gratitude quotes for hard times](/gratitude-quotes-for-hard-times/) provides specific comfort and perspective for these challenging seasons. Additionally, <a href="https://www.health.harvard.edu/healthbeat/giving-thanks-can-make-you-happier" target="_blank" rel="noopener">Harvard Health</a> notes that giving thanks can significantly improve your overall happiness and well-being.
 
 > "Gratitude is the sweetest thing in a seekers life—in all human life."
 > — Sri Chinmoy

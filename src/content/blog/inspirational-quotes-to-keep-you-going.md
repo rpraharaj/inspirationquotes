@@ -4,7 +4,7 @@ description: "Discover 150 powerful inspirational quotes to keep you going. Thes
 pubDate: "2026-02-06"
 heroImage: "/images/blog/inspirational-quotes-to-keep-you-going.webp"
 category: "inspirational"
-author: "Rajesh Praharaj"
+author: "Inspiration Quotes Hub"
 tags: ["inspiration", "perseverance", "motivation", "never give up"]
 ---
 

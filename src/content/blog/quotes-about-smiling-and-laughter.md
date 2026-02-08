@@ -5,7 +5,7 @@ pubDate: 2026-02-08
 heroImage: "/images/blog/quotes-about-smiling-and-laughter.webp"
 category: "happiness-joy"
 tags: ["smiling", "laughter", "happiness", "positivity"]
-author: "default"
+author: "Inspiration Quotes Hub"
 ---
 
 I used to think that smiling was just something we did when things were already going well. But a few years ago, during a particularly stressful month when everything seemed to be going wrong, I realized I had it backward. I was waiting for a reason to smile, when what I actually needed was to smile to find my way back to the light.

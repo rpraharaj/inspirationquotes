@@ -4,7 +4,7 @@ description: "Discover 150 heartfelt love quotes for couples and partners. From 
 pubDate: 2026-02-08
 heroImage: "/images/blog/love-quotes-for-couples.webp"
 category: "love-relationships"
-author: "rajesh-praharaj"
+author: "Inspiration Quotes Hub"
 ---
 
 I remember the first time I realized that love wasn't just a feeling, but a series of quiet, everyday choices. My partner and I were sitting in a crowded cafe, trying to navigate a particularly stressful week of deadlines and missed connections. Instead of the usual frustration, they simply reached across the table, took my hand, and said, "We're on the same team." That simple reminder shifted everything. It wasn't a grand cinematic gesture, but it was the exact anchor I needed in that moment.
@@ -325,6 +325,8 @@ While this is true for toxic bonds, it also reminds us to handle our healthy rel
 
 > "There is no love without forgiveness, and there is no forgiveness without love."
 > — Bryant H. McGill
+
+To explore this vital balance further, check out our dedicated list of [quotes about love and forgiveness](/quotes-about-love-and-forgiveness/) for healing and growth.
 
 > "Every couple needs to argue now and then, just to prove that the relationship is strong enough to survive."
 > — Nicholas Sparks
